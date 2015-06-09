@@ -2,4 +2,4 @@
 The Iron Yard Assignments
 
 
-This repository has all of my assignments that were done with The Iron Yard
+This repository has all of my assignments completed at The Iron Yard
