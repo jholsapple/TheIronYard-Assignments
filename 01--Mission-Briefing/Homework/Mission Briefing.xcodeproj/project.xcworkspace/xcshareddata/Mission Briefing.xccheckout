@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C6BE73A-FB08-4AF2-A6B9-807A82A61E24</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mission Briefing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22E880E88EDED6DF6AC3F7081EABBD108AEB8DD8</key>
+		<string>https://github.com/TheIronYard--Orlando/2015--SUMMER--iOS.git</string>
+		<key>80A74662D27E19380B45E03D5256DB39B581602C</key>
+		<string>https://github.com/jholsapple/Spoon-Knife.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>01--Mission-Briefing/Homework/Mission Briefing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22E880E88EDED6DF6AC3F7081EABBD108AEB8DD8</key>
+		<string>../../../..</string>
+		<key>80A74662D27E19380B45E03D5256DB39B581602C</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TheIronYard--Orlando/2015--SUMMER--iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22E880E88EDED6DF6AC3F7081EABBD108AEB8DD8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>80A74662D27E19380B45E03D5256DB39B581602C</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22E880E88EDED6DF6AC3F7081EABBD108AEB8DD8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>2015--SUMMER--iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
