@@ -15,6 +15,9 @@
 //     object. How do we do that?
 //
 @property (weak, nonatomic) IBOutlet UILabel *coverNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *realNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accessLevelLabel;
+
 
 //
 // 18. We need properties for the other two labels here so we can reference them in code.

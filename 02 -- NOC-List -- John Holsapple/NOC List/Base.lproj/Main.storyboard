@@ -99,6 +99,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="accessLevelLabel" destination="Jga-0A-cFM" id="dVh-2k-xsB"/>
+                        <outlet property="coverNameLabel" destination="3bR-5P-bwS" id="Ra9-Vz-N4k"/>
+                        <outlet property="realNameLabel" destination="lKQ-i7-38W" id="IjQ-OS-39Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOZ-bi-MBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
