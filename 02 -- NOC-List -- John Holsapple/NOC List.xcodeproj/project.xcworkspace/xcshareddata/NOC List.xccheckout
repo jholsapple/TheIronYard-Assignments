@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8C6BE73A-FB08-4AF2-A6B9-807A82A61E24</string>
+	<string>9266E3C9-4ED4-4CBD-B10D-A2AF25848C90</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Mission Briefing</string>
+	<string>NOC List</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
 		<string>https://github.com/jholsapple/TIY-Assignments.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>01--Mission-Briefing -- John Holsapple/Mission Briefing/Mission Briefing.xcodeproj</string>
+	<string>02 -- NOC-List -- John Holsapple/NOC List.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jholsapple/TIY-Assignments.git</string>
