@@ -30,17 +30,17 @@
     //
     // 3. Set the title of the view to "NOC List"
     //
-    
+    self.title = @"NOC List";
     
     //
     // 4. Initialize the agents array as an NSMutableArray
     //
-    self.agents = nil;
+    self.agents = [[NSMutableArray alloc] init];
 
     //
     // 5. Call the method loadNocList so the tableview will actually have objects to load into its cells.
     //
-    
+    [self loadNocList];
     
 }
 
