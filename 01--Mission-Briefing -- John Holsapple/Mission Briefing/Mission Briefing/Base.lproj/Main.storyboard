@@ -64,6 +64,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="8O7-tP-wex" secondAttribute="centerX" id="0Mh-aC-LmX"/>
                             <constraint firstItem="qZC-WU-mTE" firstAttribute="centerX" secondItem="k6s-Cc-dbR" secondAttribute="centerX" id="2DD-gi-x4u"/>
@@ -100,6 +101,9 @@
                                 <exclude reference="VbH-ux-D8w"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Gd6-p6-ZXB" appends="YES" id="mbt-zt-9pd"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="6V1-5v-Evt"/>
                     <connections>
@@ -110,6 +114,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gd6-p6-ZXB">
+                    <connections>
+                        <action selector="viewTapped:" destination="vXZ-lx-hvc" id="Mhe-oG-U2a"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1241" y="1090.5"/>
         </scene>

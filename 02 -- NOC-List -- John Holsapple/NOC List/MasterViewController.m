@@ -63,7 +63,6 @@
         [self.agents addObject:anAgent];
     }
 
-    
     //
     // 7. Now that we have agent objects, call a method to instruct the table to reload its data.
     //

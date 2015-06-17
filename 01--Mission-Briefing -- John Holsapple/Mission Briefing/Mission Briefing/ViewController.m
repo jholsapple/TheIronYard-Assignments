@@ -31,7 +31,7 @@
     //
     
     [self.agentNameTextField setText: @""];
-    self.greetingLabel.text = @"";
+    [self.greetingLabel setText: @""];
     self.missionBriefingTextView.text = @"";
 }
 
@@ -41,17 +41,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)viewTapped:(UITapGestureRecognizer*)sender
+{
+    [self hideKeyboard];
+}
+
 - (IBAction)authenticateAgent:(UIButton *)sender
 {
     // This will cause the keyboard to dismiss when the authenticate button is tapped
-    if ([self.agentNameTextField isFirstResponder])
-    {
-        [self.agentNameTextField resignFirstResponder];
-    }
-    
+    [self hideKeyboard];
+  
     //
     // 2. Check whether there is text in BOTH the name and password textfields
-    //
+    //                                              Logical AND
     if (![self.agentNameTextField.text isEqualToString:@""] && ![self.agentPasswordTextField.text isEqualToString:@""])
     {
         //
@@ -65,8 +67,8 @@
         NSString *agentName = self.agentNameTextField.text;
         // Additional step(s) to remove only the last name
         NSArray *nameComponents = [agentName componentsSeparatedByString:@" "];
-        NSString *greeting = [NSString stringWithFormat:@"Good Evening, Agent %@", nameComponents[1]];
-        self.greetingLabel.text = greeting;
+        self.greetingLabel.text = [NSString stringWithFormat:@"Good Evening, Agent %@", nameComponents[1]];
+      //  self.greetingLabel.text = greeting;
         
         //
         // 4. The mission briefing textview needs to be populated with the briefing from HQ, but it must also include the last
@@ -89,7 +91,7 @@
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
 
-        UIColor *authenticatedBackgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1];
+        UIColor *authenticatedBackgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1.0];
         
         // Additional step to set the above color object to self.view's background color
         self.view.backgroundColor = authenticatedBackgroundColor;
@@ -105,9 +107,19 @@
         //
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
-        UIColor *accessDeniedBackgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1];
+        UIColor *accessDeniedBackgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1.0];
         // Additional step to set the above color object to self.view's background color
         self.view.backgroundColor = accessDeniedBackgroundColor;
+    }
+}
+
+- (void) hideKeyboard
+{
+    if ([self.agentPasswordTextField isFirstResponder] || [self.agentNameTextField isFirstResponder])
+    {
+        [self.agentPasswordTextField resignFirstResponder];
+        [self.agentNameTextField resignFirstResponder];
+        
     }
 }
 
