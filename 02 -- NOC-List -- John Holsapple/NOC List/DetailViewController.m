@@ -15,15 +15,14 @@
 //     object. How do we do that?
 //
 @property (weak, nonatomic) IBOutlet UILabel *coverNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *realNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *accessLevelLabel;
 
 //
 // 18. We need properties for the other two labels here so we can reference them in code.
 //
+@property (weak, nonatomic) IBOutlet UILabel *realNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accessLevelLabel;
 
-
-// Why is this here?
+// Why is this here?   To know it's going to be used later.
 - (void)configureView;
 
 @end
@@ -55,14 +54,14 @@
         //
         //     (hint: We did something similar to this in HW 1)
         //
-        
+        self.title = [NSString stringWithFormat:@"Agent %@", [self.agent.coverName componentsSeparatedByString: @" "][1]];
         
         
         //
         // 20. Once we have the last name of the agent from the code above, how do we set the view's title to the right
         //     string?
         //
-        
+   //     self.title = @"Agent Name";
         
         
         //
@@ -71,6 +70,10 @@
         //     The level label will be a little trickier, because the level property is an NSInteger. We also want that label
         //     to read "Level #". How do we do that?
         //
+        self.coverNameLabel.text = self.agent.coverName;
+        self.realNameLabel.text = self.agent.realName;
+        self.accessLevelLabel.text = [NSString stringWithFormat:@"Level %ld",(long)self.agent.accessLevel];
+        
 
         
         
@@ -87,6 +90,7 @@
     // 22. We need to make sure to call the configureView method so the detail view will be populated with the agent's data.
     //     How do we do that?
     //
+    [self configureView];
     
     
 }
