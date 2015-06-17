@@ -92,6 +92,8 @@
     //
     [self configureView];
     
+    self.view.backgroundColor = [UIColor colorWithRed:0.310f green:0.769f blue:0.635f alpha:1.00f];
+    
     
 }
 
