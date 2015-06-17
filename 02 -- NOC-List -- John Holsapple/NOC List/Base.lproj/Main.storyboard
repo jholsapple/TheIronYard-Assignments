@@ -7,7 +7,6 @@
         <!--Master View Controller-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
                 <tableViewController id="pGg-6v-bdr" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -37,7 +36,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="V4Y-9m-eac" kind="show" id="8Uc-nr-fw8"/>
+                                    <segue destination="V4Y-9m-eac" kind="show" identifier="AgentNameCellSegue" id="8Uc-nr-fw8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -49,6 +48,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="tQt-TN-PWz"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229" y="64"/>
         </scene>
