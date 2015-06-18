@@ -36,12 +36,10 @@
     // 4. Initialize the agents array as an NSMutableArray
     //
     self.agents = [[NSMutableArray alloc] init];
-
     //
     // 5. Call the method loadNocList so the tableview will actually have objects to load into its cells.
     //
     [self loadNocList];
-    
 }
 
 - (void)loadNocList
@@ -51,23 +49,21 @@
     // This is a built in method that allows us to load a JSON file into native Cocoa objects (NSDictionaries and NSArrays).
     NSArray *agentsFromFile = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
     
-    //
     // 6. Once we have an array of dictionaries, we need to iterate over them and convert them into Agent objects.
     //
     //    Type in "forin" below. It should offer code completion for a for-in loop. Just hit enter to accept it.
     //    Use the "agents" array from above as the array to iterate over. Create an NSDictionary object on the left side
     //    of the for-in loop. You will use this inside the for loop to create an Agent object.
+    
     for (NSDictionary *agentDict in agentsFromFile)
     {
         Agent *anAgent = [Agent agentWithDictionary:agentDict];
         [self.agents addObject:anAgent];
     }
 
-    //
     // 7. Now that we have agent objects, call a method to instruct the table to reload its data.
     //
     [self.tableView reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,8 +116,7 @@
 {
     //
     // 12. How do we tell the table view how many rows we need?
-    //
-    
+
     return [self.agents count];
 }
 
@@ -151,7 +146,6 @@
     //
     // 16. This method is supposed to give a cell back to its caller. How do we do that? Why is this method currently
     //     throwing an error?
-    //
     
     return agentNameCell;
 }

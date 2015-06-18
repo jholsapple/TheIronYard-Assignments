@@ -92,6 +92,7 @@
     //
     [self configureView];
     
+//////// Self added color. Not part of assignment ////////
     self.view.backgroundColor = [UIColor colorWithRed:0.310f green:0.769f blue:0.635f alpha:1.00f];
     
     
