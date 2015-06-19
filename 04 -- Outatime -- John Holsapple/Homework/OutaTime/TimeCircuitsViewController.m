@@ -18,9 +18,9 @@
     //    The last is an NSInteger object to hold the current speed of the DeLorean.
     //
     
-//    NSTimer
-//    NSDateFormatter
-//    NSInteger
+    NSTimer *speedometer;
+    NSDateFormatter *timeCircuits;
+    NSInteger *deloreanSpeed;
 }
 
 // These are the properties that will be wired up to the labels in the storyboard. If the circles to the left of them are hollow, they have not been connected in the storyboard.
@@ -48,11 +48,13 @@
     //
     // 2. The view should be titled "Time Circuits"
     //
+    self.title = @"Time Circuits";
     
     //
     // 3. This is a good place to initialize the objects that will be used later on.
     //    The date formatter object you created above need to be instantiated.
     //
+    timeCircuits = [[NSDateFormatter alloc] init];
     
     //
     // 4. Once created, the formatString you see below needs to be set as the date formatter's dateFormat
@@ -95,11 +97,11 @@
 {
     if ([segue.identifier isEqualToString:@"ShowDestinationDatePickerSegue"])
     {
-        DatePickerViewController *timePickerVC = (DatePickerViewController *)[segue destinationViewController];
+        DatePickerViewController *datePickerVC = (DatePickerViewController *)[segue destinationViewController];
         //
         // 10. This view controller needs to be set as the time picker view controller's delegate object.
         //
-        
+        datePickerVC.delegate = self;
     }
 }
 

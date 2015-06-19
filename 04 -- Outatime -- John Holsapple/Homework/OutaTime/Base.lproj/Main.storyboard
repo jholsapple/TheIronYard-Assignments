@@ -169,7 +169,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
-                                <rect key="frame" x="16" y="219" width="568" height="162"/>
+                                <rect key="frame" x="0.0" y="219" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445876717.15564197">
                                     <!--2015-02-17 14:38:37 +0000-->
                                 </date>
@@ -187,10 +187,10 @@
                             <constraint firstAttribute="centerX" secondItem="H9E-IV-AOj" secondAttribute="centerX" id="62K-3t-wuI"/>
                             <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" id="6qG-EB-HfH"/>
                             <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" id="CLf-7m-zCW"/>
-                            <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" constant="16" id="Htd-EZ-36R"/>
+                            <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" id="Htd-EZ-36R"/>
                             <constraint firstAttribute="centerY" secondItem="H9E-IV-AOj" secondAttribute="centerY" id="miv-Hn-k06"/>
                             <constraint firstAttribute="centerY" secondItem="H9E-IV-AOj" secondAttribute="centerY" id="rld-wQ-zVO"/>
-                            <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" constant="16" id="vaQ-Iq-OOu"/>
+                            <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" id="vaQ-Iq-OOu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

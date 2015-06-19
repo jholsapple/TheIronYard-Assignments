@@ -29,7 +29,7 @@
     // 11. We need to call a method to tell the delegate that a destination date was chosen and pass the date from the
     //    datePicker object.
     //
-    
+    [self.delegate destinationDateWasChosen:self.datepicker2.date];
 }
 
 - (void)didReceiveMemoryWarning
