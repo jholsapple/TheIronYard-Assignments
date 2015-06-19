@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uGX-mP-Xos">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7.ttf">
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
             <string>Digital-7</string>
         </mutableArray>
     </customFonts>
@@ -22,37 +29,137 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJj-oG-KHX">
-                                <rect key="frame" x="223" y="40" width="154" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="214" y="84" width="172" height="25"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-Jw-nUV">
-                                <rect key="frame" x="210" y="68.5" width="180" height="36.5"/>
+                                <rect key="frame" x="210" y="117" width="180" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="0.78903317451477051" green="0.18061754107475281" blue="0.16475954651832581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhR-W3-uDj">
+                                <rect key="frame" x="210" y="206" width="180" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="0.74773848684210531" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOa-Cd-e3V">
+                                <rect key="frame" x="232" y="173" width="136.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--- -- ----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-lR-Fno">
+                                <rect key="frame" x="210" y="296" width="180" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYh-EK-WoC">
+                                <rect key="frame" x="196" y="263" width="208" height="25"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-Rn-foS">
+                                <rect key="frame" x="269" y="352" width="62" height="25"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kQ-Tu-h61">
+                                <rect key="frame" x="210" y="385" width="180" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="0.78903317449999999" green="0.1806175411" blue="0.16475954649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-iG-QYo">
+                                <rect key="frame" x="215" y="441" width="170" height="30"/>
+                                <state key="normal" title="SET DESTINATION TIME">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bBv-ya-q7Q" kind="show" identifier="ShowDestinationDatePickerSegue" id="dQ0-Zy-3ZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgI-RA-jlW">
+                                <rect key="frame" x="249" y="491" width="102" height="30"/>
+                                <state key="normal" title="TRAVEL BACK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="travelBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nB9-E3-eFR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20984494686126709" green="0.2098878026008606" blue="0.20984223484992981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="FJj-oG-KHX" secondAttribute="centerX" constant="-0.5" id="0F7-oX-3e3"/>
                             <constraint firstItem="9G3-Jw-nUV" firstAttribute="top" secondItem="FJj-oG-KHX" secondAttribute="bottom" constant="8" id="1jg-5e-9fe"/>
                             <constraint firstAttribute="centerX" secondItem="FJj-oG-KHX" secondAttribute="centerX" id="2Ew-BK-hs1"/>
+                            <constraint firstAttribute="centerX" secondItem="nm5-Rn-foS" secondAttribute="centerX" id="2xi-3S-3EF"/>
+                            <constraint firstItem="9G3-Jw-nUV" firstAttribute="top" secondItem="FJj-oG-KHX" secondAttribute="bottom" constant="8" id="5Kk-jE-uin"/>
+                            <constraint firstAttribute="centerX" secondItem="hhR-W3-uDj" secondAttribute="centerX" id="64D-ex-1eY"/>
+                            <constraint firstItem="VgI-RA-jlW" firstAttribute="top" secondItem="aVV-iG-QYo" secondAttribute="bottom" constant="20" id="7Wn-Hz-FAk"/>
+                            <constraint firstAttribute="centerX" secondItem="9G3-Jw-nUV" secondAttribute="centerX" id="9JH-rl-l44"/>
+                            <constraint firstItem="nm5-Rn-foS" firstAttribute="top" secondItem="Vf6-lR-Fno" secondAttribute="bottom" constant="20" id="9zm-Lb-Uhk"/>
+                            <constraint firstItem="9G3-Jw-nUV" firstAttribute="top" secondItem="FJj-oG-KHX" secondAttribute="bottom" constant="20" id="BPP-04-8XU"/>
+                            <constraint firstAttribute="centerX" secondItem="2kQ-Tu-h61" secondAttribute="centerX" id="Cj2-uZ-J5U"/>
+                            <constraint firstItem="9G3-Jw-nUV" firstAttribute="top" secondItem="FJj-oG-KHX" secondAttribute="bottom" constant="20" id="IjU-65-cuk"/>
+                            <constraint firstAttribute="centerX" secondItem="aVV-iG-QYo" secondAttribute="centerX" id="LJL-wg-2FT"/>
+                            <constraint firstItem="hhR-W3-uDj" firstAttribute="top" secondItem="JOa-Cd-e3V" secondAttribute="bottom" constant="8" id="LZW-Uw-ojb"/>
+                            <constraint firstItem="Vf6-lR-Fno" firstAttribute="top" secondItem="EYh-EK-WoC" secondAttribute="bottom" constant="8" id="Msv-Lg-Mcq"/>
+                            <constraint firstAttribute="centerX" secondItem="EYh-EK-WoC" secondAttribute="centerX" constant="-0.25" id="Ond-IN-MhI"/>
+                            <constraint firstAttribute="centerX" secondItem="VgI-RA-jlW" secondAttribute="centerX" id="T9D-TG-NtX"/>
+                            <constraint firstAttribute="centerX" secondItem="JOa-Cd-e3V" secondAttribute="centerX" constant="-0.75" id="Tlw-Ah-rcL"/>
+                            <constraint firstItem="aVV-iG-QYo" firstAttribute="top" secondItem="2kQ-Tu-h61" secondAttribute="bottom" constant="20" id="VQi-vM-AFl"/>
+                            <constraint firstItem="JOa-Cd-e3V" firstAttribute="centerX" secondItem="hhR-W3-uDj" secondAttribute="centerX" id="WoO-Tp-bZj"/>
+                            <constraint firstItem="hhR-W3-uDj" firstAttribute="top" secondItem="JOa-Cd-e3V" secondAttribute="bottom" constant="20" id="XT0-TF-46X"/>
+                            <constraint firstItem="Vf6-lR-Fno" firstAttribute="top" secondItem="EYh-EK-WoC" secondAttribute="bottom" constant="8" id="d4L-9Y-H3f"/>
+                            <constraint firstItem="2kQ-Tu-h61" firstAttribute="top" secondItem="nm5-Rn-foS" secondAttribute="bottom" constant="8" id="kgR-fy-5de"/>
+                            <constraint firstItem="JOa-Cd-e3V" firstAttribute="top" secondItem="9G3-Jw-nUV" secondAttribute="bottom" constant="20" id="mPq-fQ-bNm"/>
+                            <constraint firstItem="hhR-W3-uDj" firstAttribute="top" secondItem="JOa-Cd-e3V" secondAttribute="bottom" constant="20" id="mu5-vg-WY3"/>
+                            <constraint firstItem="hhR-W3-uDj" firstAttribute="top" secondItem="JOa-Cd-e3V" secondAttribute="bottom" constant="20" id="nMl-PG-O8H"/>
+                            <constraint firstItem="JOa-Cd-e3V" firstAttribute="top" secondItem="9G3-Jw-nUV" secondAttribute="bottom" constant="20" id="pV7-6n-xab"/>
                             <constraint firstItem="FJj-oG-KHX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="tom-6k-ZlW"/>
                             <constraint firstItem="FJj-oG-KHX" firstAttribute="centerX" secondItem="9G3-Jw-nUV" secondAttribute="centerX" id="vjD-KC-Jzd"/>
+                            <constraint firstItem="EYh-EK-WoC" firstAttribute="top" secondItem="hhR-W3-uDj" secondAttribute="bottom" constant="20" id="xxC-Ax-8Vt"/>
+                            <constraint firstAttribute="centerX" secondItem="Vf6-lR-Fno" secondAttribute="centerX" id="xxn-gN-4zP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vjD-KC-Jzd"/>
+                                <exclude reference="1jg-5e-9fe"/>
+                                <exclude reference="BPP-04-8XU"/>
+                                <exclude reference="IjU-65-cuk"/>
+                                <exclude reference="WoO-Tp-bZj"/>
+                                <exclude reference="mPq-fQ-bNm"/>
+                                <exclude reference="XT0-TF-46X"/>
+                                <exclude reference="mu5-vg-WY3"/>
+                                <exclude reference="nMl-PG-O8H"/>
+                                <exclude reference="d4L-9Y-H3f"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Atb-Fv-IUq"/>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="FJj-oG-KHX" id="Xre-wd-hbN"/>
+                        <outlet property="lastTimeDepartedLabel" destination="EYh-EK-WoC" id="9p3-18-Ptd"/>
+                        <outlet property="presentTimeLabel" destination="JOa-Cd-e3V" id="hck-xV-KKD"/>
+                        <outlet property="speedLabel" destination="nm5-Rn-foS" id="eLK-hM-Ugu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282" y="429"/>
+            <point key="canvasLocation" x="2094" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Picker View Controller-->
         <scene sceneID="SpG-af-3vy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AjJ-Yj-yzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="bBv-ya-q7Q" sceneMemberID="viewController">
+                <viewController id="bBv-ya-q7Q" customClass="DatePickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PxX-lT-acD"/>
                         <viewControllerLayoutGuide type="bottom" id="F94-gU-J2J"/>
@@ -61,8 +168,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
+                                <rect key="frame" x="16" y="219" width="568" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445876717.15564197">
                                     <!--2015-02-17 14:38:37 +0000-->
                                 </date>
@@ -76,10 +183,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="H9E-IV-AOj" secondAttribute="centerX" id="0u0-w6-zA8"/>
                             <constraint firstAttribute="centerX" secondItem="H9E-IV-AOj" secondAttribute="centerX" id="62K-3t-wuI"/>
                             <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" id="6qG-EB-HfH"/>
                             <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" id="CLf-7m-zCW"/>
+                            <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" constant="16" id="Htd-EZ-36R"/>
                             <constraint firstAttribute="centerY" secondItem="H9E-IV-AOj" secondAttribute="centerY" id="miv-Hn-k06"/>
+                            <constraint firstAttribute="centerY" secondItem="H9E-IV-AOj" secondAttribute="centerY" id="rld-wQ-zVO"/>
+                            <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" constant="16" id="vaQ-Iq-OOu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -90,9 +201,31 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="H9E-IV-AOj" id="9Js-Z2-mpy"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjJ-Yj-yzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="429"/>
+            <point key="canvasLocation" x="2795" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NgH-Fy-IIq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uGX-mP-Xos" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7IN-9w-Oi7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nh1-BC-pQ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdH-Ln-v7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="429"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.20523375272750854" green="0.66902583837509155" blue="0.83536911010742188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
