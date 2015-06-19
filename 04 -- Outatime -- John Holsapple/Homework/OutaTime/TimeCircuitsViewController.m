@@ -20,7 +20,7 @@
     
     NSTimer *speedometer;
     NSDateFormatter *timeCircuits;
-    NSInteger *deloreanSpeed;
+    NSInteger *currentSpeed;
 }
 
 // These are the properties that will be wired up to the labels in the storyboard. If the circles to the left of them are hollow, they have not been connected in the storyboard.
@@ -59,29 +59,31 @@
     //
     // 4. Once created, the formatString you see below needs to be set as the date formatter's dateFormat
     //
-    NSString *formatString = [NSDateFormatter dateFormatFromTemplate:@"MMMddyyyy"
+    NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"MMMddyyyy"
                                                              options:0
-                                                              locale:[NSLocale currentLocale]];
+                                                             locale:[NSLocale currentLocale]];
+    [timeCircuits setDateFormat:dateFormat];
     
     //
     // 5. The presentTimeLabel needs to be set to today's date. Use the dateFormatter object to do this.
     //
+    self.presentTimeLabel.text = [timeCircuits stringFromDate:[NSDate date]];
     
-    
+
     //
     // 6. The currentSpeed integer object needs to be set to 0 to start.
     //
-
+    currentSpeed = 0;
     
     //
     // 7. The speedLabel should be set to "% MPH", with the % being the current speed
     //
-
+    self.speedLabel.text = [NSString stringWithFormat:@"%ld MPH", (long)currentSpeed];
     
     //
     // 8. The lastTimeDeparted label needs to be set to "--- -- ----"
     //
-
+    self.lastTimeDepartedLabel.text = @"--- -- ----";
 }
 
 - (void)didReceiveMemoryWarning
