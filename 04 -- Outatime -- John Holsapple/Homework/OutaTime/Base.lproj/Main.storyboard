@@ -52,8 +52,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--- -- ----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-lR-Fno">
-                                <rect key="frame" x="210" y="296" width="180" height="36.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-lR-Fno">
+                                <rect key="frame" x="217" y="296" width="166" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -70,8 +70,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kQ-Tu-h61">
-                                <rect key="frame" x="210" y="385" width="180" height="36.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kQ-Tu-h61">
+                                <rect key="frame" x="256" y="385" width="87" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="0.78903317449999999" green="0.1806175411" blue="0.16475954649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -146,10 +146,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Atb-Fv-IUq"/>
                     <connections>
-                        <outlet property="destinationTimeLabel" destination="FJj-oG-KHX" id="Xre-wd-hbN"/>
-                        <outlet property="lastTimeDepartedLabel" destination="EYh-EK-WoC" id="9p3-18-Ptd"/>
-                        <outlet property="presentTimeLabel" destination="JOa-Cd-e3V" id="hck-xV-KKD"/>
-                        <outlet property="speedLabel" destination="nm5-Rn-foS" id="eLK-hM-Ugu"/>
+                        <outlet property="destinationTimeLabel" destination="9G3-Jw-nUV" id="zP0-ny-Llt"/>
+                        <outlet property="lastTimeDepartedLabel" destination="Vf6-lR-Fno" id="Anj-TH-wYS"/>
+                        <outlet property="presentTimeLabel" destination="hhR-W3-uDj" id="vpd-QW-nol"/>
+                        <outlet property="speedLabel" destination="2kQ-Tu-h61" id="GRG-Aj-Ec0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
