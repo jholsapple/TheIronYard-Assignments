@@ -6,13 +6,19 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *yourBirthdate;
+@property (weak, nonatomic) IBOutlet UILabel *todaysDate;
+@property (weak, nonatomic) IBOutlet UILabel *yourAge;
+
+- (IBAction)calculateAge:(id)sender;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calculateAge:(id)sender {
+
+}
 @end
