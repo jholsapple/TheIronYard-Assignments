@@ -20,9 +20,7 @@
 //    superclass declaration (UIViewController below)
 //
 
-@interface TimeCircuitsViewController : UIViewController
-
-<TimeCircuitsDatePickerDelegate>
+@interface TimeCircuitsViewController : UIViewController <TimeCircuitsDatePickerDelegate>
 
 //@property (weak, nonatomic) id<TimeCircuitsDatePickerDelegate> delegate;
 

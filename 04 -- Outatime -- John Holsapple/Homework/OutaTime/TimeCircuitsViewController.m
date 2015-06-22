@@ -20,7 +20,7 @@
     
     NSTimer *speedometer;
     NSDateFormatter *timeCircuits;
-    NSInteger *currentSpeed;
+    NSInteger currentSpeed;
 }
 
 // These are the properties that will be wired up to the labels in the storyboard. If the circles to the left of them are hollow, they have not been connected in the storyboard.
@@ -49,7 +49,7 @@
     // 2. The view should be titled "Time Circuits"
     //
     self.title = @"Time Circuits";
-    
+                    //^String Literal
     //
     // 3. This is a good place to initialize the objects that will be used later on.
     //    The date formatter object you created above need to be instantiated.
@@ -96,7 +96,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+{                                                                                               // ^ wildcard
     if ([segue.identifier isEqualToString:@"ShowDestinationDatePickerSegue"])
     {
         DatePickerViewController *datePickerVC = (DatePickerViewController *)[segue destinationViewController];
@@ -114,7 +114,7 @@
     //
     // 12. The destinationTimeLabel needs to be set to the destination date using our date formatter object
     //
-    self.destinationTimeLabel.text = [timeCircuits stringFromDate:[NSDate date]];
+    self.destinationTimeLabel.text = [timeCircuits stringFromDate: destinationDate];
 }
 
 #pragma mark - Action Handlers
@@ -138,7 +138,7 @@
     //
     //    NOTE: !NO below is just a placeholder.
     //
-    if (![self.speedLabel.text isEqualToString:[nil]]);
+    if (!speedometer)
     {
         //
         // 15. Below is an example of a timer being instantiated with a particular interval and firing a particular
@@ -146,9 +146,9 @@
         //    will need to fire our custom method to update the speed label.
         //
         
-        NSTimer *speedTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
+        speedometer = [NSTimer scheduledTimerWithTimeInterval:0.1
                                                            target:self
-                                                         selector:updateSpeed
+                                                         selector:@selector(updateSpeed)
                                                          userInfo:nil
                                                           repeats:YES];
         
@@ -162,7 +162,8 @@
     //    Once it's stopped, we want to nil out the object so we can create a new one when the user asks to travel back
     //    again.
     //
-    
+    [speedometer invalidate];
+    speedometer = nil;
     
 }
 
@@ -171,34 +172,36 @@
     //
     // 17. We need to check if the current speed variable is set to 88 yet.
     //
-    if (88)
+    if (currentSpeed < 88)
     {
         //
         // 18. If it's not yet set to 88, we want to increment the current speed variable by 1.
         //
-        
+        currentSpeed++;
         //
         // 19. Here we want to update the speed label to reflect the current speed.
         //
+        self.speedLabel.text = [NSString stringWithFormat:@"%ld MPH", (long)currentSpeed];
     }
     else
     {
         //
         // 20. If the speed variable is at least 88, we want to stop the timer here.
         //
-
+        [self stopTimer];
         //
         // 21. Then we need to update the lastTimeDepartedLabel with the value of the presentTimeLabel.
         //
-
+        self.lastTimeDepartedLabel.text = self.presentTimeLabel.text;
         //
         // 22. The presentTimeLabel needs to take the value of the destinationTimeLabel here.
         //
-        
+        self.presentTimeLabel.text = self.destinationTimeLabel.text;
         //
         // 23. Lastly, we need to reset the current speed label to 0 here.
         //
-        
+        currentSpeed = 0;
+        self.speedLabel.text = [NSString stringWithFormat:@"%ld MPH", (long)currentSpeed];
     }
 }
 
