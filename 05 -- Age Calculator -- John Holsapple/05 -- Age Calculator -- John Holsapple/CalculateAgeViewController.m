@@ -75,7 +75,6 @@
             self.yourBirthDate.text = [calculateAge stringFromDate:birthDate];
         }
                                                                                              
-
 - (IBAction)calculateAge:(id)sender
 {
     [self calculateAge];
