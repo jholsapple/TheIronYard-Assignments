@@ -27,6 +27,7 @@
     [super viewWillDisappear:animated];
     
     [self.delegate birthDateWasChosen:self.birthDatePicker.date];
+    
 }
 
 

@@ -53,7 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SeD-q7-VQl" kind="show" id="GpB-JQ-T8e"/>
+                                    <segue destination="SeD-q7-VQl" kind="show" identifier="ShowBirthDatePickerSegue" id="GpB-JQ-T8e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXt-ir-opw">
@@ -66,8 +66,8 @@
                                     <action selector="calculateAge:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="osu-Sr-3f1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-Mp-cFZ">
-                                <rect key="frame" x="288" y="325" width="25" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-Mp-cFZ">
+                                <rect key="frame" x="260" y="325" width="81" height="26"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                     <connections>
                         <outlet property="todaysDate" destination="f72-i6-XQX" id="7ZN-Ot-ha1"/>
                         <outlet property="yourAge" destination="tVd-Mp-cFZ" id="dmD-nd-H1i"/>
-                        <outlet property="yourBirthdate" destination="xYg-wv-nhV" id="EaH-Ee-QpB"/>
+                        <outlet property="yourBirthDate" destination="xYg-wv-nhV" id="oX4-lf-v4N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -124,7 +124,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-6f-KN0">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-6f-KN0">
                                 <rect key="frame" x="0.0" y="219" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="456692785.89107603">
                                     <!--2015-06-22 19:06:25 +0000-->

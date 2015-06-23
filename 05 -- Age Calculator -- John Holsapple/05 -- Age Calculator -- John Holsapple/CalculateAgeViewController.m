@@ -40,13 +40,15 @@
     
     calculateAge = [[NSDateFormatter alloc] init];
     
-    NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"MM/dd/yyyy" options:0 locale:[NSLocale currentLocale]];
+    NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"MMddYYYY"
+                                                                            options:0
+                                                                            locale:[NSLocale currentLocale]];
     
     [calculateAge setDateFormat:dateFormat];
     
     self.yourBirthDate.text = @"-- -- ----";
     self.todaysDate.text = [calculateAge stringFromDate:[NSDate date]];
-    self.yourAge.text = [NSString stringWithFormat:@"%ld",(long)age];
+    self.yourAge.text = [NSString stringWithFormat:@"%ld years",(long)age];
 
 }
 
@@ -59,9 +61,9 @@
 {
     if ([segue.identifier isEqualToString:@"ShowBirthDatePickerSegue"])
     {
-        BirthDatePickerViewController *birthDatePickerVC = (BirthDatePickerViewController *)[[segue destinationViewController]
+        BirthDatePickerViewController *birthDatePickerVC = (BirthDatePickerViewController*)[segue destinationViewController];
                                                                                         
-       birthDatePickerVC.delegate = self;
+        birthDatePickerVC.delegate = self;
     }
 }
         
@@ -73,6 +75,39 @@
 
 - (IBAction)calculateAge:(id)sender
 {
-
+    [self calculateAge];
 }
+
+-(void)calculateAge
+{
+    age = currentYear - birthYear;
+    
+    if (currentMonth == birthMonth)
+    {
+        if (currentDay >= birthDay)
+        {
+            //NSLog(@"%ld years", (long)age);
+            self.yourAge.text = [NSString stringWithFormat:@"%ld years", (long)age];
+        }
+        else
+        {
+            //NSLog(@"%ld years", age - 1);
+            self.yourAge.text = [NSString stringWithFormat:@"%ld years", age - 1];
+        }
+    }
+    else if (currentMonth > birthMonth)
+    {
+        //NSLog(@"%ld years", (long)age);
+        self.yourAge.text = [NSString stringWithFormat:@"%ld years", (long)age];
+
+    }
+    else
+    {
+        //NSLog(@"%ld years", age - 1);
+        self.yourAge.text = [NSString stringWithFormat:@"%ld years", age - 1];
+    }
+}
+
+
+
 @end
