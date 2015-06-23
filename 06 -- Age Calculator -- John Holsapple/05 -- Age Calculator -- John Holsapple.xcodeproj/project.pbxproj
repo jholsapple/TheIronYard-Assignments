@@ -422,6 +422,7 @@
 				7447F3DA1B389120007B9814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7447F3DB1B389120007B9814 /* Build configuration list for PBXNativeTarget "05 -- Age Calculator -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				7447F3DD1B389120007B9814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
