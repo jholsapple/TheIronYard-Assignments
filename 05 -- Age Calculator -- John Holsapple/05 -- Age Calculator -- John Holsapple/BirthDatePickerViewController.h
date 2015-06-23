@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculateAgeViewController.h"
 
 @interface BirthDatePickerViewController : UIViewController
 
+@property (strong, nonatomic) id<BirthDatePickerDelegate> delegate;
+
 @end
+
+

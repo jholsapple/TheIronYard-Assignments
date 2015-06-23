@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7447F3BB1B389120007B9814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7447F3BA1B389120007B9814 /* main.m */; };
 		7447F3BE1B389120007B9814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7447F3BD1B389120007B9814 /* AppDelegate.m */; };
-		7447F3C11B389120007B9814 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7447F3C01B389120007B9814 /* MainViewController.m */; };
+		7447F3C11B389120007B9814 /* CalculateAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7447F3C01B389120007B9814 /* CalculateAgeViewController.m */; };
 		7447F3C41B389120007B9814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7447F3C21B389120007B9814 /* Main.storyboard */; };
 		7447F3C61B389120007B9814 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7447F3C51B389120007B9814 /* Images.xcassets */; };
 		7447F3C91B389120007B9814 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7447F3C71B389120007B9814 /* LaunchScreen.xib */; };
@@ -33,8 +33,8 @@
 		7447F3BA1B389120007B9814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7447F3BC1B389120007B9814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7447F3BD1B389120007B9814 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7447F3BF1B389120007B9814 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		7447F3C01B389120007B9814 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7447F3BF1B389120007B9814 /* CalculateAgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateAgeViewController.h; sourceTree = "<group>"; };
+		7447F3C01B389120007B9814 /* CalculateAgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateAgeViewController.m; sourceTree = "<group>"; };
 		7447F3C31B389120007B9814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7447F3C51B389120007B9814 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7447F3C81B389120007B9814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 			children = (
 				7447F3BC1B389120007B9814 /* AppDelegate.h */,
 				7447F3BD1B389120007B9814 /* AppDelegate.m */,
-				7447F3BF1B389120007B9814 /* MainViewController.h */,
-				7447F3C01B389120007B9814 /* MainViewController.m */,
+				7447F3BF1B389120007B9814 /* CalculateAgeViewController.h */,
+				7447F3C01B389120007B9814 /* CalculateAgeViewController.m */,
 				7447F3E11B389532007B9814 /* BirthDatePickerViewController.h */,
 				7447F3E21B389532007B9814 /* BirthDatePickerViewController.m */,
 				7447F3C21B389120007B9814 /* Main.storyboard */,
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7447F3C11B389120007B9814 /* MainViewController.m in Sources */,
+				7447F3C11B389120007B9814 /* CalculateAgeViewController.m in Sources */,
 				7447F3BE1B389120007B9814 /* AppDelegate.m in Sources */,
 				7447F3E31B389532007B9814 /* BirthDatePickerViewController.m in Sources */,
 				7447F3BB1B389120007B9814 /* main.m in Sources */,

@@ -22,6 +22,4 @@
 
 @interface TimeCircuitsViewController : UIViewController <TimeCircuitsDatePickerDelegate>
 
-//@property (weak, nonatomic) id<TimeCircuitsDatePickerDelegate> delegate;
-
 @end

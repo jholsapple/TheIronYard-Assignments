@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@protocol BirthDatePickerDelegate
+
+- (void)birthDateWasChosen:(NSDate *)birthDate;
+
+@end
+
+@interface CalculateAgeViewController : UIViewController<BirthDatePickerDelegate>
 
 
 @end
