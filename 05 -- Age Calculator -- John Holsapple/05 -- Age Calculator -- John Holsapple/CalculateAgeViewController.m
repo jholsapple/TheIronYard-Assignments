@@ -27,6 +27,8 @@
 
 - (IBAction)calculateAge:(id)sender;
 
+-(void)calculateAge;
+
 @end
 
 @implementation CalculateAgeViewController
@@ -46,6 +48,7 @@
     
     [calculateAge setDateFormat:dateFormat];
     
+    age = currentYear - birthYear;
     self.yourBirthDate.text = @"-- -- ----";
     self.todaysDate.text = [calculateAge stringFromDate:[NSDate date]];
     self.yourAge.text = [NSString stringWithFormat:@"%ld years",(long)age];
@@ -80,7 +83,7 @@
 
 -(void)calculateAge
 {
-    age = currentYear - birthYear;
+    //age = currentYear - birthYear;
     
     if (currentMonth == birthMonth)
     {
