@@ -7,16 +7,14 @@
 //
 
 #import "TicketsTableViewController.h"
-#import "ticket.h"
+#import "Ticket.h"
 
 @interface TicketsTableViewController ()
 {
     NSMutableArray *tickets;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-
--(IBAction)tickets:(UIBarButtonItem*)sender;
+- (IBAction)addTickets:(UIBarButtonItem *)sender;
 
 @end
 
@@ -38,11 +36,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)tickets:(id)sender
-{
-    [self tickets];
 }
 
 
@@ -67,9 +60,9 @@
     
     // Configure the cell...
     
+    Ticket *specificTicket = [tickets objectAtIndex:indexPath.row];
     
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", "%d", "%d", "%d", "%d", "%d", tickets];
+     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", [specificTicket.picks objectAtIndex:0], specificTicket.picks[1], specificTicket.picks[2], specificTicket.picks[3], specificTicket.picks[4], specificTicket.picks[5]];
     
     return cell;
 }
@@ -118,5 +111,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (IBAction)addTickets:(UIBarButtonItem *)sender
+{
+    Ticket *anotherTicket =  [Ticket ticketUsingRandomNumbers];
+    [tickets addObject:anotherTicket];
+    [self.tableView reloadData];
+}
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ticket.h
+//  Ticket.h
 //  07 -- Jackpot
 //
 //  Created by John Holsapple on 6/23/15.
@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ticket : NSObject
+@interface Ticket : NSObject
+
+@property(nonatomic) NSMutableArray *picks;
+
 
 + (instancetype)ticketUsingRandomNumbers;
 
