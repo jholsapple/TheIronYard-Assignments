@@ -14,9 +14,9 @@
     NSMutableArray *tickets;
 }
 
--(IBAction)tickets:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 
--(void) tickets;
+-(IBAction)tickets:(UIBarButtonItem*)sender;
 
 @end
 
@@ -42,7 +42,7 @@
 
 - (IBAction)tickets:(id)sender
 {
-    [self tickets:(id)sender];
+    [self tickets];
 }
 
 
@@ -66,6 +66,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TicketsCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    
+    
     
     cell.textLabel.text = [NSString stringWithFormat:@"%d", "%d", "%d", "%d", "%d", "%d", tickets];
     
