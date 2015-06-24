@@ -14,11 +14,11 @@
 		<string>https://github.com/jholsapple/TIY-Assignments.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>07 -- Jackpot -- John Holsapple/07 -- Jackpot/07 -- Jackpot.xcodeproj</string>
+	<string>07 -- Jackpot -- John Holsapple/07 -- Jackpot.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jholsapple/TIY-Assignments.git</string>

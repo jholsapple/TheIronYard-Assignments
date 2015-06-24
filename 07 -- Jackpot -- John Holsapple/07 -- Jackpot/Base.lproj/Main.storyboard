@@ -30,14 +30,13 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="UJc-Gc-QVq" id="iGP-lN-FLJ"/>
-                            <outlet property="delegate" destination="UJc-Gc-QVq" id="nP7-sN-5TZ"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="nO1-iE-ujM">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mzc-sz-fcF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sjz-3Y-pn8">
                             <connections>
-                                <action selector="pickTicketNumbers:" destination="UJc-Gc-QVq" id="SB4-bh-ytS"/>
+                                <action selector="tickets:" destination="UJc-Gc-QVq" id="h8S-kD-Jhl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
