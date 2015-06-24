@@ -36,7 +36,7 @@
                         <nil key="title"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sjz-3Y-pn8">
                             <connections>
-                                <action selector="tickets:" destination="UJc-Gc-QVq" id="h8S-kD-Jhl"/>
+                                <action selector="tickets:" destination="UJc-Gc-QVq" id="uU9-Eo-Gmm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

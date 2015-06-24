@@ -14,7 +14,9 @@
     NSMutableArray *tickets;
 }
 
--(IBAction)tickets:(UIBarButtonItem *)sender;
+-(IBAction)tickets:(id)sender;
+
+-(void) tickets;
 
 @end
 
@@ -38,9 +40,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)tickets:(UIBarButtonItem *)sender
+- (IBAction)tickets:(id)sender
 {
-    [self tickets:(UIBarButtonItem *)sender];
+    [self tickets:(id)sender];
 }
 
 
@@ -65,7 +67,7 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", "%d", "%d", "%d", "%d", "%d", ];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d", "%d", "%d", "%d", "%d", "%d", tickets];
     
     return cell;
 }
