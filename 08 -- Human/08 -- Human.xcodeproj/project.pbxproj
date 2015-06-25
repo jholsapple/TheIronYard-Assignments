@@ -25,6 +25,10 @@
 		747176041B3B5A5A00A991D1 /* Heart.m in Sources */ = {isa = PBXBuildFile; fileRef = 747176031B3B5A5A00A991D1 /* Heart.m */; };
 		747176071B3B5D1800A991D1 /* EyeBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 747176061B3B5D1800A991D1 /* EyeBall.m */; };
 		747176101B3B604D00A991D1 /* Tricep.m in Sources */ = {isa = PBXBuildFile; fileRef = 7471760F1B3B604D00A991D1 /* Tricep.m */; };
+		747176131B3C21ED00A991D1 /* Face.m in Sources */ = {isa = PBXBuildFile; fileRef = 747176121B3C21ED00A991D1 /* Face.m */; };
+		747176161B3C229600A991D1 /* Hair.m in Sources */ = {isa = PBXBuildFile; fileRef = 747176151B3C229600A991D1 /* Hair.m */; };
+		747176191B3C23F300A991D1 /* Muscle.m in Sources */ = {isa = PBXBuildFile; fileRef = 747176181B3C23F300A991D1 /* Muscle.m */; };
+		7471761C1B3C252F00A991D1 /* Butt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7471761B1B3C252F00A991D1 /* Butt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +80,14 @@
 		747176061B3B5D1800A991D1 /* EyeBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeBall.m; sourceTree = "<group>"; };
 		7471760E1B3B604D00A991D1 /* Tricep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tricep.h; sourceTree = "<group>"; };
 		7471760F1B3B604D00A991D1 /* Tricep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tricep.m; sourceTree = "<group>"; };
+		747176111B3C21ED00A991D1 /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		747176121B3C21ED00A991D1 /* Face.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Face.m; sourceTree = "<group>"; };
+		747176141B3C229600A991D1 /* Hair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hair.h; sourceTree = "<group>"; };
+		747176151B3C229600A991D1 /* Hair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hair.m; sourceTree = "<group>"; };
+		747176171B3C23F300A991D1 /* Muscle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Muscle.h; sourceTree = "<group>"; };
+		747176181B3C23F300A991D1 /* Muscle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Muscle.m; sourceTree = "<group>"; };
+		7471761A1B3C252F00A991D1 /* Butt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Butt.h; sourceTree = "<group>"; };
+		7471761B1B3C252F00A991D1 /* Butt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Butt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,14 @@
 				747176061B3B5D1800A991D1 /* EyeBall.m */,
 				7471760E1B3B604D00A991D1 /* Tricep.h */,
 				7471760F1B3B604D00A991D1 /* Tricep.m */,
+				747176111B3C21ED00A991D1 /* Face.h */,
+				747176121B3C21ED00A991D1 /* Face.m */,
+				747176141B3C229600A991D1 /* Hair.h */,
+				747176151B3C229600A991D1 /* Hair.m */,
+				747176171B3C23F300A991D1 /* Muscle.h */,
+				747176181B3C23F300A991D1 /* Muscle.m */,
+				7471761A1B3C252F00A991D1 /* Butt.h */,
+				7471761B1B3C252F00A991D1 /* Butt.m */,
 			);
 			path = "08 -- Human";
 			sourceTree = "<group>";
@@ -208,18 +228,22 @@
 				747175FE1B3B568200A991D1 /* LargeIntestines.m in Sources */,
 				747175EF1B3B4DCB00A991D1 /* LeftLeg.m in Sources */,
 				747175F51B3B528B00A991D1 /* Feet.m in Sources */,
+				747176161B3C229600A991D1 /* Hair.m in Sources */,
+				7471761C1B3C252F00A991D1 /* Butt.m in Sources */,
 				747175D71B3B3CEC00A991D1 /* BodyPart.m in Sources */,
 				747175DA1B3B435400A991D1 /* Head.m in Sources */,
 				747176041B3B5A5A00A991D1 /* Heart.m in Sources */,
 				747175E01B3B445B00A991D1 /* Neck.m in Sources */,
 				747175F81B3B544D00A991D1 /* Brain.m in Sources */,
 				747176011B3B58D400A991D1 /* SmallIntestines.m in Sources */,
+				747176191B3C23F300A991D1 /* Muscle.m in Sources */,
 				747176071B3B5D1800A991D1 /* EyeBall.m in Sources */,
 				747175EC1B3B4AEC00A991D1 /* RightLeg.m in Sources */,
 				747175E61B3B471A00A991D1 /* LeftArm.m in Sources */,
 				747175E31B3B45F100A991D1 /* RightArm.m in Sources */,
 				747175CF1B3B3AAD00A991D1 /* main.m in Sources */,
 				747175FB1B3B55A300A991D1 /* Mouth.m in Sources */,
+				747176131B3C21ED00A991D1 /* Face.m in Sources */,
 				747175E91B3B495600A991D1 /* Abdomen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +361,7 @@
 				747175D41B3B3AAD00A991D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
