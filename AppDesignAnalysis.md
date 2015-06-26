@@ -1,6 +1,7 @@
 # App Design Analysis
 
 ## Lego Juniors
+
 ### Games
 
 * Build or Trophy Room plus a Settings Button (Modal View)
@@ -11,6 +12,7 @@
           * Back to initial Modal view
 
 ## Calendar
+
 ### Calendar
 
 * Year view (Tabbed application with custom collection view)
@@ -20,6 +22,7 @@
         * Magnifier (search view)
 
 ## Spotify
+
 ### Music App
 
 * Home page (tabbed view with custom page based view)
@@ -31,6 +34,7 @@
             * Settings (Table VC)
 
 ## Wunderlist
+
 ### To-Do
 
 * Login (Modal)
@@ -41,6 +45,7 @@
           * Settings (Modal View w/ table view and sections)
 
 ## Instagram
+
 ### Social Media
 
 * Login (Modal View)
@@ -50,6 +55,7 @@
         * Settings (UIBarButton w/ table view and sections)
 
 ## Pic Stitch
+
 ### Photography
 
 * Layouts (Page based view with custom cell collection)
@@ -58,6 +64,7 @@
       * Info (Modal View)
 
 ## Camera
+
 ### Photography
 
 * Camera view
@@ -65,6 +72,7 @@
     * Photo album (Tabbed view with custom cell)
 
 ## Dubsmash
+
 ### Sound
 
 * Trending List (Table VC)
@@ -73,6 +81,7 @@
       * Hamburger Basement
 
 ## The App Store
+
 ### Shopping
 
 * Featured (Tabbed application w/ table VC custom cell collection and sections)
@@ -81,6 +90,7 @@
       * Categories (Modal View)
 
 ## Amazon
+
 ### Shopping
 
 * Home (Table VC using custom cell colletions)
@@ -90,6 +100,7 @@
         * Login (Modal View)
 
 ## Duolingo
+
 ### Language Learner
 
 * Login/Sign-up (Modal View)
