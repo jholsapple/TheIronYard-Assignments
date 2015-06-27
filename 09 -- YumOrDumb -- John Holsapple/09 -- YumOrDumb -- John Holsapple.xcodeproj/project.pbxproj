@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		744797561B3F2C5E003E8196 /* RestaurantListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744797551B3F2C5E003E8196 /* RestaurantListTableViewController.m */; };
 		74DCDDC21B3D93EA0086C721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC11B3D93EA0086C721 /* main.m */; };
 		74DCDDC51B3D93EA0086C721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC41B3D93EA0086C721 /* AppDelegate.m */; };
-		74DCDDC81B3D93EA0086C721 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC71B3D93EA0086C721 /* ViewController.m */; };
+		74DCDDC81B3D93EA0086C721 /* RestaurantVisited.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC71B3D93EA0086C721 /* RestaurantVisited.m */; };
 		74DCDDCB1B3D93EA0086C721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDC91B3D93EA0086C721 /* Main.storyboard */; };
 		74DCDDCD1B3D93EA0086C721 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDCC1B3D93EA0086C721 /* Images.xcassets */; };
 		74DCDDD01B3D93EA0086C721 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */; };
@@ -27,13 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		744797541B3F2C5E003E8196 /* RestaurantListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListTableViewController.h; sourceTree = "<group>"; };
+		744797551B3F2C5E003E8196 /* RestaurantListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListTableViewController.m; sourceTree = "<group>"; };
 		74DCDDBC1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09 -- YumOrDumb -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DCDDC01B3D93EA0086C721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DCDDC11B3D93EA0086C721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74DCDDC31B3D93EA0086C721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74DCDDC41B3D93EA0086C721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74DCDDC61B3D93EA0086C721 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74DCDDC71B3D93EA0086C721 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74DCDDC61B3D93EA0086C721 /* RestaurantVisited.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantVisited.h; sourceTree = "<group>"; };
+		74DCDDC71B3D93EA0086C721 /* RestaurantVisited.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantVisited.m; sourceTree = "<group>"; };
 		74DCDDCA1B3D93EA0086C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74DCDDCC1B3D93EA0086C721 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74DCDDCF1B3D93EA0086C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +86,10 @@
 			children = (
 				74DCDDC31B3D93EA0086C721 /* AppDelegate.h */,
 				74DCDDC41B3D93EA0086C721 /* AppDelegate.m */,
-				74DCDDC61B3D93EA0086C721 /* ViewController.h */,
-				74DCDDC71B3D93EA0086C721 /* ViewController.m */,
+				74DCDDC61B3D93EA0086C721 /* RestaurantVisited.h */,
+				74DCDDC71B3D93EA0086C721 /* RestaurantVisited.m */,
+				744797541B3F2C5E003E8196 /* RestaurantListTableViewController.h */,
+				744797551B3F2C5E003E8196 /* RestaurantListTableViewController.m */,
 				74DCDDC91B3D93EA0086C721 /* Main.storyboard */,
 				74DCDDCC1B3D93EA0086C721 /* Images.xcassets */,
 				74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */,
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DCDDC81B3D93EA0086C721 /* ViewController.m in Sources */,
+				74DCDDC81B3D93EA0086C721 /* RestaurantVisited.m in Sources */,
 				74DCDDC51B3D93EA0086C721 /* AppDelegate.m in Sources */,
+				744797561B3F2C5E003E8196 /* RestaurantListTableViewController.m in Sources */,
 				74DCDDC21B3D93EA0086C721 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				74DCDDE11B3D93EA0086C721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74DCDDE21B3D93EA0086C721 /* Build configuration list for PBXNativeTarget "09 -- YumOrDumb -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				74DCDDE41B3D93EA0086C721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
