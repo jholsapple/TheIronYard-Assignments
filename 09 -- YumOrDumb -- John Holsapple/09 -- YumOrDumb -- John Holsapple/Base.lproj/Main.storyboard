@@ -32,6 +32,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="rating" destination="Aet-cM-H1L" id="S4c-HA-Awk"/>
+                                    <outlet property="ratingInfo" destination="Aet-cM-H1L" id="by7-9x-RSZ"/>
+                                    <outlet property="restaurantName" destination="Aet-cM-H1L" id="NNg-je-4U3"/>
+                                    <outlet property="restaurantNameInfo" destination="Aet-cM-H1L" id="wdW-eP-yYb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -103,8 +109,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rating" destination="9Hv-D0-Akj" id="X2v-t7-EX9"/>
-                        <outlet property="restaurantName" destination="UWV-44-eGd" id="Fs1-jC-Bum"/>
+                        <outlet property="rating" destination="9Hv-D0-Akj" id="pza-bb-SXr"/>
+                        <outlet property="restaurantName" destination="UWV-44-eGd" id="hRk-HI-cLD"/>
                         <outlet property="restaurantNameAndRatingLabel" destination="ZCZ-DW-2a0" id="K2X-sg-5kj"/>
                     </connections>
                 </viewController>

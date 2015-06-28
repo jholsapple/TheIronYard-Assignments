@@ -7,9 +7,12 @@
 //
 
 #import "RatingViewController.h"
+#import "TableViewCell.h"
 
 @interface RatingViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *restaurantName;
+@property (weak, nonatomic) IBOutlet UITextField *rating;
 @property (weak, nonatomic) IBOutlet UILabel *restaurantNameAndRatingLabel;
 
 - (IBAction)rate:(UIButton *)sender;
@@ -54,7 +57,7 @@
 {
     [super viewWillDisappear:animated];
     
-    [self.RatingDelegate];
+   // [self.RatingDelegate];
     
     
     

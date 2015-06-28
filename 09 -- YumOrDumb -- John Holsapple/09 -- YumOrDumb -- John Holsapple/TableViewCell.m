@@ -10,8 +10,6 @@
 
 @implementation RestaurantRatingCell
 
-@property (weak, nonatomic) IBOutlet UITextField *restaurantName;
-@property (weak, nonatomic) IBOutlet UITextField *rating;
 
 - (void)awakeFromNib {
     // Initialization code

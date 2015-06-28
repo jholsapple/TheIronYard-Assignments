@@ -10,4 +10,7 @@
 
 @interface RestaurantRatingCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIView *restaurantNameInfo;
+@property (weak, nonatomic) IBOutlet UIView *ratingInfo;
+
 @end
