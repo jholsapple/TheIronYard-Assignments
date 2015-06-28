@@ -7,16 +7,30 @@
         <!--Restaurant List-->
         <scene sceneID="6Gh-E7-G8h">
             <objects>
-                <tableViewController id="xSG-Ww-xgv" customClass="RestaurantListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="xSG-Ww-xgv" customClass="ListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cA2-5G-csT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantRatingCell" id="c8Z-Fs-Wsk">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantRatingCell" textLabel="ARE-vV-57A" detailTextLabel="dnY-WW-rvp" style="IBUITableViewCellStyleValue1" id="c8Z-Fs-Wsk" customClass="RestaurantRatingCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c8Z-Fs-Wsk" id="Aet-cM-H1L">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ARE-vV-57A">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dnY-WW-rvp">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -37,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="2675" y="325"/>
         </scene>
-        <!--Restaurant Visited View Controller-->
+        <!--Rating View Controller-->
         <scene sceneID="cLQ-Wb-015">
             <objects>
-                <viewController id="ViS-ML-UaN" customClass="RestaurantVisitedViewController" sceneMemberID="viewController">
+                <viewController id="ViS-ML-UaN" customClass="RatingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OcW-FC-bAT"/>
                         <viewControllerLayoutGuide type="bottom" id="HAT-W5-nBU"/>

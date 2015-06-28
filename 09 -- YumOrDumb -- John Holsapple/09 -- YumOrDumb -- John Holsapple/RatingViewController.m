@@ -6,19 +6,17 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "RestaurantVisitedViewController.h"
+#import "RatingViewController.h"
 
-@interface RestaurantVisitedViewController ()
+@interface RatingViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *restaurantNameAndRatingLabel;
-@property (weak, nonatomic) IBOutlet UITextField *restaurantName;
-@property (weak, nonatomic) IBOutlet UITextField *rating;
 
 - (IBAction)rate:(UIButton *)sender;
 
 @end
 
-@implementation RestaurantVisitedViewController
+@implementation RatingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,9 +36,9 @@
     [self hideKeyboard];
 }
 
-- (IBAction)rateNow:(UIButton *)sender
+- (IBAction)rate:(UIButton *)sender
 {
-    [self hideKeyboard];
+        [self hideKeyboard];
 }
 
 - (void) hideKeyboard
@@ -56,12 +54,11 @@
 {
     [super viewWillDisappear:animated];
     
-    [self.delegate restaurantNameEntered:self.restaurantName.text];
-    [self.delegate restaurantNameEntered:self.rating.text];
+    [self.RatingDelegate];
+    
+    
+    
 }
-
-
-
 
 
 @end

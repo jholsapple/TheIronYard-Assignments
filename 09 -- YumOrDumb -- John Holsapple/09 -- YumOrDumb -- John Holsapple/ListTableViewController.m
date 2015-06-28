@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "RestaurantListTableViewController.h"
-#import "RestaurantVisitedViewController.h"
+#import "ListTableViewController.h"
+#import "RatingViewController.h"
 
-@interface RestaurantListTableViewController ()
+@interface ListTableViewController ()
 {
     NSMutableArray *addRestaurants;
 }
 
 @end
 
-@implementation RestaurantListTableViewController
+@implementation ListTableViewController
 
 - (void)viewDidLoad
 {
@@ -41,18 +41,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [addRestaurants count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -60,7 +57,8 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@ Stars", restaurantName[0], ratingNumber[1]];
+        
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@", nameAndRating[0], rating[1]];
     
     
     return cell;
@@ -106,9 +104,19 @@
  //In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    RestaurantVisitedViewController *restaurantVisitedVC = (RestaurantVisitedViewController *)[segue destinationViewController];
-    restaurantVisitedVC.delegate = self;
+    RatingViewController *ratingVC = (RatingViewController *)[segue destinationViewController];
+    ratingVC.delegate = self;
     // Pass the selected object to the new view controller.
 }
+
+/*#pragma mark - RatingDelegate
+
+-(void)restaurantAddedWithName:(NSString *)nameAndRating :(NSNumber *)rating;
+{
+    self.delegate restaurantNameEntered:self.restaurantName.text;
+    self.delegate restaurantNameEntered:self.rating.text;
+
+}
+*/
 
 @end

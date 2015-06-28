@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RestaurantListTableViewController.h"
+#import "ListTableViewController.h"
 
-@interface RestaurantVisitedViewController : UIViewController
+@interface RatingViewController : UIViewController
 
-@property (nonatomic) id<RestaurantVisitedDelegate> delegate;
+@property (nonatomic) id<RatingDelegate> delegate;
 
 @end
 
