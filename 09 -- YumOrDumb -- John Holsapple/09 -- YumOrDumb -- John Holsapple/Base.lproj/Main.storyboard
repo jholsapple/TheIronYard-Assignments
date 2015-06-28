@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="c8Z-Fs-Wsk">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantRatingCell" id="c8Z-Fs-Wsk">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c8Z-Fs-Wsk" id="Aet-cM-H1L">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -28,7 +28,7 @@
                     <navigationItem key="navigationItem" title="Restaurant List" id="Krn-Yc-yoL">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8aw-X1-Jud">
                             <connections>
-                                <segue destination="ViS-ML-UaN" kind="modal" id="39a-oo-E5U"/>
+                                <segue destination="ViS-ML-UaN" kind="modal" id="ekQ-he-Z8v"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="2675" y="325"/>
         </scene>
-        <!--Restaurant Visited-->
+        <!--Restaurant Visited View Controller-->
         <scene sceneID="cLQ-Wb-015">
             <objects>
-                <viewController id="ViS-ML-UaN" customClass="RestaurantVisited" sceneMemberID="viewController">
+                <viewController id="ViS-ML-UaN" customClass="RestaurantVisitedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OcW-FC-bAT"/>
                         <viewControllerLayoutGuide type="bottom" id="HAT-W5-nBU"/>
@@ -55,7 +55,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="AddRestaurant:" destination="ViS-ML-UaN" eventType="touchUpInside" id="NLT-um-7nw"/>
+                                    <action selector="rate:" destination="ViS-ML-UaN" eventType="touchUpInside" id="diH-MY-Vef"/>
+                                    <action selector="rateNow:" destination="ViS-ML-UaN" eventType="touchUpInside" id="uhm-QK-SGA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name and Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCZ-DW-2a0">
@@ -94,8 +95,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkf-rA-atW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yM7-KR-dBv">
+                    <connections>
+                        <action selector="viewTapped:" destination="ViS-ML-UaN" id="fTN-bG-3UM"/>
+                        <outlet property="delegate" destination="I55-fy-2t9" id="P11-KR-8gI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3390" y="325"/>
+            <point key="canvasLocation" x="3384" y="325"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KXt-kJ-r3a">

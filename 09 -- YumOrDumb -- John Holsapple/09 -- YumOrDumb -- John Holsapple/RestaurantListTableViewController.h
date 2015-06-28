@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RestaurantListTableViewController : UITableViewController
+//@interface RestaurantListTableViewController : UITableViewController
+
+@protocol RestaurantVisitedDelegate
+
+-(void)restaurantNameEntered: (NSObject *)restaurantName;
+-(void)ratingNumberEntered: (NSObject *)ratingNumber;
 
 @end
+
+@interface RestaurantListTableViewController: UIViewController<RestaurantVisitedDelegate>
+
+@end
+
