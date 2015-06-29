@@ -1,5 +1,5 @@
 //
-//  RestaurantListTableViewController.h
+//  ListTableViewController.h
 //  09 -- YumOrDumb -- John Holsapple
 //
 //  Created by John Holsapple on 6/27/15.

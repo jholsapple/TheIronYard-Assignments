@@ -58,7 +58,7 @@
     // Configure the cell...
     
         
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@", restaurantNameInfo[0], ratingInfo[1]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@", restaurantNameInfo[0], ratingInfo[1]];
     
     
     return cell;
