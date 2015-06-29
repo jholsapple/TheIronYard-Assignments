@@ -8,6 +8,7 @@
 
 #import "ListTableViewController.h"
 #import "RatingViewController.h"
+#import "Restaurant.h"
 
 @interface ListTableViewController ()
 {
@@ -56,12 +57,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RestaurantRatingCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    Restaurant *aRestaurant = addRestaurants[indexPath.row];
         
-    //cell.textLabel.text = [NSString stringWithFormat:@"%@ : %@", restaurantNameInfo[0], ratingInfo[1]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", aRestaurant.restaurant];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", (long)aRestaurant.rating];
     
     
     return cell;
+}
+
+- (void)restaurantAdded:(Restaurant *)aRestaurant
+{
+    [addRestaurants addObject:aRestaurant];
+    [self.tableView reloadData];
 }
 
 /*
@@ -104,11 +112,13 @@
  //In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    RatingViewController *ratingVC = (RatingViewController *)[segue destinationViewController];
-    ratingVC.delegate = self;
+    if ([segue.identifier isEqualToString:@"AddRestaurantSegue"])
+    {
+        RatingViewController *ratingVC = (RatingViewController *)[segue destinationViewController];
+        ratingVC.delegate = self;
     // Pass the selected object to the new view controller.
+    }
 }
-
 /*#pragma mark - RatingDelegate
 
 -(void)restaurantAddedWithName:(NSString *)nameAndRating :(NSNumber *)rating;
@@ -120,3 +130,4 @@
 */
 
 @end
+

@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Restaurant List" id="Krn-Yc-yoL">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8aw-X1-Jud">
                             <connections>
-                                <segue destination="ViS-ML-UaN" kind="modal" id="ekQ-he-Z8v"/>
+                                <segue destination="ViS-ML-UaN" kind="modal" identifier="AddRestaurantSegue" id="ekQ-he-Z8v"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,7 +76,6 @@
                                 </state>
                                 <connections>
                                     <action selector="rate:" destination="ViS-ML-UaN" eventType="touchUpInside" id="diH-MY-Vef"/>
-                                    <action selector="rateNow:" destination="ViS-ML-UaN" eventType="touchUpInside" id="uhm-QK-SGA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name and Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCZ-DW-2a0">

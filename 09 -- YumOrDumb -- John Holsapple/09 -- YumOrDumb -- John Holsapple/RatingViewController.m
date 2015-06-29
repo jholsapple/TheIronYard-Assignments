@@ -8,6 +8,7 @@
 
 #import "RatingViewController.h"
 #import "TableViewCell.h"
+#import "Restaurant.h"
 
 @interface RatingViewController ()
 
@@ -41,6 +42,11 @@
 
 - (IBAction)rate:(UIButton *)sender
 {
+        Restaurant *anotherRestaurant = [[Restaurant alloc] init];
+        anotherRestaurant.restaurant = self.restaurantName.text;
+        anotherRestaurant.rating = [self.rating.text integerValue];
+        [self.delegate restaurantAdded:anotherRestaurant];
+    
         [self hideKeyboard];
 }
 

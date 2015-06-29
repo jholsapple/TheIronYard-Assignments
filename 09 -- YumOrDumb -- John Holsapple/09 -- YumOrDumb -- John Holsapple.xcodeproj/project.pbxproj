@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74226A8A1B41E4E20036C80F /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 74226A891B41E4E20036C80F /* Restaurant.m */; };
 		744797561B3F2C5E003E8196 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744797551B3F2C5E003E8196 /* ListTableViewController.m */; };
 		74D861E11B406ED20087AC53 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D861E01B406ED20087AC53 /* TableViewCell.m */; };
 		74DCDDC21B3D93EA0086C721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC11B3D93EA0086C721 /* main.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74226A881B41E4E20036C80F /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		74226A891B41E4E20036C80F /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		744797541B3F2C5E003E8196 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		744797551B3F2C5E003E8196 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		74D861DF1B406ED20087AC53 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				744797551B3F2C5E003E8196 /* ListTableViewController.m */,
 				74DCDDC61B3D93EA0086C721 /* RatingViewController.h */,
 				74DCDDC71B3D93EA0086C721 /* RatingViewController.m */,
+				74226A881B41E4E20036C80F /* Restaurant.h */,
+				74226A891B41E4E20036C80F /* Restaurant.m */,
 				74DCDDC91B3D93EA0086C721 /* Main.storyboard */,
 				74DCDDCC1B3D93EA0086C721 /* Images.xcassets */,
 				74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */,
@@ -233,6 +238,7 @@
 				74DCDDC51B3D93EA0086C721 /* AppDelegate.m in Sources */,
 				744797561B3F2C5E003E8196 /* ListTableViewController.m in Sources */,
 				74D861E11B406ED20087AC53 /* TableViewCell.m in Sources */,
+				74226A8A1B41E4E20036C80F /* Restaurant.m in Sources */,
 				74DCDDC21B3D93EA0086C721 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

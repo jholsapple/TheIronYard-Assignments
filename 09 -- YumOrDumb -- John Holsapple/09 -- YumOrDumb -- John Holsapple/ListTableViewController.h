@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Restaurant.h"
 
 //@interface ListTableViewController : UITableViewController
 
 @protocol RatingDelegate
 
--(void)restaurantAddedWithName:(NSString *)nameAndRating :(NSNumber *)rating;
+-(void)restaurantAdded:(Restaurant *)aRestaurant;
 
 @end
 
-@interface ListTableViewController: UIViewController<RatingDelegate>
+@interface ListTableViewController: UITableViewController<RatingDelegate>
 
 @end
 
