@@ -88,25 +88,20 @@
     {
         if (currentDay >= birthDay)
         {
-            //NSLog(@"%ld years", (long)age);
-            self.yourAge.text = [NSString stringWithFormat:@"%ld years", (long)age];
+            NSLog(@"%ld years", (long)age);
         }
         else
         {
-            //NSLog(@"%ld years", age - 1);
-            self.yourAge.text = [NSString stringWithFormat:@"%ld years", age - 1];
+            NSLog(@"%ld years", age - 1);
         }
     }
     else if (currentMonth > birthMonth)
     {
-        //NSLog(@"%ld years", (long)age);
-        self.yourAge.text = [NSString stringWithFormat:@"%ld years", (long)age];
-
+            NSLog(@"%ld years", (long)age);
     }
     else
     {
-        //NSLog(@"%ld years", age - 1);
-        self.yourAge.text = [NSString stringWithFormat:@"%ld years", age - 1];
+            NSLog(@"%ld years", age - 1);
     }
 }
 
