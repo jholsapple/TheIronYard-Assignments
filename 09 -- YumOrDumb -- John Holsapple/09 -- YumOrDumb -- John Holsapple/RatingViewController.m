@@ -22,7 +22,8 @@
 
 @implementation RatingViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self.restaurantName setText:@""];
@@ -30,7 +31,8 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -62,11 +64,7 @@
 -(void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
-   // [self.RatingDelegate];
-    
-    
-    
+        
 }
 
 

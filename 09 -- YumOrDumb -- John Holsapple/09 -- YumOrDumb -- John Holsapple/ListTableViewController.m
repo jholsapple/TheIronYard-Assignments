@@ -116,18 +116,10 @@
     {
         RatingViewController *ratingVC = (RatingViewController *)[segue destinationViewController];
         ratingVC.delegate = self;
+        
     // Pass the selected object to the new view controller.
     }
 }
-/*#pragma mark - RatingDelegate
-
--(void)restaurantAddedWithName:(NSString *)nameAndRating :(NSNumber *)rating;
-{
-    self.delegate restaurantNameEntered:self.restaurantName.text;
-    self.delegate restaurantNameEntered:self.rating.text;
-
-}
-*/
 
 @end
 
