@@ -84,13 +84,6 @@
         //
         // 5. The view's background color needs to switch to green to indicate a successful login by the agent.
         //
-        //    The color's RGB value is Red: 0.585, Green: 0.78, Blue: 0.188 with an alpha of 1. There is a class method on the
-        //    UIColor class that returns a color object with custom defined RGBA values. Open the documentation and look for a
-        //    method on UIColor that can take red, green, blue and alpha values as arguments.
-        //
-        //    Once you have the color object, you should be able to set the view's background color to this object.
-        //
-
         UIColor *authenticatedBackgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1.0];
         
         // Additional step to set the above color object to self.view's background color
@@ -100,12 +93,6 @@
     {
         //
         // 6. The view's background color needs to switch to red to indicate a failed login by the agent.
-        //
-        //    The color's RGB value is Red: 0.78, Green: 0.188, Blue: 0.188 with an alpha of 1. There is a class method on the
-        //    UIColor class that returns a color object with custom defined RGBA values. Open the documentation and look for a
-        //    method on UIColor that can take red, green, blue and alpha values as arguments.
-        //
-        //    Once you have the color object, you should be able to set the view's background color to this object.
         //
         UIColor *accessDeniedBackgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1.0];
         // Additional step to set the above color object to self.view's background color

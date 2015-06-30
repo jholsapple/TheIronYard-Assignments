@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74226A8A1B41E4E20036C80F /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 74226A891B41E4E20036C80F /* Restaurant.m */; };
+		744797561B3F2C5E003E8196 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744797551B3F2C5E003E8196 /* ListTableViewController.m */; };
+		74D861E11B406ED20087AC53 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D861E01B406ED20087AC53 /* TableViewCell.m */; };
+		74DCDDC21B3D93EA0086C721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC11B3D93EA0086C721 /* main.m */; };
+		74DCDDC51B3D93EA0086C721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC41B3D93EA0086C721 /* AppDelegate.m */; };
+		74DCDDC81B3D93EA0086C721 /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDC71B3D93EA0086C721 /* RatingViewController.m */; };
+		74DCDDCB1B3D93EA0086C721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDC91B3D93EA0086C721 /* Main.storyboard */; };
+		74DCDDCD1B3D93EA0086C721 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDCC1B3D93EA0086C721 /* Images.xcassets */; };
+		74DCDDD01B3D93EA0086C721 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */; };
+		74DCDDDC1B3D93EA0086C721 /* _9____YumOrDumb____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DCDDDB1B3D93EA0086C721 /* _9____YumOrDumb____John_HolsappleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74DCDDD61B3D93EA0086C721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74DCDDB41B3D93EA0086C721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DCDDBB1B3D93EA0086C721;
+			remoteInfo = "09 -- YumOrDumb -- John Holsapple";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74226A881B41E4E20036C80F /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		74226A891B41E4E20036C80F /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		744797541B3F2C5E003E8196 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		744797551B3F2C5E003E8196 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		74D861DF1B406ED20087AC53 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		74D861E01B406ED20087AC53 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		74DCDDBC1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09 -- YumOrDumb -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DCDDC01B3D93EA0086C721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DCDDC11B3D93EA0086C721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74DCDDC31B3D93EA0086C721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74DCDDC41B3D93EA0086C721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74DCDDC61B3D93EA0086C721 /* RatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingViewController.h; sourceTree = "<group>"; };
+		74DCDDC71B3D93EA0086C721 /* RatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatingViewController.m; sourceTree = "<group>"; };
+		74DCDDCA1B3D93EA0086C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74DCDDCC1B3D93EA0086C721 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74DCDDCF1B3D93EA0086C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		74DCDDD51B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "09 -- YumOrDumb -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DCDDDA1B3D93EA0086C721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DCDDDB1B3D93EA0086C721 /* _9____YumOrDumb____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_9____YumOrDumb____John_HolsappleTests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74DCDDB91B3D93EA0086C721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DCDDD21B3D93EA0086C721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74DCDDB31B3D93EA0086C721 = {
+			isa = PBXGroup;
+			children = (
+				74DCDDBE1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple */,
+				74DCDDD81B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests */,
+				74DCDDBD1B3D93EA0086C721 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74DCDDBD1B3D93EA0086C721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74DCDDBC1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple.app */,
+				74DCDDD51B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74DCDDBE1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple */ = {
+			isa = PBXGroup;
+			children = (
+				74DCDDC31B3D93EA0086C721 /* AppDelegate.h */,
+				74DCDDC41B3D93EA0086C721 /* AppDelegate.m */,
+				74D861DF1B406ED20087AC53 /* TableViewCell.h */,
+				74D861E01B406ED20087AC53 /* TableViewCell.m */,
+				744797541B3F2C5E003E8196 /* ListTableViewController.h */,
+				744797551B3F2C5E003E8196 /* ListTableViewController.m */,
+				74DCDDC61B3D93EA0086C721 /* RatingViewController.h */,
+				74DCDDC71B3D93EA0086C721 /* RatingViewController.m */,
+				74226A881B41E4E20036C80F /* Restaurant.h */,
+				74226A891B41E4E20036C80F /* Restaurant.m */,
+				74DCDDC91B3D93EA0086C721 /* Main.storyboard */,
+				74DCDDCC1B3D93EA0086C721 /* Images.xcassets */,
+				74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */,
+				74DCDDBF1B3D93EA0086C721 /* Supporting Files */,
+			);
+			path = "09 -- YumOrDumb -- John Holsapple";
+			sourceTree = "<group>";
+		};
+		74DCDDBF1B3D93EA0086C721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DCDDC01B3D93EA0086C721 /* Info.plist */,
+				74DCDDC11B3D93EA0086C721 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74DCDDD81B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests */ = {
+			isa = PBXGroup;
+			children = (
+				74DCDDDB1B3D93EA0086C721 /* _9____YumOrDumb____John_HolsappleTests.m */,
+				74DCDDD91B3D93EA0086C721 /* Supporting Files */,
+			);
+			path = "09 -- YumOrDumb -- John HolsappleTests";
+			sourceTree = "<group>";
+		};
+		74DCDDD91B3D93EA0086C721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DCDDDA1B3D93EA0086C721 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74DCDDBB1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DCDDDF1B3D93EA0086C721 /* Build configuration list for PBXNativeTarget "09 -- YumOrDumb -- John Holsapple" */;
+			buildPhases = (
+				74DCDDB81B3D93EA0086C721 /* Sources */,
+				74DCDDB91B3D93EA0086C721 /* Frameworks */,
+				74DCDDBA1B3D93EA0086C721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "09 -- YumOrDumb -- John Holsapple";
+			productName = "09 -- YumOrDumb -- John Holsapple";
+			productReference = 74DCDDBC1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74DCDDD41B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DCDDE21B3D93EA0086C721 /* Build configuration list for PBXNativeTarget "09 -- YumOrDumb -- John HolsappleTests" */;
+			buildPhases = (
+				74DCDDD11B3D93EA0086C721 /* Sources */,
+				74DCDDD21B3D93EA0086C721 /* Frameworks */,
+				74DCDDD31B3D93EA0086C721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DCDDD71B3D93EA0086C721 /* PBXTargetDependency */,
+			);
+			name = "09 -- YumOrDumb -- John HolsappleTests";
+			productName = "09 -- YumOrDumb -- John HolsappleTests";
+			productReference = 74DCDDD51B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74DCDDB41B3D93EA0086C721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					74DCDDBB1B3D93EA0086C721 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					74DCDDD41B3D93EA0086C721 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 74DCDDBB1B3D93EA0086C721;
+					};
+				};
+			};
+			buildConfigurationList = 74DCDDB71B3D93EA0086C721 /* Build configuration list for PBXProject "09 -- YumOrDumb -- John Holsapple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74DCDDB31B3D93EA0086C721;
+			productRefGroup = 74DCDDBD1B3D93EA0086C721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74DCDDBB1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple */,
+				74DCDDD41B3D93EA0086C721 /* 09 -- YumOrDumb -- John HolsappleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74DCDDBA1B3D93EA0086C721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DCDDCB1B3D93EA0086C721 /* Main.storyboard in Resources */,
+				74DCDDD01B3D93EA0086C721 /* LaunchScreen.xib in Resources */,
+				74DCDDCD1B3D93EA0086C721 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DCDDD31B3D93EA0086C721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74DCDDB81B3D93EA0086C721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DCDDC81B3D93EA0086C721 /* RatingViewController.m in Sources */,
+				74DCDDC51B3D93EA0086C721 /* AppDelegate.m in Sources */,
+				744797561B3F2C5E003E8196 /* ListTableViewController.m in Sources */,
+				74D861E11B406ED20087AC53 /* TableViewCell.m in Sources */,
+				74226A8A1B41E4E20036C80F /* Restaurant.m in Sources */,
+				74DCDDC21B3D93EA0086C721 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DCDDD11B3D93EA0086C721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DCDDDC1B3D93EA0086C721 /* _9____YumOrDumb____John_HolsappleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74DCDDD71B3D93EA0086C721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DCDDBB1B3D93EA0086C721 /* 09 -- YumOrDumb -- John Holsapple */;
+			targetProxy = 74DCDDD61B3D93EA0086C721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74DCDDC91B3D93EA0086C721 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DCDDCA1B3D93EA0086C721 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74DCDDCE1B3D93EA0086C721 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DCDDCF1B3D93EA0086C721 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74DCDDDD1B3D93EA0086C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74DCDDDE1B3D93EA0086C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74DCDDE01B3D93EA0086C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "09 -- YumOrDumb -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74DCDDE11B3D93EA0086C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "09 -- YumOrDumb -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74DCDDE31B3D93EA0086C721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "09 -- YumOrDumb -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/09 -- YumOrDumb -- John Holsapple.app/09 -- YumOrDumb -- John Holsapple";
+			};
+			name = Debug;
+		};
+		74DCDDE41B3D93EA0086C721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "09 -- YumOrDumb -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/09 -- YumOrDumb -- John Holsapple.app/09 -- YumOrDumb -- John Holsapple";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74DCDDB71B3D93EA0086C721 /* Build configuration list for PBXProject "09 -- YumOrDumb -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DCDDDD1B3D93EA0086C721 /* Debug */,
+				74DCDDDE1B3D93EA0086C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DCDDDF1B3D93EA0086C721 /* Build configuration list for PBXNativeTarget "09 -- YumOrDumb -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DCDDE01B3D93EA0086C721 /* Debug */,
+				74DCDDE11B3D93EA0086C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DCDDE21B3D93EA0086C721 /* Build configuration list for PBXNativeTarget "09 -- YumOrDumb -- John HolsappleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DCDDE31B3D93EA0086C721 /* Debug */,
+				74DCDDE41B3D93EA0086C721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74DCDDB41B3D93EA0086C721 /* Project object */;
+}
