@@ -7,7 +7,6 @@
         <!--Tickets Table View Controller-->
         <scene sceneID="pWp-r9-S6e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xBB-c6-TAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="UJc-Gc-QVq" customClass="TicketsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EFI-2H-cvU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -45,6 +44,7 @@
                         <outlet property="tickets" destination="sjz-3Y-pn8" id="y2r-om-YEN"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBB-c6-TAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1494" y="398"/>
         </scene>

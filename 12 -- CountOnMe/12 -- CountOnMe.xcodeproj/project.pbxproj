@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		740507571B43316500817A12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740507561B43316500817A12 /* main.m */; };
 		7405075A1B43316500817A12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740507591B43316500817A12 /* AppDelegate.m */; };
-		7405075D1B43316500817A12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405075C1B43316500817A12 /* ViewController.m */; };
 		740507601B43316500817A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7405075E1B43316500817A12 /* Main.storyboard */; };
 		740507621B43316500817A12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740507611B43316500817A12 /* Images.xcassets */; };
 		740507651B43316500817A12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 740507631B43316500817A12 /* LaunchScreen.xib */; };
 		740507711B43316500817A12 /* _2____CountOnMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740507701B43316500817A12 /* _2____CountOnMeTests.m */; };
+		7405077C1B43333E00817A12 /* CountersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405077B1B43333E00817A12 /* CountersTableViewController.m */; };
+		7405077F1B43344400817A12 /* CounterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405077E1B43344400817A12 /* CounterTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		740507561B43316500817A12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		740507581B43316500817A12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		740507591B43316500817A12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7405075B1B43316500817A12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7405075C1B43316500817A12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7405075F1B43316500817A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740507611B43316500817A12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		740507641B43316500817A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7405076A1B43316500817A12 /* 12 -- CountOnMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "12 -- CountOnMeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7405076F1B43316500817A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		740507701B43316500817A12 /* _2____CountOnMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____CountOnMeTests.m"; sourceTree = "<group>"; };
+		7405077A1B43333E00817A12 /* CountersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountersTableViewController.h; sourceTree = "<group>"; };
+		7405077B1B43333E00817A12 /* CountersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountersTableViewController.m; sourceTree = "<group>"; };
+		7405077D1B43344400817A12 /* CounterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterTableViewCell.h; sourceTree = "<group>"; };
+		7405077E1B43344400817A12 /* CounterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				740507581B43316500817A12 /* AppDelegate.h */,
 				740507591B43316500817A12 /* AppDelegate.m */,
-				7405075B1B43316500817A12 /* ViewController.h */,
-				7405075C1B43316500817A12 /* ViewController.m */,
+				7405077A1B43333E00817A12 /* CountersTableViewController.h */,
+				7405077B1B43333E00817A12 /* CountersTableViewController.m */,
+				7405077D1B43344400817A12 /* CounterTableViewCell.h */,
+				7405077E1B43344400817A12 /* CounterTableViewCell.m */,
 				7405075E1B43316500817A12 /* Main.storyboard */,
 				740507611B43316500817A12 /* Images.xcassets */,
 				740507631B43316500817A12 /* LaunchScreen.xib */,
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7405075D1B43316500817A12 /* ViewController.m in Sources */,
+				7405077F1B43344400817A12 /* CounterTableViewCell.m in Sources */,
 				7405075A1B43316500817A12 /* AppDelegate.m in Sources */,
+				7405077C1B43333E00817A12 /* CountersTableViewController.m in Sources */,
 				740507571B43316500817A12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				740507761B43316500817A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		740507771B43316500817A12 /* Build configuration list for PBXNativeTarget "12 -- CountOnMeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				740507791B43316500817A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
