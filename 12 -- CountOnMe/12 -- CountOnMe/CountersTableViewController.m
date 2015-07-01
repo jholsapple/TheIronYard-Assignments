@@ -8,13 +8,14 @@
 
 #import "CountersTableViewController.h"
 #import "CounterTableViewCell.h"
-#import "Counter.h"
+
 
 @interface CountersTableViewController ()
 {
     NSMutableArray *counters;
 }
 - (IBAction)addCounter:(UIBarButtonItem *)sender;
+
 
 @end
 
@@ -33,6 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 #pragma mark - Table view data source
@@ -57,7 +59,7 @@
     CounterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CounterCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    Counter *specificCount = [counters objectAtIndex:indexPath.row];
+    
     
     
     return cell;
@@ -110,9 +112,8 @@
 
 - (IBAction)addCounter:(UIBarButtonItem *)sender
 {
-    Counter *anotherCounter = [Counter integarCount];
-    [counters addObject:anotherCounter];
-    [self.tableView reloadData];
+    currentCount = sender.value;
+    [self updateViewWithCurrentCount];
 }
 
 @end

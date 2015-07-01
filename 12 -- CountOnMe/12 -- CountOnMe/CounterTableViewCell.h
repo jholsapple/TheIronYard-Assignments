@@ -9,15 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface CounterTableViewCell : UITableViewCell
-{
-    int currentCount;
-}
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UIView *stepper;
-@property (weak, nonatomic) IBOutlet UILabel *count;
+@property (weak, nonatomic) IBOutlet UILabel *totalCount;
 
 -(IBAction)stepperValueChanged:(UIStepper *)sender;
 
-
 @end
+
