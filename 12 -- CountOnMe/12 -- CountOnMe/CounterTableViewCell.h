@@ -15,8 +15,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UIView *stepper;
-@property (weak, nonatomic) IBOutlet UIView *count;
+@property (weak, nonatomic) IBOutlet UILabel *count;
 
-- (IBAction)stepperValueChanged:(UIStepper *)sender;
+-(IBAction)stepperValueChanged:(UIStepper *)sender;
+
 
 @end

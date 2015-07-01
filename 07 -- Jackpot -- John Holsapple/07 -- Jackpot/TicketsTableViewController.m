@@ -20,7 +20,8 @@
 
 @implementation TicketsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     tickets = [[NSMutableArray alloc] init];

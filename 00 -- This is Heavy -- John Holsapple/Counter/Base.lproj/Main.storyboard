@@ -39,7 +39,7 @@
                                     <action selector="stepperValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="OdS-5T-Wzl"/>
                                 </connections>
                             </stepper>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-HM-cxg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-HM-cxg">
                                 <rect key="frame" x="180" y="311" width="240" height="212"/>
                             </imageView>
                         </subviews>

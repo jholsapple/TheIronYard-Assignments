@@ -18,32 +18,43 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8iz-i8-p1H" id="jmP-Q9-O0P">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-08-GdT">
-                                            <rect key="frame" x="253" y="20" width="94" height="29"/>
-                                            <connections>
-                                                <action selector="stepperValueChanged:" destination="8iz-i8-p1H" eventType="valueChanged" id="bQg-EV-Fce"/>
-                                            </connections>
-                                        </stepper>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Counter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-yb-POE">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-yb-POE">
                                             <rect key="frame" x="8" y="20" width="237" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhh-6m-eQw">
-                                            <rect key="frame" x="355" y="17" width="237" height="35"/>
-                                            <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
-                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8i-BT-CVy">
+                                            <rect key="frame" x="355" y="24" width="237" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-08-GdT">
+                                            <rect key="frame" x="253" y="20" width="94" height="29"/>
+                                            <connections>
+                                                <action selector="stepperValueChanged:" destination="8iz-i8-p1H" eventType="valueChanged" id="Ghb-ju-gac"/>
+                                            </connections>
+                                        </stepper>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="fVm-08-GdT" firstAttribute="leading" secondItem="Ae1-yb-POE" secondAttribute="trailing" constant="8" id="2AI-5o-sxI"/>
+                                        <constraint firstAttribute="trailing" secondItem="q8i-BT-CVy" secondAttribute="trailing" constant="8" id="I3j-Bj-20a"/>
                                         <constraint firstItem="Ae1-yb-POE" firstAttribute="top" secondItem="jmP-Q9-O0P" secondAttribute="top" constant="20" id="UL4-qt-0Dv"/>
+                                        <constraint firstItem="q8i-BT-CVy" firstAttribute="centerY" secondItem="fVm-08-GdT" secondAttribute="centerY" id="cw5-HY-bgb"/>
                                         <constraint firstAttribute="centerY" secondItem="fVm-08-GdT" secondAttribute="centerY" constant="0.25" id="iGv-XN-Iwq"/>
                                         <constraint firstItem="Ae1-yb-POE" firstAttribute="leading" secondItem="jmP-Q9-O0P" secondAttribute="leading" constant="8" id="ihW-00-jcW"/>
+                                        <constraint firstAttribute="centerY" secondItem="q8i-BT-CVy" secondAttribute="centerY" constant="0.25" id="kqN-Av-Qhc"/>
+                                        <constraint firstItem="q8i-BT-CVy" firstAttribute="leading" secondItem="fVm-08-GdT" secondAttribute="trailing" constant="8" id="lKU-Xe-zKY"/>
                                         <constraint firstAttribute="centerX" secondItem="fVm-08-GdT" secondAttribute="centerX" id="uoS-6d-CaV"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="cw5-HY-bgb"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="count" destination="qhh-6m-eQw" id="Ozj-6N-fqZ"/>
+                                    <outlet property="count" destination="q8i-BT-CVy" id="Q1i-sz-oSG"/>
                                     <outlet property="name" destination="Ae1-yb-POE" id="ajG-fE-vKT"/>
                                     <outlet property="stepper" destination="jmP-Q9-O0P" id="VbG-2G-U1X"/>
                                 </connections>

@@ -15,6 +15,7 @@
 		740507711B43316500817A12 /* _2____CountOnMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740507701B43316500817A12 /* _2____CountOnMeTests.m */; };
 		7405077C1B43333E00817A12 /* CountersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405077B1B43333E00817A12 /* CountersTableViewController.m */; };
 		7405077F1B43344400817A12 /* CounterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405077E1B43344400817A12 /* CounterTableViewCell.m */; };
+		74EFD14E1B43684F00A5109A /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EFD14D1B43684F00A5109A /* Counter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7405077B1B43333E00817A12 /* CountersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountersTableViewController.m; sourceTree = "<group>"; };
 		7405077D1B43344400817A12 /* CounterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterTableViewCell.h; sourceTree = "<group>"; };
 		7405077E1B43344400817A12 /* CounterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTableViewCell.m; sourceTree = "<group>"; };
+		74EFD14C1B43684F00A5109A /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		74EFD14D1B43684F00A5109A /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				7405077B1B43333E00817A12 /* CountersTableViewController.m */,
 				7405077D1B43344400817A12 /* CounterTableViewCell.h */,
 				7405077E1B43344400817A12 /* CounterTableViewCell.m */,
+				74EFD14C1B43684F00A5109A /* Counter.h */,
+				74EFD14D1B43684F00A5109A /* Counter.m */,
 				7405075E1B43316500817A12 /* Main.storyboard */,
 				740507611B43316500817A12 /* Images.xcassets */,
 				740507631B43316500817A12 /* LaunchScreen.xib */,
@@ -227,6 +232,7 @@
 				7405077F1B43344400817A12 /* CounterTableViewCell.m in Sources */,
 				7405075A1B43316500817A12 /* AppDelegate.m in Sources */,
 				7405077C1B43333E00817A12 /* CountersTableViewController.m in Sources */,
+				74EFD14E1B43684F00A5109A /* Counter.m in Sources */,
 				740507571B43316500817A12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
