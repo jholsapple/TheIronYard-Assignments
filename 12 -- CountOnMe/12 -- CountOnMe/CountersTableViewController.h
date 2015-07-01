@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CounterTableViewController.h
 //  12 -- CountOnMe
 //
 //  Created by John Holsapple on 6/30/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CountersTableViewController : UITableViewController
 
 @end
-

@@ -1,36 +1,32 @@
 //
-//  TicketsTableViewController.m
-//  07 -- Jackpot
+//  CounterTableViewController.m
+//  12 -- CountOnMe
 //
-//  Created by John Holsapple on 6/23/15.
+//  Created by John Holsapple on 6/30/15.
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "TicketsTableViewController.h"
-#import "Ticket.h"
+#import "CountersTableViewController.h"
+#import "CounterTableViewCell.h"
 
-@interface TicketsTableViewController ()
+
+@interface CountersTableViewController ()
 {
-    NSMutableArray *tickets;
+    NSMutableArray *counters;
 }
+- (IBAction)addCounter:(UIBarButtonItem *)sender;
 
-- (IBAction)addTickets:(UIBarButtonItem *)sender;
 
 @end
 
-@implementation TicketsTableViewController
+@implementation CountersTableViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    tickets = [[NSMutableArray alloc] init];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    counters = [[NSMutableArray alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,30 +36,31 @@
 }
 
 
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+
     // Return the number of rows in the section.
-    return [tickets count];
+    return [counters count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TicketsCell" forIndexPath:indexPath];
+    CounterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CounterCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
-    Ticket *specificTicket = [tickets objectAtIndex:indexPath.row];
     
-     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", [specificTicket.picks objectAtIndex:0], specificTicket.picks[1], specificTicket.picks[2], specificTicket.picks[3], specificTicket.picks[4], specificTicket.picks[5]];
     
     return cell;
 }
@@ -113,12 +110,10 @@
 }
 */
 
-
-- (IBAction)addTickets:(UIBarButtonItem *)sender
+- (IBAction)addCounter:(UIBarButtonItem *)sender
 {
-    Ticket *anotherTicket =  [Ticket ticketUsingRandomNumbers];
-    [tickets addObject:anotherTicket];
-    [self.tableView reloadData];
+    currentCount = sender.value;
+    [self updateViewWithCurrentCount];
 }
 
 @end

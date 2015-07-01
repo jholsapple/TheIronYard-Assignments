@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B583CC21-7A82-451E-A700-01BE7AB01289</string>
+	<string>9D5A6C5C-7E9E-43C0-B9D9-CCC3990E1DFD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>12 -- CountOnMe</string>
+	<string>Counter</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
 		<string>https://github.com/jholsapple/TIY-Assignments.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>12 -- CountOnMe/12 -- CountOnMe.xcodeproj</string>
+	<string>00 -- This is Heavy -- John Holsapple/Counter.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
