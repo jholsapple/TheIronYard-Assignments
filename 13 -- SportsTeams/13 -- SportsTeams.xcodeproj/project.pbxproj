@@ -15,6 +15,7 @@
 		7477556D1B4463DD008ADE32 /* _3____SportsTeamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477556C1B4463DD008ADE32 /* _3____SportsTeamsTests.m */; };
 		747755781B446516008ADE32 /* TeamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747755771B446516008ADE32 /* TeamsTableViewController.m */; };
 		7477557B1B446A61008ADE32 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477557A1B446A61008ADE32 /* Team.m */; };
+		7477557E1B448441008ADE32 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477557D1B448441008ADE32 /* TeamTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		747755771B446516008ADE32 /* TeamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamsTableViewController.m; sourceTree = "<group>"; };
 		747755791B446A61008ADE32 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
 		7477557A1B446A61008ADE32 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		7477557C1B448441008ADE32 /* TeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
+		7477557D1B448441008ADE32 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				747755771B446516008ADE32 /* TeamsTableViewController.m */,
 				747755791B446A61008ADE32 /* Team.h */,
 				7477557A1B446A61008ADE32 /* Team.m */,
+				7477557C1B448441008ADE32 /* TeamTableViewCell.h */,
+				7477557D1B448441008ADE32 /* TeamTableViewCell.m */,
 				7477555A1B4463DD008ADE32 /* Main.storyboard */,
 				7477555D1B4463DD008ADE32 /* Images.xcassets */,
 				7477555F1B4463DD008ADE32 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7477557E1B448441008ADE32 /* TeamTableViewCell.m in Sources */,
 				7477557B1B446A61008ADE32 /* Team.m in Sources */,
 				747755561B4463DD008ADE32 /* AppDelegate.m in Sources */,
 				747755781B446516008ADE32 /* TeamsTableViewController.m in Sources */,

@@ -10,8 +10,12 @@
 
 @interface Team : NSObject
 
-@property(nonatomic)NSString *teamName;
-@property(nonatomic)NSString *league;
-@property(nonatomic)NSString *starPlayer;
+@property(nonatomic) NSString *teamName;
+@property(nonatomic) NSString *league;
+@property(nonatomic) NSString *starPlayer;
+@property(nonatomic) int wins;
+@property(nonatomic) int losses;
+
+
 
 @end

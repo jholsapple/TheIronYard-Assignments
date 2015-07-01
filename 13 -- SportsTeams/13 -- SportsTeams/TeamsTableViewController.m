@@ -22,7 +22,23 @@
 {
     [super viewDidLoad];
     
-    Team *aTeam = [[Team alloc] init];
+    NSArray *moreData = @[@{@"teamName": @"Orlando Magic", @"league": @"NBA", @"starPlayer": @"Victor Oladipo", @"wins": @"25", @"losses": @"57"}, @{@"teamName": @"Detroit Lions", @"league": @"NFL", @"starPlayer": @"Matthew Stafford", @"wins": @"11", @"losses": @"5"}, @{@"teamName": @"Seattle Seahawks", @"league": @"NFL", @"starPlayer": @"Russell Wilson", @"wins": @"12", @"losses": @"4"}, @{@"teamName": @"L.A. Lakers", @"league": @"NBA", @"starPlayer": @"Kobe Bryant", @"wins": @"21", @"losses": @"61"}, @{@"teamName": @"Washington Nationals", @"league": @"MLB", @"starPlayer": @"Bryce Harper", @"wins": @"43", @"losses": @"34"}, @{@"teamName": @"New England Patriots", @"league": @"NFL", @"starPlayer": @"Tom Brady", @"wins": @"12", @"losses": @"4"}, @{@"teamName": @"New York Yankees", @"league": @"MLB", @"starPlayer": @"Babe Ruth", @"wins": @"41", @"losses": @"37"}, @{@"teamName": @"Miami Heat", @"league": @"NBA", @"starPlayer": @"Dwayne Wade", @"wins": @"37", @"losses": @"45"}, @{@"teamName": @"Philadelphia Eagles", @"league": @"NFL", @"starPlayer": @"Tim Tebow", @"wins": @"10", @"losses": @"6"}, @{@"teamName": @"Cleveland Cavaliers", @"league": @"NBA", @"starPlayer": @"Kevin Love", @"wins": @"53", @"losses": @"29"}, @{@"teamName": @"", @"league": @"PGA", @"starPlayer":@"Tiger Woods", @"wins": @"79", @"losses": @""}, @{@"teamName": @"", @"league": @"Tennis", @"starPlayer": @"Serena Williams", @"wins": @"716", @"losses": @"121"}, @{@"teamName": @"L.A. Galaxy", @"league": @"MLS", @"starPlayer": @"David Beckham", @"wins": @"7", @"losses": @"7"}];
+    
+    NSMutableArray *teamStorage = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *more in moreData)
+    {
+        Team *aTeam = [[Team alloc] init];
+        aTeam.teamName = more[@"teamName"];
+        aTeam.league = more[@"league"];
+        aTeam.starPlayer = more[@"starPlayer"];
+        aTeam.wins = [more[@"wins"] intValue];
+        aTeam.losses = [more[@"losses"] intValue];
+        
+        [teamStorage addObject: aTeam];
+    }
+    
+/*  Team *aTeam = [[Team alloc] init];
     aTeam.teamName = @"Orlando Magic";
     aTeam.league = @"NBA";
     aTeam.starPlayer = @"Victor Oladipo";
@@ -31,8 +47,9 @@
     anotherTeam.teamName = @"Detroit Lions";
     anotherTeam.league = @"NFL";
     anotherTeam.starPlayer = @"Matthew Stafford";
-    
-    theTeams = @[aTeam, anotherTeam];
+*/
+ 
+    theTeams = [teamStorage copy];
     self.title = @"Sports Teams";
 }
 
@@ -64,7 +81,7 @@
     
     // Configure the cell...
     Team *theTeam = theTeams[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@  (%@) : %@", theTeam.teamName, theTeam.league, theTeam.starPlayer];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@  (%@) : %@ || %d - %d", theTeam.teamName, theTeam.league, theTeam.starPlayer, theTeam.wins, theTeam.losses];
     
     return cell;
 }

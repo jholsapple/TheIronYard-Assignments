@@ -13,19 +13,72 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamCell" textLabel="J8M-MP-fjY" style="IBUITableViewCellStyleDefault" id="pRK-Cr-j2g">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamCell" id="pRK-Cr-j2g" customClass="TeamTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pRK-Cr-j2g" id="Coa-jn-ajw">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J8M-MP-fjY">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V06-mv-dlw">
+                                            <rect key="frame" x="8" y="11" width="164" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsl-O8-9Ra">
+                                            <rect key="frame" x="180" y="11" width="57" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rja-BO-GrS">
+                                            <rect key="frame" x="507" y="11" width="85" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWs-ym-u5Q">
+                                            <rect key="frame" x="264" y="11" width="185" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rja-BO-GrS" firstAttribute="leading" secondItem="JWs-ym-u5Q" secondAttribute="trailing" constant="58" id="1Q2-Wf-gIc"/>
+                                        <constraint firstItem="V06-mv-dlw" firstAttribute="leading" secondItem="Coa-jn-ajw" secondAttribute="leading" constant="8" id="GfR-TC-dmy"/>
+                                        <constraint firstAttribute="centerY" secondItem="rja-BO-GrS" secondAttribute="centerY" constant="0.25" id="I3O-dD-zQs"/>
+                                        <constraint firstItem="rja-BO-GrS" firstAttribute="leading" secondItem="JWs-ym-u5Q" secondAttribute="trailing" constant="57" id="OS3-3t-5rM"/>
+                                        <constraint firstAttribute="centerY" secondItem="JWs-ym-u5Q" secondAttribute="centerY" constant="0.25" id="P8h-L0-0m7"/>
+                                        <constraint firstAttribute="centerX" secondItem="rja-BO-GrS" secondAttribute="centerX" constant="-249.5" id="S1V-q0-I4Z"/>
+                                        <constraint firstItem="Nsl-O8-9Ra" firstAttribute="centerY" secondItem="V06-mv-dlw" secondAttribute="centerY" id="SaU-En-ykT"/>
+                                        <constraint firstAttribute="trailing" secondItem="rja-BO-GrS" secondAttribute="trailing" constant="8" id="duC-kR-bpg"/>
+                                        <constraint firstItem="JWs-ym-u5Q" firstAttribute="leading" secondItem="Nsl-O8-9Ra" secondAttribute="trailing" constant="28" id="h1z-dC-MFY"/>
+                                        <constraint firstItem="JWs-ym-u5Q" firstAttribute="centerY" secondItem="rja-BO-GrS" secondAttribute="centerY" id="hWl-p5-f5L"/>
+                                        <constraint firstAttribute="centerY" secondItem="V06-mv-dlw" secondAttribute="centerY" constant="0.25" id="jj1-fl-VP7"/>
+                                        <constraint firstAttribute="centerX" secondItem="JWs-ym-u5Q" secondAttribute="centerX" constant="-56.5" id="kac-m8-NFx"/>
+                                        <constraint firstItem="Nsl-O8-9Ra" firstAttribute="top" secondItem="V06-mv-dlw" secondAttribute="top" id="oq9-Md-YAw"/>
+                                        <constraint firstItem="Nsl-O8-9Ra" firstAttribute="leading" secondItem="V06-mv-dlw" secondAttribute="trailing" constant="8" id="rCi-Kh-aDy"/>
+                                        <constraint firstAttribute="centerX" secondItem="V06-mv-dlw" secondAttribute="centerX" constant="210" id="rJO-sV-eGC"/>
+                                        <constraint firstItem="JWs-ym-u5Q" firstAttribute="centerY" secondItem="rja-BO-GrS" secondAttribute="centerY" id="sVW-ij-TeF"/>
+                                        <constraint firstItem="JWs-ym-u5Q" firstAttribute="centerY" secondItem="Nsl-O8-9Ra" secondAttribute="centerY" id="tBe-4W-nzf"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="h1z-dC-MFY"/>
+                                            <exclude reference="hWl-p5-f5L"/>
+                                            <exclude reference="sVW-ij-TeF"/>
+                                            <exclude reference="tBe-4W-nzf"/>
+                                            <exclude reference="OS3-3t-5rM"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="league" destination="Nsl-O8-9Ra" id="oHh-AN-Rjs"/>
+                                    <outlet property="playerName" destination="P8h-L0-0m7" id="Iee-2X-8QK"/>
+                                    <outlet property="starPlayer" destination="P8h-L0-0m7" id="yTM-rg-fAu"/>
+                                    <outlet property="teamName" destination="V06-mv-dlw" id="weQ-kE-kSR"/>
+                                    <outlet property="winsAndLosses" destination="rja-BO-GrS" id="kBp-pZ-Yeg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
