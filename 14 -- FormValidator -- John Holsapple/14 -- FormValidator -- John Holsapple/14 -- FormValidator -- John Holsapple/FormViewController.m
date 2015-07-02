@@ -22,17 +22,89 @@
 
 @implementation FormViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    
-    // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Form";
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Text Field Delegate
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    BOOL returnValue = NO;
+    if (textField == self.nameTextField)
+    {
+        if (![self.nameTextField.text isEqualToString:@""])
+        {
+            returnValue = YES;
+            [self.streetTextField becomeFirstResponder];
+        }
+    }
+    else if (textField == self.streetTextField)
+    {
+        if (![self.streetTextField.text isEqualToString:@""])
+        {
+            returnValue = YES;
+            [self.cityTextField becomeFirstResponder];
+        }
+    }
+    else if (textField == self.cityTextField)
+    {
+        if (![self.cityTextField.text isEqualToString:@""])
+        {
+            returnValue = YES;
+            [self.stateTextField becomeFirstResponder];
+        }
+    }
+    else if (textField == self.stateTextField)
+    {
+        if (![self.stateTextField.text isEqualToString:@""])
+        {
+            returnValue = YES;
+            [self.zipTextField becomeFirstResponder];
+        }
+    }
+    else if (textField == self.zipTextField)
+    {
+        if ([self.zipTextField.text length] == 5)
+        {
+            NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+            if ([self.zipTextField.text rangeOfCharacterFromSet:set].location != NSNotFound)
+            {
+                returnValue = YES;
+                [self.phoneTextField becomeFirstResponder];
+            }
+        }
+    }
+    else if (textField == self.phoneTextField)
+    {
+        if ([self.phoneTextField.text length] == 10)
+        {
+            NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+            if ([self.phoneTextField.text rangeOfCharacterFromSet:set].length != NSNotFound)
+            {
+                returnValue = YES;
+                [self.phoneTextField resignFirstResponder];
+            }
+        }
+    }
+    if (returnValue == NO)
+    {
+        self.view.backgroundColor = [UIColor redColor];
+    }
+    else
+    {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    return returnValue;
 }
 
 @end
