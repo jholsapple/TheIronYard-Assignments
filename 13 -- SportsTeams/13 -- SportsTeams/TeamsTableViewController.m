@@ -8,6 +8,7 @@
 
 #import "TeamsTableViewController.h"
 #import "Team.h"
+#import "TeamTableViewCell.h"
 
 @interface TeamsTableViewController ()
 {
@@ -77,11 +78,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
+    TeamTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
     
     // Configure the cell...
     Team *theTeam = theTeams[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@  (%@) : %@ || %d - %d", theTeam.teamName, theTeam.league, theTeam.starPlayer, theTeam.wins, theTeam.losses];
+    cell.textLabel.text = theTeam.teamName;
+    cell.textLabel.text = theTeam.league;
+    cell.textLabel.text = theTeam.starPlayer;
+    cell.textLabel.text = [NSString stringWithFormat:@"%d - %d", theTeam.wins, theTeam.losses];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@  (%@) : %@ || %d - %d", theTeam.teamName, theTeam.league, theTeam.starPlayer, theTeam.wins, theTeam.losses];
     
     return cell;
 }

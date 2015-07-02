@@ -10,9 +10,9 @@
 
 @interface TeamTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *teamName;
-@property (weak, nonatomic) IBOutlet UILabel *league;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *starPlayer;
-@property (weak, nonatomic) IBOutlet UILabel *winsAndLosses;
+@property (weak, nonatomic) IBOutlet UILabel *teamNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *leagueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *starPlayerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *winsAndLossesLabel;
 
 @end
