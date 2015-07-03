@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		748A10FE1B45B970005E68C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 748A10FD1B45B970005E68C1 /* main.m */; };
 		748A11011B45B970005E68C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 748A11001B45B970005E68C1 /* AppDelegate.m */; };
-		748A11041B45B970005E68C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748A11031B45B970005E68C1 /* ViewController.m */; };
+		748A11041B45B970005E68C1 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748A11031B45B970005E68C1 /* FormViewController.m */; };
 		748A11071B45B970005E68C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748A11051B45B970005E68C1 /* Main.storyboard */; };
 		748A11091B45B970005E68C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748A11081B45B970005E68C1 /* Images.xcassets */; };
 		748A110C1B45B970005E68C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 748A110A1B45B970005E68C1 /* LaunchScreen.xib */; };
@@ -32,8 +32,8 @@
 		748A10FD1B45B970005E68C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		748A10FF1B45B970005E68C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		748A11001B45B970005E68C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		748A11021B45B970005E68C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		748A11031B45B970005E68C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		748A11021B45B970005E68C1 /* FormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		748A11031B45B970005E68C1 /* FormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
 		748A11061B45B970005E68C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		748A11081B45B970005E68C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		748A110B1B45B970005E68C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				748A10FF1B45B970005E68C1 /* AppDelegate.h */,
 				748A11001B45B970005E68C1 /* AppDelegate.m */,
-				748A11021B45B970005E68C1 /* ViewController.h */,
-				748A11031B45B970005E68C1 /* ViewController.m */,
+				748A11021B45B970005E68C1 /* FormViewController.h */,
+				748A11031B45B970005E68C1 /* FormViewController.m */,
 				748A11051B45B970005E68C1 /* Main.storyboard */,
 				748A11081B45B970005E68C1 /* Images.xcassets */,
 				748A110A1B45B970005E68C1 /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748A11041B45B970005E68C1 /* ViewController.m in Sources */,
+				748A11041B45B970005E68C1 /* FormViewController.m in Sources */,
 				748A11011B45B970005E68C1 /* AppDelegate.m in Sources */,
 				748A10FE1B45B970005E68C1 /* main.m in Sources */,
 			);
@@ -416,6 +416,7 @@
 				748A111D1B45B970005E68C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		748A111E1B45B970005E68C1 /* Build configuration list for PBXNativeTarget "14 -- FormValidator -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				748A11201B45B970005E68C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
