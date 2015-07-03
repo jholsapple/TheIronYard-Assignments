@@ -44,16 +44,28 @@
     {
         if (![self.nameTextField.text isEqualToString:@""])
         {
-            returnValue = YES;
-            [self.streetTextField becomeFirstResponder];
+            NSArray *bothNames = [self.nameTextField.text componentsSeparatedByString:@" "];
+            if ([bothNames count] == 2)
+            {
+                returnValue = YES;
+                [self.streetTextField becomeFirstResponder];
+            }
         }
     }
     else if (textField == self.streetTextField)
     {
         if (![self.streetTextField.text isEqualToString:@""])
         {
-            returnValue = YES;
-            [self.cityTextField becomeFirstResponder];
+            NSArray *street = [self.streetTextField.text componentsSeparatedByString:@" "];
+            if ([street count] >= 3)
+            {
+                NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+                if ([street[0] rangeOfCharacterFromSet:set].location != NSNotFound)
+                {
+                    returnValue = YES;
+                    [self.cityTextField becomeFirstResponder];
+                }
+            }
         }
     }
     else if (textField == self.cityTextField)
