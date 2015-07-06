@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74A767C91B4ADA2500CB9C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A767C81B4ADA2500CB9C66 /* Main.storyboard */; };
 		74B64E0D1B4710B400D165DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E0C1B4710B400D165DB /* main.m */; };
 		74B64E101B4710B400D165DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E0F1B4710B400D165DB /* AppDelegate.m */; };
 		74B64E131B4710B400D165DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E121B4710B400D165DB /* ViewController.m */; };
-		74B64E161B4710B400D165DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B64E141B4710B400D165DB /* Main.storyboard */; };
 		74B64E181B4710B400D165DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B64E171B4710B400D165DB /* Images.xcassets */; };
 		74B64E1B1B4710B400D165DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B64E191B4710B400D165DB /* LaunchScreen.xib */; };
 		74B64E271B4710B400D165DB /* _5____Calculator____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E261B4710B400D165DB /* _5____Calculator____John_HolsappleTests.m */; };
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74A767C81B4ADA2500CB9C66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		74B64E071B4710B400D165DB /* 15 -- Calculator -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "15 -- Calculator -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B64E0B1B4710B400D165DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B64E0C1B4710B400D165DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		74B64E0F1B4710B400D165DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74B64E111B4710B400D165DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		74B64E121B4710B400D165DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		74B64E151B4710B400D165DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74B64E171B4710B400D165DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74B64E1A1B4710B400D165DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74B64E201B4710B400D165DB /* 15 -- Calculator -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "15 -- Calculator -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +85,7 @@
 				74B64E0F1B4710B400D165DB /* AppDelegate.m */,
 				74B64E111B4710B400D165DB /* ViewController.h */,
 				74B64E121B4710B400D165DB /* ViewController.m */,
-				74B64E141B4710B400D165DB /* Main.storyboard */,
+				74A767C81B4ADA2500CB9C66 /* Main.storyboard */,
 				74B64E171B4710B400D165DB /* Images.xcassets */,
 				74B64E191B4710B400D165DB /* LaunchScreen.xib */,
 				74B64E0A1B4710B400D165DB /* Supporting Files */,
@@ -199,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B64E161B4710B400D165DB /* Main.storyboard in Resources */,
 				74B64E1B1B4710B400D165DB /* LaunchScreen.xib in Resources */,
+				74A767C91B4ADA2500CB9C66 /* Main.storyboard in Resources */,
 				74B64E181B4710B400D165DB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74B64E141B4710B400D165DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74B64E151B4710B400D165DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74B64E191B4710B400D165DB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +408,7 @@
 				74B64E2C1B4710B400D165DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74B64E2D1B4710B400D165DB /* Build configuration list for PBXNativeTarget "15 -- Calculator -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +417,7 @@
 				74B64E2F1B4710B400D165DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
