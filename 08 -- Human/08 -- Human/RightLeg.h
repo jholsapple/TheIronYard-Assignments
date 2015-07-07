@@ -7,11 +7,12 @@
 //
 
 #import "BodyPart.h"
+#import "Feet.h"
 
 @interface RightLeg : BodyPart
 
 @property(nonatomic) NSObject *femur;
-@property(nonatomic) NSObject *foot;
+@property(nonatomic) Feet *foot;
 @property(nonatomic) NSObject *knee;
 
 +(instancetype)fracture;

@@ -7,12 +7,13 @@
 //
 
 #import "BodyPart.h"
+#import "Abdomen.h"
 
 @interface SmallIntestines : BodyPart
 
-@property(nonatomic) NSObject *jejunum;
-@property(nonatomic) NSObject *ileum;
-@property(nonatomic) NSObject *duodenum;
+@property(nonatomic) Abdomen *jejunum;
+@property(nonatomic) Abdomen *ileum;
+@property(nonatomic) Abdomen *duodenum;
 
 +(instancetype)takeNutrients;
 +(instancetype)leftoverNutrients;

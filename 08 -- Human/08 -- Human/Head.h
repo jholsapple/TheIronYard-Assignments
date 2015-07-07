@@ -7,10 +7,11 @@
 //
 
 #import "BodyPart.h"
+#import "EyeBall.h"
 
 @interface Head : BodyPart
 
-@property(nonatomic) NSObject *eye;
+@property(nonatomic) EyeBall *eye;
 @property(nonatomic) NSObject *ear;
 @property(nonatomic) NSObject *nose;
 

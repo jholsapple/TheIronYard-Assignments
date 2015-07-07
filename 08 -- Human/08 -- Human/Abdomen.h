@@ -7,10 +7,11 @@
 //
 
 #import "BodyPart.h"
+#import "Heart.h"
 
 @interface Abdomen : BodyPart
 
-@property(nonatomic) NSObject *heart;
+@property(nonatomic) Heart *heart;
 @property(nonatomic) NSObject *stomach;
 @property(nonatomic) NSObject *lung;
 

@@ -7,12 +7,13 @@
 //
 
 #import "BodyPart.h"
+#import "Abdomen.h"
 
 @interface LargeIntestines : BodyPart
 
-@property(nonatomic) NSObject *cecum;
-@property(nonatomic) NSObject *appendix;
-@property(nonatomic) NSObject *rectum;
+@property(nonatomic) Abdomen *cecum;
+@property(nonatomic) Abdomen *appendix;
+@property(nonatomic) Abdomen *rectum;
 
 +(instancetype)assist;
 +(instancetype)storeBacteria;

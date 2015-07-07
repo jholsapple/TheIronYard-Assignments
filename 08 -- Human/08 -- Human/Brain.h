@@ -7,12 +7,13 @@
 //
 
 #import "BodyPart.h"
+#import "Head.h"
 
 @interface Brain : BodyPart
 
-@property(nonatomic) NSObject *baselGanglia;
-@property(nonatomic) NSObject *stem;
-@property(nonatomic) NSObject *cortex;
+@property(nonatomic) Head *baselGanglia;
+@property(nonatomic) Head *stem;
+@property(nonatomic) Head *cortex;
 
 +(instancetype)memory;
 +(instancetype)control;
