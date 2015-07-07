@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74A767C91B4ADA2500CB9C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A767C81B4ADA2500CB9C66 /* Main.storyboard */; };
+		74A767CC1B4B017D00CB9C66 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A767CB1B4B017D00CB9C66 /* CalculatorBrain.m */; };
 		74B64E0D1B4710B400D165DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E0C1B4710B400D165DB /* main.m */; };
 		74B64E101B4710B400D165DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E0F1B4710B400D165DB /* AppDelegate.m */; };
 		74B64E131B4710B400D165DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B64E121B4710B400D165DB /* ViewController.m */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		74A767C81B4ADA2500CB9C66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		74A767CA1B4B017D00CB9C66 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		74A767CB1B4B017D00CB9C66 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 		74B64E071B4710B400D165DB /* 15 -- Calculator -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "15 -- Calculator -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B64E0B1B4710B400D165DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B64E0C1B4710B400D165DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				74B64E0F1B4710B400D165DB /* AppDelegate.m */,
 				74B64E111B4710B400D165DB /* ViewController.h */,
 				74B64E121B4710B400D165DB /* ViewController.m */,
+				74A767CA1B4B017D00CB9C66 /* CalculatorBrain.h */,
+				74A767CB1B4B017D00CB9C66 /* CalculatorBrain.m */,
 				74A767C81B4ADA2500CB9C66 /* Main.storyboard */,
 				74B64E171B4710B400D165DB /* Images.xcassets */,
 				74B64E191B4710B400D165DB /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				74B64E131B4710B400D165DB /* ViewController.m in Sources */,
 				74B64E101B4710B400D165DB /* AppDelegate.m in Sources */,
+				74A767CC1B4B017D00CB9C66 /* CalculatorBrain.m in Sources */,
 				74B64E0D1B4710B400D165DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
