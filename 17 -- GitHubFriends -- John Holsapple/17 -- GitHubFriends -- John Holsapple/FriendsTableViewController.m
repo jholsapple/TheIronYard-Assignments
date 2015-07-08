@@ -87,6 +87,7 @@
     FriendDetailViewController *detailVC = [[FriendDetailViewController alloc] init];
     detailVC.view.backgroundColor = [UIColor greenColor];
     detailVC.friendInfo = friends [indexPath.row];
+    [detailVC configureView];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
