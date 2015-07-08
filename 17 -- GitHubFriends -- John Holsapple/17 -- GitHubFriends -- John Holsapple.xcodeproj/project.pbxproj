@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74257BF71B4D7289000A5B94 /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74257BF61B4D7289000A5B94 /* NewFriendViewController.m */; };
+		74257BFA1B4D72A3000A5B94 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74257BF91B4D72A3000A5B94 /* FriendDetailViewController.m */; };
 		74995CFF1B4D5F36000A3929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74995CFE1B4D5F36000A3929 /* main.m */; };
 		74995D021B4D5F36000A3929 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74995D011B4D5F36000A3929 /* AppDelegate.m */; };
 		74995D0A1B4D5F36000A3929 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74995D091B4D5F36000A3929 /* Images.xcassets */; };
 		74995D0D1B4D5F36000A3929 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74995D0B1B4D5F36000A3929 /* LaunchScreen.xib */; };
 		74995D191B4D5F36000A3929 /* _7____GitHubFriends____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74995D181B4D5F36000A3929 /* _7____GitHubFriends____John_HolsappleTests.m */; };
 		74995D241B4D6436000A3929 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74995D231B4D6436000A3929 /* FriendsTableViewController.m */; };
+		74995D271B4D6C4E000A3929 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74995D261B4D6C4E000A3929 /* FriendCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74257BF51B4D7289000A5B94 /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
+		74257BF61B4D7289000A5B94 /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
+		74257BF81B4D72A3000A5B94 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
+		74257BF91B4D72A3000A5B94 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 		74995CF91B4D5F36000A3929 /* 17 -- GitHubFriends -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "17 -- GitHubFriends -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74995CFD1B4D5F36000A3929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74995CFE1B4D5F36000A3929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +45,8 @@
 		74995D181B4D5F36000A3929 /* _7____GitHubFriends____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_7____GitHubFriends____John_HolsappleTests.m"; sourceTree = "<group>"; };
 		74995D221B4D6436000A3929 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
 		74995D231B4D6436000A3929 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		74995D251B4D6C4E000A3929 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		74995D261B4D6C4E000A3929 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,12 @@
 				74995D011B4D5F36000A3929 /* AppDelegate.m */,
 				74995D221B4D6436000A3929 /* FriendsTableViewController.h */,
 				74995D231B4D6436000A3929 /* FriendsTableViewController.m */,
+				74995D251B4D6C4E000A3929 /* FriendCell.h */,
+				74995D261B4D6C4E000A3929 /* FriendCell.m */,
+				74257BF51B4D7289000A5B94 /* NewFriendViewController.h */,
+				74257BF61B4D7289000A5B94 /* NewFriendViewController.m */,
+				74257BF81B4D72A3000A5B94 /* FriendDetailViewController.h */,
+				74257BF91B4D72A3000A5B94 /* FriendDetailViewController.m */,
 				74995D091B4D5F36000A3929 /* Images.xcassets */,
 				74995D0B1B4D5F36000A3929 /* LaunchScreen.xib */,
 				74995CFC1B4D5F36000A3929 /* Supporting Files */,
@@ -215,9 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74257BF71B4D7289000A5B94 /* NewFriendViewController.m in Sources */,
+				74257BFA1B4D72A3000A5B94 /* FriendDetailViewController.m in Sources */,
 				74995D241B4D6436000A3929 /* FriendsTableViewController.m in Sources */,
 				74995D021B4D5F36000A3929 /* AppDelegate.m in Sources */,
 				74995CFF1B4D5F36000A3929 /* main.m in Sources */,
+				74995D271B4D6C4E000A3929 /* FriendCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +422,7 @@
 				74995D1E1B4D5F36000A3929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74995D1F1B4D5F36000A3929 /* Build configuration list for PBXNativeTarget "17 -- GitHubFriends -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +431,7 @@
 				74995D211B4D5F36000A3929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,51 +7,80 @@
 //
 
 #import "FriendsTableViewController.h"
+#import "NewFriendViewController.h"
+#import "FriendDetailViewController.h"
+#import "FriendCell.h"
 
 @interface FriendsTableViewController ()
+{
+    NSMutableArray *friends;
+}
 
 @end
 
 @implementation FriendsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    self.title = @"GitHub Friends";
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    friends = [[NSMutableArray alloc] init];
+    [friends addObject:@{
+                        @"login": @"jcgohlke",
+                        @"id": @3697689,
+                        @"avatar_url": @"https://avatars.githubusercontent.com/u/3697689?v=3",
+                        @"name": @"Ben Gohlke",
+                        @"company": @"The Iron Yard",
+                        @"blog": @"http://www.jgohlke.com",
+                        @"location": @"Orlando, FL",
+                        @"public_repos": @2,
+                        @"public_gists": @0,
+                        @"followers": @3,
+                        @"following": @2
+                        }];
+    [self.tableView registerClass:[FriendCell class] forCellReuseIdentifier:@"FriendCell"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *addFriendButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFriendTapped:)];
+    self.navigationItem.rightBarButtonItem = addFriendButton;
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     // Return the number of rows in the section.
-    return 0;
+    return [friends count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FriendCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    NSDictionary *friendInfo = friends[indexPath.row];
+    cell.textLabel.text = friendInfo[@"name"];
+    
+    NSURL *avatarURL = [NSURL URLWithString:friendInfo[@"avatar_url"]];
+    NSData *imageData = [NSData dataWithContentsOfURL:avatarURL];
+    UIImage *image = [UIImage imageWithData:imageData];
+    cell.imageView.image = image;
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -87,14 +116,16 @@
 }
 */
 
-/*
-#pragma mark - Navigation
+#pragma mark - Action Handlers
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)addFriendTapped:(UIBarButtonItem *)sender;
+{
+    NewFriendViewController *newFriendVC = [[NewFriendViewController alloc] init];
+    newFriendVC.friends = friends;
+    
+    newFriendVC.view.backgroundColor = [UIColor greenColor];
+    
+    [self presentViewController:newFriendVC animated:YES completion:nil];
 }
-*/
 
 @end
