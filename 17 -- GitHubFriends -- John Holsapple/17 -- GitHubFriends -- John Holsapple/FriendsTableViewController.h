@@ -10,4 +10,6 @@
 
 @interface FriendsTableViewController : UITableViewController
 
+@property(nonatomic)NSMutableArray *friends;
+
 @end
