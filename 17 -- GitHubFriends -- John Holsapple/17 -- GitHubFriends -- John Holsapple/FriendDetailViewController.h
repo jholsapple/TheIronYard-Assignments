@@ -12,4 +12,6 @@
 
 @property(nonatomic)NSDictionary *friendInfo;
 
+-(void)configureView;
+
 @end

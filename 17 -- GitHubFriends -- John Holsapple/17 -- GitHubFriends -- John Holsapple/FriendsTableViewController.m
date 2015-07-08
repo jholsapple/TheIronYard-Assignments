@@ -85,10 +85,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FriendDetailViewController *detailVC = [[FriendDetailViewController alloc] init];
-    detailVC.view.backgroundColor = [UIColor grayColor];
+    detailVC.view.backgroundColor = [UIColor greenColor];
     detailVC.friendInfo = friends [indexPath.row];
     [self.navigationController pushViewController:detailVC animated:YES];
-    
 }
 
 
