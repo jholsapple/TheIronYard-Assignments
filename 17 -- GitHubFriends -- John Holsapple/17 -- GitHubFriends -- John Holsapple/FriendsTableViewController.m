@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"GitHub Friends";
+    self.title = @"Friends";
     
     friends = [[NSMutableArray alloc] init];
     [friends addObject:@{
@@ -44,6 +44,11 @@
     UIBarButtonItem *addFriendButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFriendTapped:)];
     self.navigationItem.rightBarButtonItem = addFriendButton;
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -139,3 +144,11 @@
 }
 
 @end
+
+
+
+
+
+
+
+
