@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742123141B5007320011B7E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742123131B5007320011B7E2 /* LocationViewController.m */; };
 		749DD3CC1B4F0EE100E0930D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CB1B4F0EE100E0930D /* main.m */; };
 		749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CE1B4F0EE100E0930D /* AppDelegate.m */; };
 		749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D31B4F0EE100E0930D /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		742123121B5007320011B7E2 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		742123131B5007320011B7E2 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19 -- Forecaster -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749DD3CA1B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749DD3CB1B4F0EE100E0930D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				749DD3CE1B4F0EE100E0930D /* AppDelegate.m */,
 				749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */,
 				749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */,
+				742123121B5007320011B7E2 /* LocationViewController.h */,
+				742123131B5007320011B7E2 /* LocationViewController.m */,
 				749DD3D31B4F0EE100E0930D /* Main.storyboard */,
 				749DD3D61B4F0EE100E0930D /* Images.xcassets */,
 				749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */,
 				749DD3F11B4F0F2300E0930D /* ForecasterTableViewController.m in Sources */,
 				749DD3CC1B4F0EE100E0930D /* main.m in Sources */,
+				742123141B5007320011B7E2 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				749DD3EB1B4F0EE100E0930D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		749DD3EC1B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				749DD3EE1B4F0EE100E0930D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
