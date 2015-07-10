@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		742123141B5007320011B7E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742123131B5007320011B7E2 /* LocationViewController.m */; };
+		748B81531B5051D80059488E /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81521B5051D80059488E /* AddLocationViewController.m */; };
+		748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81551B505B080059488E /* ForecasterTableViewCell.m */; };
 		749DD3CC1B4F0EE100E0930D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CB1B4F0EE100E0930D /* main.m */; };
 		749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CE1B4F0EE100E0930D /* AppDelegate.m */; };
 		749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D31B4F0EE100E0930D /* Main.storyboard */; };
@@ -30,6 +32,10 @@
 /* Begin PBXFileReference section */
 		742123121B5007320011B7E2 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		742123131B5007320011B7E2 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		748B81511B5051D80059488E /* AddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
+		748B81521B5051D80059488E /* AddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
+		748B81541B505B080059488E /* ForecasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewCell.h; sourceTree = "<group>"; };
+		748B81551B505B080059488E /* ForecasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecasterTableViewCell.m; sourceTree = "<group>"; };
 		749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19 -- Forecaster -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749DD3CA1B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749DD3CB1B4F0EE100E0930D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +94,10 @@
 				749DD3CE1B4F0EE100E0930D /* AppDelegate.m */,
 				749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */,
 				749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */,
+				748B81541B505B080059488E /* ForecasterTableViewCell.h */,
+				748B81551B505B080059488E /* ForecasterTableViewCell.m */,
+				748B81511B5051D80059488E /* AddLocationViewController.h */,
+				748B81521B5051D80059488E /* AddLocationViewController.m */,
 				742123121B5007320011B7E2 /* LocationViewController.h */,
 				742123131B5007320011B7E2 /* LocationViewController.m */,
 				749DD3D31B4F0EE100E0930D /* Main.storyboard */,
@@ -173,6 +183,7 @@
 				TargetAttributes = {
 					749DD3C51B4F0EE100E0930D = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 23BAUC8853;
 					};
 					749DD3DE1B4F0EE100E0930D = {
 						CreatedOnToolsVersion = 6.4;
@@ -224,9 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748B81531B5051D80059488E /* AddLocationViewController.m in Sources */,
 				749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */,
 				749DD3F11B4F0F2300E0930D /* ForecasterTableViewController.m in Sources */,
 				749DD3CC1B4F0EE100E0930D /* main.m in Sources */,
+				748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */,
 				742123141B5007320011B7E2 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

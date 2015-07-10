@@ -10,6 +10,17 @@
 
 @interface LocationViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *currentTempLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lowTempLabel;
+@property (weak, nonatomic) IBOutlet UILabel *precipitationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *humidityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *windLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sunriseLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sunsetLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *weatherIcon;
+
+
 @end
 
 @implementation LocationViewController
