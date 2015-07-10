@@ -7,6 +7,7 @@
 //
 
 #import "ForecasterTableViewController.h"
+#import "ForecasterTableViewCell.h"
 
 @interface ForecasterTableViewController ()
 
