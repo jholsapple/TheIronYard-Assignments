@@ -57,13 +57,10 @@
 {
     ForecasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
     
-    NSDictionary *aForecast = [forecasts objectAtIndex:indexPath.row];
+    City *aCity = [forecasts objectAtIndex:indexPath.row];
     
-    cell.currentTempLabel.text = @"";
-    cell.lowTempLabel.text = @"";
-    cell.cityStateLabel.text = @"";
+    cell.cityStateLabel.text =  [NSString stringWithFormat:@"%@, %@", aCity.cityName, aCity.stateName];
     cell.currentDateLabel.text = @"";
-    //cell.weatherIcon.image = @"";
     
     return cell;
 }

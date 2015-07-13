@@ -16,8 +16,8 @@
 @property(assign) float humidity;
 @property(nonatomic) float wind;
 
-@property(nonatomic) NSString *sunrise;
-@property(nonatomic) NSString *sunset;
+@property(nonatomic) NSDate *sunrise;
+@property(nonatomic) NSDate *sunset;
 
 @property(nonatomic) NSString *weatherIcon;
 
