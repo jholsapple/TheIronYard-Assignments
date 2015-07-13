@@ -24,9 +24,8 @@
         self.weatherIcon = currently[@"icon"];
         NSDictionary *daily = forecastDictionary [@"daily"];
         self.lowTemp = [daily[@"temperatureMin"] floatValue];
-        self.sunrise = [daily[@"sunriseTime"] dateFromComponents:self.sunrise];
-        
-        
+        self.sunrise = [daily[@"sunriseTime"] dateTemplate];
+        self.sunset = [daily[@"sunsetTime"] dateTemplate];
         
     }
     return returnValue;
