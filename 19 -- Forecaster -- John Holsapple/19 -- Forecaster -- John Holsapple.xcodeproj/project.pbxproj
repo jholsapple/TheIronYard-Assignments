@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		742123141B5007320011B7E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742123131B5007320011B7E2 /* LocationViewController.m */; };
+		742123141B5007320011B7E2 /* LocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742123131B5007320011B7E2 /* LocationDetailViewController.m */; };
 		748B81531B5051D80059488E /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81521B5051D80059488E /* AddLocationViewController.m */; };
 		748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81551B505B080059488E /* ForecasterTableViewCell.m */; };
 		748B81591B5061490059488E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81581B5061490059488E /* City.m */; };
 		748B815C1B50616B0059488E /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B815B1B50616B0059488E /* Weather.m */; };
+		748B815F1B509D1E0059488E /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B815E1B509D1E0059488E /* NetworkManager.m */; };
 		749DD3CC1B4F0EE100E0930D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CB1B4F0EE100E0930D /* main.m */; };
 		749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CE1B4F0EE100E0930D /* AppDelegate.m */; };
 		749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D31B4F0EE100E0930D /* Main.storyboard */; };
@@ -32,8 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		742123121B5007320011B7E2 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		742123131B5007320011B7E2 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		742123121B5007320011B7E2 /* LocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailViewController.h; sourceTree = "<group>"; };
+		742123131B5007320011B7E2 /* LocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailViewController.m; sourceTree = "<group>"; };
 		748B81511B5051D80059488E /* AddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
 		748B81521B5051D80059488E /* AddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
 		748B81541B505B080059488E /* ForecasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewCell.h; sourceTree = "<group>"; };
@@ -42,6 +43,8 @@
 		748B81581B5061490059488E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		748B815A1B50616B0059488E /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		748B815B1B50616B0059488E /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		748B815D1B509D1E0059488E /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		748B815E1B509D1E0059488E /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19 -- Forecaster -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749DD3CA1B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749DD3CB1B4F0EE100E0930D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,12 +107,14 @@
 				748B81551B505B080059488E /* ForecasterTableViewCell.m */,
 				748B81511B5051D80059488E /* AddLocationViewController.h */,
 				748B81521B5051D80059488E /* AddLocationViewController.m */,
-				742123121B5007320011B7E2 /* LocationViewController.h */,
-				742123131B5007320011B7E2 /* LocationViewController.m */,
+				742123121B5007320011B7E2 /* LocationDetailViewController.h */,
+				742123131B5007320011B7E2 /* LocationDetailViewController.m */,
 				748B81571B5061490059488E /* City.h */,
 				748B81581B5061490059488E /* City.m */,
 				748B815A1B50616B0059488E /* Weather.h */,
 				748B815B1B50616B0059488E /* Weather.m */,
+				748B815D1B509D1E0059488E /* NetworkManager.h */,
+				748B815E1B509D1E0059488E /* NetworkManager.m */,
 				749DD3D31B4F0EE100E0930D /* Main.storyboard */,
 				749DD3D61B4F0EE100E0930D /* Images.xcassets */,
 				749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */,
@@ -252,7 +257,8 @@
 				748B815C1B50616B0059488E /* Weather.m in Sources */,
 				748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */,
 				748B81591B5061490059488E /* City.m in Sources */,
-				742123141B5007320011B7E2 /* LocationViewController.m in Sources */,
+				748B815F1B509D1E0059488E /* NetworkManager.m in Sources */,
+				742123141B5007320011B7E2 /* LocationDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

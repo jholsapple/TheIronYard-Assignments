@@ -11,20 +11,22 @@
 @interface AddLocationViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTextField;
-@property (weak, nonatomic) IBOutlet UIButton *currentLocationButton;
-@property (weak, nonatomic) IBOutlet UIButton *addLocationButton;
-
+- (IBAction)addLocationButton:(UIButton *)sender;
+- (IBAction)currentLocationButton:(UIButton *)sender;
 
 @end
 
 @implementation AddLocationViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -38,5 +40,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)addLocationButton:(UIButton *)sender
+{
+    
+}
+
+- (IBAction)currentLocationButton:(UIButton *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

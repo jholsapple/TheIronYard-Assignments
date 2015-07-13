@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LocationViewController : UIViewController
+@interface LocationDetailViewController : UIViewController
+
+@property(nonatomic) NSDictionary *forecastsInfo;
 
 @end

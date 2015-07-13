@@ -10,4 +10,6 @@
 
 @interface ForecasterTableViewController : UITableViewController
 
+@property(nonatomic) NSMutableArray *forecasts;
+
 @end

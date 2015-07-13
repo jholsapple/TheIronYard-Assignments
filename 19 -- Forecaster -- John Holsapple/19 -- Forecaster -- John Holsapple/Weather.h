@@ -10,4 +10,17 @@
 
 @interface Weather : NSObject
 
+@property(assign) float currentTemp;
+@property(assign) float lowTemp;
+@property(assign) float precipitation;
+@property(assign) float humidity;
+@property(nonatomic) float wind;
+
+@property(nonatomic) NSDate *sunrise;
+@property(nonatomic) NSDate *sunset;
+
+@property(nonatomic) NSString *weatherIcon;
+
+-(BOOL) parseWeatherInfo: (NSDictionary *) forecastDictionary;
+
 @end

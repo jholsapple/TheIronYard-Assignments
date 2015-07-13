@@ -10,4 +10,26 @@
 
 @implementation Weather
 
+-(BOOL) parseWeatherInfo: (NSDictionary *) forecastDictionary
+{
+    BOOL returnValue = NO;
+    if (forecastDictionary)
+    {
+        returnValue = YES;
+        NSDictionary *currently = forecastDictionary [@"currently"];
+        self.currentTemp = [currently[@"temperature"] floatValue];
+        self.precipitation = [currently[@"precipProbability"] floatValue];
+        self.humidity = [currently[@"humidity"] floatValue];
+        self.wind = [currently[@"windSpeed"] floatValue];
+        self.weatherIcon = currently[@"icon"];
+        NSDictionary *daily = forecastDictionary [@"daily"];
+        self.lowTemp = [daily[@"temperatureMin"] floatValue];
+        self.sunrise = [daily[@"sunriseTime"] dateFromComponents:self.sunrise];
+        
+        
+        
+    }
+    return returnValue;
+}
+
 @end

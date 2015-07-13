@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "LocationViewController.h"
+#import "LocationDetailViewController.h"
 
-@interface LocationViewController ()
+@interface LocationDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *currentTempLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lowTempLabel;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation LocationViewController
+@implementation LocationDetailViewController
 
 - (void)viewDidLoad
 {

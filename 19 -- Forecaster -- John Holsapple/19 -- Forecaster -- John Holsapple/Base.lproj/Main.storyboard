@@ -74,8 +74,8 @@
                                 <color key="backgroundColor" red="0.84344774484634399" green="0.92405962944030762" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="addLocationButton" destination="fnb-Wc-mSv" id="tvy-Sk-nsP"/>
-                                    <outlet property="cityStateLabel" destination="BBR-yG-xtd" id="YaD-RQ-f1c"/>
-                                    <outlet property="currentDateLabel" destination="dzS-Rz-4HX" id="lo8-3L-qKe"/>
+                                    <outlet property="cityStateLabel" destination="BBR-yG-xtd" id="LKw-Cg-KQV"/>
+                                    <outlet property="currentDateLabel" destination="dzS-Rz-4HX" id="gYB-RC-Xhb"/>
                                     <outlet property="currentTempLabel" destination="PYX-nd-b4b" id="9hb-LN-KRN"/>
                                     <outlet property="lowTempLabel" destination="mzT-nY-fuZ" id="3ap-JG-l1T"/>
                                     <outlet property="weatherIcon" destination="hrj-Xh-oAC" id="SsC-RO-FBC"/>
@@ -92,6 +92,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fnb-Wc-mSv">
                             <color key="tintColor" red="0.77884423732757568" green="0.96601217985153198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
+                                <action selector="addLocationTapped:" destination="5No-QK-uuC" id="pNp-gH-Y2d"/>
                                 <segue destination="Zsn-cI-4H6" kind="modal" id="WLa-Di-CnA"/>
                             </connections>
                         </barButtonItem>
@@ -119,6 +120,9 @@
                                 <state key="normal" title="Use Current Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="currentLocationButton:" destination="1ID-9H-30T" eventType="touchUpInside" id="3fr-Pj-r5q"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hja-nq-Fv0">
                                 <rect key="frame" x="260" y="131" width="80.5" height="30"/>
@@ -139,6 +143,9 @@
                                 <state key="normal" title="Add Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addLocationButton:" destination="1ID-9H-30T" eventType="touchUpInside" id="NJ3-ta-xBr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,8 +162,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Location" id="BUO-d5-h7Q"/>
                     <connections>
-                        <outlet property="addLocationButton" destination="DyK-4s-KeQ" id="afH-XW-Tnn"/>
-                        <outlet property="currentLocationButton" destination="wTh-rO-Crm" id="rSb-Eo-upo"/>
                         <outlet property="zipCodeTextField" destination="hja-nq-Fv0" id="iY0-lv-6o3"/>
                     </connections>
                 </viewController>
@@ -164,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="2711" y="74"/>
         </scene>
-        <!--Location View Controller-->
+        <!--Location Detail View Controller-->
         <scene sceneID="VE2-Gw-wOb">
             <objects>
-                <viewController storyboardIdentifier="City Weather" id="LTn-b3-e0k" customClass="LocationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="City Weather" id="LTn-b3-e0k" customClass="LocationDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ezB-2P-7dE"/>
                         <viewControllerLayoutGuide type="bottom" id="hMH-DC-Knb"/>

@@ -7,9 +7,18 @@
 //
 
 #import "ForecasterTableViewController.h"
+#import "AddLocationViewController.h"
+#import "LocationDetailViewController.h"
 #import "ForecasterTableViewCell.h"
+#import "Weather.h"
+#import "City.h"
+#import "NetworkManager.h"
 
 @interface ForecasterTableViewController ()
+{
+    NSMutableArray *forecasts;
+}
+- (IBAction)addLocationTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -18,14 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.title = @"Forecaster";
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    forecasts = [[NSMutableArray alloc] init];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,16 +50,30 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [forecasts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ForecasterTableViewController *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
+    ForecasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSDictionary *aForecast = [forecasts objectAtIndex:indexPath.row];
+    
+    cell.currentTempLabel.text = @"";
+    cell.lowTempLabel.text = @"";
+    cell.cityStateLabel.text = @"";
+    cell.currentDateLabel.text = @"";
+    //cell.weatherIcon.image = @"";
     
     return cell;
+}
+                                        
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LocationDetailViewController *detailVC = [[LocationDetailViewController alloc] init];
+    detailVC.forecastsInfo = forecasts [indexPath.row];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 /*
@@ -91,14 +110,22 @@
 }
 */
 
-/*
 #pragma mark - Navigation
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
 */
+
+-(IBAction)addLocationTapped:(UIBarButtonItem *)sender
+{
+    //AddLocationViewController *addLocationVC = [[AddLocationViewController alloc] init];
+    //addLocationVC.forecasts = forecasts;
+    
+    //[self presentViewController:addLocationVC animated:YES completion:nil];
+}
 
 @end
