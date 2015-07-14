@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		742123141B5007320011B7E2 /* LocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742123131B5007320011B7E2 /* LocationDetailViewController.m */; };
+		748B81531B5051D80059488E /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81521B5051D80059488E /* AddLocationViewController.m */; };
+		748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81551B505B080059488E /* ForecasterTableViewCell.m */; };
+		748B81591B5061490059488E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B81581B5061490059488E /* City.m */; };
+		748B815C1B50616B0059488E /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B815B1B50616B0059488E /* Weather.m */; };
+		748B815F1B509D1E0059488E /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 748B815E1B509D1E0059488E /* NetworkManager.m */; };
+		749DD3CC1B4F0EE100E0930D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CB1B4F0EE100E0930D /* main.m */; };
+		749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3CE1B4F0EE100E0930D /* AppDelegate.m */; };
+		749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D31B4F0EE100E0930D /* Main.storyboard */; };
+		749DD3D71B4F0EE100E0930D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D61B4F0EE100E0930D /* Images.xcassets */; };
+		749DD3DA1B4F0EE100E0930D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */; };
+		749DD3E61B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */; };
+		749DD3F11B4F0F2300E0930D /* ForecasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		749DD3E01B4F0EE100E0930D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 749DD3BE1B4F0EE100E0930D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 749DD3C51B4F0EE100E0930D;
+			remoteInfo = "19 -- Forecaster -- John Holsapple";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		742123121B5007320011B7E2 /* LocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailViewController.h; sourceTree = "<group>"; };
+		742123131B5007320011B7E2 /* LocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailViewController.m; sourceTree = "<group>"; };
+		748B81511B5051D80059488E /* AddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
+		748B81521B5051D80059488E /* AddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
+		748B81541B505B080059488E /* ForecasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewCell.h; sourceTree = "<group>"; };
+		748B81551B505B080059488E /* ForecasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecasterTableViewCell.m; sourceTree = "<group>"; };
+		748B81571B5061490059488E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		748B81581B5061490059488E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		748B815A1B50616B0059488E /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		748B815B1B50616B0059488E /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		748B815D1B509D1E0059488E /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		748B815E1B509D1E0059488E /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19 -- Forecaster -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749DD3CA1B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749DD3CB1B4F0EE100E0930D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		749DD3CD1B4F0EE100E0930D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		749DD3CE1B4F0EE100E0930D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		749DD3D41B4F0EE100E0930D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		749DD3D61B4F0EE100E0930D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		749DD3D91B4F0EE100E0930D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "19 -- Forecaster -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		749DD3E41B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_9____Forecaster____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewController.h; sourceTree = "<group>"; };
+		749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecasterTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		749DD3C31B4F0EE100E0930D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749DD3DC1B4F0EE100E0930D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		749DD3BD1B4F0EE100E0930D = {
+			isa = PBXGroup;
+			children = (
+				749DD3C81B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */,
+				749DD3E21B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */,
+				749DD3C71B4F0EE100E0930D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		749DD3C71B4F0EE100E0930D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */,
+				749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		749DD3C81B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */ = {
+			isa = PBXGroup;
+			children = (
+				749DD3CD1B4F0EE100E0930D /* AppDelegate.h */,
+				749DD3CE1B4F0EE100E0930D /* AppDelegate.m */,
+				749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */,
+				749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */,
+				748B81541B505B080059488E /* ForecasterTableViewCell.h */,
+				748B81551B505B080059488E /* ForecasterTableViewCell.m */,
+				748B81511B5051D80059488E /* AddLocationViewController.h */,
+				748B81521B5051D80059488E /* AddLocationViewController.m */,
+				742123121B5007320011B7E2 /* LocationDetailViewController.h */,
+				742123131B5007320011B7E2 /* LocationDetailViewController.m */,
+				748B81571B5061490059488E /* City.h */,
+				748B81581B5061490059488E /* City.m */,
+				748B815A1B50616B0059488E /* Weather.h */,
+				748B815B1B50616B0059488E /* Weather.m */,
+				748B815D1B509D1E0059488E /* NetworkManager.h */,
+				748B815E1B509D1E0059488E /* NetworkManager.m */,
+				749DD3D31B4F0EE100E0930D /* Main.storyboard */,
+				749DD3D61B4F0EE100E0930D /* Images.xcassets */,
+				749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */,
+				749DD3C91B4F0EE100E0930D /* Supporting Files */,
+			);
+			path = "19 -- Forecaster -- John Holsapple";
+			sourceTree = "<group>";
+		};
+		749DD3C91B4F0EE100E0930D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				749DD3CA1B4F0EE100E0930D /* Info.plist */,
+				749DD3CB1B4F0EE100E0930D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		749DD3E21B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */ = {
+			isa = PBXGroup;
+			children = (
+				749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */,
+				749DD3E31B4F0EE100E0930D /* Supporting Files */,
+			);
+			path = "19 -- Forecaster -- John HolsappleTests";
+			sourceTree = "<group>";
+		};
+		749DD3E31B4F0EE100E0930D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				749DD3E41B4F0EE100E0930D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		749DD3C51B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749DD3E91B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John Holsapple" */;
+			buildPhases = (
+				749DD3C21B4F0EE100E0930D /* Sources */,
+				749DD3C31B4F0EE100E0930D /* Frameworks */,
+				749DD3C41B4F0EE100E0930D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "19 -- Forecaster -- John Holsapple";
+			productName = "19 -- Forecaster -- John Holsapple";
+			productReference = 749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		749DD3DE1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749DD3EC1B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John HolsappleTests" */;
+			buildPhases = (
+				749DD3DB1B4F0EE100E0930D /* Sources */,
+				749DD3DC1B4F0EE100E0930D /* Frameworks */,
+				749DD3DD1B4F0EE100E0930D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749DD3E11B4F0EE100E0930D /* PBXTargetDependency */,
+			);
+			name = "19 -- Forecaster -- John HolsappleTests";
+			productName = "19 -- Forecaster -- John HolsappleTests";
+			productReference = 749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		749DD3BE1B4F0EE100E0930D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					749DD3C51B4F0EE100E0930D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 23BAUC8853;
+					};
+					749DD3DE1B4F0EE100E0930D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 749DD3C51B4F0EE100E0930D;
+					};
+				};
+			};
+			buildConfigurationList = 749DD3C11B4F0EE100E0930D /* Build configuration list for PBXProject "19 -- Forecaster -- John Holsapple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 749DD3BD1B4F0EE100E0930D;
+			productRefGroup = 749DD3C71B4F0EE100E0930D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				749DD3C51B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */,
+				749DD3DE1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		749DD3C41B4F0EE100E0930D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */,
+				749DD3DA1B4F0EE100E0930D /* LaunchScreen.xib in Resources */,
+				749DD3D71B4F0EE100E0930D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749DD3DD1B4F0EE100E0930D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		749DD3C21B4F0EE100E0930D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748B81531B5051D80059488E /* AddLocationViewController.m in Sources */,
+				749DD3CF1B4F0EE100E0930D /* AppDelegate.m in Sources */,
+				749DD3F11B4F0F2300E0930D /* ForecasterTableViewController.m in Sources */,
+				749DD3CC1B4F0EE100E0930D /* main.m in Sources */,
+				748B815C1B50616B0059488E /* Weather.m in Sources */,
+				748B81561B505B080059488E /* ForecasterTableViewCell.m in Sources */,
+				748B81591B5061490059488E /* City.m in Sources */,
+				748B815F1B509D1E0059488E /* NetworkManager.m in Sources */,
+				742123141B5007320011B7E2 /* LocationDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749DD3DB1B4F0EE100E0930D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749DD3E61B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		749DD3E11B4F0EE100E0930D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 749DD3C51B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */;
+			targetProxy = 749DD3E01B4F0EE100E0930D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		749DD3D31B4F0EE100E0930D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				749DD3D41B4F0EE100E0930D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				749DD3D91B4F0EE100E0930D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		749DD3E71B4F0EE100E0930D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		749DD3E81B4F0EE100E0930D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		749DD3EA1B4F0EE100E0930D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		749DD3EB1B4F0EE100E0930D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		749DD3ED1B4F0EE100E0930D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "19 -- Forecaster -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/19 -- Forecaster -- John Holsapple.app/19 -- Forecaster -- John Holsapple";
+			};
+			name = Debug;
+		};
+		749DD3EE1B4F0EE100E0930D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "19 -- Forecaster -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/19 -- Forecaster -- John Holsapple.app/19 -- Forecaster -- John Holsapple";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		749DD3C11B4F0EE100E0930D /* Build configuration list for PBXProject "19 -- Forecaster -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749DD3E71B4F0EE100E0930D /* Debug */,
+				749DD3E81B4F0EE100E0930D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749DD3E91B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749DD3EA1B4F0EE100E0930D /* Debug */,
+				749DD3EB1B4F0EE100E0930D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749DD3EC1B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John HolsappleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749DD3ED1B4F0EE100E0930D /* Debug */,
+				749DD3EE1B4F0EE100E0930D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 749DD3BE1B4F0EE100E0930D /* Project object */;
+}

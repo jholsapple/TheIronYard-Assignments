@@ -63,15 +63,10 @@
     {
         NSString *urlString = [NSString stringWithFormat:@"https://api.github.com/users/%@", login];
         NSURL *url = [NSURL URLWithString:urlString];
-       // NSURLRequest *request = [NSURLRequest requestWithURL:url];
-       // NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-       // NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
         NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
         [dataTask resume];
-        //[self.friends addObject:userInfo];
-        //[self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
