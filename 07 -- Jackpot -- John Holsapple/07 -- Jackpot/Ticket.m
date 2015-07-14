@@ -10,6 +10,8 @@
 
 @interface Ticket ()
 
+
+
 @end
 
 @implementation Ticket
@@ -40,6 +42,15 @@
     int pickInt = arc4random() % 53 + 1;
     NSNumber *anInt = [NSNumber numberWithInt:pickInt];
     [_picks addObject:anInt];
+}
+
+-(void)checkingWinningNumber
+{
+    Ticket *checkingWinningTicket = [[Ticket alloc] init];
+    for (<#initialization#>; <#condition#>; <#increment#>)
+    {
+        <#statements#>
+    }
 }
 
 @end

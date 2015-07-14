@@ -10,6 +10,15 @@
 
 @interface WinningNumbersViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber1;
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber2;
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber3;
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber4;
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber5;
+@property (weak, nonatomic) IBOutlet UITextField *winningNumber6;
+
+- (IBAction)showMeTheMoneyButton:(UIButton *)sender;
+
 @end
 
 @implementation WinningNumbersViewController
@@ -34,4 +43,8 @@
 }
 */
 
+- (IBAction)showMeTheMoneyButton:(UIButton *)sender
+{
+
+}
 @end

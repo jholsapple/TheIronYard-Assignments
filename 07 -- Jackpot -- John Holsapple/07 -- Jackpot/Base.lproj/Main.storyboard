@@ -123,6 +123,9 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showMeTheMoneyButton:" destination="NdL-Q2-sXW" eventType="touchUpInside" id="9qh-Cx-ju4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 6 Numbers = $100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bah-ES-idi">
                                 <rect key="frame" x="223" y="410" width="154" height="20.5"/>
@@ -181,6 +184,14 @@
                             <color key="tintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="winningNumber1" destination="glR-jw-N6p" id="ath-y5-eeD"/>
+                        <outlet property="winningNumber2" destination="2f3-Me-N3t" id="3fC-qO-RfO"/>
+                        <outlet property="winningNumber3" destination="dQO-DG-1ZQ" id="V53-f2-O9X"/>
+                        <outlet property="winningNumber4" destination="S3w-rR-W3F" id="LhX-S8-IMg"/>
+                        <outlet property="winningNumber5" destination="pEJ-rQ-SeS" id="91S-AQ-4GE"/>
+                        <outlet property="winningNumber6" destination="gID-7x-5Rc" id="6yG-DM-Y8m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8KW-S7-FL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
