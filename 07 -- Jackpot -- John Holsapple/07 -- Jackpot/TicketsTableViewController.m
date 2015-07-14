@@ -23,6 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Jackpot";
     
     tickets = [[NSMutableArray alloc] init];
     

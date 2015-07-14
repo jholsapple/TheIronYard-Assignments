@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Vg-oE-wo6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Vg-oE-wo6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Tickets Table View Controller-->
+        <!--Jackpot-->
         <scene sceneID="pWp-r9-S6e">
             <objects>
                 <tableViewController id="UJc-Gc-QVq" customClass="TicketsTableViewController" sceneMemberID="viewController">
@@ -32,9 +32,15 @@
                             <outlet property="dataSource" destination="UJc-Gc-QVq" id="iGP-lN-FLJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="nO1-iE-ujM">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Jackpot" id="nO1-iE-ujM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="13b-9U-f9N">
+                            <color key="tintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="NdL-Q2-sXW" kind="show" identifier="WinningNumbersSegue" id="Bfv-Bv-lhp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sjz-3Y-pn8">
+                            <color key="tintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addTickets:" destination="UJc-Gc-QVq" id="EmN-b7-D6Q"/>
                             </connections>
@@ -48,6 +54,138 @@
             </objects>
             <point key="canvasLocation" x="1494" y="398"/>
         </scene>
+        <!--Winning Numbers-->
+        <scene sceneID="NKz-9V-kTl">
+            <objects>
+                <viewController title="Winning Numbers" id="NdL-Q2-sXW" customClass="WinningNumbersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rs0-Vo-z8L"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ky-58-5HY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xc7-qI-5Zo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glR-jw-N6p">
+                                <rect key="frame" x="16" y="133" width="86.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2f3-Me-N3t">
+                                <rect key="frame" x="112.5" y="133" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dQO-DG-1ZQ">
+                                <rect key="frame" x="208.5" y="133" width="86.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3w-rR-W3F">
+                                <rect key="frame" x="305" y="133" width="86.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="mNe-Qv-vya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mNe-Qv-vya"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEJ-rQ-SeS">
+                                <rect key="frame" x="401.5" y="133" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 3 Numbers = $1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-88-6s0">
+                                <rect key="frame" x="233" y="325" width="135" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 4 Numbers = $5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAj-5l-5LP">
+                                <rect key="frame" x="233" y="353" width="135" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 5 Numbers = $20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-MC-Vu1">
+                                <rect key="frame" x="228" y="382" width="144.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ0-B1-XDy">
+                                <rect key="frame" x="230" y="258" width="141" height="30"/>
+                                <state key="normal" title="Show me the Money">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 6 Numbers = $100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bah-ES-idi">
+                                <rect key="frame" x="223" y="410" width="154" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gID-7x-5Rc">
+                                <rect key="frame" x="497.5" y="133" width="86.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qlt-88-6s0" firstAttribute="centerX" secondItem="cQ0-B1-XDy" secondAttribute="centerX" id="4G3-eU-L7C"/>
+                            <constraint firstItem="UAj-5l-5LP" firstAttribute="leading" secondItem="qlt-88-6s0" secondAttribute="leading" id="8fX-Kw-QtU"/>
+                            <constraint firstItem="gID-7x-5Rc" firstAttribute="leading" secondItem="pEJ-rQ-SeS" secondAttribute="trailing" constant="10" id="9Qi-uG-sCk"/>
+                            <constraint firstItem="gID-7x-5Rc" firstAttribute="centerY" secondItem="pEJ-rQ-SeS" secondAttribute="centerY" id="9XG-x8-qiH"/>
+                            <constraint firstItem="pEJ-rQ-SeS" firstAttribute="width" secondItem="S3w-rR-W3F" secondAttribute="width" id="BT6-Du-drj"/>
+                            <constraint firstItem="UAj-5l-5LP" firstAttribute="top" secondItem="qlt-88-6s0" secondAttribute="bottom" constant="8" id="DDi-No-zH4"/>
+                            <constraint firstItem="gID-7x-5Rc" firstAttribute="centerY" secondItem="pEJ-rQ-SeS" secondAttribute="centerY" id="EA5-1b-UEO"/>
+                            <constraint firstItem="dQO-DG-1ZQ" firstAttribute="centerY" secondItem="2f3-Me-N3t" secondAttribute="centerY" id="GFB-Pr-V31"/>
+                            <constraint firstItem="UAj-5l-5LP" firstAttribute="centerX" secondItem="qlt-88-6s0" secondAttribute="centerX" id="LFj-Se-2Z3"/>
+                            <constraint firstItem="bah-ES-idi" firstAttribute="top" secondItem="1Pq-MC-Vu1" secondAttribute="bottom" constant="8" id="Mb8-xF-XBq"/>
+                            <constraint firstAttribute="centerX" secondItem="cQ0-B1-XDy" secondAttribute="centerX" id="P0O-wU-QcR"/>
+                            <constraint firstItem="pEJ-rQ-SeS" firstAttribute="leading" secondItem="S3w-rR-W3F" secondAttribute="trailing" constant="10" id="Qbc-Cr-15F"/>
+                            <constraint firstItem="1Pq-MC-Vu1" firstAttribute="top" secondItem="UAj-5l-5LP" secondAttribute="bottom" constant="8" id="SDA-QO-2Wc"/>
+                            <constraint firstItem="glR-jw-N6p" firstAttribute="leading" secondItem="Xc7-qI-5Zo" secondAttribute="leading" constant="16" id="TVH-Ck-yqt"/>
+                            <constraint firstItem="glR-jw-N6p" firstAttribute="centerY" secondItem="2f3-Me-N3t" secondAttribute="centerY" id="UGd-EP-oRc"/>
+                            <constraint firstItem="UAj-5l-5LP" firstAttribute="centerX" secondItem="1Pq-MC-Vu1" secondAttribute="centerX" constant="0.25" id="Ysa-Pk-OUa"/>
+                            <constraint firstAttribute="trailing" secondItem="gID-7x-5Rc" secondAttribute="trailing" constant="16" id="bnn-TJ-9MR"/>
+                            <constraint firstItem="glR-jw-N6p" firstAttribute="top" secondItem="Rs0-Vo-z8L" secondAttribute="bottom" constant="69" id="c3v-zQ-Tsf"/>
+                            <constraint firstItem="gID-7x-5Rc" firstAttribute="top" secondItem="Rs0-Vo-z8L" secondAttribute="bottom" constant="69" id="dkd-Ph-hxA"/>
+                            <constraint firstAttribute="centerY" secondItem="cQ0-B1-XDy" secondAttribute="centerY" constant="27" id="ewQ-9h-cPU"/>
+                            <constraint firstItem="dQO-DG-1ZQ" firstAttribute="width" secondItem="2f3-Me-N3t" secondAttribute="width" id="fU2-Lr-g0H"/>
+                            <constraint firstItem="2f3-Me-N3t" firstAttribute="leading" secondItem="glR-jw-N6p" secondAttribute="trailing" constant="10" id="fhX-Fy-gTA"/>
+                            <constraint firstItem="glR-jw-N6p" firstAttribute="width" secondItem="2f3-Me-N3t" secondAttribute="width" id="hNn-uk-Qj1"/>
+                            <constraint firstItem="dQO-DG-1ZQ" firstAttribute="leading" secondItem="2f3-Me-N3t" secondAttribute="trailing" constant="10" id="il0-C5-1s3"/>
+                            <constraint firstItem="gID-7x-5Rc" firstAttribute="width" secondItem="pEJ-rQ-SeS" secondAttribute="width" id="kqX-g5-2TW"/>
+                            <constraint firstItem="qlt-88-6s0" firstAttribute="top" secondItem="cQ0-B1-XDy" secondAttribute="bottom" constant="37" id="qLc-uG-SDY"/>
+                            <constraint firstItem="pEJ-rQ-SeS" firstAttribute="centerY" secondItem="S3w-rR-W3F" secondAttribute="centerY" id="sbY-lB-Axs"/>
+                            <constraint firstItem="S3w-rR-W3F" firstAttribute="width" secondItem="dQO-DG-1ZQ" secondAttribute="width" id="tIO-hz-UI6"/>
+                            <constraint firstItem="1Pq-MC-Vu1" firstAttribute="centerX" secondItem="bah-ES-idi" secondAttribute="centerX" constant="0.25" id="vhm-2o-ePB"/>
+                            <constraint firstItem="S3w-rR-W3F" firstAttribute="centerY" secondItem="dQO-DG-1ZQ" secondAttribute="centerY" id="wFy-wp-2VB"/>
+                            <constraint firstItem="S3w-rR-W3F" firstAttribute="leading" secondItem="dQO-DG-1ZQ" secondAttribute="trailing" constant="10" id="xRt-UR-Yks"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9XG-x8-qiH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Winning Numbers" id="IDn-QT-92b">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GMN-jH-oXT">
+                            <color key="tintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KW-S7-FL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192" y="398"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2rv-dv-ws7">
             <objects>
@@ -56,6 +194,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ncw-Zf-5lV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

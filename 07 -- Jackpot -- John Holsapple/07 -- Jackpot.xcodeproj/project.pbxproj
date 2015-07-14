@@ -15,6 +15,7 @@
 		7405CFD01B39E52600798D86 /* _7____JackpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405CFCF1B39E52600798D86 /* _7____JackpotTests.m */; };
 		7405CFDB1B39EB4500798D86 /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405CFDA1B39EB4500798D86 /* TicketsTableViewController.m */; };
 		7405CFDE1B39F11A00798D86 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7405CFDD1B39F11A00798D86 /* Ticket.m */; };
+		74539B641B5596C800172B79 /* WinningNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74539B631B5596C800172B79 /* WinningNumbersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7405CFDA1B39EB4500798D86 /* TicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewController.m; sourceTree = "<group>"; };
 		7405CFDC1B39F11A00798D86 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		7405CFDD1B39F11A00798D86 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		74539B621B5596C800172B79 /* WinningNumbersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningNumbersViewController.h; sourceTree = "<group>"; };
+		74539B631B5596C800172B79 /* WinningNumbersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningNumbersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				7405CFDD1B39F11A00798D86 /* Ticket.m */,
 				7405CFD91B39EB4500798D86 /* TicketsTableViewController.h */,
 				7405CFDA1B39EB4500798D86 /* TicketsTableViewController.m */,
+				74539B621B5596C800172B79 /* WinningNumbersViewController.h */,
+				74539B631B5596C800172B79 /* WinningNumbersViewController.m */,
 				7405CFBD1B39E52600798D86 /* Main.storyboard */,
 				7405CFC01B39E52600798D86 /* Images.xcassets */,
 				7405CFC21B39E52600798D86 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74539B641B5596C800172B79 /* WinningNumbersViewController.m in Sources */,
 				7405CFB91B39E52600798D86 /* AppDelegate.m in Sources */,
 				7405CFB61B39E52600798D86 /* main.m in Sources */,
 				7405CFDB1B39EB4500798D86 /* TicketsTableViewController.m in Sources */,
