@@ -120,7 +120,7 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f
         }
         if (success)
         {
-            [self.delegate cityWasFound: theCity];
+            //[self.delegate cityWasFound: theCity];
         }
     }
 }
