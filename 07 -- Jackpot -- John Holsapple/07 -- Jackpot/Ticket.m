@@ -9,7 +9,9 @@
 #import "Ticket.h"
 
 @interface Ticket ()
-
+{
+    NSMutableArray *winnings;
+}
 
 
 @end
@@ -33,6 +35,7 @@
     if (self)
     {
         _picks = [[NSMutableArray alloc] init];
+        _winnings = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -44,12 +47,12 @@
     [_picks addObject:anInt];
 }
 
--(void)checkingWinningNumber
+-(void)checkingWinningNumbers
 {
     Ticket *checkingWinningTicket = [[Ticket alloc] init];
-    for (<#initialization#>; <#condition#>; <#increment#>)
+    for (checkingWinningTicket in _winnings)
     {
-        <#statements#>
+        
     }
 }
 

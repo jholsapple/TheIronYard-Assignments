@@ -11,7 +11,9 @@
 @interface Ticket : NSObject
 
 @property(nonatomic) NSMutableArray *picks;
+@property(nonatomic) NSMutableArray *winnings;
 
 + (instancetype)ticketUsingRandomNumbers;
+-(void)checkingWinningNumbers;
 
 @end

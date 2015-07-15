@@ -16,6 +16,8 @@
 
 - (IBAction)addTickets:(UIBarButtonItem *)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *winningsLabel;
+
 @end
 
 @implementation TicketsTableViewController
@@ -65,6 +67,9 @@
     Ticket *specificTicket = [tickets objectAtIndex:indexPath.row];
     
      cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", [specificTicket.picks objectAtIndex:0], specificTicket.picks[1], specificTicket.picks[2], specificTicket.picks[3], specificTicket.picks[4], specificTicket.picks[5]];
+    
+    Ticket *winnings = [tickets objectAtIndex:indexPath.row];
+    self.winningsLabel.text = [NSString stringWithFormat:@"$%@", winnings];
     
     return cell;
 }
