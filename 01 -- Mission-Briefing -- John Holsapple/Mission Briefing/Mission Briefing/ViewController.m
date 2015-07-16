@@ -88,7 +88,7 @@
         
         // Additional step to set the above color object to self.view's background color
         self.view.backgroundColor = authenticatedBackgroundColor;
-    }
+    }"
     else
     {
         //
