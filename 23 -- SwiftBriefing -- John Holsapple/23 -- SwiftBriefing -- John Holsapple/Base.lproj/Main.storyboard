@@ -76,8 +76,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="tAD-AN-b7u"/>
                     <connections>
-                        <outlet property="agentName" destination="xD7-we-7xb" id="Wnr-P0-U19"/>
-                        <outlet property="agentPassword" destination="aVy-oy-Ecg" id="TVx-yx-gdu"/>
+                        <outlet property="agentNameTextField" destination="xD7-we-7xb" id="pe7-Qm-Eu2"/>
+                        <outlet property="agentPasswordTextField" destination="aVy-oy-Ecg" id="Qyl-SH-mav"/>
                         <outlet property="greetingLabel" destination="4jL-WZ-VGq" id="Eq4-bQ-8IU"/>
                         <outlet property="missionBriefing" destination="pz3-hB-AOJ" id="CcV-W8-FsP"/>
                     </connections>
