@@ -8,14 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var webView: UIWebView!
+    
+    @IBAction func openPage(sender: AnyObject)
+    {
+        //NSURL(scheme: "http", host: "www.developer.apple.com", path: "")
+        var url : NSURL
+        url = NSURL(string: "https://developer.apple.com")!
+        //UIApplication.sharedApplication().openURL(NSURL(string:"https://developer.apple.com")!)
+        
+        webView.loadRequest(NSURLRequest(URL: url))
+    }
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
