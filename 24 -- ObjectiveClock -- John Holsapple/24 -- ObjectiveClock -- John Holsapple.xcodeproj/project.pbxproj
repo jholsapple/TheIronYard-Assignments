@@ -14,6 +14,7 @@
 		748866611B58297F00C72C3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748866601B58297F00C72C3C /* Images.xcassets */; };
 		748866641B58297F00C72C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 748866621B58297F00C72C3C /* LaunchScreen.xib */; };
 		748866701B58297F00C72C3C /* _4____ObjectiveClock____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7488666F1B58297F00C72C3C /* _4____ObjectiveClock____John_HolsappleTests.m */; };
+		748866AD1B58326A00C72C3C /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 748866AC1B58326A00C72C3C /* Clock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		748866691B58297F00C72C3C /* 24 -- ObjectiveClock -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "24 -- ObjectiveClock -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7488666E1B58297F00C72C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7488666F1B58297F00C72C3C /* _4____ObjectiveClock____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_4____ObjectiveClock____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		748866AB1B58326A00C72C3C /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		748866AC1B58326A00C72C3C /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				748866581B58297F00C72C3C /* AppDelegate.m */,
 				7488665A1B58297F00C72C3C /* ViewController.h */,
 				7488665B1B58297F00C72C3C /* ViewController.m */,
+				748866AB1B58326A00C72C3C /* Clock.h */,
+				748866AC1B58326A00C72C3C /* Clock.m */,
 				7488665D1B58297F00C72C3C /* Main.storyboard */,
 				748866601B58297F00C72C3C /* Images.xcassets */,
 				748866621B58297F00C72C3C /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				7488665C1B58297F00C72C3C /* ViewController.m in Sources */,
 				748866591B58297F00C72C3C /* AppDelegate.m in Sources */,
+				748866AD1B58326A00C72C3C /* Clock.m in Sources */,
 				748866561B58297F00C72C3C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				748866751B58297F00C72C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		748866761B58297F00C72C3C /* Build configuration list for PBXNativeTarget "24 -- ObjectiveClock -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				748866781B58297F00C72C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
