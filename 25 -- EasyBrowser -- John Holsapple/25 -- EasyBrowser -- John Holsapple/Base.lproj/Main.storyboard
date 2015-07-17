@@ -18,34 +18,36 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQN-jg-RfR">
-                                <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YW-Al-37t">
-                                <rect key="frame" x="262" y="28" width="77" height="30"/>
-                                <state key="normal" title="Open Page">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z44-ph-NRX"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5H-ES-wph">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="BER-4Y-Ede">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="UMk-ie-oEl">
+                                            <rect key="frame" x="16" y="7" width="136" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="rewind" id="zb4-BZ-Vlq"/>
+                                    <barButtonItem style="plain" systemItem="fastForward" id="Kwd-E0-twT"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="9YW-Al-37t" secondAttribute="centerY" id="2oC-k1-K05"/>
-                            <constraint firstAttribute="centerX" secondItem="9YW-Al-37t" secondAttribute="centerX" id="BrZ-sk-gPN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A5H-ES-wph" secondAttribute="trailing" constant="-16" id="AWw-e0-I0y"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tQN-jg-RfR" secondAttribute="bottom" id="M3c-n0-a5I"/>
+                            <constraint firstItem="A5H-ES-wph" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="NjK-ac-hWA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tQN-jg-RfR" secondAttribute="trailing" constant="-16" id="Q1c-bd-uPu"/>
-                            <constraint firstItem="9YW-Al-37t" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="d8U-Ew-0f2"/>
+                            <constraint firstItem="tQN-jg-RfR" firstAttribute="top" secondItem="A5H-ES-wph" secondAttribute="bottom" id="RqB-Ud-Pqo"/>
+                            <constraint firstItem="A5H-ES-wph" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="VPW-hO-UUg"/>
                             <constraint firstItem="tQN-jg-RfR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="dzl-G0-6PL"/>
-                            <constraint firstItem="tQN-jg-RfR" firstAttribute="top" secondItem="9YW-Al-37t" secondAttribute="bottom" constant="8" id="rEY-JS-6L4"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2oC-k1-K05"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="webView" destination="tQN-jg-RfR" id="JBL-B9-FXv"/>
@@ -53,6 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="335" y="415"/>
         </scene>
     </scenes>
 </document>
