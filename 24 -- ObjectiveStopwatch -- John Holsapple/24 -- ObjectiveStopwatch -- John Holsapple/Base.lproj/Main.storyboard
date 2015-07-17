@@ -16,30 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-zM-r6H">
-                                <rect key="frame" x="279" y="75" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-zM-r6H">
+                                <rect key="frame" x="217" y="74" width="166.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-Um-CiO">
-                                <rect key="frame" x="199" y="443" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-Um-CiO">
+                                <rect key="frame" x="188.5" y="442" width="33" height="30"/>
+                                <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z38-ws-1tg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1X-0I-IpQ">
-                                <rect key="frame" x="383" y="443" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1X-0I-IpQ">
+                                <rect key="frame" x="379.5" y="442" width="33" height="30"/>
+                                <state key="normal" title="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TkL-2d-Ubs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ZFa-Um-CiO" secondAttribute="centerX" constant="95" id="1DJ-Ps-nft"/>
+                            <constraint firstAttribute="centerX" secondItem="Bo5-zM-r6H" secondAttribute="centerX" id="BVB-0p-DkR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZFa-Um-CiO" secondAttribute="bottom" constant="128" id="Cbi-vm-0A3"/>
+                            <constraint firstAttribute="centerX" secondItem="G1X-0I-IpQ" secondAttribute="centerX" constant="-96" id="LZ0-av-B9O"/>
+                            <constraint firstItem="G1X-0I-IpQ" firstAttribute="centerY" secondItem="ZFa-Um-CiO" secondAttribute="centerY" id="yog-N7-PXp"/>
+                            <constraint firstItem="Bo5-zM-r6H" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="54" id="zjp-5J-CJF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="elapsedTimeLabel" destination="Bo5-zM-r6H" id="wJY-Hm-mcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="323" y="383"/>
         </scene>
     </scenes>
 </document>

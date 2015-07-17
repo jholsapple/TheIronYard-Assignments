@@ -14,6 +14,7 @@
 		748866931B5829D900C72C3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748866921B5829D900C72C3C /* Images.xcassets */; };
 		748866961B5829D900C72C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 748866941B5829D900C72C3C /* LaunchScreen.xib */; };
 		748866A21B5829D900C72C3C /* _4____ObjectiveStopwatch____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 748866A11B5829D900C72C3C /* _4____ObjectiveStopwatch____John_HolsappleTests.m */; };
+		748866B01B592D8000C72C3C /* Stopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 748866AF1B592D8000C72C3C /* Stopwatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7488669B1B5829D900C72C3C /* 24 -- ObjectiveStopwatch -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "24 -- ObjectiveStopwatch -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		748866A01B5829D900C72C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748866A11B5829D900C72C3C /* _4____ObjectiveStopwatch____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_4____ObjectiveStopwatch____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		748866AE1B592D8000C72C3C /* Stopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stopwatch.h; sourceTree = "<group>"; };
+		748866AF1B592D8000C72C3C /* Stopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stopwatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				7488668A1B5829D900C72C3C /* AppDelegate.m */,
 				7488668C1B5829D900C72C3C /* ViewController.h */,
 				7488668D1B5829D900C72C3C /* ViewController.m */,
+				748866AE1B592D8000C72C3C /* Stopwatch.h */,
+				748866AF1B592D8000C72C3C /* Stopwatch.m */,
 				7488668F1B5829D900C72C3C /* Main.storyboard */,
 				748866921B5829D900C72C3C /* Images.xcassets */,
 				748866941B5829D900C72C3C /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				7488668E1B5829D900C72C3C /* ViewController.m in Sources */,
 				7488668B1B5829D900C72C3C /* AppDelegate.m in Sources */,
 				748866881B5829D900C72C3C /* main.m in Sources */,
+				748866B01B592D8000C72C3C /* Stopwatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				748866A71B5829D900C72C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		748866A81B5829D900C72C3C /* Build configuration list for PBXNativeTarget "24 -- ObjectiveStopwatch -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				748866AA1B5829D900C72C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
