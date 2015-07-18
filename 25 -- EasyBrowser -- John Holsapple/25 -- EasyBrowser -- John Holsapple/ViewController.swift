@@ -13,20 +13,23 @@ class ViewController: UIViewController, UITextFieldDelegate
 
     @IBOutlet weak var webView: UIWebView!
     
-    /*@IBAction func openPage(sender: AnyObject)
+    @IBOutlet var txtField: UITextField! = nil
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
     {
-        //NSURL(scheme: "http", host: "www.developer.apple.com", path: "")
-        var url : NSURL
-        url = NSURL(string: "https://developer.apple.com")!
+        //var url : NSURL
+        //url = NSURL(string:"")!
         //UIApplication.sharedApplication().openURL(NSURL(string:"https://developer.apple.com")!)
-        
-        webView.loadRequest(NSURLRequest(URL: url))
-    }*/
+        //webView.loadRequest(NSURLRequest(URL: url))
+        textField.resignFirstResponder()
+        return true
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        txtField.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning()
