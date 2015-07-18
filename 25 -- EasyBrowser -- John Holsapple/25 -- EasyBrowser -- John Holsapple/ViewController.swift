@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate
+class ViewController: UIViewController, UITextFieldDelegate
 {
 
     @IBOutlet weak var webView: UIWebView!
     
-    @IBAction func openPage(sender: AnyObject)
+    /*@IBAction func openPage(sender: AnyObject)
     {
         //NSURL(scheme: "http", host: "www.developer.apple.com", path: "")
         var url : NSURL
@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIWebViewDelegate
         //UIApplication.sharedApplication().openURL(NSURL(string:"https://developer.apple.com")!)
         
         webView.loadRequest(NSURLRequest(URL: url))
-    }
+    }*/
     
     override func viewDidLoad()
     {
