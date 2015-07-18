@@ -9,15 +9,17 @@
 #import "Stopwatch.h"
 
 @implementation Stopwatch
-
-- (NSDate *) currentTIme
 {
     NSDate *startTime;
     NSTimeInterval *elapsedTime;
+}
+
+- (NSDate *) currentTIme
+{
     
     if (startTime)
     {
-        return startTime
+        return startTime;
     }
     else
     {
@@ -28,6 +30,21 @@
 - (NSString *) elapsedTimeAsString
 {
     self.elapsedTimeAsString.text = [NSString stringWithFormat:@"%02d:%02d.%d", elapsedTime];
+}
+
+- (BOOL)isRunning;
+{
+    return startTime = nil;
+}
+
+- (void)start
+{
+     startTime;
+}
+
+- (void)stop
+{
+    startTime = nil;
 }
 
 @end
