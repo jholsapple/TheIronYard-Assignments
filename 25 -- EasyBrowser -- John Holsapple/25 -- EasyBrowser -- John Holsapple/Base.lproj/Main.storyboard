@@ -60,6 +60,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myTextField" destination="yvv-OA-lPi" id="bBI-40-zuX"/>
                         <outlet property="webView" destination="tQN-jg-RfR" id="JBL-B9-FXv"/>
                     </connections>
                 </viewController>
