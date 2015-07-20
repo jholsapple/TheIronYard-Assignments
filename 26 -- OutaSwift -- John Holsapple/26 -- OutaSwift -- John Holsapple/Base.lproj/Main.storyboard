@@ -16,7 +16,7 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Time Circuits-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_6____OutaSwift____John_Holsapple" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                             <constraint firstAttribute="centerX" secondItem="7Ln-dr-Rvv" secondAttribute="centerX" id="zAG-rc-yoL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ToW-7r-fyV"/>
+                    <navigationItem key="navigationItem" title="Time Circuits" id="ToW-7r-fyV"/>
                     <connections>
                         <outlet property="destinationTimeLabel" destination="pCs-ma-QqC" id="kTQ-sY-drd"/>
                         <outlet property="lastTimedepartedLabel" destination="RNT-tH-PGH" id="TvU-Uh-eCd"/>

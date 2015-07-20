@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    var speedometer = NSTimer()
+    var timeCircuits = NSDateFormatter()
+    var currentSpeed = NSInteger()
 
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
@@ -28,7 +32,13 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        timeCircuits = NSDateFormatter()
+        
+        let dateFormat = NSDateFormatter.dateFormatFromTemplate("MMMddyyyy", options:0, locale:NSLocale.currentLocale())
+        timeCircuits.dateFormat = dateFormat
+        
+        presentTimeLabel.text = timeCircuits .stringFromDate(NSDate())
+        currentSpeed = 0
     }
 
     override func didReceiveMemoryWarning()
