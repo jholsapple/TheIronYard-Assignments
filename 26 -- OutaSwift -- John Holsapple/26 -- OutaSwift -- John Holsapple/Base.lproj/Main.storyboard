@@ -79,15 +79,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-1n-JGR">
                                 <rect key="frame" x="215" y="443" width="170" height="30"/>
                                 <state key="normal" title="SET DESTINATION TIME">
+                                    <color key="titleColor" red="0.29644984006881714" green="0.77944248914718628" blue="0.791770339012146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="setDestinationTimeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DfH-Ak-duw"/>
+                                    <segue destination="CUG-8e-dKb" kind="show" identifier="ShowDestinationDatePickerSegue" id="C35-Ag-itr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-06-A7i">
                                 <rect key="frame" x="249" y="493.5" width="102" height="30"/>
                                 <state key="normal" title="TRAVEL BACK">
+                                    <color key="titleColor" red="0.29644984006881714" green="0.77944248914718628" blue="0.791770339012146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -130,6 +133,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1252" y="399"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="2j5-jf-xwe">
+            <objects>
+                <viewController id="CUG-8e-dKb" customClass="DatePickerViewController" customModule="_6____OutaSwift____John_Holsapple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Lh-oE-hDw"/>
+                        <viewControllerLayoutGuide type="bottom" id="NMh-df-TS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BLG-ue-Gcn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="56O-58-o5R">
+                                <rect key="frame" x="0.0" y="219" width="600" height="162"/>
+                                <color key="tintColor" red="0.29644984006881714" green="0.77944248914718628" blue="0.791770339012146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="459107189.078511">
+                                    <!--2015-07-20 17:46:29 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1425042000">
+                                    <!--1955-11-05 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1420023600">
+                                    <!--2045-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="56O-58-o5R" firstAttribute="leading" secondItem="BLG-ue-Gcn" secondAttribute="leading" id="9c5-9Y-WbU"/>
+                            <constraint firstAttribute="centerY" secondItem="56O-58-o5R" secondAttribute="centerY" id="U9N-l5-lra"/>
+                            <constraint firstAttribute="centerX" secondItem="56O-58-o5R" secondAttribute="centerX" id="WaE-5b-Gcr"/>
+                            <constraint firstAttribute="trailing" secondItem="56O-58-o5R" secondAttribute="trailing" id="yEy-Ne-pDQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="56O-58-o5R" id="fcc-Cl-oOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMu-vW-giI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="399"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XR0-JX-OnH">
