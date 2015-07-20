@@ -7,18 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "Stopwatch.h"
 
 @interface ViewController ()
 {
     NSTimer *timer;
-    Stopwatch *stopwatch;
+    Stopwatch *stopWatch;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *elapsedTimeLabel;
 
 - (IBAction)startButtonTapped:(UIButton *)sender;
 - (IBAction)stopButtonTapped:(UIButton *)sender;
-
 
 @end
 
@@ -27,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    stopWatch = [[Stopwatch alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,12 +39,21 @@
 
 - (IBAction)startButtonTapped:(id)sender
 {
-    
+    [stopWatch start];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateElapsedTimeLabel) userInfo:nil repeats:true];
 }
 
+- (void)updateElapsedTimeLabel
+{
+    if (stopWatch.isRunning)
+    {
+        self.elapsedTimeLabel.text = [stopWatch elapsedTimeAsString];
+    }
+}
+             
 - (IBAction)stopButtonTapped:(id)sender
 {
-    
+    [stopWatch stop];
 }
 
 

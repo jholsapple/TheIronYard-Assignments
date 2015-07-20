@@ -8,18 +8,22 @@
 
 #import "Stopwatch.h"
 
-@implementation Stopwatch
+@interface Stopwatch()
 {
     NSDate *startTime;
-    NSTimeInterval *elapsedTime;
 }
 
-- (NSDate *) currentTIme
+@property (nonatomic, assign)NSTimeInterval elapsedTime;
+
+@end
+
+@implementation Stopwatch
+
+- (NSTimeInterval)elapsedTime
 {
-    
     if (startTime)
     {
-        return startTime;
+        return -startTime.timeIntervalSinceNow;
     }
     else
     {
@@ -27,24 +31,25 @@
     }
 }
 
-- (NSString *) elapsedTimeAsString
+- (void) start
 {
-    self.elapsedTimeAsString.text = [NSString stringWithFormat:@"%02d:%02d.%d", elapsedTime];
-}
-
-- (BOOL)isRunning;
-{
-    return startTime = nil;
-}
-
-- (void)start
-{
-     startTime;
+    startTime = [NSDate date];
 }
 
 - (void)stop
 {
-    startTime = nil;
+    startTime  = nil;
 }
+
+- (BOOL)isRunning;
+{
+    return startTime != nil;
+}
+
+- (NSString *)elapsedTimeAsString
+{
+    return [NSString stringWithFormat:@"%02d:%02d.%d", (int)self.elapsedTime / 60, (int)self.elapsedTime % 60, (int)(self.elapsedTime * 10) % 10];
+}
+
 
 @end

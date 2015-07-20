@@ -10,6 +10,12 @@
 
 @interface Stopwatch : NSObject
 
+- (void)start;
+- (void)stop;
+- (BOOL)isRunning;
+- (NSString *)elapsedTimeAsString;
+
 @property(nonatomic) NSDate *stopwatch;
+
 
 @end
