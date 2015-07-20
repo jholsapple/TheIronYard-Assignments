@@ -81,12 +81,18 @@
                                 <state key="normal" title="SET DESTINATION TIME">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="setDestinationTimeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DfH-Ak-duw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-06-A7i">
                                 <rect key="frame" x="249" y="493.5" width="102" height="30"/>
                                 <state key="normal" title="TRAVEL BACK">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="travelBackButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dLQ-p5-CbH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,6 +120,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ToW-7r-fyV"/>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="pCs-ma-QqC" id="kTQ-sY-drd"/>
+                        <outlet property="lastTimedepartedLabel" destination="RNT-tH-PGH" id="TvU-Uh-eCd"/>
+                        <outlet property="presentTimeLabel" destination="HIU-f4-NEl" id="kpC-e4-fQd"/>
+                        <outlet property="speedLabel" destination="sl3-Q7-ESv" id="FUu-kV-AHV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

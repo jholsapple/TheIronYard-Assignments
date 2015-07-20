@@ -11,6 +11,20 @@ import UIKit
 class ViewController: UIViewController
 {
 
+    @IBOutlet weak var destinationTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimedepartedLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
+    @IBAction func setDestinationTimeButton(sender: UIButton)
+    {
+        
+    }
+    @IBAction func travelBackButton(sender: UIButton)
+    {
+        
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
