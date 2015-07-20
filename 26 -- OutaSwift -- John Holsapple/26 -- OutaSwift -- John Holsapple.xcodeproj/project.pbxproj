@@ -13,6 +13,7 @@
 		74A39DC31B5D61F700179B35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A39DC21B5D61F700179B35 /* Images.xcassets */; };
 		74A39DC61B5D61F700179B35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A39DC41B5D61F700179B35 /* LaunchScreen.xib */; };
 		74A39DD21B5D61F700179B35 /* _6____OutaSwift____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A39DD11B5D61F700179B35 /* _6____OutaSwift____John_HolsappleTests.swift */; };
+		74A39DDC1B5D685A00179B35 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74A39DDB1B5D62AF00179B35 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		74A39DCB1B5D61F700179B35 /* 26 -- OutaSwift -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "26 -- OutaSwift -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A39DD01B5D61F700179B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74A39DD11B5D61F700179B35 /* _6____OutaSwift____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_6____OutaSwift____John_HolsappleTests.swift"; sourceTree = "<group>"; };
+		74A39DDB1B5D62AF00179B35 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		74A39DB81B5D61F700179B35 /* 26 -- OutaSwift -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
+				74A39DDB1B5D62AF00179B35 /* digital-7.ttf */,
 				74A39DBB1B5D61F700179B35 /* AppDelegate.swift */,
 				74A39DBD1B5D61F700179B35 /* ViewController.swift */,
 				74A39DBF1B5D61F700179B35 /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				74A39DC11B5D61F700179B35 /* Main.storyboard in Resources */,
 				74A39DC61B5D61F700179B35 /* LaunchScreen.xib in Resources */,
 				74A39DC31B5D61F700179B35 /* Images.xcassets in Resources */,
+				74A39DDC1B5D685A00179B35 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
