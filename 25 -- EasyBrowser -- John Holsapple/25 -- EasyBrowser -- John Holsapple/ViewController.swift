@@ -13,22 +13,21 @@ class ViewController: UIViewController, UITextFieldDelegate
 
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var myTextField: UITextField!
-    //var myTextField: UITextField!
     
     func textFieldShouldReturn(myTextField: UITextField) -> Bool
     {
         myTextField.resignFirstResponder()
-        println("this method printed")
+        if let url = NSURL(string: myTextField.text)
+        {
+            webView.loadRequest(NSURLRequest (URL: url))
+        }
+        println("url: \(webView.request?.URL)")
         return true
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        //myTextField.delegate = self
-        let url = NSURL(string: "http://developer.apple.com")
-        let request = NSURLRequest(URL: url!)
-        webView.loadRequest(request)
         
     }
 
