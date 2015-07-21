@@ -119,10 +119,10 @@
 
 -(IBAction)addLocationTapped:(UIBarButtonItem *)sender
 {
-    //AddLocationViewController *addLocationVC = [[AddLocationViewController alloc] init];
-    //addLocationVC.forecasts = forecasts;
+    AddLocationViewController *addLocationVC = [[AddLocationViewController alloc] init];
+    addLocationVC = forecasts;
     
-    //[self presentViewController:addLocationVC animated:YES completion:nil];
+    [self presentViewController:addLocationVC animated:YES completion:nil];
 }
 
 @end
