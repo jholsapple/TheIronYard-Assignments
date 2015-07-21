@@ -83,8 +83,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="setDestinationTimeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DfH-Ak-duw"/>
-                                    <segue destination="CUG-8e-dKb" kind="show" identifier="ShowDestinationDatePickerSegue" id="C35-Ag-itr"/>
+                                    <segue destination="CUG-8e-dKb" kind="show" identifier="ShowDestinationDatePicker" id="C35-Ag-itr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-06-A7i">

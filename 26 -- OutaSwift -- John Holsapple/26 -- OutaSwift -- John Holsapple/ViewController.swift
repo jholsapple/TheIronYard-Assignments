@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController
+protocol TimeCircuitsDatePickerDelegate
+{
+    func destinationDateWasChosen(destinationDate: NSDate)
+}
+
+class ViewController: UIViewController, TimeCircuitsDatePickerDelegate
 {
     
-    var speedometer = NSTimer()
+    var speedometer: NSTimer?
     var timeCircuits = NSDateFormatter()
     var currentSpeed = NSInteger()
 
@@ -20,15 +25,6 @@ class ViewController: UIViewController
     @IBOutlet weak var lastTimedepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    @IBAction func setDestinationTimeButton(sender: UIButton)
-    {
-        
-    }
-    @IBAction func travelBackButton(sender: UIButton)
-    {
-        
-    }
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -36,9 +32,11 @@ class ViewController: UIViewController
         
         let dateFormat = NSDateFormatter.dateFormatFromTemplate("MMMddyyyy", options:0, locale:NSLocale.currentLocale())
         timeCircuits.dateFormat = dateFormat
-        
         presentTimeLabel.text = timeCircuits .stringFromDate(NSDate())
+        
         currentSpeed = 0
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimedepartedLabel.text = "--- -- ----"
     }
 
     override func didReceiveMemoryWarning()
@@ -46,7 +44,51 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "ShowDestinationDatePicker"
+        {
+            let datePickerVC = segue.destinationViewController as! DatePickerViewController
+            datePickerVC.delegate = self
+        }
+    }
+    
+    func destinationDateWasChosen(destinationDate:NSDate)
+    {
+        destinationTimeLabel.text = timeCircuits.stringFromDate(destinationDate)
+    }
+    
+    @IBAction func travelBackButton(sender: UIButton)
+    {
+        startTimer()
+    }
+    
+    func startTimer()
+    {
+        speedometer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateSpeed", userInfo: nil, repeats: true)
+    }
+    
+    func stopTimer()
+    {
+        speedometer?.invalidate()
+        speedometer = nil
+    }
+    
+    func updateSpeed()
+    {
+        if currentSpeed < 88
+        {
+            currentSpeed++
+            speedLabel.text = "\(currentSpeed) MPH"
+        }
+        else
+        {
+            stopTimer()
+            lastTimedepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            speedLabel.text = "\(currentSpeed) MPH"
+        }
+    }
 }
-
