@@ -14,6 +14,7 @@
 		7461DD8E1B5ED300003CC3A8 /* _7____SwiftTeams____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461DD8D1B5ED300003CC3A8 /* _7____SwiftTeams____John_HolsappleTests.swift */; };
 		7461DD981B5ED416003CC3A8 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461DD971B5ED416003CC3A8 /* TeamsTableViewController.swift */; };
 		7461DD9A1B5ED512003CC3A8 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461DD991B5ED512003CC3A8 /* TeamTableViewCell.swift */; };
+		7461DD9C1B5EDC61003CC3A8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461DD9B1B5EDC61003CC3A8 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7461DD8D1B5ED300003CC3A8 /* _7____SwiftTeams____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_7____SwiftTeams____John_HolsappleTests.swift"; sourceTree = "<group>"; };
 		7461DD971B5ED416003CC3A8 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
 		7461DD991B5ED512003CC3A8 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		7461DD9B1B5EDC61003CC3A8 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				7461DD771B5ED300003CC3A8 /* AppDelegate.swift */,
 				7461DD971B5ED416003CC3A8 /* TeamsTableViewController.swift */,
 				7461DD991B5ED512003CC3A8 /* TeamTableViewCell.swift */,
+				7461DD9B1B5EDC61003CC3A8 /* Team.swift */,
 				7461DD7B1B5ED300003CC3A8 /* Main.storyboard */,
 				7461DD7E1B5ED300003CC3A8 /* Images.xcassets */,
 				7461DD801B5ED300003CC3A8 /* LaunchScreen.xib */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7461DD9C1B5EDC61003CC3A8 /* Team.swift in Sources */,
 				7461DD981B5ED416003CC3A8 /* TeamsTableViewController.swift in Sources */,
 				7461DD9A1B5ED512003CC3A8 /* TeamTableViewCell.swift in Sources */,
 				7461DD781B5ED300003CC3A8 /* AppDelegate.swift in Sources */,
