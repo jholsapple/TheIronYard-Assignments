@@ -18,11 +18,11 @@ class ViewController: UIViewController, TimeCircuitsDatePickerDelegate
     
     var speedometer: NSTimer?
     var timeCircuits = NSDateFormatter()
-    var currentSpeed = NSInteger()
+    var currentSpeed = 0
 
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
-    @IBOutlet weak var lastTimedepartedLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
     override func viewDidLoad()
@@ -34,9 +34,8 @@ class ViewController: UIViewController, TimeCircuitsDatePickerDelegate
         timeCircuits.dateFormat = dateFormat
         presentTimeLabel.text = timeCircuits .stringFromDate(NSDate())
         
-        currentSpeed = 0
         speedLabel.text = "\(currentSpeed) MPH"
-        lastTimedepartedLabel.text = "--- -- ----"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
 
     override func didReceiveMemoryWarning()
@@ -85,7 +84,7 @@ class ViewController: UIViewController, TimeCircuitsDatePickerDelegate
         else
         {
             stopTimer()
-            lastTimedepartedLabel.text = presentTimeLabel.text
+            lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
             speedLabel.text = "\(currentSpeed) MPH"

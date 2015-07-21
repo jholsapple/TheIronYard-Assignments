@@ -124,7 +124,7 @@
                     <navigationItem key="navigationItem" title="Time Circuits" id="ToW-7r-fyV"/>
                     <connections>
                         <outlet property="destinationTimeLabel" destination="pCs-ma-QqC" id="kTQ-sY-drd"/>
-                        <outlet property="lastTimedepartedLabel" destination="RNT-tH-PGH" id="TvU-Uh-eCd"/>
+                        <outlet property="lastTimeDepartedLabel" destination="RNT-tH-PGH" id="67M-TL-fYr"/>
                         <outlet property="presentTimeLabel" destination="HIU-f4-NEl" id="kpC-e4-fQd"/>
                         <outlet property="speedLabel" destination="sl3-Q7-ESv" id="FUu-kV-AHV"/>
                     </connections>
