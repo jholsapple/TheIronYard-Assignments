@@ -26,8 +26,8 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Pa8-FS-jCh"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fso-q9-JpF">
-                                <rect key="frame" x="16" y="192" width="217.5" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fso-q9-JpF">
+                                <rect key="frame" x="16" y="192" width="142.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
@@ -51,7 +51,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ug4-dX-SEy">
-                                <rect key="frame" x="78.5" y="252" width="80.5" height="30"/>
+                                <rect key="frame" x="78" y="252" width="80.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next"/>
                                 <connections>
@@ -75,6 +75,7 @@
                             <constraint firstItem="hbc-rH-sLR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="5gF-3V-tvT"/>
                             <constraint firstItem="xjf-E7-Lgk" firstAttribute="leading" secondItem="bFx-Mp-lXx" secondAttribute="leading" id="Adm-BQ-iyv"/>
                             <constraint firstItem="xjf-E7-Lgk" firstAttribute="leading" secondItem="uuj-7r-X4a" secondAttribute="leading" id="BWu-Fb-7W7"/>
+                            <constraint firstItem="ug4-dX-SEy" firstAttribute="trailing" secondItem="fso-q9-JpF" secondAttribute="trailing" id="CO9-E3-Kfl"/>
                             <constraint firstItem="bFx-Mp-lXx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="FLa-Z5-KUy"/>
                             <constraint firstItem="ug4-dX-SEy" firstAttribute="leading" secondItem="bFx-Mp-lXx" secondAttribute="trailing" constant="7.5" id="HPe-Fs-ibn"/>
                             <constraint firstItem="uuj-7r-X4a" firstAttribute="centerX" secondItem="fso-q9-JpF" secondAttribute="centerX" constant="175.25" id="KZb-rA-G69"/>
