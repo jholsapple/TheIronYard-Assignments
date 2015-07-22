@@ -12,6 +12,7 @@
 		747B0B001B5F10440038647C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747B0AFF1B5F10440038647C /* Images.xcassets */; };
 		747B0B031B5F10440038647C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 747B0B011B5F10440038647C /* LaunchScreen.xib */; };
 		747B0B0F1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B0B0E1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift */; };
+		7497CDE81B5F3140005BF749 /* Teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 7497CDE71B5F3140005BF749 /* Teams.json */; };
 		74E5AAD71B5F2393004EE555 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AAD61B5F2393004EE555 /* TeamsTableViewController.swift */; };
 		74E5AAD91B5F23C0004EE555 /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AAD81B5F23C0004EE555 /* TeamsTableViewCell.swift */; };
 		74E5AADB1B5F23DE004EE555 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AADA1B5F23DE004EE555 /* Team.swift */; };
@@ -37,6 +38,7 @@
 		747B0B081B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "27 -- SwiftTeams -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747B0B0D1B5F10440038647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747B0B0E1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_7____SwiftTeams____John_HolsappleTests.swift"; sourceTree = "<group>"; };
+		7497CDE71B5F3140005BF749 /* Teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Teams.json; sourceTree = "<group>"; };
 		74E5AAD61B5F2393004EE555 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
 		74E5AAD81B5F23C0004EE555 /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
 		74E5AADA1B5F23DE004EE555 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		747B0AF61B5F10440038647C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7497CDE71B5F3140005BF749 /* Teams.json */,
 				747B0AF71B5F10440038647C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7497CDE81B5F3140005BF749 /* Teams.json in Resources */,
 				747B0AFE1B5F10440038647C /* Main.storyboard in Resources */,
 				747B0B031B5F10440038647C /* LaunchScreen.xib in Resources */,
 				747B0B001B5F10440038647C /* Images.xcassets in Resources */,

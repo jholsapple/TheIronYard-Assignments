@@ -66,6 +66,12 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leagueLabel" destination="Hre-bs-rst" id="VGw-BH-Kft"/>
+                                    <outlet property="playerLabel" destination="iow-JO-cCU" id="SRe-cs-Oe6"/>
+                                    <outlet property="recordLabel" destination="3eY-q1-zsi" id="jmW-Tb-YGU"/>
+                                    <outlet property="teamLabel" destination="vIs-J1-rMx" id="gnp-iV-Eul"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

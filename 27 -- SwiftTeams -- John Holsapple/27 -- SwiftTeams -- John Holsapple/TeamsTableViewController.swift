@@ -8,19 +8,46 @@
 
 import UIKit
 
-class TeamsTableViewController: UITableViewController {
+class TeamsTableViewController: UITableViewController
+{
+    
+    
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let moreData = [[]]
+        
+        var teamStorage = []()
+        
+        for more in moreData
+        {
+            let aTeam = []()
+            aTeam.teamName = "teamName"
+            aTeam.league = "league"
+            aTeam.starPlayer = "starPlayer"
+            aTeam.wins = ("wins")
+        }
+        
+    }
+    
+    func loadTeams()
+    {
+        let filePath = NSBundle.mainBundle().pathForResource("Teams", ofType: "json")
+        let teamsFromFile = NSJSONSerialization.JSONObjectWithData(NSData.dataWithContentsOfMappedFile(filePath!), options: NSJSONReadingOptions(), error: nil); -> anyobject?
+        
+        for agentDict in teamsFromFile
+        {
+            Team *anotherTeam = Team teamWithDictionary
+        }
+        
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

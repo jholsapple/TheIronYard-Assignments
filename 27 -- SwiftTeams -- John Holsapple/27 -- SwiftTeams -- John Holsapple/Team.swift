@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+let teamName: NSString
+let league: NSString
+let starPlayer: NSString
+let wins: Int
+let losses: Int
+
+func teamWithDictionary()
+
+
+
