@@ -8,8 +8,9 @@
 
 #import "TicketsTableViewController.h"
 #import "Ticket.h"
+#import "WinningTicketViewController.h"
 
-@interface TicketsTableViewController ()
+@interface TicketsTableViewController()
 {
     NSMutableArray *tickets;
 }
@@ -103,15 +104,18 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"ShowWinningTicketSegue"])
+    {
+        WinningTicketViewController *ticketsVC = (WinningTicketViewController *)[segue destinationViewController];
+        
+        ticketsVC.delegate = self;
+    }
 }
-*/
 
 
 - (IBAction)addTickets:(UIBarButtonItem *)sender
