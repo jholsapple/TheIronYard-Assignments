@@ -15,6 +15,7 @@
 - (void)weatherWasFoundForCity: (City *) anotherCity;
 
 @end
+
 @interface ForecasterTableViewController : UITableViewController <ForecasterTableViewControllerDelegate>
 
 @property(nonatomic) NSMutableArray *cityForecasts;

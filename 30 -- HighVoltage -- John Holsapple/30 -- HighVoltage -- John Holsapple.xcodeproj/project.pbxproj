@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		74CAD2701B62A296000B9083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD26F1B62A296000B9083 /* main.m */; };
 		74CAD2731B62A296000B9083 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2721B62A296000B9083 /* AppDelegate.m */; };
-		74CAD2761B62A296000B9083 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2751B62A296000B9083 /* ViewController.m */; };
 		74CAD2791B62A296000B9083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD2771B62A296000B9083 /* Main.storyboard */; };
 		74CAD27B1B62A296000B9083 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD27A1B62A296000B9083 /* Images.xcassets */; };
 		74CAD27E1B62A296000B9083 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD27C1B62A296000B9083 /* LaunchScreen.xib */; };
 		74CAD28A1B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2891B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m */; };
+		74CAD2951B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */; };
+		74CAD2981B62A912000B9083 /* PopoverSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */; };
+		74CAD29D1B62A9A0000B9083 /* ConversionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		74CAD26F1B62A296000B9083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74CAD2711B62A296000B9083 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74CAD2721B62A296000B9083 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74CAD2741B62A296000B9083 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74CAD2751B62A296000B9083 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74CAD2781B62A296000B9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74CAD27A1B62A296000B9083 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74CAD27D1B62A296000B9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74CAD2831B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "30 -- HighVoltage -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CAD2881B62A297000B9083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74CAD2891B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_0____HighVoltage____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		74CAD2931B62A8F4000B9083 /* ElectricityCalculationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricityCalculationsTableViewController.h; sourceTree = "<group>"; };
+		74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectricityCalculationsTableViewController.m; sourceTree = "<group>"; };
+		74CAD2961B62A912000B9083 /* PopoverSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverSelectionTableViewController.h; sourceTree = "<group>"; };
+		74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverSelectionTableViewController.m; sourceTree = "<group>"; };
+		74CAD29B1B62A9A0000B9083 /* ConversionsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionsModel.h; sourceTree = "<group>"; };
+		74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				74CAD2711B62A296000B9083 /* AppDelegate.h */,
 				74CAD2721B62A296000B9083 /* AppDelegate.m */,
-				74CAD2741B62A296000B9083 /* ViewController.h */,
-				74CAD2751B62A296000B9083 /* ViewController.m */,
+				74CAD2931B62A8F4000B9083 /* ElectricityCalculationsTableViewController.h */,
+				74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */,
+				74CAD2961B62A912000B9083 /* PopoverSelectionTableViewController.h */,
+				74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */,
+				74CAD29B1B62A9A0000B9083 /* ConversionsModel.h */,
+				74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */,
 				74CAD2771B62A296000B9083 /* Main.storyboard */,
 				74CAD27A1B62A296000B9083 /* Images.xcassets */,
 				74CAD27C1B62A296000B9083 /* LaunchScreen.xib */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CAD2761B62A296000B9083 /* ViewController.m in Sources */,
+				74CAD2981B62A912000B9083 /* PopoverSelectionTableViewController.m in Sources */,
+				74CAD2951B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m in Sources */,
+				74CAD29D1B62A9A0000B9083 /* ConversionsModel.m in Sources */,
 				74CAD2731B62A296000B9083 /* AppDelegate.m in Sources */,
 				74CAD2701B62A296000B9083 /* main.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ElectricityCalculationsTableViewController.h
 //  30 -- HighVoltage -- John Holsapple
 //
 //  Created by John Holsapple on 7/24/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ElectricityCalculationsTableViewController : UITableViewController
 
 @end
-
