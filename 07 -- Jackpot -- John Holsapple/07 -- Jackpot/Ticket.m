@@ -39,7 +39,20 @@
 {
     int pickInt = arc4random() % 53 + 1;
     NSNumber *anInt = [NSNumber numberWithInt:pickInt];
-    [_picks addObject:anInt];
+    [self.picks addObject:anInt];
+}
+
+- (NSString *)description
+{
+    NSMutableString *numbers = [[NSMutableString alloc] init];
+    NSSortDescriptor *lowestToHighest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
+    [self.picks sortUsingDescriptors:@[lowestToHighest]];
+    
+    for (NSNumber *pick in self.picks)
+    {
+        [numbers appendString:(NSString *)@" %d"];
+        return numbers;
+    }
 }
 
 @end

@@ -12,7 +12,6 @@
 
 @property(nonatomic) NSMutableArray *picks;
 
-
 + (instancetype)ticketUsingRandomNumbers;
 
 @end
