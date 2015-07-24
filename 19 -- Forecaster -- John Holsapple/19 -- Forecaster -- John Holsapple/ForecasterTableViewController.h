@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "City.h"
 
-@interface ForecasterTableViewController : UITableViewController
+@protocol ForecasterTableViewControllerDelegate
 
-@property(nonatomic) NSMutableArray *forecasts;
+- (void)cityWasFound: (City *) aCity;
+- (void)weatherWasFoundForCity: (City *) anotherCity;
+
+@end
+@interface ForecasterTableViewController : UITableViewController <ForecasterTableViewControllerDelegate>
+
+@property(nonatomic) NSMutableArray *cityForecasts;
 
 @end

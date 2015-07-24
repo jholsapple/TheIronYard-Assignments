@@ -72,7 +72,7 @@
                                         <constraint firstItem="7JU-uR-yoX" firstAttribute="leading" secondItem="Coa-jn-ajw" secondAttribute="leading" constant="8" id="l6P-e2-67w"/>
                                         <constraint firstItem="7JU-uR-yoX" firstAttribute="top" secondItem="P4e-sc-h1c" secondAttribute="top" constant="38" id="m4W-OE-p1X"/>
                                         <constraint firstItem="7JU-uR-yoX" firstAttribute="centerY" secondItem="P4e-sc-h1c" secondAttribute="centerY" id="nIu-Za-jOi"/>
-                                        <constraint firstItem="253-8F-XYx" firstAttribute="centerY" secondItem="7JU-uR-yoX" secondAttribute="centerY" constant="-0.5" id="oQ7-KB-Wr1"/>
+                                        <constraint firstItem="253-8F-XYx" firstAttribute="centerY" secondItem="7JU-uR-yoX" secondAttribute="centerY" id="oQ7-KB-Wr1"/>
                                         <constraint firstItem="7JU-uR-yoX" firstAttribute="leading" secondItem="P4e-sc-h1c" secondAttribute="trailing" constant="8" id="oUe-Eh-3EH"/>
                                         <constraint firstItem="cM3-EN-0Ix" firstAttribute="leading" secondItem="Coa-jn-ajw" secondAttribute="leading" constant="251" id="uXW-0O-FGD"/>
                                         <constraint firstItem="cM3-EN-0Ix" firstAttribute="leading" secondItem="7JU-uR-yoX" secondAttribute="trailing" constant="8" id="wLq-Do-EGL"/>
@@ -124,7 +124,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5U-Ks-60x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="407"/>
+            <point key="canvasLocation" x="1215" y="407"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Ns-Ks-owh">

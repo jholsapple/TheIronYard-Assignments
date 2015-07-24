@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ForecasterTableViewController.h"
 
-@interface NetworkManager : NSObject <NSURLSessionDataDelegate>
+@interface NetworkManager : NSObject
+
+@property(nonatomic) id<ForecasterTableViewControllerDelegate> delegate;
+
++ (NetworkManager *)sharedNetworkManager;
+- (void)findCoordinatesForCity: (City *) aCity;
+- (void)fetchCurrentWeatherForCity: (City *) aCity;
 
 @end
 

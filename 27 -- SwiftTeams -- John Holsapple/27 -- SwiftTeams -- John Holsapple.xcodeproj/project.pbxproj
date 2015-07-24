@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747B0AF91B5F10440038647C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B0AF81B5F10440038647C /* AppDelegate.swift */; };
+		747B0AFE1B5F10440038647C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747B0AFC1B5F10440038647C /* Main.storyboard */; };
+		747B0B001B5F10440038647C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747B0AFF1B5F10440038647C /* Images.xcassets */; };
+		747B0B031B5F10440038647C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 747B0B011B5F10440038647C /* LaunchScreen.xib */; };
+		747B0B0F1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B0B0E1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift */; };
+		7497CDE81B5F3140005BF749 /* Teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 7497CDE71B5F3140005BF749 /* Teams.json */; };
+		74E5AAD71B5F2393004EE555 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AAD61B5F2393004EE555 /* TeamsTableViewController.swift */; };
+		74E5AAD91B5F23C0004EE555 /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AAD81B5F23C0004EE555 /* TeamsTableViewCell.swift */; };
+		74E5AADB1B5F23DE004EE555 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5AADA1B5F23DE004EE555 /* Team.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		747B0B091B5F10440038647C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747B0AEB1B5F10440038647C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747B0AF21B5F10440038647C;
+			remoteInfo = "27 -- SwiftTeams -- John Holsapple";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		747B0AF31B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "27 -- SwiftTeams -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		747B0AF71B5F10440038647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747B0AF81B5F10440038647C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		747B0AFD1B5F10440038647C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		747B0AFF1B5F10440038647C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		747B0B021B5F10440038647C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		747B0B081B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "27 -- SwiftTeams -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		747B0B0D1B5F10440038647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747B0B0E1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_7____SwiftTeams____John_HolsappleTests.swift"; sourceTree = "<group>"; };
+		7497CDE71B5F3140005BF749 /* Teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Teams.json; sourceTree = "<group>"; };
+		74E5AAD61B5F2393004EE555 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		74E5AAD81B5F23C0004EE555 /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewCell.swift; sourceTree = "<group>"; };
+		74E5AADA1B5F23DE004EE555 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747B0AF01B5F10440038647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747B0B051B5F10440038647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747B0AEA1B5F10440038647C = {
+			isa = PBXGroup;
+			children = (
+				747B0AF51B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple */,
+				747B0B0B1B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests */,
+				747B0AF41B5F10440038647C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		747B0AF41B5F10440038647C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747B0AF31B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple.app */,
+				747B0B081B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747B0AF51B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple */ = {
+			isa = PBXGroup;
+			children = (
+				747B0AF81B5F10440038647C /* AppDelegate.swift */,
+				74E5AAD61B5F2393004EE555 /* TeamsTableViewController.swift */,
+				74E5AAD81B5F23C0004EE555 /* TeamsTableViewCell.swift */,
+				74E5AADA1B5F23DE004EE555 /* Team.swift */,
+				747B0AFC1B5F10440038647C /* Main.storyboard */,
+				747B0AFF1B5F10440038647C /* Images.xcassets */,
+				747B0B011B5F10440038647C /* LaunchScreen.xib */,
+				747B0AF61B5F10440038647C /* Supporting Files */,
+			);
+			path = "27 -- SwiftTeams -- John Holsapple";
+			sourceTree = "<group>";
+		};
+		747B0AF61B5F10440038647C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7497CDE71B5F3140005BF749 /* Teams.json */,
+				747B0AF71B5F10440038647C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		747B0B0B1B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests */ = {
+			isa = PBXGroup;
+			children = (
+				747B0B0E1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift */,
+				747B0B0C1B5F10440038647C /* Supporting Files */,
+			);
+			path = "27 -- SwiftTeams -- John HolsappleTests";
+			sourceTree = "<group>";
+		};
+		747B0B0C1B5F10440038647C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				747B0B0D1B5F10440038647C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		747B0AF21B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747B0B121B5F10440038647C /* Build configuration list for PBXNativeTarget "27 -- SwiftTeams -- John Holsapple" */;
+			buildPhases = (
+				747B0AEF1B5F10440038647C /* Sources */,
+				747B0AF01B5F10440038647C /* Frameworks */,
+				747B0AF11B5F10440038647C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "27 -- SwiftTeams -- John Holsapple";
+			productName = "27 -- SwiftTeams -- John Holsapple";
+			productReference = 747B0AF31B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		747B0B071B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747B0B151B5F10440038647C /* Build configuration list for PBXNativeTarget "27 -- SwiftTeams -- John HolsappleTests" */;
+			buildPhases = (
+				747B0B041B5F10440038647C /* Sources */,
+				747B0B051B5F10440038647C /* Frameworks */,
+				747B0B061B5F10440038647C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				747B0B0A1B5F10440038647C /* PBXTargetDependency */,
+			);
+			name = "27 -- SwiftTeams -- John HolsappleTests";
+			productName = "27 -- SwiftTeams -- John HolsappleTests";
+			productReference = 747B0B081B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		747B0AEB1B5F10440038647C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					747B0AF21B5F10440038647C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					747B0B071B5F10440038647C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 747B0AF21B5F10440038647C;
+					};
+				};
+			};
+			buildConfigurationList = 747B0AEE1B5F10440038647C /* Build configuration list for PBXProject "27 -- SwiftTeams -- John Holsapple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 747B0AEA1B5F10440038647C;
+			productRefGroup = 747B0AF41B5F10440038647C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				747B0AF21B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple */,
+				747B0B071B5F10440038647C /* 27 -- SwiftTeams -- John HolsappleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		747B0AF11B5F10440038647C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7497CDE81B5F3140005BF749 /* Teams.json in Resources */,
+				747B0AFE1B5F10440038647C /* Main.storyboard in Resources */,
+				747B0B031B5F10440038647C /* LaunchScreen.xib in Resources */,
+				747B0B001B5F10440038647C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747B0B061B5F10440038647C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		747B0AEF1B5F10440038647C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E5AADB1B5F23DE004EE555 /* Team.swift in Sources */,
+				74E5AAD71B5F2393004EE555 /* TeamsTableViewController.swift in Sources */,
+				747B0AF91B5F10440038647C /* AppDelegate.swift in Sources */,
+				74E5AAD91B5F23C0004EE555 /* TeamsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747B0B041B5F10440038647C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747B0B0F1B5F10440038647C /* _7____SwiftTeams____John_HolsappleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		747B0B0A1B5F10440038647C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747B0AF21B5F10440038647C /* 27 -- SwiftTeams -- John Holsapple */;
+			targetProxy = 747B0B091B5F10440038647C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		747B0AFC1B5F10440038647C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747B0AFD1B5F10440038647C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		747B0B011B5F10440038647C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747B0B021B5F10440038647C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		747B0B101B5F10440038647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		747B0B111B5F10440038647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747B0B131B5F10440038647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "27 -- SwiftTeams -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		747B0B141B5F10440038647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "27 -- SwiftTeams -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		747B0B161B5F10440038647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "27 -- SwiftTeams -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/27 -- SwiftTeams -- John Holsapple.app/27 -- SwiftTeams -- John Holsapple";
+			};
+			name = Debug;
+		};
+		747B0B171B5F10440038647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "27 -- SwiftTeams -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/27 -- SwiftTeams -- John Holsapple.app/27 -- SwiftTeams -- John Holsapple";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		747B0AEE1B5F10440038647C /* Build configuration list for PBXProject "27 -- SwiftTeams -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747B0B101B5F10440038647C /* Debug */,
+				747B0B111B5F10440038647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747B0B121B5F10440038647C /* Build configuration list for PBXNativeTarget "27 -- SwiftTeams -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747B0B131B5F10440038647C /* Debug */,
+				747B0B141B5F10440038647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747B0B151B5F10440038647C /* Build configuration list for PBXNativeTarget "27 -- SwiftTeams -- John HolsappleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747B0B161B5F10440038647C /* Debug */,
+				747B0B171B5F10440038647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 747B0AEB1B5F10440038647C /* Project object */;
+}

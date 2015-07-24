@@ -7,6 +7,8 @@
 //
 
 #import "AddLocationViewController.h"
+#import "City.h"
+#import "NetworkManager.h"
 
 @interface AddLocationViewController ()
 
@@ -43,7 +45,14 @@
 
 - (IBAction)addLocationButton:(UIButton *)sender
 {
-    
+    if (![self.zipCodeTextField.text isEqualToString: @""])
+    {
+        City *addCity = [[City alloc] init];
+        addCity.zipcode = self.zipCodeTextField.text;
+        [[NetworkManager sharedNetworkManager] findCoordinatesForCity:addCity];
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)currentLocationButton:(UIButton *)sender

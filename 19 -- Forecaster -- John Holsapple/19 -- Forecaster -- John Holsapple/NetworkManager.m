@@ -16,7 +16,7 @@ typedef enum
     DataFetchTypeWeather,
 }   DataFetchType;
 
-@interface NetworkManager ()
+@interface NetworkManager () <NSURLSessionDataDelegate>
 {
     NSURLSessionConfiguration *configuration;
     NSURLSession *session;
@@ -29,7 +29,7 @@ typedef enum
 @implementation NetworkManager
 
 static NSString *gMapsBaseURL = @"http://maps.googleapis.com/maps/api/geocode/json?address=santa+cruz&components=postal_code:%@&sensor=false";
-static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f7b00bc8064c538d9936061b1/%f, %f";
+static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f7b00bc8064c538d9936061b1/%.f,%.f";
 
 //Singleton Constructor
 + (NetworkManager *) sharedNetworkManager
@@ -64,6 +64,14 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f
 {
     NSString *gMapsURLString = [NSString stringWithFormat: gMapsBaseURL, aCity.zipcode];
     NSURL *forecastURL = [NSURL URLWithString:gMapsURLString];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:forecastURL];
+    [self startDataTask:dataTask forCity:aCity];
+}
+
+- (void)fetchCurrentWeatherForCity: (City *) aCity;
+{
+    NSString *forecastIOURLString = [NSString stringWithFormat: forecastIOBaseURL, aCity.latitude, aCity.longitude];
+    NSURL *forecastURL = [NSURL URLWithString:forecastIOURLString];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:forecastURL];
     [self startDataTask:dataTask forCity:aCity];
 }
@@ -104,23 +112,29 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f
         {
             fetchType = DataFetchTypeWeather;
         }
-        BOOL success;
+        BOOL coordinateSuccess = NO;
+        BOOL weatherSuccess = NO;
         switch (fetchType)
         {
             case DataFetchTypeCoordinates:
-                success = [theCity parseCoordinateInfo:aDictionary];
+                coordinateSuccess = [theCity parseCoordinateInfo:aDictionary];
                 break;
                 
             case DataFetchTypeWeather:
-                success = [theCity.theWeather parseWeatherInfo:aDictionary];
+                weatherSuccess = [theCity.theWeather parseWeatherInfo:aDictionary];
                 break;
                 
             default:
                 break;
         }
-        if (success)
+        if (coordinateSuccess)
         {
-            //[self.delegate cityWasFound: theCity];
+            [self.delegate cityWasFound: theCity];
+            
+        }
+        if (weatherSuccess)
+        {
+            [self.delegate weatherWasFoundForCity: theCity];
         }
     }
 }
