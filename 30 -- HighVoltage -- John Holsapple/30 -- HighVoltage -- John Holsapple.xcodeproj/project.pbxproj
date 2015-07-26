@@ -7,56 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74CAD2701B62A296000B9083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD26F1B62A296000B9083 /* main.m */; };
-		74CAD2731B62A296000B9083 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2721B62A296000B9083 /* AppDelegate.m */; };
-		74CAD2791B62A296000B9083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD2771B62A296000B9083 /* Main.storyboard */; };
-		74CAD27B1B62A296000B9083 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD27A1B62A296000B9083 /* Images.xcassets */; };
-		74CAD27E1B62A296000B9083 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CAD27C1B62A296000B9083 /* LaunchScreen.xib */; };
-		74CAD28A1B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2891B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m */; };
-		74CAD2951B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */; };
-		74CAD2981B62A912000B9083 /* PopoverSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */; };
-		74CAD29D1B62A9A0000B9083 /* ConversionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */; };
+		7439F1461B62C498007CAF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439F1451B62C498007CAF44 /* AppDelegate.swift */; };
+		7439F14B1B62C498007CAF44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7439F1491B62C498007CAF44 /* Main.storyboard */; };
+		7439F14D1B62C498007CAF44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7439F14C1B62C498007CAF44 /* Images.xcassets */; };
+		7439F1501B62C498007CAF44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7439F14E1B62C498007CAF44 /* LaunchScreen.xib */; };
+		7439F15C1B62C498007CAF44 /* _0____HighVoltage____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439F15B1B62C498007CAF44 /* _0____HighVoltage____John_HolsappleTests.swift */; };
+		7439F1661B62C582007CAF44 /* ConversionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439F1651B62C582007CAF44 /* ConversionsTableViewController.swift */; };
+		7439F1681B62C5A5007CAF44 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439F1671B62C5A5007CAF44 /* PopoverTableViewController.swift */; };
+		7439F16A1B62C5C6007CAF44 /* ElectricityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439F1691B62C5C6007CAF44 /* ElectricityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74CAD2841B62A297000B9083 /* PBXContainerItemProxy */ = {
+		7439F1561B62C498007CAF44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74CAD2621B62A296000B9083 /* Project object */;
+			containerPortal = 7439F1381B62C498007CAF44 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74CAD2691B62A296000B9083;
+			remoteGlobalIDString = 7439F13F1B62C498007CAF44;
 			remoteInfo = "30 -- HighVoltage -- John Holsapple";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74CAD26A1B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30 -- HighVoltage -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74CAD26E1B62A296000B9083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74CAD26F1B62A296000B9083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74CAD2711B62A296000B9083 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		74CAD2721B62A296000B9083 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74CAD2781B62A296000B9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		74CAD27A1B62A296000B9083 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		74CAD27D1B62A296000B9083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		74CAD2831B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "30 -- HighVoltage -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74CAD2881B62A297000B9083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74CAD2891B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_0____HighVoltage____John_HolsappleTests.m"; sourceTree = "<group>"; };
-		74CAD2931B62A8F4000B9083 /* ElectricityCalculationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricityCalculationsTableViewController.h; sourceTree = "<group>"; };
-		74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectricityCalculationsTableViewController.m; sourceTree = "<group>"; };
-		74CAD2961B62A912000B9083 /* PopoverSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverSelectionTableViewController.h; sourceTree = "<group>"; };
-		74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverSelectionTableViewController.m; sourceTree = "<group>"; };
-		74CAD29B1B62A9A0000B9083 /* ConversionsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionsModel.h; sourceTree = "<group>"; };
-		74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionsModel.m; sourceTree = "<group>"; };
+		7439F1401B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30 -- HighVoltage -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7439F1441B62C498007CAF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7439F1451B62C498007CAF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7439F14A1B62C498007CAF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7439F14C1B62C498007CAF44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7439F14F1B62C498007CAF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7439F1551B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "30 -- HighVoltage -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7439F15A1B62C498007CAF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7439F15B1B62C498007CAF44 /* _0____HighVoltage____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_0____HighVoltage____John_HolsappleTests.swift"; sourceTree = "<group>"; };
+		7439F1651B62C582007CAF44 /* ConversionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionsTableViewController.swift; sourceTree = "<group>"; };
+		7439F1671B62C5A5007CAF44 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
+		7439F1691B62C5C6007CAF44 /* ElectricityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74CAD2671B62A296000B9083 /* Frameworks */ = {
+		7439F13D1B62C498007CAF44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74CAD2801B62A297000B9083 /* Frameworks */ = {
+		7439F1521B62C498007CAF44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,65 +60,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74CAD2611B62A296000B9083 = {
+		7439F1371B62C498007CAF44 = {
 			isa = PBXGroup;
 			children = (
-				74CAD26C1B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple */,
-				74CAD2861B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests */,
-				74CAD26B1B62A296000B9083 /* Products */,
+				7439F1421B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple */,
+				7439F1581B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests */,
+				7439F1411B62C498007CAF44 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		74CAD26B1B62A296000B9083 /* Products */ = {
+		7439F1411B62C498007CAF44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD26A1B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple.app */,
-				74CAD2831B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests.xctest */,
+				7439F1401B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple.app */,
+				7439F1551B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74CAD26C1B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple */ = {
+		7439F1421B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD2711B62A296000B9083 /* AppDelegate.h */,
-				74CAD2721B62A296000B9083 /* AppDelegate.m */,
-				74CAD2931B62A8F4000B9083 /* ElectricityCalculationsTableViewController.h */,
-				74CAD2941B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m */,
-				74CAD2961B62A912000B9083 /* PopoverSelectionTableViewController.h */,
-				74CAD2971B62A912000B9083 /* PopoverSelectionTableViewController.m */,
-				74CAD29B1B62A9A0000B9083 /* ConversionsModel.h */,
-				74CAD29C1B62A9A0000B9083 /* ConversionsModel.m */,
-				74CAD2771B62A296000B9083 /* Main.storyboard */,
-				74CAD27A1B62A296000B9083 /* Images.xcassets */,
-				74CAD27C1B62A296000B9083 /* LaunchScreen.xib */,
-				74CAD26D1B62A296000B9083 /* Supporting Files */,
+				7439F1451B62C498007CAF44 /* AppDelegate.swift */,
+				7439F1651B62C582007CAF44 /* ConversionsTableViewController.swift */,
+				7439F1671B62C5A5007CAF44 /* PopoverTableViewController.swift */,
+				7439F1691B62C5C6007CAF44 /* ElectricityModel.swift */,
+				7439F1491B62C498007CAF44 /* Main.storyboard */,
+				7439F14C1B62C498007CAF44 /* Images.xcassets */,
+				7439F14E1B62C498007CAF44 /* LaunchScreen.xib */,
+				7439F1431B62C498007CAF44 /* Supporting Files */,
 			);
 			path = "30 -- HighVoltage -- John Holsapple";
 			sourceTree = "<group>";
 		};
-		74CAD26D1B62A296000B9083 /* Supporting Files */ = {
+		7439F1431B62C498007CAF44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD26E1B62A296000B9083 /* Info.plist */,
-				74CAD26F1B62A296000B9083 /* main.m */,
+				7439F1441B62C498007CAF44 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		74CAD2861B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests */ = {
+		7439F1581B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD2891B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m */,
-				74CAD2871B62A297000B9083 /* Supporting Files */,
+				7439F15B1B62C498007CAF44 /* _0____HighVoltage____John_HolsappleTests.swift */,
+				7439F1591B62C498007CAF44 /* Supporting Files */,
 			);
 			path = "30 -- HighVoltage -- John HolsappleTests";
 			sourceTree = "<group>";
 		};
-		74CAD2871B62A297000B9083 /* Supporting Files */ = {
+		7439F1591B62C498007CAF44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD2881B62A297000B9083 /* Info.plist */,
+				7439F15A1B62C498007CAF44 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,13 +121,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74CAD2691B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple */ = {
+		7439F13F1B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74CAD28D1B62A297000B9083 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John Holsapple" */;
+			buildConfigurationList = 7439F15F1B62C498007CAF44 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John Holsapple" */;
 			buildPhases = (
-				74CAD2661B62A296000B9083 /* Sources */,
-				74CAD2671B62A296000B9083 /* Frameworks */,
-				74CAD2681B62A296000B9083 /* Resources */,
+				7439F13C1B62C498007CAF44 /* Sources */,
+				7439F13D1B62C498007CAF44 /* Frameworks */,
+				7439F13E1B62C498007CAF44 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -146,46 +135,46 @@
 			);
 			name = "30 -- HighVoltage -- John Holsapple";
 			productName = "30 -- HighVoltage -- John Holsapple";
-			productReference = 74CAD26A1B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple.app */;
+			productReference = 7439F1401B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		74CAD2821B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests */ = {
+		7439F1541B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74CAD2901B62A297000B9083 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John HolsappleTests" */;
+			buildConfigurationList = 7439F1621B62C498007CAF44 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John HolsappleTests" */;
 			buildPhases = (
-				74CAD27F1B62A297000B9083 /* Sources */,
-				74CAD2801B62A297000B9083 /* Frameworks */,
-				74CAD2811B62A297000B9083 /* Resources */,
+				7439F1511B62C498007CAF44 /* Sources */,
+				7439F1521B62C498007CAF44 /* Frameworks */,
+				7439F1531B62C498007CAF44 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				74CAD2851B62A297000B9083 /* PBXTargetDependency */,
+				7439F1571B62C498007CAF44 /* PBXTargetDependency */,
 			);
 			name = "30 -- HighVoltage -- John HolsappleTests";
 			productName = "30 -- HighVoltage -- John HolsappleTests";
-			productReference = 74CAD2831B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests.xctest */;
+			productReference = 7439F1551B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		74CAD2621B62A296000B9083 /* Project object */ = {
+		7439F1381B62C498007CAF44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
-					74CAD2691B62A296000B9083 = {
+					7439F13F1B62C498007CAF44 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					74CAD2821B62A297000B9083 = {
+					7439F1541B62C498007CAF44 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 74CAD2691B62A296000B9083;
+						TestTargetID = 7439F13F1B62C498007CAF44;
 					};
 				};
 			};
-			buildConfigurationList = 74CAD2651B62A296000B9083 /* Build configuration list for PBXProject "30 -- HighVoltage -- John Holsapple" */;
+			buildConfigurationList = 7439F13B1B62C498007CAF44 /* Build configuration list for PBXProject "30 -- HighVoltage -- John Holsapple" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,29 +182,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 74CAD2611B62A296000B9083;
-			productRefGroup = 74CAD26B1B62A296000B9083 /* Products */;
+			mainGroup = 7439F1371B62C498007CAF44;
+			productRefGroup = 7439F1411B62C498007CAF44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74CAD2691B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple */,
-				74CAD2821B62A297000B9083 /* 30 -- HighVoltage -- John HolsappleTests */,
+				7439F13F1B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple */,
+				7439F1541B62C498007CAF44 /* 30 -- HighVoltage -- John HolsappleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74CAD2681B62A296000B9083 /* Resources */ = {
+		7439F13E1B62C498007CAF44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CAD2791B62A296000B9083 /* Main.storyboard in Resources */,
-				74CAD27E1B62A296000B9083 /* LaunchScreen.xib in Resources */,
-				74CAD27B1B62A296000B9083 /* Images.xcassets in Resources */,
+				7439F14B1B62C498007CAF44 /* Main.storyboard in Resources */,
+				7439F1501B62C498007CAF44 /* LaunchScreen.xib in Resources */,
+				7439F14D1B62C498007CAF44 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74CAD2811B62A297000B9083 /* Resources */ = {
+		7439F1531B62C498007CAF44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,49 +214,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74CAD2661B62A296000B9083 /* Sources */ = {
+		7439F13C1B62C498007CAF44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CAD2981B62A912000B9083 /* PopoverSelectionTableViewController.m in Sources */,
-				74CAD2951B62A8F4000B9083 /* ElectricityCalculationsTableViewController.m in Sources */,
-				74CAD29D1B62A9A0000B9083 /* ConversionsModel.m in Sources */,
-				74CAD2731B62A296000B9083 /* AppDelegate.m in Sources */,
-				74CAD2701B62A296000B9083 /* main.m in Sources */,
+				7439F1461B62C498007CAF44 /* AppDelegate.swift in Sources */,
+				7439F1681B62C5A5007CAF44 /* PopoverTableViewController.swift in Sources */,
+				7439F1661B62C582007CAF44 /* ConversionsTableViewController.swift in Sources */,
+				7439F16A1B62C5C6007CAF44 /* ElectricityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74CAD27F1B62A297000B9083 /* Sources */ = {
+		7439F1511B62C498007CAF44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CAD28A1B62A297000B9083 /* _0____HighVoltage____John_HolsappleTests.m in Sources */,
+				7439F15C1B62C498007CAF44 /* _0____HighVoltage____John_HolsappleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		74CAD2851B62A297000B9083 /* PBXTargetDependency */ = {
+		7439F1571B62C498007CAF44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74CAD2691B62A296000B9083 /* 30 -- HighVoltage -- John Holsapple */;
-			targetProxy = 74CAD2841B62A297000B9083 /* PBXContainerItemProxy */;
+			target = 7439F13F1B62C498007CAF44 /* 30 -- HighVoltage -- John Holsapple */;
+			targetProxy = 7439F1561B62C498007CAF44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74CAD2771B62A296000B9083 /* Main.storyboard */ = {
+		7439F1491B62C498007CAF44 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74CAD2781B62A296000B9083 /* Base */,
+				7439F14A1B62C498007CAF44 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		74CAD27C1B62A296000B9083 /* LaunchScreen.xib */ = {
+		7439F14E1B62C498007CAF44 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74CAD27D1B62A296000B9083 /* Base */,
+				7439F14F1B62C498007CAF44 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -275,7 +263,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		74CAD28B1B62A297000B9083 /* Debug */ = {
+		7439F15D1B62C498007CAF44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,11 +303,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		74CAD28C1B62A297000B9083 /* Release */ = {
+		7439F15E1B62C498007CAF44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +346,7 @@
 			};
 			name = Release;
 		};
-		74CAD28E1B62A297000B9083 /* Debug */ = {
+		7439F1601B62C498007CAF44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -367,7 +356,7 @@
 			};
 			name = Debug;
 		};
-		74CAD28F1B62A297000B9083 /* Release */ = {
+		7439F1611B62C498007CAF44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -377,7 +366,7 @@
 			};
 			name = Release;
 		};
-		74CAD2911B62A297000B9083 /* Debug */ = {
+		7439F1631B62C498007CAF44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -396,7 +385,7 @@
 			};
 			name = Debug;
 		};
-		74CAD2921B62A297000B9083 /* Release */ = {
+		7439F1641B62C498007CAF44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,32 +403,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74CAD2651B62A296000B9083 /* Build configuration list for PBXProject "30 -- HighVoltage -- John Holsapple" */ = {
+		7439F13B1B62C498007CAF44 /* Build configuration list for PBXProject "30 -- HighVoltage -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74CAD28B1B62A297000B9083 /* Debug */,
-				74CAD28C1B62A297000B9083 /* Release */,
+				7439F15D1B62C498007CAF44 /* Debug */,
+				7439F15E1B62C498007CAF44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74CAD28D1B62A297000B9083 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John Holsapple" */ = {
+		7439F15F1B62C498007CAF44 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74CAD28E1B62A297000B9083 /* Debug */,
-				74CAD28F1B62A297000B9083 /* Release */,
+				7439F1601B62C498007CAF44 /* Debug */,
+				7439F1611B62C498007CAF44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		74CAD2901B62A297000B9083 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John HolsappleTests" */ = {
+		7439F1621B62C498007CAF44 /* Build configuration list for PBXNativeTarget "30 -- HighVoltage -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74CAD2911B62A297000B9083 /* Debug */,
-				74CAD2921B62A297000B9083 /* Release */,
+				7439F1631B62C498007CAF44 /* Debug */,
+				7439F1641B62C498007CAF44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 74CAD2621B62A296000B9083 /* Project object */;
+	rootObject = 7439F1381B62C498007CAF44 /* Project object */;
 }
