@@ -68,7 +68,6 @@
         // Additional step(s) to remove only the last name
         NSArray *nameComponents = [agentName componentsSeparatedByString:@" "];
         self.greetingLabel.text = [NSString stringWithFormat:@"Good Evening, Agent %@", nameComponents[1]];
-      //  self.greetingLabel.text = greeting;
         
         //
         // 4. The mission briefing textview needs to be populated with the briefing from HQ, but it must also include the last
@@ -88,7 +87,7 @@
         
         // Additional step to set the above color object to self.view's background color
         self.view.backgroundColor = authenticatedBackgroundColor;
-    }"
+    }
     else
     {
         //
