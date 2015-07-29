@@ -7,50 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		744AFA4E1B6866E900CFCD5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744AFA4D1B6866E900CFCD5A /* main.m */; };
-		744AFA511B6866E900CFCD5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744AFA501B6866E900CFCD5A /* AppDelegate.m */; };
-		744AFA541B6866E900CFCD5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744AFA531B6866E900CFCD5A /* ViewController.m */; };
-		744AFA571B6866E900CFCD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744AFA551B6866E900CFCD5A /* Main.storyboard */; };
-		744AFA591B6866E900CFCD5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744AFA581B6866E900CFCD5A /* Images.xcassets */; };
-		744AFA5C1B6866E900CFCD5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744AFA5A1B6866E900CFCD5A /* LaunchScreen.xib */; };
-		744AFA681B6866E900CFCD5A /* _2____CoreList____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744AFA671B6866E900CFCD5A /* _2____CoreList____John_HolsappleTests.m */; };
+		748771D61B69034700327FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771D51B69034700327FAA /* main.m */; };
+		748771D91B69034700327FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771D81B69034700327FAA /* AppDelegate.m */; };
+		748771DF1B69034700327FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748771DD1B69034700327FAA /* Main.storyboard */; };
+		748771E11B69034700327FAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748771E01B69034700327FAA /* Images.xcassets */; };
+		748771E41B69034700327FAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 748771E21B69034700327FAA /* LaunchScreen.xib */; };
+		748771F01B69034700327FAA /* _2____CoreList____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771EF1B69034700327FAA /* _2____CoreList____John_HolsappleTests.m */; };
+		748771FB1B6903BA00327FAA /* CoreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771FA1B6903BA00327FAA /* CoreListTableViewController.m */; };
+		748771FE1B69041A00327FAA /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771FD1B69041A00327FAA /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		744AFA621B6866E900CFCD5A /* PBXContainerItemProxy */ = {
+		748771EA1B69034700327FAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 744AFA401B6866E900CFCD5A /* Project object */;
+			containerPortal = 748771C81B69034600327FAA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 744AFA471B6866E900CFCD5A;
+			remoteGlobalIDString = 748771CF1B69034600327FAA;
 			remoteInfo = "32 -- CoreList -- John Holsapple";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		744AFA481B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32 -- CoreList -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		744AFA4C1B6866E900CFCD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		744AFA4D1B6866E900CFCD5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		744AFA4F1B6866E900CFCD5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		744AFA501B6866E900CFCD5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		744AFA521B6866E900CFCD5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		744AFA531B6866E900CFCD5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		744AFA561B6866E900CFCD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		744AFA581B6866E900CFCD5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		744AFA5B1B6866E900CFCD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		744AFA611B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "32 -- CoreList -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		744AFA661B6866E900CFCD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		744AFA671B6866E900CFCD5A /* _2____CoreList____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____CoreList____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		748771D01B69034700327FAA /* 32 -- CoreList -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32 -- CoreList -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748771D41B69034700327FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748771D51B69034700327FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		748771D71B69034700327FAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		748771D81B69034700327FAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		748771DE1B69034700327FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		748771E01B69034700327FAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		748771E31B69034700327FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		748771E91B69034700327FAA /* 32 -- CoreList -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "32 -- CoreList -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748771EE1B69034700327FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748771EF1B69034700327FAA /* _2____CoreList____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____CoreList____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		748771F91B6903BA00327FAA /* CoreListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreListTableViewController.h; sourceTree = "<group>"; };
+		748771FA1B6903BA00327FAA /* CoreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreListTableViewController.m; sourceTree = "<group>"; };
+		748771FC1B69041A00327FAA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		748771FD1B69041A00327FAA /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		744AFA451B6866E900CFCD5A /* Frameworks */ = {
+		748771CD1B69034600327FAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		744AFA5E1B6866E900CFCD5A /* Frameworks */ = {
+		748771E61B69034700327FAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,61 +63,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		744AFA3F1B6866E900CFCD5A = {
+		748771C71B69034600327FAA = {
 			isa = PBXGroup;
 			children = (
-				744AFA4A1B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple */,
-				744AFA641B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests */,
-				744AFA491B6866E900CFCD5A /* Products */,
+				748771D21B69034700327FAA /* 32 -- CoreList -- John Holsapple */,
+				748771EC1B69034700327FAA /* 32 -- CoreList -- John HolsappleTests */,
+				748771D11B69034700327FAA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		744AFA491B6866E900CFCD5A /* Products */ = {
+		748771D11B69034700327FAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				744AFA481B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple.app */,
-				744AFA611B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests.xctest */,
+				748771D01B69034700327FAA /* 32 -- CoreList -- John Holsapple.app */,
+				748771E91B69034700327FAA /* 32 -- CoreList -- John HolsappleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		744AFA4A1B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple */ = {
+		748771D21B69034700327FAA /* 32 -- CoreList -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
-				744AFA4F1B6866E900CFCD5A /* AppDelegate.h */,
-				744AFA501B6866E900CFCD5A /* AppDelegate.m */,
-				744AFA521B6866E900CFCD5A /* ViewController.h */,
-				744AFA531B6866E900CFCD5A /* ViewController.m */,
-				744AFA551B6866E900CFCD5A /* Main.storyboard */,
-				744AFA581B6866E900CFCD5A /* Images.xcassets */,
-				744AFA5A1B6866E900CFCD5A /* LaunchScreen.xib */,
-				744AFA4B1B6866E900CFCD5A /* Supporting Files */,
+				748771D71B69034700327FAA /* AppDelegate.h */,
+				748771D81B69034700327FAA /* AppDelegate.m */,
+				748771F91B6903BA00327FAA /* CoreListTableViewController.h */,
+				748771FA1B6903BA00327FAA /* CoreListTableViewController.m */,
+				748771FC1B69041A00327FAA /* ModalViewController.h */,
+				748771FD1B69041A00327FAA /* ModalViewController.m */,
+				748771DD1B69034700327FAA /* Main.storyboard */,
+				748771E01B69034700327FAA /* Images.xcassets */,
+				748771E21B69034700327FAA /* LaunchScreen.xib */,
+				748771D31B69034700327FAA /* Supporting Files */,
 			);
 			path = "32 -- CoreList -- John Holsapple";
 			sourceTree = "<group>";
 		};
-		744AFA4B1B6866E900CFCD5A /* Supporting Files */ = {
+		748771D31B69034700327FAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				744AFA4C1B6866E900CFCD5A /* Info.plist */,
-				744AFA4D1B6866E900CFCD5A /* main.m */,
+				748771D41B69034700327FAA /* Info.plist */,
+				748771D51B69034700327FAA /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		744AFA641B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests */ = {
+		748771EC1B69034700327FAA /* 32 -- CoreList -- John HolsappleTests */ = {
 			isa = PBXGroup;
 			children = (
-				744AFA671B6866E900CFCD5A /* _2____CoreList____John_HolsappleTests.m */,
-				744AFA651B6866E900CFCD5A /* Supporting Files */,
+				748771EF1B69034700327FAA /* _2____CoreList____John_HolsappleTests.m */,
+				748771ED1B69034700327FAA /* Supporting Files */,
 			);
 			path = "32 -- CoreList -- John HolsappleTests";
 			sourceTree = "<group>";
 		};
-		744AFA651B6866E900CFCD5A /* Supporting Files */ = {
+		748771ED1B69034700327FAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				744AFA661B6866E900CFCD5A /* Info.plist */,
+				748771EE1B69034700327FAA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,13 +127,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		744AFA471B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple */ = {
+		748771CF1B69034600327FAA /* 32 -- CoreList -- John Holsapple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 744AFA6B1B6866E900CFCD5A /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John Holsapple" */;
+			buildConfigurationList = 748771F31B69034700327FAA /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John Holsapple" */;
 			buildPhases = (
-				744AFA441B6866E900CFCD5A /* Sources */,
-				744AFA451B6866E900CFCD5A /* Frameworks */,
-				744AFA461B6866E900CFCD5A /* Resources */,
+				748771CC1B69034600327FAA /* Sources */,
+				748771CD1B69034600327FAA /* Frameworks */,
+				748771CE1B69034600327FAA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +141,46 @@
 			);
 			name = "32 -- CoreList -- John Holsapple";
 			productName = "32 -- CoreList -- John Holsapple";
-			productReference = 744AFA481B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple.app */;
+			productReference = 748771D01B69034700327FAA /* 32 -- CoreList -- John Holsapple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		744AFA601B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests */ = {
+		748771E81B69034700327FAA /* 32 -- CoreList -- John HolsappleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 744AFA6E1B6866E900CFCD5A /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John HolsappleTests" */;
+			buildConfigurationList = 748771F61B69034700327FAA /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John HolsappleTests" */;
 			buildPhases = (
-				744AFA5D1B6866E900CFCD5A /* Sources */,
-				744AFA5E1B6866E900CFCD5A /* Frameworks */,
-				744AFA5F1B6866E900CFCD5A /* Resources */,
+				748771E51B69034700327FAA /* Sources */,
+				748771E61B69034700327FAA /* Frameworks */,
+				748771E71B69034700327FAA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				744AFA631B6866E900CFCD5A /* PBXTargetDependency */,
+				748771EB1B69034700327FAA /* PBXTargetDependency */,
 			);
 			name = "32 -- CoreList -- John HolsappleTests";
 			productName = "32 -- CoreList -- John HolsappleTests";
-			productReference = 744AFA611B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests.xctest */;
+			productReference = 748771E91B69034700327FAA /* 32 -- CoreList -- John HolsappleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		744AFA401B6866E900CFCD5A /* Project object */ = {
+		748771C81B69034600327FAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
-					744AFA471B6866E900CFCD5A = {
+					748771CF1B69034600327FAA = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					744AFA601B6866E900CFCD5A = {
+					748771E81B69034700327FAA = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 744AFA471B6866E900CFCD5A;
+						TestTargetID = 748771CF1B69034600327FAA;
 					};
 				};
 			};
-			buildConfigurationList = 744AFA431B6866E900CFCD5A /* Build configuration list for PBXProject "32 -- CoreList -- John Holsapple" */;
+			buildConfigurationList = 748771CB1B69034600327FAA /* Build configuration list for PBXProject "32 -- CoreList -- John Holsapple" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +188,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 744AFA3F1B6866E900CFCD5A;
-			productRefGroup = 744AFA491B6866E900CFCD5A /* Products */;
+			mainGroup = 748771C71B69034600327FAA;
+			productRefGroup = 748771D11B69034700327FAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				744AFA471B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple */,
-				744AFA601B6866E900CFCD5A /* 32 -- CoreList -- John HolsappleTests */,
+				748771CF1B69034600327FAA /* 32 -- CoreList -- John Holsapple */,
+				748771E81B69034700327FAA /* 32 -- CoreList -- John HolsappleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		744AFA461B6866E900CFCD5A /* Resources */ = {
+		748771CE1B69034600327FAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744AFA571B6866E900CFCD5A /* Main.storyboard in Resources */,
-				744AFA5C1B6866E900CFCD5A /* LaunchScreen.xib in Resources */,
-				744AFA591B6866E900CFCD5A /* Images.xcassets in Resources */,
+				748771DF1B69034700327FAA /* Main.storyboard in Resources */,
+				748771E41B69034700327FAA /* LaunchScreen.xib in Resources */,
+				748771E11B69034700327FAA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		744AFA5F1B6866E900CFCD5A /* Resources */ = {
+		748771E71B69034700327FAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,47 +220,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		744AFA441B6866E900CFCD5A /* Sources */ = {
+		748771CC1B69034600327FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744AFA541B6866E900CFCD5A /* ViewController.m in Sources */,
-				744AFA511B6866E900CFCD5A /* AppDelegate.m in Sources */,
-				744AFA4E1B6866E900CFCD5A /* main.m in Sources */,
+				748771FE1B69041A00327FAA /* ModalViewController.m in Sources */,
+				748771D91B69034700327FAA /* AppDelegate.m in Sources */,
+				748771FB1B6903BA00327FAA /* CoreListTableViewController.m in Sources */,
+				748771D61B69034700327FAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		744AFA5D1B6866E900CFCD5A /* Sources */ = {
+		748771E51B69034700327FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744AFA681B6866E900CFCD5A /* _2____CoreList____John_HolsappleTests.m in Sources */,
+				748771F01B69034700327FAA /* _2____CoreList____John_HolsappleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		744AFA631B6866E900CFCD5A /* PBXTargetDependency */ = {
+		748771EB1B69034700327FAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 744AFA471B6866E900CFCD5A /* 32 -- CoreList -- John Holsapple */;
-			targetProxy = 744AFA621B6866E900CFCD5A /* PBXContainerItemProxy */;
+			target = 748771CF1B69034600327FAA /* 32 -- CoreList -- John Holsapple */;
+			targetProxy = 748771EA1B69034700327FAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		744AFA551B6866E900CFCD5A /* Main.storyboard */ = {
+		748771DD1B69034700327FAA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				744AFA561B6866E900CFCD5A /* Base */,
+				748771DE1B69034700327FAA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		744AFA5A1B6866E900CFCD5A /* LaunchScreen.xib */ = {
+		748771E21B69034700327FAA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				744AFA5B1B6866E900CFCD5A /* Base */,
+				748771E31B69034700327FAA /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		744AFA691B6866E900CFCD5A /* Debug */ = {
+		748771F11B69034700327FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		744AFA6A1B6866E900CFCD5A /* Release */ = {
+		748771F21B69034700327FAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +349,7 @@
 			};
 			name = Release;
 		};
-		744AFA6C1B6866E900CFCD5A /* Debug */ = {
+		748771F41B69034700327FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -353,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		744AFA6D1B6866E900CFCD5A /* Release */ = {
+		748771F51B69034700327FAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -363,7 +369,7 @@
 			};
 			name = Release;
 		};
-		744AFA6F1B6866E900CFCD5A /* Debug */ = {
+		748771F71B69034700327FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		744AFA701B6866E900CFCD5A /* Release */ = {
+		748771F81B69034700327FAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -400,32 +406,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		744AFA431B6866E900CFCD5A /* Build configuration list for PBXProject "32 -- CoreList -- John Holsapple" */ = {
+		748771CB1B69034600327FAA /* Build configuration list for PBXProject "32 -- CoreList -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				744AFA691B6866E900CFCD5A /* Debug */,
-				744AFA6A1B6866E900CFCD5A /* Release */,
+				748771F11B69034700327FAA /* Debug */,
+				748771F21B69034700327FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		744AFA6B1B6866E900CFCD5A /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John Holsapple" */ = {
+		748771F31B69034700327FAA /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				744AFA6C1B6866E900CFCD5A /* Debug */,
-				744AFA6D1B6866E900CFCD5A /* Release */,
+				748771F41B69034700327FAA /* Debug */,
+				748771F51B69034700327FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		744AFA6E1B6866E900CFCD5A /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John HolsappleTests" */ = {
+		748771F61B69034700327FAA /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				744AFA6F1B6866E900CFCD5A /* Debug */,
-				744AFA701B6866E900CFCD5A /* Release */,
+				748771F71B69034700327FAA /* Debug */,
+				748771F81B69034700327FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 744AFA401B6866E900CFCD5A /* Project object */;
+	rootObject = 748771C81B69034600327FAA /* Project object */;
 }

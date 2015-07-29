@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "744AFA471B6866E900CFCD5A"
+               BlueprintIdentifier = "748771CF1B69034600327FAA"
                BuildableName = "32 -- CoreList -- John Holsapple.app"
                BlueprintName = "32 -- CoreList -- John Holsapple"
                ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "744AFA601B6866E900CFCD5A"
+               BlueprintIdentifier = "748771E81B69034700327FAA"
                BuildableName = "32 -- CoreList -- John HolsappleTests.xctest"
                BlueprintName = "32 -- CoreList -- John HolsappleTests"
                ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "744AFA601B6866E900CFCD5A"
+               BlueprintIdentifier = "748771E81B69034700327FAA"
                BuildableName = "32 -- CoreList -- John HolsappleTests.xctest"
                BlueprintName = "32 -- CoreList -- John HolsappleTests"
                ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "744AFA471B6866E900CFCD5A"
+            BlueprintIdentifier = "748771CF1B69034600327FAA"
             BuildableName = "32 -- CoreList -- John Holsapple.app"
             BlueprintName = "32 -- CoreList -- John Holsapple"
             ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "744AFA471B6866E900CFCD5A"
+            BlueprintIdentifier = "748771CF1B69034600327FAA"
             BuildableName = "32 -- CoreList -- John Holsapple.app"
             BlueprintName = "32 -- CoreList -- John Holsapple"
             ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "744AFA471B6866E900CFCD5A"
+            BlueprintIdentifier = "748771CF1B69034600327FAA"
             BuildableName = "32 -- CoreList -- John Holsapple.app"
             BlueprintName = "32 -- CoreList -- John Holsapple"
             ReferencedContainer = "container:32 -- CoreList -- John Holsapple.xcodeproj">

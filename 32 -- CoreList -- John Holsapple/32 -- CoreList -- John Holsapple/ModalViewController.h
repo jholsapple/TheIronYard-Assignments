@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ModalViewController.h
 //  32 -- CoreList -- John Holsapple
 //
 //  Created by John Holsapple on 7/29/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface ModalViewController : UIViewController
 
 @end
-
