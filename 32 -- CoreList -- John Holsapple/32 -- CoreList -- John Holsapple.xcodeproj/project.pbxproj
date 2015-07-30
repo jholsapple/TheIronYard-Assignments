@@ -6,7 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		744EA4FB1B695F25002474E4 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 744EA4FC1B695F25002474E4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				744EA4FF1B695F31002474E4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		744EA4FA1B695EAB002474E4 /* CoreListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 744EA4F81B695EAB002474E4 /* CoreListModel.xcdatamodeld */; };
+		744EA5021B695F9F002474E4 /* CoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA5011B695F9F002474E4 /* CoreItem.m */; };
+		744EA5051B695FAC002474E4 /* _CoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA5041B695FAC002474E4 /* _CoreItem.m */; };
+		744EA50A1B696EB5002474E4 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA5091B696EB5002474E4 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		748771D61B69034700327FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771D51B69034700327FAA /* main.m */; };
 		748771D91B69034700327FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 748771D81B69034700327FAA /* AppDelegate.m */; };
 		748771DF1B69034700327FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748771DD1B69034700327FAA /* Main.storyboard */; };
@@ -28,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		744EA4F91B695EAB002474E4 /* CoreListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreListModel.xcdatamodel; sourceTree = "<group>"; };
+		744EA5001B695F9F002474E4 /* CoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreItem.h; path = Classes/CoreItem.h; sourceTree = "<group>"; };
+		744EA5011B695F9F002474E4 /* CoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreItem.m; path = Classes/CoreItem.m; sourceTree = "<group>"; };
+		744EA5031B695FAC002474E4 /* _CoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CoreItem.h; path = MOGenerated/_CoreItem.h; sourceTree = "<group>"; };
+		744EA5041B695FAC002474E4 /* _CoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CoreItem.m; path = MOGenerated/_CoreItem.m; sourceTree = "<group>"; };
+		744EA5081B696EB5002474E4 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		744EA5091B696EB5002474E4 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		748771D01B69034700327FAA /* 32 -- CoreList -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32 -- CoreList -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		748771D41B69034700327FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748771D51B69034700327FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +88,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		744EA5061B695FB2002474E4 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5071B695FF7002474E4 /* Generated-DO NOT EDIT */,
+				744EA50C1B696FBC002474E4 /* Core Data Model Classes */,
+				744EA50B1B696ED2002474E4 /* Libraries */,
+			);
+			name = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		744EA5071B695FF7002474E4 /* Generated-DO NOT EDIT */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5031B695FAC002474E4 /* _CoreItem.h */,
+				744EA5041B695FAC002474E4 /* _CoreItem.m */,
+			);
+			name = "Generated-DO NOT EDIT";
+			sourceTree = "<group>";
+		};
+		744EA50B1B696ED2002474E4 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5081B696EB5002474E4 /* CoreDataStack.h */,
+				744EA5091B696EB5002474E4 /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		744EA50C1B696FBC002474E4 /* Core Data Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5001B695F9F002474E4 /* CoreItem.h */,
+				744EA5011B695F9F002474E4 /* CoreItem.m */,
+			);
+			name = "Core Data Model Classes";
+			sourceTree = "<group>";
+		};
 		748771C71B69034600327FAA = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +146,7 @@
 		748771D21B69034700327FAA /* 32 -- CoreList -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
+				744EA5061B695FB2002474E4 /* CoreDataModels */,
 				748771D71B69034700327FAA /* AppDelegate.h */,
 				748771D81B69034700327FAA /* AppDelegate.m */,
 				748771F91B6903BA00327FAA /* CoreListTableViewController.h */,
@@ -91,6 +154,7 @@
 				748771FC1B69041A00327FAA /* ModalViewController.h */,
 				748771FD1B69041A00327FAA /* ModalViewController.m */,
 				748771DD1B69034700327FAA /* Main.storyboard */,
+				744EA4F81B695EAB002474E4 /* CoreListModel.xcdatamodeld */,
 				748771E01B69034700327FAA /* Images.xcassets */,
 				748771E21B69034700327FAA /* LaunchScreen.xib */,
 				748771D31B69034700327FAA /* Supporting Files */,
@@ -171,6 +235,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
+					744EA4FB1B695F25002474E4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					748771CF1B69034600327FAA = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -195,6 +262,7 @@
 			targets = (
 				748771CF1B69034600327FAA /* 32 -- CoreList -- John Holsapple */,
 				748771E81B69034700327FAA /* 32 -- CoreList -- John HolsappleTests */,
+				744EA4FB1B695F25002474E4 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -219,14 +287,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		744EA4FF1B695F31002474E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/32 -- CoreList -- John Holsapple\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model CoreListModel.xcdatamodeld/CoreListModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		748771CC1B69034600327FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				748771FE1B69041A00327FAA /* ModalViewController.m in Sources */,
+				744EA4FA1B695EAB002474E4 /* CoreListModel.xcdatamodeld in Sources */,
 				748771D91B69034700327FAA /* AppDelegate.m in Sources */,
+				744EA50A1B696EB5002474E4 /* CoreDataStack.m in Sources */,
+				744EA5021B695F9F002474E4 /* CoreItem.m in Sources */,
 				748771FB1B6903BA00327FAA /* CoreListTableViewController.m in Sources */,
+				744EA5051B695FAC002474E4 /* _CoreItem.m in Sources */,
 				748771D61B69034700327FAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +357,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		744EA4FD1B695F25002474E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		744EA4FE1B695F25002474E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		748771F11B69034700327FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +508,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		744EA4FC1B695F25002474E4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744EA4FD1B695F25002474E4 /* Debug */,
+				744EA4FE1B695F25002474E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		748771CB1B69034600327FAA /* Build configuration list for PBXProject "32 -- CoreList -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -422,6 +532,7 @@
 				748771F51B69034700327FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		748771F61B69034700327FAA /* Build configuration list for PBXNativeTarget "32 -- CoreList -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -430,8 +541,22 @@
 				748771F81B69034700327FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		744EA4F81B695EAB002474E4 /* CoreListModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				744EA4F91B695EAB002474E4 /* CoreListModel.xcdatamodel */,
+			);
+			currentVersion = 744EA4F91B695EAB002474E4 /* CoreListModel.xcdatamodel */;
+			path = CoreListModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 748771C81B69034600327FAA /* Project object */;
 }

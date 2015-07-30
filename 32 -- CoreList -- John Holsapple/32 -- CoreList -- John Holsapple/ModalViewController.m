@@ -7,31 +7,70 @@
 //
 
 #import "ModalViewController.h"
+#import "CoreListTableViewController.h"
+#import "CoreDataStack.h"
 
-@interface ModalViewController ()
+@interface ModalViewController () <UITextFieldDelegate>
+{
+    CoreDataStack *cdStack;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *theTextField;
+
+- (IBAction)saveButton:(UIButton *)sender;
+- (IBAction)cancelButton:(UIButton *)sender;
 
 @end
 
 @implementation ModalViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    BOOL returnValue = NO;
+    if (textField == self.theTextField)
+    {
+        if (![self.theTextField.text isEqualToString:@""])
+        {
+            returnValue = YES;
+            [self saveCoreDataUpdates];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
+    return returnValue;
+}
+
+- (void)saveCoreDataUpdates
+{
+    [cdStack saveOrFail:^(NSError *errorOrNil)
+     {
+         if (errorOrNil)
+         {
+             NSLog(@"Error from CDStack: %@", [errorOrNil localizedDescription]);
+         }
+     }];
+}
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)saveButton:(UIButton *)sender
+{
+    
 }
-*/
 
+- (IBAction)cancelButton:(UIButton *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

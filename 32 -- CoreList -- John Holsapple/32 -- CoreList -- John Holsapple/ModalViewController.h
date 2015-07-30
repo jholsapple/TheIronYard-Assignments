@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreListTableViewController.h"
 
 @interface ModalViewController : UIViewController
+
+@property (strong, nonatomic) id<ModalViewControllerDelegate> delegate;
 
 @end

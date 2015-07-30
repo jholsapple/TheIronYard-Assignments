@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ModalViewControllerDelegate <NSObject>
+
+- (void)
+
+<#methods#>
+
+@end
+
 @interface CoreListTableViewController : UITableViewController
 
 @end

@@ -13,10 +13,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VqG-Cx-q7D">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoreListCell" textLabel="6uK-Ln-le9" style="IBUITableViewCellStyleDefault" id="VqG-Cx-q7D">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VqG-Cx-q7D" id="I83-8m-L8F">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6uK-Ln-le9">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -28,7 +36,7 @@
                     <navigationItem key="navigationItem" id="hnQ-Py-1W6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qGZ-qR-vVJ">
                             <connections>
-                                <segue destination="ebG-xo-Dh9" kind="presentation" id="2Hl-ZF-2WV"/>
+                                <segue destination="ebG-xo-Dh9" kind="presentation" identifier="ModalViewSegue" id="2Hl-ZF-2WV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -55,39 +63,56 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMN-OC-lxd">
-                                <rect key="frame" x="15" y="66" width="34" height="30"/>
+                                <rect key="frame" x="15" y="66" width="281" height="50"/>
+                                <color key="backgroundColor" red="0.31648367643356323" green="0.94344186782836914" blue="0.57777166366577148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
                                 <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="ebG-xo-Dh9" eventType="touchUpInside" id="HPT-ni-ZgN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCb-Zd-GXL">
-                                <rect key="frame" x="537" y="66" width="48" height="30"/>
+                                <rect key="frame" x="304" y="66" width="281" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SPd-90-TCb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
                                 <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="ebG-xo-Dh9" eventType="touchUpInside" id="GCw-en-rhE"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59251397848129272" green="0.86434084177017212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mjI-sr-G7v" firstAttribute="leading" secondItem="FMN-OC-lxd" secondAttribute="leading" id="21r-3p-va2"/>
-                            <constraint firstItem="mjI-sr-G7v" firstAttribute="top" secondItem="XbC-D3-y4G" secondAttribute="bottom" constant="8" id="2ZR-ZL-BtP"/>
-                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="bottom" secondItem="FMN-OC-lxd" secondAttribute="bottom" id="HKA-An-dXd"/>
-                            <constraint firstItem="mjI-sr-G7v" firstAttribute="top" secondItem="XbC-D3-y4G" secondAttribute="bottom" constant="8" id="Ibf-CO-dsd"/>
-                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="top" secondItem="FMN-OC-lxd" secondAttribute="bottom" constant="-30" id="KUm-IX-HYI"/>
-                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="centerY" secondItem="FMN-OC-lxd" secondAttribute="centerY" id="P0B-Em-T12"/>
-                            <constraint firstItem="mjI-sr-G7v" firstAttribute="top" secondItem="XbC-D3-y4G" secondAttribute="bottom" constant="8" id="U2f-Y6-uzI"/>
-                            <constraint firstAttribute="trailing" secondItem="mjI-sr-G7v" secondAttribute="trailing" constant="15" id="a87-VI-3QB"/>
-                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="top" secondItem="mjI-sr-G7v" secondAttribute="bottom" constant="8" id="adc-ig-gV5"/>
-                            <constraint firstItem="mjI-sr-G7v" firstAttribute="leading" secondItem="Kup-r7-Gq9" secondAttribute="leading" constant="15" id="fP3-gw-sSV"/>
-                            <constraint firstAttribute="centerX" secondItem="mjI-sr-G7v" secondAttribute="centerX" id="gvk-QN-nny"/>
-                            <constraint firstItem="FMN-OC-lxd" firstAttribute="top" secondItem="mjI-sr-G7v" secondAttribute="bottom" constant="8" id="n85-r2-Lj3"/>
-                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="trailing" secondItem="mjI-sr-G7v" secondAttribute="trailing" id="tu7-sQ-yMs"/>
+                            <constraint firstItem="FMN-OC-lxd" firstAttribute="centerY" secondItem="sCb-Zd-GXL" secondAttribute="centerY" id="1Na-0G-6v5"/>
+                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="top" secondItem="mjI-sr-G7v" secondAttribute="bottom" constant="8" id="293-cH-4Bt"/>
+                            <constraint firstItem="FMN-OC-lxd" firstAttribute="leading" secondItem="mjI-sr-G7v" secondAttribute="leading" id="6OR-5P-Vto"/>
+                            <constraint firstAttribute="trailing" secondItem="mjI-sr-G7v" secondAttribute="trailing" constant="15" id="LDV-q4-gd7"/>
+                            <constraint firstItem="FMN-OC-lxd" firstAttribute="width" secondItem="sCb-Zd-GXL" secondAttribute="width" id="NUe-38-bqd"/>
+                            <constraint firstItem="mjI-sr-G7v" firstAttribute="leading" secondItem="Kup-r7-Gq9" secondAttribute="leading" constant="15" id="Quq-2q-hi4"/>
+                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="leading" secondItem="FMN-OC-lxd" secondAttribute="trailing" constant="8" id="REQ-ng-qju"/>
+                            <constraint firstItem="sCb-Zd-GXL" firstAttribute="trailing" secondItem="mjI-sr-G7v" secondAttribute="trailing" id="So9-FK-opK"/>
+                            <constraint firstItem="FMN-OC-lxd" firstAttribute="top" secondItem="mjI-sr-G7v" secondAttribute="bottom" constant="8" id="WkD-8P-uMS"/>
+                            <constraint firstItem="FMN-OC-lxd" firstAttribute="height" secondItem="sCb-Zd-GXL" secondAttribute="height" id="cyP-cV-kPZ"/>
+                            <constraint firstItem="mjI-sr-G7v" firstAttribute="top" secondItem="XbC-D3-y4G" secondAttribute="bottom" constant="8" id="ea6-qk-lCd"/>
+                            <constraint firstAttribute="centerX" secondItem="mjI-sr-G7v" secondAttribute="centerX" id="j5M-fk-HEP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theTextField" destination="mjI-sr-G7v" id="YFB-cR-9ys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ1-cG-F8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931" y="404"/>
+            <point key="canvasLocation" x="1912" y="404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fx0-Ml-4ca">
@@ -97,6 +122,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4j-s2-CPq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.59251397848129272" green="0.86434084177017212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
