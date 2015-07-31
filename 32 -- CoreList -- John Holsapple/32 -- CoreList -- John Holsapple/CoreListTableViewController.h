@@ -10,10 +10,6 @@
 
 @protocol ModalViewControllerDelegate <NSObject>
 
-- (void)
-
-<#methods#>
-
 @end
 
 @interface CoreListTableViewController : UITableViewController

@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7434C3B41B6BDC540050E6C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */; };
+		7434C3B71B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */; };
+		7434C3BC1B6BDC540050E6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BA1B6BDC540050E6C0 /* Main.storyboard */; };
+		7434C3BE1B6BDC540050E6C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BD1B6BDC540050E6C0 /* Images.xcassets */; };
+		7434C3C11B6BDC540050E6C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */; };
+		7434C3CD1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */; };
+		7434C3D71B6BDCDF0050E6C0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */; };
+		7434C3D91B6BEF8A0050E6C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7434C3C71B6BDC540050E6C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7434C3A61B6BDC540050E6C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7434C3AD1B6BDC540050E6C0;
+			remoteInfo = "34 -- VenueMenu -- John Holsapple";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34 -- VenueMenu -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7434C3B21B6BDC540050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_4____VenueMenu____John_Holsapple.xcdatamodel"; sourceTree = "<group>"; };
+		7434C3BB1B6BDC540050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7434C3BD1B6BDC540050E6C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7434C3C01B6BDC540050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "34 -- VenueMenu -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7434C3CB1B6BDC540050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_4____VenueMenu____John_HolsappleTests.swift"; sourceTree = "<group>"; };
+		7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7434C3AB1B6BDC540050E6C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7434C3C31B6BDC540050E6C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7434C3A51B6BDC540050E6C0 = {
+			isa = PBXGroup;
+			children = (
+				7434C3B01B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
+				7434C3C91B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
+				7434C3AF1B6BDC540050E6C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7434C3AF1B6BDC540050E6C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */,
+				7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7434C3B01B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
+			isa = PBXGroup;
+			children = (
+				7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */,
+				7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */,
+				7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */,
+				7434C3BA1B6BDC540050E6C0 /* Main.storyboard */,
+				7434C3BD1B6BDC540050E6C0 /* Images.xcassets */,
+				7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */,
+				7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */,
+				7434C3B11B6BDC540050E6C0 /* Supporting Files */,
+			);
+			path = "34 -- VenueMenu -- John Holsapple";
+			sourceTree = "<group>";
+		};
+		7434C3B11B6BDC540050E6C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7434C3B21B6BDC540050E6C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7434C3C91B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */,
+				7434C3CA1B6BDC540050E6C0 /* Supporting Files */,
+			);
+			path = "34 -- VenueMenu -- John HolsappleTests";
+			sourceTree = "<group>";
+		};
+		7434C3CA1B6BDC540050E6C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7434C3CB1B6BDC540050E6C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7434C3D01B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */;
+			buildPhases = (
+				7434C3AA1B6BDC540050E6C0 /* Sources */,
+				7434C3AB1B6BDC540050E6C0 /* Frameworks */,
+				7434C3AC1B6BDC540050E6C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "34 -- VenueMenu -- John Holsapple";
+			productName = "34 -- VenueMenu -- John Holsapple";
+			productReference = 7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7434C3C51B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7434C3D31B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */;
+			buildPhases = (
+				7434C3C21B6BDC540050E6C0 /* Sources */,
+				7434C3C31B6BDC540050E6C0 /* Frameworks */,
+				7434C3C41B6BDC540050E6C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7434C3C81B6BDC540050E6C0 /* PBXTargetDependency */,
+			);
+			name = "34 -- VenueMenu -- John HolsappleTests";
+			productName = "34 -- VenueMenu -- John HolsappleTests";
+			productReference = 7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7434C3A61B6BDC540050E6C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					7434C3AD1B6BDC540050E6C0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7434C3C51B6BDC540050E6C0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7434C3AD1B6BDC540050E6C0;
+					};
+				};
+			};
+			buildConfigurationList = 7434C3A91B6BDC540050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7434C3A51B6BDC540050E6C0;
+			productRefGroup = 7434C3AF1B6BDC540050E6C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
+				7434C3C51B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7434C3AC1B6BDC540050E6C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7434C3BC1B6BDC540050E6C0 /* Main.storyboard in Resources */,
+				7434C3C11B6BDC540050E6C0 /* LaunchScreen.xib in Resources */,
+				7434C3BE1B6BDC540050E6C0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7434C3C41B6BDC540050E6C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7434C3AA1B6BDC540050E6C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7434C3D71B6BDCDF0050E6C0 /* FavoritesTableViewController.swift in Sources */,
+				7434C3B41B6BDC540050E6C0 /* AppDelegate.swift in Sources */,
+				7434C3D91B6BEF8A0050E6C0 /* SearchViewController.swift in Sources */,
+				7434C3B71B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7434C3C21B6BDC540050E6C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7434C3CD1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7434C3C81B6BDC540050E6C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */;
+			targetProxy = 7434C3C71B6BDC540050E6C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7434C3BA1B6BDC540050E6C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7434C3BB1B6BDC540050E6C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7434C3C01B6BDC540050E6C0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7434C3CE1B6BDC540050E6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7434C3CF1B6BDC540050E6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7434C3D11B6BDC540050E6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "34 -- VenueMenu -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7434C3D21B6BDC540050E6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "34 -- VenueMenu -- John Holsapple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7434C3D41B6BDC540050E6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "34 -- VenueMenu -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/34 -- VenueMenu -- John Holsapple.app/34 -- VenueMenu -- John Holsapple";
+			};
+			name = Debug;
+		};
+		7434C3D51B6BDC540050E6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "34 -- VenueMenu -- John HolsappleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/34 -- VenueMenu -- John Holsapple.app/34 -- VenueMenu -- John Holsapple";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7434C3A91B6BDC540050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7434C3CE1B6BDC540050E6C0 /* Debug */,
+				7434C3CF1B6BDC540050E6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7434C3D01B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7434C3D11B6BDC540050E6C0 /* Debug */,
+				7434C3D21B6BDC540050E6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7434C3D31B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7434C3D41B6BDC540050E6C0 /* Debug */,
+				7434C3D51B6BDC540050E6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */,
+			);
+			currentVersion = 7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */;
+			path = "_4____VenueMenu____John_Holsapple.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7434C3A61B6BDC540050E6C0 /* Project object */;
+}
