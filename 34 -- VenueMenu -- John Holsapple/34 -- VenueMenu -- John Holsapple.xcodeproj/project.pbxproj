@@ -7,56 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7434C3B41B6BDC540050E6C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */; };
-		7434C3B71B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */; };
-		7434C3BC1B6BDC540050E6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BA1B6BDC540050E6C0 /* Main.storyboard */; };
-		7434C3BE1B6BDC540050E6C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BD1B6BDC540050E6C0 /* Images.xcassets */; };
-		7434C3C11B6BDC540050E6C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */; };
-		7434C3CD1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */; };
-		7434C3D71B6BDCDF0050E6C0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */; };
-		7434C3D91B6BEF8A0050E6C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */; };
-		7434C3DD1B6C06400050E6C0 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3DC1B6C06400050E6C0 /* ResultsTableViewCell.swift */; };
-		7434C3E11B6C16240050E6C0 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3E01B6C16240050E6C0 /* LocationDetailViewController.swift */; };
-		7434C3E31B6D09010050E6C0 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3E21B6D09010050E6C0 /* FavoriteTableViewCell.swift */; };
+		7434C3F31B6D0D3C0050E6C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3F21B6D0D3C0050E6C0 /* main.m */; };
+		7434C3F61B6D0D3C0050E6C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3F51B6D0D3C0050E6C0 /* AppDelegate.m */; };
+		7434C3FC1B6D0D3C0050E6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */; };
+		7434C3FE1B6D0D3C0050E6C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */; };
+		7434C4011B6D0D3C0050E6C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3FF1B6D0D3C0050E6C0 /* LaunchScreen.xib */; };
+		7434C40D1B6D0D3C0050E6C0 /* _4____VenueMenu____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C40C1B6D0D3C0050E6C0 /* _4____VenueMenu____John_HolsappleTests.m */; };
+		7434C4181B6D0F000050E6C0 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */; };
+		7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41A1B6D10D70050E6C0 /* SearchViewController.m */; };
+		7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */; };
+		7434C4211B6D19F60050E6C0 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4201B6D19F60050E6C0 /* FavoritesCell.m */; };
+		7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4231B6D1A890050E6C0 /* ResultsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7434C3C71B6BDC540050E6C0 /* PBXContainerItemProxy */ = {
+		7434C4071B6D0D3C0050E6C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7434C3A61B6BDC540050E6C0 /* Project object */;
+			containerPortal = 7434C3E51B6D0D3C0050E6C0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7434C3AD1B6BDC540050E6C0;
+			remoteGlobalIDString = 7434C3EC1B6D0D3C0050E6C0;
 			remoteInfo = "34 -- VenueMenu -- John Holsapple";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34 -- VenueMenu -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7434C3B21B6BDC540050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_4____VenueMenu____John_Holsapple.xcdatamodel"; sourceTree = "<group>"; };
-		7434C3BB1B6BDC540050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7434C3BD1B6BDC540050E6C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7434C3C01B6BDC540050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "34 -- VenueMenu -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7434C3CB1B6BDC540050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_4____VenueMenu____John_HolsappleTests.swift"; sourceTree = "<group>"; };
-		7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
-		7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		7434C3DC1B6C06400050E6C0 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
-		7434C3E01B6C16240050E6C0 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
-		7434C3E21B6D09010050E6C0 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34 -- VenueMenu -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7434C3F11B6D0D3C0050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7434C3F21B6D0D3C0050E6C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7434C3F41B6D0D3C0050E6C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7434C3F51B6D0D3C0050E6C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7434C3FB1B6D0D3C0050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7434C4001B6D0D3C0050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "34 -- VenueMenu -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7434C40B1B6D0D3C0050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7434C40C1B6D0D3C0050E6C0 /* _4____VenueMenu____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_4____VenueMenu____John_HolsappleTests.m"; sourceTree = "<group>"; };
+		7434C4161B6D0F000050E6C0 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		7434C4191B6D10D70050E6C0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		7434C41A1B6D10D70050E6C0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsViewController.h; sourceTree = "<group>"; };
+		7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsViewController.m; sourceTree = "<group>"; };
+		7434C41F1B6D19F50050E6C0 /* FavoritesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
+		7434C4201B6D19F60050E6C0 /* FavoritesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
+		7434C4221B6D1A890050E6C0 /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
+		7434C4231B6D1A890050E6C0 /* ResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7434C3AB1B6BDC540050E6C0 /* Frameworks */ = {
+		7434C3EA1B6D0D3C0050E6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7434C3C31B6BDC540050E6C0 /* Frameworks */ = {
+		7434C4031B6D0D3C0050E6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,63 +72,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7434C3A51B6BDC540050E6C0 = {
+		7434C3E41B6D0D3C0050E6C0 = {
 			isa = PBXGroup;
 			children = (
-				7434C3B01B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
-				7434C3C91B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
-				7434C3AF1B6BDC540050E6C0 /* Products */,
+				7434C3EF1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
+				7434C4091B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
+				7434C3EE1B6D0D3C0050E6C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7434C3AF1B6BDC540050E6C0 /* Products */ = {
+		7434C3EE1B6D0D3C0050E6C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */,
-				7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */,
+				7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */,
+				7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7434C3B01B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
+		7434C3EF1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
-				7434C3B31B6BDC540050E6C0 /* AppDelegate.swift */,
-				7434C3D61B6BDCDF0050E6C0 /* FavoritesTableViewController.swift */,
-				7434C3E21B6D09010050E6C0 /* FavoriteTableViewCell.swift */,
-				7434C3D81B6BEF8A0050E6C0 /* SearchViewController.swift */,
-				7434C3DC1B6C06400050E6C0 /* ResultsTableViewCell.swift */,
-				7434C3E01B6C16240050E6C0 /* LocationDetailViewController.swift */,
-				7434C3BA1B6BDC540050E6C0 /* Main.storyboard */,
-				7434C3BD1B6BDC540050E6C0 /* Images.xcassets */,
-				7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */,
-				7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */,
-				7434C3B11B6BDC540050E6C0 /* Supporting Files */,
+				7434C3F41B6D0D3C0050E6C0 /* AppDelegate.h */,
+				7434C3F51B6D0D3C0050E6C0 /* AppDelegate.m */,
+				7434C4161B6D0F000050E6C0 /* FavoritesTableViewController.h */,
+				7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */,
+				7434C41F1B6D19F50050E6C0 /* FavoritesCell.h */,
+				7434C4201B6D19F60050E6C0 /* FavoritesCell.m */,
+				7434C4191B6D10D70050E6C0 /* SearchViewController.h */,
+				7434C41A1B6D10D70050E6C0 /* SearchViewController.m */,
+				7434C4221B6D1A890050E6C0 /* ResultsCell.h */,
+				7434C4231B6D1A890050E6C0 /* ResultsCell.m */,
+				7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */,
+				7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */,
+				7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */,
+				7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */,
+				7434C3FF1B6D0D3C0050E6C0 /* LaunchScreen.xib */,
+				7434C3F01B6D0D3C0050E6C0 /* Supporting Files */,
 			);
 			path = "34 -- VenueMenu -- John Holsapple";
 			sourceTree = "<group>";
 		};
-		7434C3B11B6BDC540050E6C0 /* Supporting Files */ = {
+		7434C3F01B6D0D3C0050E6C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7434C3B21B6BDC540050E6C0 /* Info.plist */,
+				7434C3F11B6D0D3C0050E6C0 /* Info.plist */,
+				7434C3F21B6D0D3C0050E6C0 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7434C3C91B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
+		7434C4091B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
 			isa = PBXGroup;
 			children = (
-				7434C3CC1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift */,
-				7434C3CA1B6BDC540050E6C0 /* Supporting Files */,
+				7434C40C1B6D0D3C0050E6C0 /* _4____VenueMenu____John_HolsappleTests.m */,
+				7434C40A1B6D0D3C0050E6C0 /* Supporting Files */,
 			);
 			path = "34 -- VenueMenu -- John HolsappleTests";
 			sourceTree = "<group>";
 		};
-		7434C3CA1B6BDC540050E6C0 /* Supporting Files */ = {
+		7434C40A1B6D0D3C0050E6C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7434C3CB1B6BDC540050E6C0 /* Info.plist */,
+				7434C40B1B6D0D3C0050E6C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,13 +142,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
+		7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7434C3D01B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */;
+			buildConfigurationList = 7434C4101B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */;
 			buildPhases = (
-				7434C3AA1B6BDC540050E6C0 /* Sources */,
-				7434C3AB1B6BDC540050E6C0 /* Frameworks */,
-				7434C3AC1B6BDC540050E6C0 /* Resources */,
+				7434C3E91B6D0D3C0050E6C0 /* Sources */,
+				7434C3EA1B6D0D3C0050E6C0 /* Frameworks */,
+				7434C3EB1B6D0D3C0050E6C0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,46 +156,46 @@
 			);
 			name = "34 -- VenueMenu -- John Holsapple";
 			productName = "34 -- VenueMenu -- John Holsapple";
-			productReference = 7434C3AE1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */;
+			productReference = 7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7434C3C51B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
+		7434C4051B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7434C3D31B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */;
+			buildConfigurationList = 7434C4131B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */;
 			buildPhases = (
-				7434C3C21B6BDC540050E6C0 /* Sources */,
-				7434C3C31B6BDC540050E6C0 /* Frameworks */,
-				7434C3C41B6BDC540050E6C0 /* Resources */,
+				7434C4021B6D0D3C0050E6C0 /* Sources */,
+				7434C4031B6D0D3C0050E6C0 /* Frameworks */,
+				7434C4041B6D0D3C0050E6C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7434C3C81B6BDC540050E6C0 /* PBXTargetDependency */,
+				7434C4081B6D0D3C0050E6C0 /* PBXTargetDependency */,
 			);
 			name = "34 -- VenueMenu -- John HolsappleTests";
 			productName = "34 -- VenueMenu -- John HolsappleTests";
-			productReference = 7434C3C61B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */;
+			productReference = 7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7434C3A61B6BDC540050E6C0 /* Project object */ = {
+		7434C3E51B6D0D3C0050E6C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
-					7434C3AD1B6BDC540050E6C0 = {
+					7434C3EC1B6D0D3C0050E6C0 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					7434C3C51B6BDC540050E6C0 = {
+					7434C4051B6D0D3C0050E6C0 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 7434C3AD1B6BDC540050E6C0;
+						TestTargetID = 7434C3EC1B6D0D3C0050E6C0;
 					};
 				};
 			};
-			buildConfigurationList = 7434C3A91B6BDC540050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */;
+			buildConfigurationList = 7434C3E81B6D0D3C0050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -191,29 +203,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 7434C3A51B6BDC540050E6C0;
-			productRefGroup = 7434C3AF1B6BDC540050E6C0 /* Products */;
+			mainGroup = 7434C3E41B6D0D3C0050E6C0;
+			productRefGroup = 7434C3EE1B6D0D3C0050E6C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
-				7434C3C51B6BDC540050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
+				7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
+				7434C4051B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7434C3AC1B6BDC540050E6C0 /* Resources */ = {
+		7434C3EB1B6D0D3C0050E6C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7434C3BC1B6BDC540050E6C0 /* Main.storyboard in Resources */,
-				7434C3C11B6BDC540050E6C0 /* LaunchScreen.xib in Resources */,
-				7434C3BE1B6BDC540050E6C0 /* Images.xcassets in Resources */,
+				7434C3FC1B6D0D3C0050E6C0 /* Main.storyboard in Resources */,
+				7434C4011B6D0D3C0050E6C0 /* LaunchScreen.xib in Resources */,
+				7434C3FE1B6D0D3C0050E6C0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7434C3C41B6BDC540050E6C0 /* Resources */ = {
+		7434C4041B6D0D3C0050E6C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,51 +235,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7434C3AA1B6BDC540050E6C0 /* Sources */ = {
+		7434C3E91B6D0D3C0050E6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7434C3D71B6BDCDF0050E6C0 /* FavoritesTableViewController.swift in Sources */,
-				7434C3B41B6BDC540050E6C0 /* AppDelegate.swift in Sources */,
-				7434C3D91B6BEF8A0050E6C0 /* SearchViewController.swift in Sources */,
-				7434C3B71B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld in Sources */,
-				7434C3E11B6C16240050E6C0 /* LocationDetailViewController.swift in Sources */,
-				7434C3E31B6D09010050E6C0 /* FavoriteTableViewCell.swift in Sources */,
-				7434C3DD1B6C06400050E6C0 /* ResultsTableViewCell.swift in Sources */,
+				7434C4181B6D0F000050E6C0 /* FavoritesTableViewController.m in Sources */,
+				7434C3F61B6D0D3C0050E6C0 /* AppDelegate.m in Sources */,
+				7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */,
+				7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */,
+				7434C4211B6D19F60050E6C0 /* FavoritesCell.m in Sources */,
+				7434C3F31B6D0D3C0050E6C0 /* main.m in Sources */,
+				7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7434C3C21B6BDC540050E6C0 /* Sources */ = {
+		7434C4021B6D0D3C0050E6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7434C3CD1B6BDC540050E6C0 /* _4____VenueMenu____John_HolsappleTests.swift in Sources */,
+				7434C40D1B6D0D3C0050E6C0 /* _4____VenueMenu____John_HolsappleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7434C3C81B6BDC540050E6C0 /* PBXTargetDependency */ = {
+		7434C4081B6D0D3C0050E6C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7434C3AD1B6BDC540050E6C0 /* 34 -- VenueMenu -- John Holsapple */;
-			targetProxy = 7434C3C71B6BDC540050E6C0 /* PBXContainerItemProxy */;
+			target = 7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */;
+			targetProxy = 7434C4071B6D0D3C0050E6C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7434C3BA1B6BDC540050E6C0 /* Main.storyboard */ = {
+		7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7434C3BB1B6BDC540050E6C0 /* Base */,
+				7434C3FB1B6D0D3C0050E6C0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7434C3BF1B6BDC540050E6C0 /* LaunchScreen.xib */ = {
+		7434C3FF1B6D0D3C0050E6C0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7434C3C01B6BDC540050E6C0 /* Base */,
+				7434C4001B6D0D3C0050E6C0 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -275,7 +287,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7434C3CE1B6BDC540050E6C0 /* Debug */ = {
+		7434C40E1B6D0D3C0050E6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,11 +327,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		7434C3CF1B6BDC540050E6C0 /* Release */ = {
+		7434C40F1B6D0D3C0050E6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -356,7 +367,7 @@
 			};
 			name = Release;
 		};
-		7434C3D11B6BDC540050E6C0 /* Debug */ = {
+		7434C4111B6D0D3C0050E6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -366,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		7434C3D21B6BDC540050E6C0 /* Release */ = {
+		7434C4121B6D0D3C0050E6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -376,7 +387,7 @@
 			};
 			name = Release;
 		};
-		7434C3D41B6BDC540050E6C0 /* Debug */ = {
+		7434C4141B6D0D3C0050E6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,7 +406,7 @@
 			};
 			name = Debug;
 		};
-		7434C3D51B6BDC540050E6C0 /* Release */ = {
+		7434C4151B6D0D3C0050E6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,45 +424,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7434C3A91B6BDC540050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */ = {
+		7434C3E81B6D0D3C0050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7434C3CE1B6BDC540050E6C0 /* Debug */,
-				7434C3CF1B6BDC540050E6C0 /* Release */,
+				7434C40E1B6D0D3C0050E6C0 /* Debug */,
+				7434C40F1B6D0D3C0050E6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7434C3D01B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */ = {
+		7434C4101B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John Holsapple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7434C3D11B6BDC540050E6C0 /* Debug */,
-				7434C3D21B6BDC540050E6C0 /* Release */,
+				7434C4111B6D0D3C0050E6C0 /* Debug */,
+				7434C4121B6D0D3C0050E6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		7434C3D31B6BDC540050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */ = {
+		7434C4131B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7434C3D41B6BDC540050E6C0 /* Debug */,
-				7434C3D51B6BDC540050E6C0 /* Release */,
+				7434C4141B6D0D3C0050E6C0 /* Debug */,
+				7434C4151B6D0D3C0050E6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7434C3B51B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */,
-			);
-			currentVersion = 7434C3B61B6BDC540050E6C0 /* _4____VenueMenu____John_Holsapple.xcdatamodel */;
-			path = "_4____VenueMenu____John_Holsapple.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 7434C3A61B6BDC540050E6C0 /* Project object */;
+	rootObject = 7434C3E51B6D0D3C0050E6C0 /* Project object */;
 }
