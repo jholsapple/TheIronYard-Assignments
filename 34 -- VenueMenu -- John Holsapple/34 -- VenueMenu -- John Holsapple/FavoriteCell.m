@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "FavoritesCell.h"
+#import "FavoriteCell.h"
 
-@implementation FavoritesCell
+@implementation FavoriteCell
 
 - (void)awakeFromNib {
     // Initialization code

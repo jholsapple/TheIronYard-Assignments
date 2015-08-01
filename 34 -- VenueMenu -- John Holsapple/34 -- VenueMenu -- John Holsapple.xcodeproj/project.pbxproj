@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7434C4381B6D381D0050E6C0 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7434C4391B6D381D0050E6C0 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				7434C43C1B6D38230050E6C0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		7434C3F31B6D0D3C0050E6C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3F21B6D0D3C0050E6C0 /* main.m */; };
 		7434C3F61B6D0D3C0050E6C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C3F51B6D0D3C0050E6C0 /* AppDelegate.m */; };
@@ -16,8 +30,13 @@
 		7434C4181B6D0F000050E6C0 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */; };
 		7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41A1B6D10D70050E6C0 /* SearchViewController.m */; };
 		7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */; };
-		7434C4211B6D19F60050E6C0 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4201B6D19F60050E6C0 /* FavoritesCell.m */; };
+		7434C4211B6D19F60050E6C0 /* FavoriteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4201B6D19F60050E6C0 /* FavoriteCell.m */; };
 		7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4231B6D1A890050E6C0 /* ResultsCell.m */; };
+		7434C4271B6D26570050E6C0 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4261B6D26570050E6C0 /* Location.m */; };
+		7434C4331B6D34800050E6C0 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4321B6D34800050E6C0 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7434C4371B6D34FA0050E6C0 /* VenueModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4351B6D34FA0050E6C0 /* VenueModel.xcdatamodeld */; };
+		7434C4411B6D38930050E6C0 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C43E1B6D38930050E6C0 /* Location.m */; };
+		7434C4421B6D38930050E6C0 /* _Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4401B6D38930050E6C0 /* _Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +67,19 @@
 		7434C41A1B6D10D70050E6C0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsViewController.h; sourceTree = "<group>"; };
 		7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsViewController.m; sourceTree = "<group>"; };
-		7434C41F1B6D19F50050E6C0 /* FavoritesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
-		7434C4201B6D19F60050E6C0 /* FavoritesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
+		7434C41F1B6D19F50050E6C0 /* FavoriteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteCell.h; sourceTree = "<group>"; };
+		7434C4201B6D19F60050E6C0 /* FavoriteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteCell.m; sourceTree = "<group>"; };
 		7434C4221B6D1A890050E6C0 /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
 		7434C4231B6D1A890050E6C0 /* ResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCell.m; sourceTree = "<group>"; };
+		7434C4251B6D26570050E6C0 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		7434C4261B6D26570050E6C0 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		7434C4311B6D34800050E6C0 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		7434C4321B6D34800050E6C0 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		7434C4361B6D34FA0050E6C0 /* VenueModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VenueModel.xcdatamodel; sourceTree = "<group>"; };
+		7434C43D1B6D38930050E6C0 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Classes/Location.h; sourceTree = "<group>"; };
+		7434C43E1B6D38930050E6C0 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Classes/Location.m; sourceTree = "<group>"; };
+		7434C43F1B6D38930050E6C0 /* _Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Location.h; path = MOGenerated/_Location.h; sourceTree = "<group>"; };
+		7434C4401B6D38930050E6C0 /* _Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Location.m; path = MOGenerated/_Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,19 +121,24 @@
 		7434C3EF1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */ = {
 			isa = PBXGroup;
 			children = (
+				7434C4441B6D38B70050E6C0 /* CoreDataModels */,
+				7434C4341B6D34CF0050E6C0 /* Libraries */,
 				7434C3F41B6D0D3C0050E6C0 /* AppDelegate.h */,
 				7434C3F51B6D0D3C0050E6C0 /* AppDelegate.m */,
 				7434C4161B6D0F000050E6C0 /* FavoritesTableViewController.h */,
 				7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */,
-				7434C41F1B6D19F50050E6C0 /* FavoritesCell.h */,
-				7434C4201B6D19F60050E6C0 /* FavoritesCell.m */,
+				7434C41F1B6D19F50050E6C0 /* FavoriteCell.h */,
+				7434C4201B6D19F60050E6C0 /* FavoriteCell.m */,
 				7434C4191B6D10D70050E6C0 /* SearchViewController.h */,
 				7434C41A1B6D10D70050E6C0 /* SearchViewController.m */,
 				7434C4221B6D1A890050E6C0 /* ResultsCell.h */,
 				7434C4231B6D1A890050E6C0 /* ResultsCell.m */,
 				7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */,
 				7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */,
+				7434C4251B6D26570050E6C0 /* Location.h */,
+				7434C4261B6D26570050E6C0 /* Location.m */,
 				7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */,
+				7434C4351B6D34FA0050E6C0 /* VenueModel.xcdatamodeld */,
 				7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */,
 				7434C3FF1B6D0D3C0050E6C0 /* LaunchScreen.xib */,
 				7434C3F01B6D0D3C0050E6C0 /* Supporting Files */,
@@ -137,6 +170,34 @@
 				7434C40B1B6D0D3C0050E6C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7434C4341B6D34CF0050E6C0 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7434C4311B6D34800050E6C0 /* CoreDataStack.h */,
+				7434C4321B6D34800050E6C0 /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		7434C4431B6D389A0050E6C0 /* Generated -DO NOT EDIT */ = {
+			isa = PBXGroup;
+			children = (
+				7434C43F1B6D38930050E6C0 /* _Location.h */,
+				7434C4401B6D38930050E6C0 /* _Location.m */,
+			);
+			name = "Generated -DO NOT EDIT";
+			sourceTree = "<group>";
+		};
+		7434C4441B6D38B70050E6C0 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				7434C43D1B6D38930050E6C0 /* Location.h */,
+				7434C43E1B6D38930050E6C0 /* Location.m */,
+				7434C4431B6D389A0050E6C0 /* Generated -DO NOT EDIT */,
+			);
+			name = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +254,9 @@
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 7434C3EC1B6D0D3C0050E6C0;
 					};
+					7434C4381B6D381D0050E6C0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 7434C3E81B6D0D3C0050E6C0 /* Build configuration list for PBXProject "34 -- VenueMenu -- John Holsapple" */;
@@ -210,6 +274,7 @@
 			targets = (
 				7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
 				7434C4051B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
+				7434C4381B6D381D0050E6C0 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -234,17 +299,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7434C43C1B6D38230050E6C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/34 -- VenueMenu -- John Holsapple\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model VenueModel.xcdatamodeld/VenueModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7434C3E91B6D0D3C0050E6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7434C4181B6D0F000050E6C0 /* FavoritesTableViewController.m in Sources */,
+				7434C4371B6D34FA0050E6C0 /* VenueModel.xcdatamodeld in Sources */,
 				7434C3F61B6D0D3C0050E6C0 /* AppDelegate.m in Sources */,
 				7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */,
+				7434C4411B6D38930050E6C0 /* Location.m in Sources */,
 				7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */,
-				7434C4211B6D19F60050E6C0 /* FavoritesCell.m in Sources */,
+				7434C4211B6D19F60050E6C0 /* FavoriteCell.m in Sources */,
+				7434C4331B6D34800050E6C0 /* CoreDataStack.m in Sources */,
 				7434C3F31B6D0D3C0050E6C0 /* main.m in Sources */,
+				7434C4271B6D26570050E6C0 /* Location.m in Sources */,
+				7434C4421B6D38930050E6C0 /* _Location.m in Sources */,
 				7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +507,20 @@
 			};
 			name = Release;
 		};
+		7434C43A1B6D381D0050E6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7434C43B1B6D381D0050E6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,7 +549,28 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
+		7434C4391B6D381D0050E6C0 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7434C43A1B6D381D0050E6C0 /* Debug */,
+				7434C43B1B6D381D0050E6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7434C4351B6D34FA0050E6C0 /* VenueModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7434C4361B6D34FA0050E6C0 /* VenueModel.xcdatamodel */,
+			);
+			currentVersion = 7434C4361B6D34FA0050E6C0 /* VenueModel.xcdatamodel */;
+			path = VenueModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7434C3E51B6D0D3C0050E6C0 /* Project object */;
 }

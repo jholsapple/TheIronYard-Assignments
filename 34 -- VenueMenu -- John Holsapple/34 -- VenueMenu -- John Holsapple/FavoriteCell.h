@@ -1,5 +1,5 @@
 //
-//  LocationDetailsViewController.h
+//  FavoritesCell.h
 //  34 -- VenueMenu -- John Holsapple
 //
 //  Created by John Holsapple on 8/1/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LocationDetailsViewController : UIViewController
-
-@property(nonatomic)NSDictionary *resultsInfo;
+@interface FavoriteCell : UITableViewCell
 
 @end
