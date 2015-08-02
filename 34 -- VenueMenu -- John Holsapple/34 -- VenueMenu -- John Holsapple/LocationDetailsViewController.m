@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
+- (IBAction)doneButton:(UIBarButtonItem *)sender;
+
 @end
 
 @implementation LocationDetailsViewController
@@ -35,10 +37,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - TableView data source
-
-
-
 /*
 #pragma mark - Navigation
 
@@ -48,5 +46,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)doneButton:(UIBarButtonItem *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

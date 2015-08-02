@@ -29,7 +29,6 @@
     [super viewDidLoad];
     self.title = @"Forecaster";
     [NetworkManager sharedNetworkManager].delegate = self;
-    
     cityForecasts = [[NSMutableArray alloc] init];
     
 }

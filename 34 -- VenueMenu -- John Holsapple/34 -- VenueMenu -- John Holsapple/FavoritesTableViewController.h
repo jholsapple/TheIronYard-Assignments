@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Location.h"
 
-@interface FavoritesTableViewController : UITableViewController
+@protocol FavoritesTableViewControllerDelegate
+
+- (void)locationWasFound: (Location *)aLocation;
+
+@end
+
+@interface FavoritesTableViewController : UITableViewController <FavoritesTableViewControllerDelegate>
+
+@property(nonatomic) NSMutableArray *results;
 
 @end

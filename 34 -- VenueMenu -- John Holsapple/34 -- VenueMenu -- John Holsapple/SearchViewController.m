@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "Location.h"
+#import "ResultsCell.h"
 
 @import MapKit;
 
@@ -17,10 +18,11 @@
 {
     MKMapView *mapView;
     NSMutableArray *picMarks;
+    NSMutableArray *resultsOptions;
 }
 
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UISearchBar *_searchBar;
+@property (weak, nonatomic) IBOutlet MKMapView *_mapView;
 
 @end
 
@@ -38,21 +40,40 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - TableView data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [resultsOptions count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
+    
+    return cell;
+}
+
 #pragma mark - MKMapView Delegate
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
-{
-    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"mapAnnotation"];
-    
-    if (!pinAnnotationView)
-    {
-        pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"mapAnnotation"];
-    }
-    pinAnnotationView.canShowCallout = YES;
-    Location *aLocation = (Location *)annotation;
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 32.0, 32.0)];
-    pinAnnotationView.leftCalloutAccessoryView = imageView;
-}
+//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+//{
+//    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"mapAnnotation"];
+//    
+//    if (!pinAnnotationView)
+//    {
+//        pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"mapAnnotation"];
+//    }
+//    pinAnnotationView.canShowCallout = YES;
+//    Location *aLocation = (Location *)annotation;
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 32.0, 32.0)];
+//    pinAnnotationView.leftCalloutAccessoryView = imageView;
+//}
 
 /*
 #pragma mark - Navigation

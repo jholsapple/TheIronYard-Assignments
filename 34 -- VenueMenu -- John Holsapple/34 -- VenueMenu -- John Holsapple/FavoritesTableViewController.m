@@ -11,6 +11,7 @@
 #import "FavoriteCell.h"
 #import "LocationDetailsViewController.h"
 #import "CoreDataStack.h"
+#import "NetworkManager.h"
 
 @import CoreLocation;
 
@@ -30,12 +31,7 @@
 {
     [super viewDidLoad];
     results = [[NSMutableArray alloc] init];
-    [results addObject:@{
-                         @"name": @"Gitto's Pizza",
-                         @"address": @"123 Orange Avenue",
-                         @"near":@"Orlando, FL",
-                         @"url": @"http://www.gittospizza.com"
-                         }];
+    [NetworkManager sharedNetworkManager].delegate = self;
     [self.tableView registerClass:[FavoriteCell class] forCellReuseIdentifier:@"FavoriteCell"];
 }
 
@@ -75,29 +71,33 @@
     return cell;
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    LocationDetailsViewController *detailVC = [[LocationDetailsViewController alloc] init];
-//    
-//    [self.navigationController pushViewController:detailVC animated:YES];
-//}
+#pragma mark - FavoritesTableViewControllerDelegate
+
+- (void)locationWasFound:(Location *)aLocation;
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [results addObject:aLocation];
+}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"FavoriteDetailSegue"])
-//    {
-//        LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
-//        locationVC.delegate = self;
-//    }
-//}
+//// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"FavoriteModal"])
+    {
+        LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
+        locationVC.title = segue.identifier;
+    }
+}
 
-//- (IBAction)addFavoriteButton:(UIBarButtonItem *)sender
-//{
-//    SearchViewController *searchVC = [[SearchViewController alloc] init];
-//    searchVC.
-//}
+#pragma mark - Action handlers
+
+- (IBAction)addFavoriteButton:(UIBarButtonItem *)sender
+{
+    SearchViewController *searchVC = [[SearchViewController alloc] init];
+    
+    [self presentViewController:searchVC animated:YES completion:nil];
+}
 
 @end
