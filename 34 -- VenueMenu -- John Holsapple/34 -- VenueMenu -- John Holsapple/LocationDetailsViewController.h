@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Venue.h"
 
 @interface LocationDetailsViewController : UIViewController
 
+@property(nonatomic)Venue *thatVenue;
 @property(nonatomic)NSDictionary *resultsInfo;
 
 @end

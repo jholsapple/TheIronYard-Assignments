@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@protocol SearchTableViewControllerDelegate
+
+- (void)venuesWereFound:(NSArray *)venues;
+
+@end
+
+@interface SearchTableViewController : UITableViewController <SearchTableViewControllerDelegate>
 
 @end

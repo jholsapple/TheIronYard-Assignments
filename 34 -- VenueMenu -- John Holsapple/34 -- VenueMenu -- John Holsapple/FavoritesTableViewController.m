@@ -7,19 +7,20 @@
 //
 
 #import "FavoritesTableViewController.h"
-#import "SearchViewController.h"
+#import "SearchTableViewController.h"
 #import "FavoriteCell.h"
 #import "LocationDetailsViewController.h"
 #import "CoreDataStack.h"
 #import "NetworkManager.h"
+#import "Venue.h"
 
 @import CoreLocation;
 
-@interface FavoritesTableViewController () <CLLocationManagerDelegate>
+@interface FavoritesTableViewController () //<CLLocationManagerDelegate>
 {
-    NSMutableArray *results;
-    CLLocationManager *locationManager;
-    CLLocation *currentLocation;
+    NSMutableArray *_results;
+//    CLLocationManager *locationManager;
+//    CLLocation *currentLocation;
     CoreDataStack *cdStack;
 }
 
@@ -30,9 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    results = [[NSMutableArray alloc] init];
-    [NetworkManager sharedNetworkManager].delegate = self;
+    _results = [[NSMutableArray alloc] init];
     [self.tableView registerClass:[FavoriteCell class] forCellReuseIdentifier:@"FavoriteCell"];
+    cdStack = [CoreDataStack coreDataStackWithModelName:@"VenueModel"];
+    cdStack.coreDataStoreType = CDSStoreTypeSQL;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -57,7 +59,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [results count];
+    return [_results count];
 }
 
 
@@ -65,26 +67,27 @@
  {
     FavoriteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FavoriteCell" forIndexPath:indexPath];
     
-     NSDictionary *resultsInfo = results[indexPath.row];
-     cell.textLabel.text = resultsInfo[@"name"];
+     Venue *aResult = _results[indexPath.row];
+     cell.textLabel.text = aResult.name;
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LocationDetailsViewController *detailVC = [[LocationDetailsViewController alloc] init];
+    
+}
+
 #pragma mark - FavoritesTableViewControllerDelegate
 
-- (void)locationWasFound:(Location *)aLocation;
-{
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    [results addObject:aLocation];
-}
 
 #pragma mark - Navigation
 
 //// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"FavoriteModal"])
+    if ([segue.identifier isEqualToString:@"DetailViewSegue"])
     {
         LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
         locationVC.title = segue.identifier;
@@ -95,7 +98,7 @@
 
 - (IBAction)addFavoriteButton:(UIBarButtonItem *)sender
 {
-    SearchViewController *searchVC = [[SearchViewController alloc] init];
+    SearchTableViewController *searchVC = [[SearchTableViewController alloc] init];
     
     [self presentViewController:searchVC animated:YES completion:nil];
 }

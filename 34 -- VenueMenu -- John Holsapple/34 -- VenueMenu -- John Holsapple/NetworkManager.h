@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FavoritesTableViewController.h"
+#import "SearchTableViewController.h"
+
+@import CoreLocation;
 
 @interface NetworkManager : NSObject
 
-@property(nonatomic)id<FavoritesTableViewControllerDelegate> delegate;
+@property(nonatomic)id<SearchTableViewControllerDelegate> delegate;
 
 + (NetworkManager *)sharedNetworkManager;
-- (void)findInformationForSearch: (Location *)aLocation;
+- (void)findVenuesForCoordinates:(CLLocationCoordinate2D)coordinate andSearchTerm:(NSString *)searchTerm;
 
 @end

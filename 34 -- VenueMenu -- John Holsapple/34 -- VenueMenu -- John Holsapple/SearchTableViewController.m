@@ -6,38 +6,49 @@
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "SearchViewController.h"
-#import "Location.h"
-#import "ResultsCell.h"
+#import "SearchTableViewController.h"
+#import "Venue.h"
+#import "SearchResultsCell.h"
+#import "NetworkManager.h"
 
-@import MapKit;
+@import CoreLocation;
 
-#define LAT_LNG_DEGREES 0.1
-
-@interface SearchViewController () <MKMapViewDelegate>
+@interface SearchTableViewController () <UITextFieldDelegate>
 {
-    MKMapView *mapView;
-    NSMutableArray *picMarks;
     NSMutableArray *resultsOptions;
 }
 
-@property (weak, nonatomic) IBOutlet UISearchBar *_searchBar;
-@property (weak, nonatomic) IBOutlet MKMapView *_mapView;
+@property (strong, nonatomic) IBOutlet UITextField *searchBar;
 
 @end
 
-@implementation SearchViewController
+@implementation SearchTableViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"What's the Haps?!?!";
+    [NetworkManager sharedNetworkManager].delegate = self;
+    resultsOptions = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (![textField.text isEqualToString:@""])
+    {
+        [[NetworkManager sharedNetworkManager] findVenuesForCoordinates:CLLocationCoordinate2DMake(40.7, -74) andSearchTerm:textField.text];
+    }
+    
+    return YES;
+    
 }
 
 #pragma mark - TableView data source
@@ -54,9 +65,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
+    SearchResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchResultsCell" forIndexPath:indexPath];
+    Venue *results = resultsOptions[indexPath.row];
+    cell.locationNameLabel.text = results.name;
+    cell.locationAddressLabel.text = results.address;
+    cell.cityLabel.text = results.city;
+    cell.stateLabel.text = results.state;
+    cell.zipLabel.text = results.zip;
     
     return cell;
+}
+
+
+- (void)venuesWereFound:(NSArray *)venues
+{
+    [resultsOptions addObjectsFromArray:venues];
+    [self.tableView reloadData];
+    
+    [self.searchBar resignFirstResponder];
+    
 }
 
 #pragma mark - MKMapView Delegate

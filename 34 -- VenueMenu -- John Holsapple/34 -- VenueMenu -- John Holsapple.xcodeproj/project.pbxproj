@@ -27,16 +27,15 @@
 		7434C3FE1B6D0D3C0050E6C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */; };
 		7434C4011B6D0D3C0050E6C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7434C3FF1B6D0D3C0050E6C0 /* LaunchScreen.xib */; };
 		7434C4181B6D0F000050E6C0 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */; };
-		7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41A1B6D10D70050E6C0 /* SearchViewController.m */; };
+		7434C41B1B6D10D70050E6C0 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41A1B6D10D70050E6C0 /* SearchTableViewController.m */; };
 		7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */; };
 		7434C4211B6D19F60050E6C0 /* FavoriteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4201B6D19F60050E6C0 /* FavoriteCell.m */; };
-		7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4231B6D1A890050E6C0 /* ResultsCell.m */; };
-		7434C4271B6D26570050E6C0 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4261B6D26570050E6C0 /* Location.m */; };
+		7434C4241B6D1A890050E6C0 /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4231B6D1A890050E6C0 /* SearchResultsCell.m */; };
 		7434C4331B6D34800050E6C0 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4321B6D34800050E6C0 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7434C4371B6D34FA0050E6C0 /* VenueModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4351B6D34FA0050E6C0 /* VenueModel.xcdatamodeld */; };
-		7434C4411B6D38930050E6C0 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C43E1B6D38930050E6C0 /* Location.m */; };
-		7434C4421B6D38930050E6C0 /* _Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C4401B6D38930050E6C0 /* _Location.m */; };
+		7434C4411B6D38930050E6C0 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7434C43E1B6D38930050E6C0 /* Venue.m */; };
 		74ADE1141B6D9E5E001BE6A5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ADE1131B6D9E5E001BE6A5 /* NetworkManager.m */; };
+		74ADE14F1B6FE7BF001BE6A5 /* _Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ADE14E1B6FE7BF001BE6A5 /* _Venue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,25 +49,23 @@
 		7434C4001B6D0D3C0050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7434C4161B6D0F000050E6C0 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
-		7434C4191B6D10D70050E6C0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		7434C41A1B6D10D70050E6C0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		7434C4191B6D10D70050E6C0 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		7434C41A1B6D10D70050E6C0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsViewController.h; sourceTree = "<group>"; };
 		7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsViewController.m; sourceTree = "<group>"; };
 		7434C41F1B6D19F50050E6C0 /* FavoriteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteCell.h; sourceTree = "<group>"; };
 		7434C4201B6D19F60050E6C0 /* FavoriteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteCell.m; sourceTree = "<group>"; };
-		7434C4221B6D1A890050E6C0 /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
-		7434C4231B6D1A890050E6C0 /* ResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCell.m; sourceTree = "<group>"; };
-		7434C4251B6D26570050E6C0 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		7434C4261B6D26570050E6C0 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		7434C4221B6D1A890050E6C0 /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
+		7434C4231B6D1A890050E6C0 /* SearchResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsCell.m; sourceTree = "<group>"; };
 		7434C4311B6D34800050E6C0 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		7434C4321B6D34800050E6C0 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		7434C4361B6D34FA0050E6C0 /* VenueModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VenueModel.xcdatamodel; sourceTree = "<group>"; };
-		7434C43D1B6D38930050E6C0 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Classes/Location.h; sourceTree = "<group>"; };
-		7434C43E1B6D38930050E6C0 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Classes/Location.m; sourceTree = "<group>"; };
-		7434C43F1B6D38930050E6C0 /* _Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Location.h; path = MOGenerated/_Location.h; sourceTree = "<group>"; };
-		7434C4401B6D38930050E6C0 /* _Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Location.m; path = MOGenerated/_Location.m; sourceTree = "<group>"; };
+		7434C43D1B6D38930050E6C0 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = Classes/Venue.h; sourceTree = "<group>"; };
+		7434C43E1B6D38930050E6C0 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = Classes/Venue.m; sourceTree = "<group>"; };
 		74ADE1121B6D9E5E001BE6A5 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		74ADE1131B6D9E5E001BE6A5 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		74ADE14D1B6FE7BF001BE6A5 /* _Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Venue.h; path = MOGenerated/_Venue.h; sourceTree = "<group>"; };
+		74ADE14E1B6FE7BF001BE6A5 /* _Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Venue.m; path = MOGenerated/_Venue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +106,12 @@
 				7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */,
 				7434C41F1B6D19F50050E6C0 /* FavoriteCell.h */,
 				7434C4201B6D19F60050E6C0 /* FavoriteCell.m */,
-				7434C4191B6D10D70050E6C0 /* SearchViewController.h */,
-				7434C41A1B6D10D70050E6C0 /* SearchViewController.m */,
-				7434C4221B6D1A890050E6C0 /* ResultsCell.h */,
-				7434C4231B6D1A890050E6C0 /* ResultsCell.m */,
+				7434C4191B6D10D70050E6C0 /* SearchTableViewController.h */,
+				7434C41A1B6D10D70050E6C0 /* SearchTableViewController.m */,
+				7434C4221B6D1A890050E6C0 /* SearchResultsCell.h */,
+				7434C4231B6D1A890050E6C0 /* SearchResultsCell.m */,
 				7434C41C1B6D18380050E6C0 /* LocationDetailsViewController.h */,
 				7434C41D1B6D18380050E6C0 /* LocationDetailsViewController.m */,
-				7434C4251B6D26570050E6C0 /* Location.h */,
-				7434C4261B6D26570050E6C0 /* Location.m */,
 				74ADE1121B6D9E5E001BE6A5 /* NetworkManager.h */,
 				74ADE1131B6D9E5E001BE6A5 /* NetworkManager.m */,
 				7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */,
@@ -149,8 +144,8 @@
 		7434C4431B6D389A0050E6C0 /* Generated -DO NOT EDIT */ = {
 			isa = PBXGroup;
 			children = (
-				7434C43F1B6D38930050E6C0 /* _Location.h */,
-				7434C4401B6D38930050E6C0 /* _Location.m */,
+				74ADE14D1B6FE7BF001BE6A5 /* _Venue.h */,
+				74ADE14E1B6FE7BF001BE6A5 /* _Venue.m */,
 			);
 			name = "Generated -DO NOT EDIT";
 			sourceTree = "<group>";
@@ -158,8 +153,8 @@
 		7434C4441B6D38B70050E6C0 /* CoreDataModels */ = {
 			isa = PBXGroup;
 			children = (
-				7434C43D1B6D38930050E6C0 /* Location.h */,
-				7434C43E1B6D38930050E6C0 /* Location.m */,
+				7434C43D1B6D38930050E6C0 /* Venue.h */,
+				7434C43E1B6D38930050E6C0 /* Venue.m */,
 				7434C4431B6D389A0050E6C0 /* Generated -DO NOT EDIT */,
 			);
 			name = CoreDataModels;
@@ -259,14 +254,13 @@
 				7434C4371B6D34FA0050E6C0 /* VenueModel.xcdatamodeld in Sources */,
 				74ADE1141B6D9E5E001BE6A5 /* NetworkManager.m in Sources */,
 				7434C3F61B6D0D3C0050E6C0 /* AppDelegate.m in Sources */,
-				7434C4241B6D1A890050E6C0 /* ResultsCell.m in Sources */,
-				7434C4411B6D38930050E6C0 /* Location.m in Sources */,
-				7434C41B1B6D10D70050E6C0 /* SearchViewController.m in Sources */,
+				7434C4241B6D1A890050E6C0 /* SearchResultsCell.m in Sources */,
+				74ADE14F1B6FE7BF001BE6A5 /* _Venue.m in Sources */,
+				7434C4411B6D38930050E6C0 /* Venue.m in Sources */,
+				7434C41B1B6D10D70050E6C0 /* SearchTableViewController.m in Sources */,
 				7434C4211B6D19F60050E6C0 /* FavoriteCell.m in Sources */,
 				7434C4331B6D34800050E6C0 /* CoreDataStack.m in Sources */,
 				7434C3F31B6D0D3C0050E6C0 /* main.m in Sources */,
-				7434C4271B6D26570050E6C0 /* Location.m in Sources */,
-				7434C4421B6D38930050E6C0 /* _Location.m in Sources */,
 				7434C41E1B6D18380050E6C0 /* LocationDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

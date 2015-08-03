@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
-- (IBAction)doneButton:(UIBarButtonItem *)sender;
+- (IBAction)addFavoriteButton:(UIButton *)sender;
 
 @end
 
@@ -27,7 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = self.resultsInfo[@"name"];
+    self.locationNameLabel.text = self.thatVenue.name;
+    self.locationAddressLabel.text = self.thatVenue.address;
+    self.cityLabel.text = self.thatVenue.city;
+    self.stateLabel.text = self.thatVenue.city;
+    self.zipLabel.text = self.thatVenue.zip;
+    self.phoneNumberLabel.text = self.thatVenue.formattedPhone;
+    self.urlLabel.text = self.thatVenue.url;
 
 }
 
@@ -47,9 +53,9 @@
 }
 */
 
-- (IBAction)doneButton:(UIBarButtonItem *)sender
+- (IBAction)addFavoriteButton:(UIButton *)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 @end

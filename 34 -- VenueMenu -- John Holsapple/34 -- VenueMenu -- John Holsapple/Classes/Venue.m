@@ -1,12 +1,12 @@
-#import "Location.h"
+#import "Venue.h"
 
-@interface Location ()
+@interface Venue ()
 
 // Private interface goes here.
 
 @end
 
-@implementation Location
+@implementation Venue
 
 // Custom logic goes here.
 
