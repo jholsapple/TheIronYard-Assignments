@@ -39,16 +39,6 @@
 		74ADE1141B6D9E5E001BE6A5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ADE1131B6D9E5E001BE6A5 /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7434C4071B6D0D3C0050E6C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7434C3E51B6D0D3C0050E6C0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7434C3EC1B6D0D3C0050E6C0;
-			remoteInfo = "34 -- VenueMenu -- John Holsapple";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34 -- VenueMenu -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7434C3F11B6D0D3C0050E6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +48,6 @@
 		7434C3FB1B6D0D3C0050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7434C3FD1B6D0D3C0050E6C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7434C4001B6D0D3C0050E6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "34 -- VenueMenu -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7434C4161B6D0F000050E6C0 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		7434C4171B6D0F000050E6C0 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		7434C4191B6D10D70050E6C0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -90,13 +79,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7434C4031B6D0D3C0050E6C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */,
-				7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,24 +185,6 @@
 			productReference = 7434C3ED1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7434C4051B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7434C4131B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */;
-			buildPhases = (
-				7434C4021B6D0D3C0050E6C0 /* Sources */,
-				7434C4031B6D0D3C0050E6C0 /* Frameworks */,
-				7434C4041B6D0D3C0050E6C0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7434C4081B6D0D3C0050E6C0 /* PBXTargetDependency */,
-			);
-			name = "34 -- VenueMenu -- John HolsappleTests";
-			productName = "34 -- VenueMenu -- John HolsappleTests";
-			productReference = 7434C4061B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +196,6 @@
 				TargetAttributes = {
 					7434C3EC1B6D0D3C0050E6C0 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					7434C4051B6D0D3C0050E6C0 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 7434C3EC1B6D0D3C0050E6C0;
 					};
 					7434C4381B6D381D0050E6C0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -257,7 +216,6 @@
 			projectRoot = "";
 			targets = (
 				7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */,
-				7434C4051B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John HolsappleTests */,
 				7434C4381B6D381D0050E6C0 /* Mogenerator */,
 			);
 		};
@@ -271,13 +229,6 @@
 				7434C3FC1B6D0D3C0050E6C0 /* Main.storyboard in Resources */,
 				7434C4011B6D0D3C0050E6C0 /* LaunchScreen.xib in Resources */,
 				7434C3FE1B6D0D3C0050E6C0 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7434C4041B6D0D3C0050E6C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,22 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7434C4021B6D0D3C0050E6C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7434C4081B6D0D3C0050E6C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7434C3EC1B6D0D3C0050E6C0 /* 34 -- VenueMenu -- John Holsapple */;
-			targetProxy = 7434C4071B6D0D3C0050E6C0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7434C3FA1B6D0D3C0050E6C0 /* Main.storyboard */ = {
@@ -457,40 +393,6 @@
 			};
 			name = Release;
 		};
-		7434C4141B6D0D3C0050E6C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "34 -- VenueMenu -- John HolsappleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/34 -- VenueMenu -- John Holsapple.app/34 -- VenueMenu -- John Holsapple";
-			};
-			name = Debug;
-		};
-		7434C4151B6D0D3C0050E6C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "34 -- VenueMenu -- John HolsappleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/34 -- VenueMenu -- John Holsapple.app/34 -- VenueMenu -- John Holsapple";
-			};
-			name = Release;
-		};
 		7434C43A1B6D381D0050E6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -522,15 +424,6 @@
 			buildConfigurations = (
 				7434C4111B6D0D3C0050E6C0 /* Debug */,
 				7434C4121B6D0D3C0050E6C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7434C4131B6D0D3C0050E6C0 /* Build configuration list for PBXNativeTarget "34 -- VenueMenu -- John HolsappleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7434C4141B6D0D3C0050E6C0 /* Debug */,
-				7434C4151B6D0D3C0050E6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
