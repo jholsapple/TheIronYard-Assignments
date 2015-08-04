@@ -7,6 +7,8 @@
 //
 
 #import "LocationDetailsViewController.h"
+#import "FavoritesTableViewController.h"
+#import "NetworkManager.h"
 
 @interface LocationDetailsViewController ()
 
@@ -27,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.locationNameLabel.text = self.thatVenue.name;
     self.locationAddressLabel.text = self.thatVenue.address;
     self.cityLabel.text = self.thatVenue.city;
@@ -55,7 +58,15 @@
 
 - (IBAction)addFavoriteButton:(UIButton *)sender
 {
-    
+    if (![self.locationNameLabel.text isEqualToString:@""])
+    {
+        Venue *addLocationName = [[Venue alloc] init];
+        addLocationName.name = self.locationNameLabel.text;
+        [[NetworkManager sharedNetworkManager] findVenuesForCoordinates:CLLocationCoordinate2DMake(40.7, -74) andSearchTerm:self.locationNameLabel.text];
+    }
+//    FavoritesTableViewController *favoriteVC = [[FavoritesTableViewController alloc] init];
+//    self.locationNameLabel.text = self.thatVenue.name;
+//    [self presentViewController:favoriteVC animated:YES completion:nil];
 }
 
 @end

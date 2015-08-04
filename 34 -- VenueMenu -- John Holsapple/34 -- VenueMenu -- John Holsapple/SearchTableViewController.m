@@ -7,6 +7,7 @@
 //
 
 #import "SearchTableViewController.h"
+#import "LocationDetailsViewController.h"
 #import "Venue.h"
 #import "SearchResultsCell.h"
 #import "NetworkManager.h"
@@ -19,6 +20,7 @@
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *searchBar;
+- (IBAction)cancelButton:(UIBarButtonItem *)sender;
 
 @end
 
@@ -102,14 +104,27 @@
 //    pinAnnotationView.leftCalloutAccessoryView = imageView;
 //}
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"DetailViewSegue"])
+    {
+        LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
+        UITableViewCell *selectedCell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+        Venue *selectedVenue = resultsOptions[indexPath.row];
+        locationVC.thatVenue = selectedVenue;
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
+
+- (IBAction)cancelButton:(UIBarButtonItem *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

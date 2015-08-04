@@ -73,15 +73,6 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    LocationDetailsViewController *detailVC = [[LocationDetailsViewController alloc] init];
-    
-}
-
-#pragma mark - FavoritesTableViewControllerDelegate
-
-
 #pragma mark - Navigation
 
 //// In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -90,13 +81,16 @@
     if ([segue.identifier isEqualToString:@"DetailViewSegue"])
     {
         LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
-        locationVC.title = segue.identifier;
+        UITableViewCell *selectedCell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+        Venue *selectedVenue = _results[indexPath.row];
+        locationVC.thatVenue = selectedVenue;
     }
 }
 
 #pragma mark - Action handlers
 
-- (IBAction)addFavoriteButton:(UIBarButtonItem *)sender
+- (IBAction)addSearchButton:(UIBarButtonItem *)sender
 {
     SearchTableViewController *searchVC = [[SearchTableViewController alloc] init];
     
