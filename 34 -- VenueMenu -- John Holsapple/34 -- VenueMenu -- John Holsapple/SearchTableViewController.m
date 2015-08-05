@@ -13,10 +13,17 @@
 #import "NetworkManager.h"
 
 @import CoreLocation;
+@import MapKit;
 
-@interface SearchTableViewController () <UITextFieldDelegate>
+#define LAT_LNG_DEGREES 0.1
+
+@interface SearchTableViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, MKMapViewDelegate>
 {
+    MKMapView *_mapView;
     NSMutableArray *resultsOptions;
+    CLLocationManager *_locationManager;
+    CLLocation *_currentLocation;
+    NSMutableArray *_venues;
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *searchBar;
@@ -32,12 +39,69 @@
     self.title = @"What's the Haps?!?!";
     [NetworkManager sharedNetworkManager].delegate = self;
     resultsOptions = [[NSMutableArray alloc] init];
+    _venues = [[NSMutableArray alloc] init];
+    [self checkLocationAuthorization];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CLLocation related methods
+
+- (void)checkLocationAuthorization
+{
+    if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied && [CLLocationManager authorizationStatus] != kCLAuthorizationStatusRestricted)
+    {
+        if (!_locationManager)
+        {
+            _locationManager = [[CLLocationManager alloc] init];
+            _locationManager.delegate = self;
+            _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+            if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined)
+            {
+                [_locationManager requestWhenInUseAuthorization];
+            }
+            else
+            {
+                [self enableLocationManager: YES];
+            }
+        }
+    }
+}
+
+-(void)enableLocationManager:(BOOL)enable
+{
+    if (_locationManager)
+    {
+        if (enable)
+        {
+            [_locationManager startUpdatingHeading];
+        }
+        else
+        {
+            [_locationManager stopUpdatingLocation];
+        }
+    }
+}
+
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse)
+    {
+        [self enableLocationManager:YES];
+    }
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *aLocation = [locations lastObject];
+//    [self enableLocationManager:NO];
+    MKCoordinateRegion mapRegion = MKCoordinateRegionMake(aLocation.coordinate, MKCoordinateSpanMake(LAT_LNG_DEGREES, LAT_LNG_DEGREES));
+    [_mapView setRegion:mapRegion animated:YES];
+    _currentLocation = aLocation;
 }
 
 #pragma mark - UITextFieldDelegate
@@ -78,7 +142,6 @@
     return cell;
 }
 
-
 - (void)venuesWereFound:(NSArray *)venues
 {
     [resultsOptions addObjectsFromArray:venues];
@@ -87,23 +150,6 @@
     [self.searchBar resignFirstResponder];
     
 }
-
-#pragma mark - MKMapView Delegate
-
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
-//{
-//    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"mapAnnotation"];
-//    
-//    if (!pinAnnotationView)
-//    {
-//        pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"mapAnnotation"];
-//    }
-//    pinAnnotationView.canShowCallout = YES;
-//    Location *aLocation = (Location *)annotation;
-//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 32.0, 32.0)];
-//    pinAnnotationView.leftCalloutAccessoryView = imageView;
-//}
-
 
 #pragma mark - Navigation
 

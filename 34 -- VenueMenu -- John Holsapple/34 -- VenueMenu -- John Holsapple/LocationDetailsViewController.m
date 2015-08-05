@@ -8,13 +8,18 @@
 
 #import "LocationDetailsViewController.h"
 #import "FavoritesTableViewController.h"
+#import "SearchTableViewController.h"
 #import "NetworkManager.h"
 
 @import MapKit;
+@import CoreLocation;
 
 #define LAT_LNG_DEGREES 0.1
 
-@interface LocationDetailsViewController () <MKMapViewDelegate>
+@interface LocationDetailsViewController () <MKMapViewDelegate, CLLocationManagerDelegate, UINavigationControllerDelegate>
+{
+    CLLocation *_currentLocation;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationAddressLabel;
@@ -35,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _mapView.delegate = self;
     
     self.locationNameLabel.text = self.thatVenue.name;
     self.locationAddressLabel.text = self.thatVenue.address;
