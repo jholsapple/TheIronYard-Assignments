@@ -16,7 +16,7 @@
 
 @import CoreLocation;
 
-@interface FavoritesTableViewController () //<CLLocationManagerDelegate>
+@interface FavoritesTableViewController () <LocationDetailDelegate> //<CLLocationManagerDelegate>
 {
     NSMutableArray *_results;
 //    CLLocationManager *locationManager;
@@ -31,15 +31,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     _results = [[NSMutableArray alloc] init];
     [self.tableView registerClass:[FavoriteCell class] forCellReuseIdentifier:@"FavoriteCell"];
+    
     cdStack = [CoreDataStack coreDataStackWithModelName:@"VenueModel"];
     cdStack.coreDataStoreType = CDSStoreTypeSQL;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,12 +66,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
  {
-    FavoriteCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FavoriteCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FavoriteCell" forIndexPath:indexPath];
     
      Venue *aResult = _results[indexPath.row];
      cell.textLabel.text = aResult.name;
+     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LocationDetailsViewController *detailVC = [[LocationDetailsViewController alloc] init];
+    detailVC.resultsInfo = _results[indexPath.row];
 }
 
 #pragma mark - Navigation
@@ -78,14 +86,22 @@
 //// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"DetailViewSegue"])
+    if ([segue.identifier isEqualToString:@"SearchSegue"])
     {
-        LocationDetailsViewController *locationVC = (LocationDetailsViewController *)[segue destinationViewController];
-        UITableViewCell *selectedCell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
-        Venue *selectedVenue = _results[indexPath.row];
-        locationVC.thatVenue = selectedVenue;
+        UINavigationController *navCon = (UINavigationController *)[segue destinationViewController];
+        SearchTableViewController *searchVC = navCon.viewControllers[0];
+        searchVC.delegate = self;
     }
+}
+
+-(void)detailNameWasAdded:(Venue *)aFavorite
+{
+    [_results addObject:aFavorite];
+//    [cdStack saveOrFail:^(NSError *errorOrNil) {
+//        
+//    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Action handlers
@@ -93,7 +109,6 @@
 - (IBAction)addSearchButton:(UIBarButtonItem *)sender
 {
     SearchTableViewController *searchVC = [[SearchTableViewController alloc] init];
-    
     [self presentViewController:searchVC animated:YES completion:nil];
 }
 

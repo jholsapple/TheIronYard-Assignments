@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationDetailsViewController.h"
 
 @protocol SearchTableViewControllerDelegate
 
@@ -15,5 +16,7 @@
 @end
 
 @interface SearchTableViewController : UITableViewController <SearchTableViewControllerDelegate>
+
+@property(nonatomic)id <LocationDetailDelegate> delegate;
 
 @end

@@ -10,7 +10,11 @@
 #import "FavoritesTableViewController.h"
 #import "NetworkManager.h"
 
-@interface LocationDetailsViewController ()
+@import MapKit;
+
+#define LAT_LNG_DEGREES 0.1
+
+@interface LocationDetailsViewController () <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationAddressLabel;
@@ -21,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
 - (IBAction)addFavoriteButton:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -37,7 +43,6 @@
     self.zipLabel.text = self.thatVenue.zip;
     self.phoneNumberLabel.text = self.thatVenue.formattedPhone;
     self.urlLabel.text = self.thatVenue.url;
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +50,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - MKMapView Delegate
+
+
 
 /*
 #pragma mark - Navigation
@@ -58,15 +67,8 @@
 
 - (IBAction)addFavoriteButton:(UIButton *)sender
 {
-    if (![self.locationNameLabel.text isEqualToString:@""])
-    {
-        Venue *addLocationName = [[Venue alloc] init];
-        addLocationName.name = self.locationNameLabel.text;
-        [[NetworkManager sharedNetworkManager] findVenuesForCoordinates:CLLocationCoordinate2DMake(40.7, -74) andSearchTerm:self.locationNameLabel.text];
-    }
-//    FavoritesTableViewController *favoriteVC = [[FavoritesTableViewController alloc] init];
-//    self.locationNameLabel.text = self.thatVenue.name;
-//    [self presentViewController:favoriteVC animated:YES completion:nil];
+    self.locationNameLabel.text = self.thatVenue.name;
+    [self.delegate detailNameWasAdded:self.thatVenue];
 }
 
 @end

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Venue.h"
+#import "FavoritesTableViewController.h"
 
 @interface LocationDetailsViewController : UIViewController
 
 @property(nonatomic)Venue *thatVenue;
 @property(nonatomic)NSDictionary *resultsInfo;
+@property(nonatomic)id <LocationDetailDelegate> delegate;
 
 @end

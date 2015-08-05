@@ -10,4 +10,6 @@
 
 @interface FavoriteCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *favoriteLabel;
+
 @end

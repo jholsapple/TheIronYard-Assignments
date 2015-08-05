@@ -117,6 +117,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
         Venue *selectedVenue = resultsOptions[indexPath.row];
         locationVC.thatVenue = selectedVenue;
+        locationVC.delegate = self.delegate;
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

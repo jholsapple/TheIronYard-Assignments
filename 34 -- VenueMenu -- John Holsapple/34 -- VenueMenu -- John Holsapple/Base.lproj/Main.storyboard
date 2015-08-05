@@ -13,15 +13,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteCell" textLabel="3fg-Nd-2iY" style="IBUITableViewCellStyleDefault" id="wZp-v2-rMv" customClass="FavoriteCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteCell" textLabel="xYZ-qa-QvQ" style="IBUITableViewCellStyleDefault" id="wZp-v2-rMv">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wZp-v2-rMv" id="7xy-Xh-v77">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Favorite" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3fg-Nd-2iY">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xYZ-qa-QvQ">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -40,7 +40,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hmd-YA-uRV">
                             <connections>
                                 <action selector="addSearchButton:" destination="YHI-Nd-yQ3" id="stA-5t-GQN"/>
-                                <segue destination="co4-Uj-czO" kind="presentation" id="tGU-ii-9oF"/>
+                                <segue destination="co4-Uj-czO" kind="presentation" identifier="SearchSegue" id="tGU-ii-9oF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,6 +112,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xnV-vp-DuX">
+                                <rect key="frame" x="0.0" y="312" width="600" height="288"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,6 +131,7 @@
                             <constraint firstItem="Epj-wI-49V" firstAttribute="centerX" secondItem="xp5-5P-qxK" secondAttribute="centerX" constant="7" id="BAn-Pf-fyn"/>
                             <constraint firstItem="Epj-wI-49V" firstAttribute="trailing" secondItem="LTO-Ug-lyd" secondAttribute="trailing" constant="7" id="C1W-u7-oUP"/>
                             <constraint firstItem="3cF-0e-wO7" firstAttribute="top" secondItem="LTO-Ug-lyd" secondAttribute="bottom" constant="19" id="CMK-pi-S87"/>
+                            <constraint firstItem="Sce-M4-r4z" firstAttribute="top" secondItem="xnV-vp-DuX" secondAttribute="bottom" id="DFM-3f-aTP"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="top" secondItem="Epj-wI-49V" secondAttribute="bottom" constant="8" id="DPr-dx-IdU"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="leading" secondItem="7lX-im-DUo" secondAttribute="trailing" constant="8" id="Dvm-wP-uG4"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="leading" secondItem="7lX-im-DUo" secondAttribute="trailing" constant="7.5" id="G8C-vH-jff"/>
@@ -146,8 +150,10 @@
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="top" secondItem="Epj-wI-49V" secondAttribute="bottom" constant="8" id="W5c-bu-JtK"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="centerY" secondItem="7lX-im-DUo" secondAttribute="centerY" id="Xij-QY-gb9"/>
                             <constraint firstItem="Epj-wI-49V" firstAttribute="top" secondItem="o4F-Ri-XI8" secondAttribute="bottom" constant="8" id="XlW-cT-RyS"/>
+                            <constraint firstItem="xnV-vp-DuX" firstAttribute="leading" secondItem="Iud-X1-EA0" secondAttribute="leading" id="YLp-MX-Uoo"/>
                             <constraint firstItem="ZCa-Sk-d7p" firstAttribute="centerY" secondItem="xp5-5P-qxK" secondAttribute="centerY" id="Ybe-e8-Kxz"/>
                             <constraint firstItem="o4F-Ri-XI8" firstAttribute="top" secondItem="Uqk-a5-awy" secondAttribute="bottom" constant="30" id="c0n-QJ-Acq"/>
+                            <constraint firstItem="xnV-vp-DuX" firstAttribute="top" secondItem="a7i-vq-mk3" secondAttribute="bottom" constant="16" id="ePW-Uo-3yd"/>
                             <constraint firstItem="ZCa-Sk-d7p" firstAttribute="top" secondItem="xp5-5P-qxK" secondAttribute="top" constant="-1" id="fUM-Uc-3vt"/>
                             <constraint firstItem="ZCa-Sk-d7p" firstAttribute="top" secondItem="Epj-wI-49V" secondAttribute="bottom" constant="8" id="iHn-dd-lT1"/>
                             <constraint firstItem="ZCa-Sk-d7p" firstAttribute="leading" secondItem="xp5-5P-qxK" secondAttribute="trailing" constant="8.5" id="jqS-Sv-DhV"/>
@@ -160,8 +166,10 @@
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="leading" secondItem="7lX-im-DUo" secondAttribute="trailing" constant="5" id="sZX-Qs-ezt"/>
                             <constraint firstItem="LTO-Ug-lyd" firstAttribute="top" secondItem="Epj-wI-49V" secondAttribute="bottom" constant="48" id="tBt-aB-hgG"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="leading" secondItem="7lX-im-DUo" secondAttribute="trailing" constant="6" id="uqS-as-Dev"/>
+                            <constraint firstAttribute="centerX" secondItem="xnV-vp-DuX" secondAttribute="centerX" id="wMk-4R-VN4"/>
                             <constraint firstItem="xp5-5P-qxK" firstAttribute="centerX" secondItem="o4F-Ri-XI8" secondAttribute="centerX" id="wYA-Xc-uJz"/>
                             <constraint firstItem="a7i-vq-mk3" firstAttribute="top" secondItem="3cF-0e-wO7" secondAttribute="bottom" constant="18" id="wuU-Qt-5BO"/>
+                            <constraint firstAttribute="trailing" secondItem="xnV-vp-DuX" secondAttribute="trailing" id="xnU-0e-94H"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -204,6 +212,7 @@
                         <outlet property="cityLabel" destination="7lX-im-DUo" id="fIK-Qp-ryq"/>
                         <outlet property="locationAddressLabel" destination="Epj-wI-49V" id="e70-SI-WJM"/>
                         <outlet property="locationNameLabel" destination="o4F-Ri-XI8" id="S1L-TD-vOO"/>
+                        <outlet property="mapView" destination="xnV-vp-DuX" id="q2M-aK-SFj"/>
                         <outlet property="phoneNumberLabel" destination="LTO-Ug-lyd" id="BE8-dp-l8r"/>
                         <outlet property="stateLabel" destination="xp5-5P-qxK" id="O3Y-ir-JEx"/>
                         <outlet property="urlLabel" destination="3cF-0e-wO7" id="1Cb-dB-jol"/>

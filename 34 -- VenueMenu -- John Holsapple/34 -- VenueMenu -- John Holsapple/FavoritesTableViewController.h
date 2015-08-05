@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Venue.h"
 
+@protocol LocationDetailDelegate
 
+-(void)detailNameWasAdded:(Venue *)aFavorite;
+
+@end
 
 @interface FavoritesTableViewController : UITableViewController
-
-@property(nonatomic) NSMutableArray *results;
 
 @end
