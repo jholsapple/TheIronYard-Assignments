@@ -57,26 +57,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - MKMapView Delegate
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
-{
-    MKPinAnnotationView *pinAnnotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"mapAnnotation"];
-    
-    if(!pinAnnotationView)
-    {
-        pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"mapAnnotation"];
-    }
-    
-    pinAnnotationView.canShowCallout = YES;
-//    Venue *aVenue = (Venue *)annotation;
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 32.0, 32.0)];
-//    imageView setImage:[aVenue image];
-    pinAnnotationView.leftCalloutAccessoryView = imageView;
-    
-    return pinAnnotationView;
-}
-
 /*
 #pragma mark - Navigation
 
