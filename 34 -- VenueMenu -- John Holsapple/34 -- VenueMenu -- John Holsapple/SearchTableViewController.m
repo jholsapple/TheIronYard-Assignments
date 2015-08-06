@@ -17,7 +17,7 @@
 
 #define LAT_LNG_DEGREES 0.1
 
-@interface SearchTableViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, MKMapViewDelegate>
+@interface SearchTableViewController () <UITextFieldDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, MKMapViewDelegate>
 {
     MKMapView *_mapView;
     NSMutableArray *resultsOptions;
@@ -37,9 +37,10 @@
 {
     [super viewDidLoad];
     self.title = @"What's the Haps?!?!";
+    
     [NetworkManager sharedNetworkManager].delegate = self;
-    resultsOptions = [[NSMutableArray alloc] init];
-    _venues = [[NSMutableArray alloc] init];
+//    resultsOptions = [[NSMutableArray alloc] init];
+//    _venues = [[NSMutableArray alloc] init];
     [self checkLocationAuthorization];
     _mapView.delegate = self;
 }
@@ -47,7 +48,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 #pragma mark - MKMapView Delegate
@@ -62,7 +63,7 @@
     }
     
     pinAnnotationView.canShowCallout = YES;
-    Venue *aVenue = (Venue *)annotation;
+//    Venue *aVenue = (Venue *)annotation;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 32.0, 32.0)];
     pinAnnotationView.leftCalloutAccessoryView = imageView;
     
@@ -119,8 +120,8 @@
 {
     CLLocation *aLocation = [locations lastObject];
 //    [self enableLocationManager:NO];
-    MKCoordinateRegion mapRegion = MKCoordinateRegionMake(aLocation.coordinate, MKCoordinateSpanMake(LAT_LNG_DEGREES, LAT_LNG_DEGREES));
-    [_mapView setRegion:mapRegion animated:YES];
+//    MKCoordinateRegion mapRegion = MKCoordinateRegionMake(aLocation.coordinate, MKCoordinateSpanMake(LAT_LNG_DEGREES, LAT_LNG_DEGREES));
+//    [_mapView setRegion:mapRegion animated:YES];
     _currentLocation = aLocation;
 }
 
