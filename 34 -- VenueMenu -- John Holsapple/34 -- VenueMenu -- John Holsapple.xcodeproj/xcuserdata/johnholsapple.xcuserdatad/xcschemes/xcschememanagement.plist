@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>34 -- VenueMenu -- John Holsapple.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Mogenerator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7434C3EC1B6D0D3C0050E6C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7434C4051B6D0D3C0050E6C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7434C42B1B6D30E30050E6C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7434C4381B6D381D0050E6C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

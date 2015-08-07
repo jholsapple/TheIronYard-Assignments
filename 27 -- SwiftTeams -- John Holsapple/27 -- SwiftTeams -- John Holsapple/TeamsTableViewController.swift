@@ -10,8 +10,6 @@ import UIKit
 
 class TeamsTableViewController: UITableViewController
 {
-    
-    
 
     override func viewDidLoad()
     {
