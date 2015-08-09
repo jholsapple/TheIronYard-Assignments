@@ -63,8 +63,8 @@
 {
     ResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
     
-    NSDictionary *characterInfo = _characters[indexPath.row];
-    cell.textLabel.text = characterInfo[@"name"];
+    Character *characterInfo = _characters[indexPath.row];
+    cell.textLabel.text = characterInfo.characterLabel;
     
     return cell;
 }
@@ -75,18 +75,18 @@
     detailVC.characterInfo = _characters[indexPath.row];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"CharacterSelectedSegue"])
-    {
-        ResultsCell *selectedCell = (ResultsCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
-        Character *selectedCharacter = self.characters[indexPath.row];
-        
-        IndividualCharacterViewController *detailVC = segue.destinationViewController;
-        detailVC.characterInfo = selectedCharacter;
-    }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"CharacterSelectedSegue"])
+//    {
+//        ResultsCell *selectedCell = (ResultsCell *)sender;
+//        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+//        Character *selectedCharacter = self.characters[indexPath.row];
+//        
+//        IndividualCharacterViewController *detailVC = segue.destinationViewController;
+//        detailVC.characterInfo = selectedCharacter;
+//    }
+//}
 
 
 
