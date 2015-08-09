@@ -13,7 +13,7 @@
 
 @interface BoomResultsTableViewController ()
 {
-    NSMutableArray *characters;
+    NSMutableArray *_characters;
 }
 
 @end
@@ -25,7 +25,7 @@
     [super viewDidLoad];
     self.title = @"Character Results";
     
-    characters = [[NSMutableArray alloc] init];
+    _characters = [[NSMutableArray alloc] init];
 //    [characters addObject:@{
 //                            @"name":@"Captain America",
 //                            @"description":@"Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.",
@@ -56,14 +56,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [characters count];
+    return [_characters count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
     
-    NSDictionary *characterInfo = characters[indexPath.row];
+    NSDictionary *characterInfo = _characters[indexPath.row];
     cell.textLabel.text = characterInfo[@"name"];
     
     return cell;
@@ -72,52 +72,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     IndividualCharacterViewController *detailVC = [[IndividualCharacterViewController alloc] init];
-    detailVC.characterInfo = characters[indexPath.row];
-    [detailVC configureView];
+    detailVC.characterInfo = _characters[indexPath.row];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"CharacterSelectedSegue"])
+    {
+        ResultsCell *selectedCell = (ResultsCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+        Character *selectedCharacter = self.characters[indexPath.row];
+        
+        IndividualCharacterViewController *detailVC = segue.destinationViewController;
+        detailVC.characterInfo = selectedCharacter;
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

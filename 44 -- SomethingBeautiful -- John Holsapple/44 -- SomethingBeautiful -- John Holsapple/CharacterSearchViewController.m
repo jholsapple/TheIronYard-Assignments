@@ -17,7 +17,6 @@
 
 - (IBAction)boomButtonTapped:(UIButton *)sender;
 
-
 @end
 
 @implementation CharacterSearchViewController
@@ -26,6 +25,7 @@
 {
     [super viewDidLoad];
     self.title = @"Character Search";
+    receivedData = [[NSMutableData alloc] init];
     
 }
 
@@ -35,30 +35,19 @@
     
 }
 
-#pragma mark - UITextFieldDelegate
-
-//- (BOOL)textFieldShouldReturn:(UITextField *)textField
-//{
-//    if (![textField.text isEqualToString:@""])
-//    {
-//        <#statements#>
-//    }
-//}
-
 - (IBAction)boomButtonTapped:(UIButton *)sender
 {
     NSString *search = self.characterSearchTextField.text;
     if (![search isEqualToString:@""])
     {
-        NSString *urlString = [NSString stringWithFormat:@"http://gateway.marvel.com/v1/public/characters?name=&apikey=3064df81eb7184a51f2a603d25e295b3&ts=1&hash=b6268eacde15dab3345bf58b0a947e88"];
-        NSString *escapedUrlString = [urlString stringByAddingPercentEscapesUsingEncoding: NSASCIIStringEncoding];
-        NSURL *url = [NSURL URLWithString:escapedUrlString];
+        NSString *urlString = [NSString stringWithFormat:@"http://gateway.marvel.com/v1/public/characters?nameStartsWith=%@&apikey=3064df81eb7184a51f2a603d25e295b3&ts=1&hash=b6268eacde15dab3345bf58b0a947e88", search];
+        NSURL *url = [NSURL URLWithString:urlString];
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];
         NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
         [dataTask resume];
     }
-    [self resignFirstResponder];
+        [self resignFirstResponder];
 }
 
 #pragma mark - URLSession data delegate
@@ -84,7 +73,7 @@
         NSLog(@"Download Successful!");
         NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
         [self.characters addObject:userInfo];
-        [self dismissViewControllerAnimated:YES completion:nil];
+//        [self dismissViewControllerAnimated:YES completion:nil];
     }
     else
     {

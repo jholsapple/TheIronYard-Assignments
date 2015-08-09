@@ -10,4 +10,6 @@
 
 @interface BoomResultsTableViewController : UITableViewController
 
+@property(nonatomic)NSMutableArray *characters;
+
 @end
