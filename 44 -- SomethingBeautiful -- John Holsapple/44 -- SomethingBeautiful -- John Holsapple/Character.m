@@ -10,21 +10,23 @@
 
 @implementation Character
 
-- (BOOL)parseCharacterInfo:(NSDictionary *)characterData
++ (Character *)parseCharacterInfo:(NSDictionary *)characterDictionary
 {
-    BOOL returnValue = NO;
-    if(characterData)
+    Character *aCharacter = [[Character alloc] init];
+    if (aCharacter)
     {
-        returnValue = YES;
-        NSDictionary *data = characterData[@"data"];
-        NSArray *results = data[@"results"];
-        NSDictionary *resultsDictionary = results[1];
-        self.characterLabel = resultsDictionary[@"name"];
-        self.characterDescription = resultsDictionary[@"description"];
-        NSDictionary *resultsPath = results[4];
-        self.characterPic = resultsPath[@"path"];
+        aCharacter.characterName = characterDictionary[@"name"];
+        aCharacter.characterDescription = characterDictionary[@"description"];
+        NSDictionary *thumbnailDict = characterDictionary[@"thumbnail"];
+        aCharacter.characterPic = [NSString stringWithFormat:@"%@/portrait_incredible.%@", thumbnailDict[@"path"], thumbnailDict[@"extension"]];
+//        NSLog(@"character: %@, image path: %@", characterDictionary[@"name"], aCharacter.characterPic);
     }
-    return returnValue;
+    return aCharacter;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"name: %@", self.characterName];
 }
 
 @end

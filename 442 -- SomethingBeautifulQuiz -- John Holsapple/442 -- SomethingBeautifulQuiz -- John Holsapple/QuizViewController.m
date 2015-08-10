@@ -39,7 +39,7 @@
                      @"Gas",
                      @"an evil monkey",
                      @"Giligan",
-                     @"Olly",
+                     @"Olly Williams",
                      @"a foam cowboy hat",
                      @"England"];
 }

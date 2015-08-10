@@ -10,8 +10,5 @@
 
 @interface CharacterSearchViewController : UIViewController
 
-@property(nonatomic)NSMutableArray *characters;
-
-
 @end
 

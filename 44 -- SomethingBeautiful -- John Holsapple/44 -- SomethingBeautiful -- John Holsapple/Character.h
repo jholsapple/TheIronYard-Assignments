@@ -10,10 +10,10 @@
 
 @interface Character : NSObject
 
-@property(nonatomic)NSString *characterLabel;
+@property(nonatomic)NSString *characterName;
 @property(nonatomic)NSString *characterDescription;
 @property(nonatomic)NSString *characterPic;
 
-- (BOOL)parseCharacterInfo:(NSDictionary *)characterData;
++ (Character *)parseCharacterInfo:(NSDictionary *)characterData;
 
 @end

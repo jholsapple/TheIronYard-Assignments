@@ -34,7 +34,6 @@
                                 </state>
                                 <connections>
                                     <action selector="boomButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="riL-gA-kXX"/>
-                                    <segue destination="Ihi-el-sw4" kind="show" id="sLI-2O-YDX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,6 +49,7 @@
                     <navigationItem key="navigationItem" id="v2t-jn-8su"/>
                     <connections>
                         <outlet property="characterSearchTextField" destination="W1j-wc-1QR" id="Eil-un-OLA"/>
+                        <segue destination="Ihi-el-sw4" kind="show" identifier="ShowResultsSegue" id="q24-aG-T9d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -65,15 +65,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ResultsCell" textLabel="XKI-T2-BwL" style="IBUITableViewCellStyleDefault" id="ZIS-Aq-4MG" customClass="ResultsCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ResultsCell" textLabel="mkP-Ts-N1X" style="IBUITableViewCellStyleDefault" id="ZIS-Aq-4MG">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZIS-Aq-4MG" id="gNn-ep-QK7">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XKI-T2-BwL">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mkP-Ts-N1X">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
