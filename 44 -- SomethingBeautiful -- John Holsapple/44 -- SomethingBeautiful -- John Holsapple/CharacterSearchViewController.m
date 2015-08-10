@@ -73,11 +73,11 @@
         NSLog(@"Download Successful!");
         NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
         [self.characters addObject:userInfo];
-//        [self dismissViewControllerAnimated:YES completion:nil];
+
     }
     else
     {
-        
+        NSLog(@"No Go!!");
     }
 }
 

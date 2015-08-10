@@ -29,7 +29,7 @@
     self.title = self.characterInfo[@"name"];
     
     self.characterImageView = [[UIImageView alloc] init];
-    NSURL *characterURL = [NSURL URLWithString:self.characterInfo[@"avatar_url"]];
+    NSURL *characterURL = [NSURL URLWithString:self.characterInfo[@"path"]];
     NSData *imageData = [NSData dataWithContentsOfURL:characterURL];
     UIImage *image = [UIImage imageWithData:imageData];
     self.characterImageView.image = image;

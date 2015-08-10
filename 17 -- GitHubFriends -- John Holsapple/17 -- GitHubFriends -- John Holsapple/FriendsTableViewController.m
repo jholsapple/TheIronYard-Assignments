@@ -36,7 +36,7 @@
                         @"location": @"Orlando, FL",
                         @"public_repos": @2,
                         @"public_gists": @0,
-                        @"followers": @3,
+                        @"followers": @3, 
                         @"following": @2
                         }];
     [self.tableView registerClass:[FriendCell class] forCellReuseIdentifier:@"FriendCell"];

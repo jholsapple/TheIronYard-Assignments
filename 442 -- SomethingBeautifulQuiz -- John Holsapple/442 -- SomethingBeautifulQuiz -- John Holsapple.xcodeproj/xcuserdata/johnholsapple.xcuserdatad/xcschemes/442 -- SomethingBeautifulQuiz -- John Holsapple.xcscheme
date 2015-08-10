@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74E881F41B7512C5001DAF43"
-               BuildableName = "44 -- SomethingBeautiful -- John Holsapple.app"
-               BlueprintName = "44 -- SomethingBeautiful -- John Holsapple"
-               ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+               BlueprintIdentifier = "74D0D7871B7822EA00EF6C11"
+               BuildableName = "442 -- SomethingBeautifulQuiz -- John Holsapple.app"
+               BlueprintName = "442 -- SomethingBeautifulQuiz -- John Holsapple"
+               ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74E8820D1B7512C5001DAF43"
-               BuildableName = "44 -- SomethingBeautiful -- John HolsappleTests.xctest"
-               BlueprintName = "44 -- SomethingBeautiful -- John HolsappleTests"
-               ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+               BlueprintIdentifier = "74D0D7A01B7822EA00EF6C11"
+               BuildableName = "442 -- SomethingBeautifulQuiz -- John HolsappleTests.xctest"
+               BlueprintName = "442 -- SomethingBeautifulQuiz -- John HolsappleTests"
+               ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74E8820D1B7512C5001DAF43"
-               BuildableName = "44 -- SomethingBeautiful -- John HolsappleTests.xctest"
-               BlueprintName = "44 -- SomethingBeautiful -- John HolsappleTests"
-               ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+               BlueprintIdentifier = "74D0D7A01B7822EA00EF6C11"
+               BuildableName = "442 -- SomethingBeautifulQuiz -- John HolsappleTests.xctest"
+               BlueprintName = "442 -- SomethingBeautifulQuiz -- John HolsappleTests"
+               ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74E881F41B7512C5001DAF43"
-            BuildableName = "44 -- SomethingBeautiful -- John Holsapple.app"
-            BlueprintName = "44 -- SomethingBeautiful -- John Holsapple"
-            ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+            BlueprintIdentifier = "74D0D7871B7822EA00EF6C11"
+            BuildableName = "442 -- SomethingBeautifulQuiz -- John Holsapple.app"
+            BlueprintName = "442 -- SomethingBeautifulQuiz -- John Holsapple"
+            ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74E881F41B7512C5001DAF43"
-            BuildableName = "44 -- SomethingBeautiful -- John Holsapple.app"
-            BlueprintName = "44 -- SomethingBeautiful -- John Holsapple"
-            ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+            BlueprintIdentifier = "74D0D7871B7822EA00EF6C11"
+            BuildableName = "442 -- SomethingBeautifulQuiz -- John Holsapple.app"
+            BlueprintName = "442 -- SomethingBeautifulQuiz -- John Holsapple"
+            ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74E881F41B7512C5001DAF43"
-            BuildableName = "44 -- SomethingBeautiful -- John Holsapple.app"
-            BlueprintName = "44 -- SomethingBeautiful -- John Holsapple"
-            ReferencedContainer = "container:44 -- SomethingBeautiful -- John Holsapple.xcodeproj">
+            BlueprintIdentifier = "74D0D7871B7822EA00EF6C11"
+            BuildableName = "442 -- SomethingBeautifulQuiz -- John Holsapple.app"
+            BlueprintName = "442 -- SomethingBeautifulQuiz -- John Holsapple"
+            ReferencedContainer = "container:442 -- SomethingBeautifulQuiz -- John Holsapple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

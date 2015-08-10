@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>44 -- SomethingBeautiful -- John Holsapple.xcscheme</key>
+		<key>442 -- SomethingBeautifulQuiz -- John Holsapple.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>74E881F41B7512C5001DAF43</key>
+		<key>74D0D7871B7822EA00EF6C11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74E8820D1B7512C5001DAF43</key>
+		<key>74D0D7A01B7822EA00EF6C11</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,7 @@
 //
 
 #import "BoomResultsTableViewController.h"
+#import "CharacterSearchViewController.h"
 #import "IndividualCharacterViewController.h"
 #import "ResultsCell.h"
 #import "Character.h"
@@ -26,7 +27,7 @@
     self.title = @"Character Results";
     
     _characters = [[NSMutableArray alloc] init];
-//    [characters addObject:@{
+//    [_characters addObject:@{
 //                            @"name":@"Captain America",
 //                            @"description":@"Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.",
 //                            @"path": @"http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55/portrait_incredible.jpg"
@@ -73,6 +74,7 @@
 {
     IndividualCharacterViewController *detailVC = [[IndividualCharacterViewController alloc] init];
     detailVC.characterInfo = _characters[indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

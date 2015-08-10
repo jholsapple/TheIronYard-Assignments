@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  44 -- SomethingBeautiful -- John Holsapple
+//  442 -- SomethingBeautifulQuiz -- John Holsapple
 //
-//  Created by John Holsapple on 8/7/15.
+//  Created by John Holsapple on 8/9/15.
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "QuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UINavigationBar appearance] setTitleTextAttributes:
-    [NSDictionary dictionaryWithObjectsAndKeys:
-    [UIFont fontWithName:@"BadaBoom BB" size:20.0],NSFontAttributeName,nil]];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

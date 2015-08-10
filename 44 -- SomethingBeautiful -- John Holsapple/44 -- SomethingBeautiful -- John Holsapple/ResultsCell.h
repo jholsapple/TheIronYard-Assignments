@@ -10,6 +10,6 @@
 
 @interface ResultsCell : UITableViewCell
 
-//@property(weak, nonatomic) IBOutlet UILabel *characterNameLabel;
+@property(weak, nonatomic) IBOutlet UILabel *characterNameLabel;
 
 @end

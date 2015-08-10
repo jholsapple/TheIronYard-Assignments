@@ -79,7 +79,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fZR-HX-ar2" kind="show" identifier="CharacterSelectedSegue" id="Jbh-pb-NUQ"/>
+                                    <segue destination="y4h-eZ-DUV" kind="show" id="w9G-Xe-FyU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,57 +104,13 @@
                     <view key="view" contentMode="scaleToFill" id="coR-rh-eje">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="apl-u9-4ZY">
-                                <rect key="frame" x="192" y="64" width="216" height="324"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gaQ-TR-FMF">
-                                <rect key="frame" x="180" y="396" width="240" height="196"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gaQ-TR-FMF" secondAttribute="trailing" constant="180" id="0yz-n3-9jv"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="centerX" secondItem="apl-u9-4ZY" secondAttribute="centerX" id="2Fx-gF-G4h"/>
-                            <constraint firstItem="4BO-e5-PWi" firstAttribute="top" secondItem="gaQ-TR-FMF" secondAttribute="bottom" constant="8" id="34R-nB-tPk"/>
-                            <constraint firstItem="4BO-e5-PWi" firstAttribute="top" secondItem="apl-u9-4ZY" secondAttribute="bottom" constant="212" id="59O-Wv-DhE"/>
-                            <constraint firstItem="apl-u9-4ZY" firstAttribute="leading" secondItem="coR-rh-eje" secondAttribute="leading" constant="192" id="9bY-Tm-DyJ"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="width" secondItem="apl-u9-4ZY" secondAttribute="width" id="PyM-uG-6Fh"/>
-                            <constraint firstAttribute="centerX" secondItem="apl-u9-4ZY" secondAttribute="centerX" id="Xkx-Ec-dFX"/>
-                            <constraint firstItem="apl-u9-4ZY" firstAttribute="top" secondItem="cVD-w1-Ehh" secondAttribute="bottom" id="YwX-iW-5j7"/>
-                            <constraint firstAttribute="trailing" secondItem="apl-u9-4ZY" secondAttribute="trailing" constant="192" id="f1j-em-FYc"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="top" secondItem="apl-u9-4ZY" secondAttribute="bottom" constant="8" id="hMN-NK-HoV"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="leading" secondItem="coR-rh-eje" secondAttribute="leading" constant="180" id="kyL-e2-aFL"/>
-                            <constraint firstItem="4BO-e5-PWi" firstAttribute="top" secondItem="gaQ-TR-FMF" secondAttribute="bottom" constant="8" id="o6l-Mc-FuW"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="top" secondItem="apl-u9-4ZY" secondAttribute="bottom" constant="8" id="sA6-0e-6zD"/>
-                            <constraint firstItem="gaQ-TR-FMF" firstAttribute="centerX" secondItem="apl-u9-4ZY" secondAttribute="centerX" id="xSv-ZK-r9K"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0yz-n3-9jv"/>
-                                <exclude reference="2Fx-gF-G4h"/>
-                                <exclude reference="PyM-uG-6Fh"/>
-                                <exclude reference="hMN-NK-HoV"/>
-                                <exclude reference="kyL-e2-aFL"/>
-                                <exclude reference="sA6-0e-6zD"/>
-                                <exclude reference="xSv-ZK-r9K"/>
-                                <exclude reference="34R-nB-tPk"/>
-                                <exclude reference="o6l-Mc-FuW"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="characterImageView" destination="apl-u9-4ZY" id="BRR-mj-PSU"/>
-                        <outlet property="characterTextView" destination="gaQ-TR-FMF" id="R1F-ke-qMj"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="88J-Fv-clP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbc-NO-wNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2700" y="399"/>
+            <point key="canvasLocation" x="3401" y="399"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UWz-b2-iW3">
@@ -177,6 +133,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZL-T1-wvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="531" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aUV-Gx-A5o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y4h-eZ-DUV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GYK-1M-gLu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fZR-HX-ar2" kind="relationship" relationship="rootViewController" id="oJO-Gl-Y5A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mb7-Uv-coo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="399"/>
         </scene>
     </scenes>
 </document>
