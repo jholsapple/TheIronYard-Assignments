@@ -7,6 +7,7 @@
 //
 
 #import "IndividualCharacterViewController.h"
+#import "BoomResultsTableViewController.h"
 #import "Character.h"
 
 @interface IndividualCharacterViewController ()
@@ -21,25 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-}
-
-- (void)configureView
-{
     self.title = self.characterInfo[@"name"];
-    
-    self.characterImageView = [[UIImageView alloc] init];
-    NSURL *characterURL = [NSURL URLWithString:self.characterInfo[@"path"]];
-    NSData *imageData = [NSData dataWithContentsOfURL:characterURL];
-    UIImage *image = [UIImage imageWithData:imageData];
-    self.characterImageView.image = image;
-    [self.characterImageView setFrame:CGRectMake(self.view.frame.size.width-100, 64.0f, 100.0f, 100.0f)];
-    [self.view addSubview:self.characterImageView];
-    
-    self.characterTextView = [[UITextView alloc] init];
-    self.characterTextView.text = [NSString stringWithFormat:@"%@", self.characterInfo[@"description"]];
-    [self.characterTextView setFrame:CGRectMake(self.view.frame.size.width/6, 75.0f, self.view.frame.size.width/2, 30.0f)];
-    [self.view addSubview:self.characterTextView];
+
 }
 
 - (void)didReceiveMemoryWarning

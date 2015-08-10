@@ -70,19 +70,6 @@
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"CharacterSelectedSegue"])
-//    {
-//        ResultsCell *selectedCell = (ResultsCell *)sender;
-//        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
-//        Character *selectedCharacter = self.characters[indexPath.row];
-//        
-//        IndividualCharacterViewController *detailVC = segue.destinationViewController;
-//        detailVC.characterInfo = selectedCharacter;
-//    }
-//}
-
 
 
 

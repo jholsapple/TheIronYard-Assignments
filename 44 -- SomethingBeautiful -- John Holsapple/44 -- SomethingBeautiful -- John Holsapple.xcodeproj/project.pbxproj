@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74C2C7541B7923F8007522EC /* CharacterSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2C7531B7923F8007522EC /* CharacterSearchViewController.m */; };
 		74E881FB1B7512C5001DAF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E881FA1B7512C5001DAF43 /* main.m */; };
 		74E881FE1B7512C5001DAF43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E881FD1B7512C5001DAF43 /* AppDelegate.m */; };
-		74E882011B7512C5001DAF43 /* CharacterSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E882001B7512C5001DAF43 /* CharacterSearchViewController.m */; };
 		74E882041B7512C5001DAF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E882021B7512C5001DAF43 /* Main.storyboard */; };
 		74E882061B7512C5001DAF43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E882051B7512C5001DAF43 /* Images.xcassets */; };
 		74E882091B7512C5001DAF43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E882071B7512C5001DAF43 /* LaunchScreen.xib */; };
@@ -32,13 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74C2C7531B7923F8007522EC /* CharacterSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSearchViewController.m; sourceTree = "<group>"; };
 		74E881F51B7512C5001DAF43 /* 44 -- SomethingBeautiful -- John Holsapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "44 -- SomethingBeautiful -- John Holsapple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E881F91B7512C5001DAF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E881FA1B7512C5001DAF43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74E881FC1B7512C5001DAF43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74E881FD1B7512C5001DAF43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74E881FF1B7512C5001DAF43 /* CharacterSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterSearchViewController.h; sourceTree = "<group>"; };
-		74E882001B7512C5001DAF43 /* CharacterSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterSearchViewController.m; sourceTree = "<group>"; };
 		74E882031B7512C5001DAF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74E882051B7512C5001DAF43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74E882081B7512C5001DAF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				74E881FC1B7512C5001DAF43 /* AppDelegate.h */,
 				74E881FD1B7512C5001DAF43 /* AppDelegate.m */,
 				74E881FF1B7512C5001DAF43 /* CharacterSearchViewController.h */,
-				74E882001B7512C5001DAF43 /* CharacterSearchViewController.m */,
+				74C2C7531B7923F8007522EC /* CharacterSearchViewController.m */,
 				74E882201B751997001DAF43 /* BoomResultsTableViewController.h */,
 				74E882211B751997001DAF43 /* BoomResultsTableViewController.m */,
 				74E8822C1B767A69001DAF43 /* ResultsCell.h */,
@@ -243,8 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E882011B7512C5001DAF43 /* CharacterSearchViewController.m in Sources */,
 				74E8822B1B756880001DAF43 /* Character.m in Sources */,
+				74C2C7541B7923F8007522EC /* CharacterSearchViewController.m in Sources */,
 				74E8822E1B767A69001DAF43 /* ResultsCell.m in Sources */,
 				74E882251B7519CE001DAF43 /* IndividualCharacterViewController.m in Sources */,
 				74E881FE1B7512C5001DAF43 /* AppDelegate.m in Sources */,

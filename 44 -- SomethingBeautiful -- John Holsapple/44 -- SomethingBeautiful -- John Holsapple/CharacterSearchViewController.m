@@ -52,7 +52,7 @@
         NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
         [dataTask resume];
     }
-        [self resignFirstResponder];
+    [self resignFirstResponder];
 }
 
 #pragma mark - URLSession data delegate

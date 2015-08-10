@@ -12,6 +12,4 @@
 
 @property(nonatomic)NSDictionary *characterInfo;
 
-- (void)configureView;
-
 @end
