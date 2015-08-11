@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target '13 -- SportsTeams' do
+pod 'Parse'
+end
+
+target '13 -- SportsTeamsTests' do
+
+end
+

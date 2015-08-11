@@ -7,13 +7,17 @@
 //
 
 #import "TeamsTableViewController.h"
-#import "Team.h"
-#import "TeamTableViewCell.h"
+#import "TeamCell.h"
+#import <Parse/Parse.h>
+
 
 @interface TeamsTableViewController ()
 {
     NSArray *theTeams;
 }
+
+- (IBAction)refreshTapped:(UIBarButtonItem *)sender;
+
 @end
 
 @implementation TeamsTableViewController
@@ -21,25 +25,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSArray *moreData = @[@{@"teamName": @"Orlando Magic", @"league": @"NBA", @"starPlayer": @"Victor Oladipo", @"wins": @25, @"losses": @57}, @{@"teamName": @"Detroit Lions", @"league": @"NFL", @"starPlayer": @"Matthew Stafford", @"wins": @11, @"losses": @5}, @{@"teamName": @"Seattle Seahawks", @"league": @"NFL", @"starPlayer": @"Russell Wilson", @"wins": @12, @"losses": @4}, @{@"teamName": @"L.A. Lakers", @"league": @"NBA", @"starPlayer": @"Kobe Bryant", @"wins": @21, @"losses": @61}, @{@"teamName": @"Washington Nationals", @"league": @"MLB", @"starPlayer": @"Bryce Harper", @"wins": @43, @"losses": @34}, @{@"teamName": @"New England Patriots", @"league": @"NFL", @"starPlayer": @"Tom Brady", @"wins": @12, @"losses": @4}, @{@"teamName": @"New York Yankees", @"league": @"MLB", @"starPlayer": @"Babe Ruth", @"wins": @41, @"losses": @37}, @{@"teamName": @"Miami Heat", @"league": @"NBA", @"starPlayer": @"Dwayne Wade", @"wins": @37, @"losses": @45}, @{@"teamName": @"Philadelphia Eagles", @"league": @"NFL", @"starPlayer": @"Tim Tebow", @"wins": @10, @"losses": @6}, @{@"teamName": @"Cleveland Cavaliers", @"league": @"NBA", @"starPlayer": @"Kevin Love", @"wins": @53, @"losses": @29}, @{@"teamName": @"Team Woods", @"league": @"PGA", @"starPlayer":@"Tiger Woods", @"wins": @79, @"losses": @"Never"}, @{@"teamName": @"Team Serena", @"league": @"Tennis", @"starPlayer": @"Serena Williams", @"wins": @716, @"losses": @121}, @{@"teamName": @"L.A. Galaxy", @"league": @"MLS", @"starPlayer": @"David Beckham", @"wins": @7, @"losses": @7}];
-    
-    NSMutableArray *teamStorage = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *more in moreData)
-    {
-        Team *aTeam = [[Team alloc] init];
-        aTeam.teamName = more[@"teamName"];
-        aTeam.league = more[@"league"];
-        aTeam.starPlayer = more[@"starPlayer"];
-        aTeam.wins = [more[@"wins"] intValue];
-        aTeam.losses = [more[@"losses"] intValue];
-        
-        [teamStorage addObject: aTeam];
-    }
-    
-    theTeams = [teamStorage copy];
-    self.title = @"Sports Teams";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshTapped:)];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self refreshTeamsFromParse];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,31 +44,62 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
     return [theTeams count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TeamTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
+    TeamCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    Team *theTeam = theTeams[indexPath.row];
-    cell.teamNameLabel.text = theTeam.teamName;
-    cell.leagueLabel.text = theTeam.league;
-    cell.starPlayerLabel.text = theTeam.starPlayer;
-    cell.winsAndLossesLabel.text = [NSString stringWithFormat:@"%d - %d", theTeam.wins, theTeam.losses];
-    //cell.textLabel.text = [NSString stringWithFormat:@"%@  (%@) : %@ || %d - %d", theTeam.teamName, theTeam.league, theTeam.starPlayer, theTeam.wins, theTeam.losses];
+    PFObject *aTeam = theTeams[indexPath.row];
+    cell.teamNameLabel.text = aTeam[@"teamName"];
+    cell.starPlayerLabel.text = aTeam[@"player"];
+    cell.leagueLabel.text = aTeam[@"league"];
+    cell.winsAndLossesLabel.text = aTeam[@"record"];
+    
+//    PFRelation *userCreated = aTeam[@"createdBy"];
+//    [userCreated.query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error)
+//        {
+//            id anObject = objects[0];
+//            if ([anObject isKindOfClass:[PFUser class]])
+//            {
+//                PFUser *user = anObject;
+//                
+//            }
+//        }
+//    }];
     
     return cell;
 }
+
+- (IBAction)refreshTapped:(UIBarButtonItem *)sender
+{
+    [self refreshTeamsFromParse];
+}
+
+#pragma mark - Private
+
+- (void)refreshTeamsFromParse
+{
+    if ([PFUser currentUser])
+    {
+        PFQuery *query = [[PFQuery alloc] initWithClassName:@"Team"];
+        [query orderByDescending:@"createdAt"];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if (!error)
+            {
+                theTeams = objects;
+                [self.tableView reloadData];
+            }
+        }];
+    }
+}
+
 
 @end
