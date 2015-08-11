@@ -14,7 +14,6 @@
 {
     NSArray *theTeams;
 }
-
 @end
 
 @implementation TeamsTableViewController
@@ -23,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    NSArray *moreData = @[@{@"teamName": @"Orlando Magic", @"league": @"NBA", @"starPlayer": @"Victor Oladipo", @"wins": @25, @"losses": @57}, @{@"teamName": @"Detroit Lions", @"league": @"NFL", @"starPlayer": @"Matthew Stafford", @"wins": @11, @"losses": @5}, @{@"teamName": @"Seattle Seahawks", @"league": @"NFL", @"starPlayer": @"Russell Wilson", @"wins": @12, @"losses": @4}, @{@"teamName": @"L.A. Lakers", @"league": @"NBA", @"starPlayer": @"Kobe Bryant", @"wins": @21, @"losses": @61}, @{@"teamName": @"Washington Nationals", @"league": @"MLB", @"starPlayer": @"Bryce Harper", @"wins": @43, @"losses": @34}, @{@"teamName": @"New England Patriots", @"league": @"NFL", @"starPlayer": @"Tom Brady", @"wins": @12, @"losses": @4}, @{@"teamName": @"New York Yankees", @"league": @"MLB", @"starPlayer": @"Babe Ruth", @"wins": @41, @"losses": @37}, @{@"teamName": @"Miami Heat", @"league": @"NBA", @"starPlayer": @"Dwayne Wade", @"wins": @37, @"losses": @45}, @{@"teamName": @"Philadelphia Eagles", @"league": @"NFL", @"starPlayer": @"Tim Tebow", @"wins": @10, @"losses": @6}, @{@"teamName": @"Cleveland Cavaliers", @"league": @"NBA", @"starPlayer": @"Kevin Love", @"wins": @53, @"losses": @29}, @{@"teamName": @"", @"league": @"PGA", @"starPlayer":@"Tiger Woods", @"wins": @79, @"losses": @""}, @{@"teamName": @"", @"league": @"Tennis", @"starPlayer": @"Serena Williams", @"wins": @716, @"losses": @121}, @{@"teamName": @"L.A. Galaxy", @"league": @"MLS", @"starPlayer": @"David Beckham", @"wins": @7, @"losses": @7}];
+    NSArray *moreData = @[@{@"teamName": @"Orlando Magic", @"league": @"NBA", @"starPlayer": @"Victor Oladipo", @"wins": @25, @"losses": @57}, @{@"teamName": @"Detroit Lions", @"league": @"NFL", @"starPlayer": @"Matthew Stafford", @"wins": @11, @"losses": @5}, @{@"teamName": @"Seattle Seahawks", @"league": @"NFL", @"starPlayer": @"Russell Wilson", @"wins": @12, @"losses": @4}, @{@"teamName": @"L.A. Lakers", @"league": @"NBA", @"starPlayer": @"Kobe Bryant", @"wins": @21, @"losses": @61}, @{@"teamName": @"Washington Nationals", @"league": @"MLB", @"starPlayer": @"Bryce Harper", @"wins": @43, @"losses": @34}, @{@"teamName": @"New England Patriots", @"league": @"NFL", @"starPlayer": @"Tom Brady", @"wins": @12, @"losses": @4}, @{@"teamName": @"New York Yankees", @"league": @"MLB", @"starPlayer": @"Babe Ruth", @"wins": @41, @"losses": @37}, @{@"teamName": @"Miami Heat", @"league": @"NBA", @"starPlayer": @"Dwayne Wade", @"wins": @37, @"losses": @45}, @{@"teamName": @"Philadelphia Eagles", @"league": @"NFL", @"starPlayer": @"Tim Tebow", @"wins": @10, @"losses": @6}, @{@"teamName": @"Cleveland Cavaliers", @"league": @"NBA", @"starPlayer": @"Kevin Love", @"wins": @53, @"losses": @29}, @{@"teamName": @"Team Woods", @"league": @"PGA", @"starPlayer":@"Tiger Woods", @"wins": @79, @"losses": @"Never"}, @{@"teamName": @"", @"league": @"Tennis", @"starPlayer": @"Serena Williams", @"wins": @716, @"losses": @121}, @{@"teamName": @"L.A. Galaxy", @"league": @"MLS", @"starPlayer": @"David Beckham", @"wins": @7, @"losses": @7}];
     
     NSMutableArray *teamStorage = [[NSMutableArray alloc] init];
     
