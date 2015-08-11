@@ -8,7 +8,6 @@
 
 #import "IndividualCharacterViewController.h"
 #import "BoomResultsTableViewController.h"
-#import "Character.h"
 
 @interface IndividualCharacterViewController ()
 
@@ -22,7 +21,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = self.characterInfo[@"name"];
+    self.title = self.characterInfo.characterName;
+    
+    self.characterTextView.text = self.characterInfo.characterDescription;
+    self.characterImageView.image = [UIImage imageWithContentsOfFile:self.characterInfo.characterPic];
 
 }
 

@@ -63,14 +63,18 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    IndividualCharacterViewController *detailVC = [[IndividualCharacterViewController alloc] init];
-    detailVC.characterInfo = _characters[indexPath.row];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    if ([segue.identifier isEqualToString:@"ShowDetailViewSegue"])
+    {
+        IndividualCharacterViewController *detailVC = (IndividualCharacterViewController *)[segue destinationViewController];
+        UITableViewCell *selectedCell = (UITableViewCell *)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
+        Character *selectedCharacter = _characters[indexPath.row];
+        detailVC.characterInfo = selectedCharacter;
+    }
 }
-
-
 
 
 

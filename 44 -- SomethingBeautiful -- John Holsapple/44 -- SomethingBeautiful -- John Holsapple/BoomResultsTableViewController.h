@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CharacterSearchViewController.h"
+#import "Character.h"
 
 @interface BoomResultsTableViewController : UITableViewController
 

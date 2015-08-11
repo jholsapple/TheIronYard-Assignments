@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
 
 @interface IndividualCharacterViewController : UIViewController
 
-@property(nonatomic)NSDictionary *characterInfo;
+@property(nonatomic) Character *characterInfo;
 
 @end

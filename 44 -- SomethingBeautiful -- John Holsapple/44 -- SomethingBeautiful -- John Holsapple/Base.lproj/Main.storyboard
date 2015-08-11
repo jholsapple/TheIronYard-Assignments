@@ -88,7 +88,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fZR-HX-ar2" kind="show" identifier="ShowDetailViewSegue" id="4q1-I1-0Xd"/>
+                                    <segue destination="fZR-HX-ar2" kind="show" identifier="ShowDetailViewSegue" id="OYR-fr-mcr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
