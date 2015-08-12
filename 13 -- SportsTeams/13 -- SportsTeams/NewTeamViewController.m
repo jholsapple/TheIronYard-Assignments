@@ -45,11 +45,14 @@
 }
 */
 
-#pragma mark - UITextFieldDelegate
+#pragma mark - TextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self addTeamToParse];
+    [self addPlayerToParse];
+    [self addLeagueToParse];
+    [self addRecordToParse];
     return YES;
 }
 
@@ -58,6 +61,9 @@
 - (IBAction)submitButtonTapped:(UIButton *)sender
 {
     [self addTeamToParse];
+    [self addPlayerToParse];
+    [self addLeagueToParse];
+    [self addRecordToParse];
 }
 
 - (IBAction)cancelButtonTapped:(UIButton *)sender
@@ -87,6 +93,10 @@
             }
         }];
     }
+}
+
+- (void)addPlayerToParse
+{
     if (![self.playerTextField.text isEqualToString:@""])
     {
         PFObject *aNewPlayer = [PFObject objectWithClassName:@"Team"];
@@ -105,6 +115,10 @@
             }
         }];
     }
+}
+
+- (void)addLeagueToParse
+{
     if (![self.leagueTextField.text isEqualToString:@""])
     {
         PFObject *aNewLeague = [PFObject objectWithClassName:@"Team"];
@@ -114,7 +128,7 @@
         [aNewLeague saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded)
             {
-                NSLog(@"A new League was added to parse");
+                NSLog(@"A new league was added to parse");
                 [self.navigationController dismissViewControllerAnimated:YES completion:nil];
             }
             else
@@ -123,6 +137,10 @@
             }
         }];
     }
+}
+
+- (void)addRecordToParse
+{
     if (![self.recordTextField.text isEqualToString:@""])
     {
         PFObject *aNewRecord = [PFObject objectWithClassName:@"Team"];
@@ -142,7 +160,6 @@
         }];
     }
 }
-
 
 
 

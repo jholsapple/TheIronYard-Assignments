@@ -92,12 +92,12 @@
         PFQuery *query = [[PFQuery alloc] initWithClassName:@"Team"];
         [query orderByDescending:@"createdAt"];
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            if (!error)
-            {
-                theTeams = objects;
-                [self.tableView reloadData];
-            }
-        }];
+                    if (!error)
+                    {
+                        theTeams = objects;
+                        [self.tableView reloadData];
+                    }
+                }];
     }
 }
 

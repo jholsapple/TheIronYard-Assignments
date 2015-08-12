@@ -100,10 +100,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Team Entry" id="x4f-gh-VBq">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="8Ob-Mc-8Ml"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="joz-Xk-sde"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Team Entry" id="x4f-gh-VBq"/>
                     <connections>
                         <outlet property="leagueTextField" destination="27L-Jb-j1t" id="0BS-XK-GM6"/>
                         <outlet property="playerTextField" destination="JkI-J0-F18" id="JS3-Ul-kgJ"/>
