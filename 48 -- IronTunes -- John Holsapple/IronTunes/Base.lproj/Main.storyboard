@@ -23,7 +23,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krI-ET-sbd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jamiroquai_synkronized_cd_cover" translatesAutoresizingMaskIntoConstraints="NO" id="krI-ET-sbd">
                                 <rect key="frame" x="60" y="133" width="480" height="240"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3r-at-Tfn">
@@ -71,6 +71,12 @@
                                 <action selector="playBarButton:" destination="vXZ-lx-hvc" id="o9b-dV-EV9"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="qsa-vO-7Mh"/>
+                        <barButtonItem systemItem="pause" id="wUb-wt-j4s">
+                            <connections>
+                                <action selector="pauseBarButton:" destination="vXZ-lx-hvc" id="Imp-L6-zzr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="yrg-Qa-gZw"/>
                         <barButtonItem systemItem="fastForward" id="aoX-L3-Ic2">
                             <connections>
@@ -81,8 +87,8 @@
                     <navigationItem key="navigationItem" id="Ib0-qY-KVc"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="albumArt" destination="krI-ET-sbd" id="AsD-jx-y4d"/>
                         <outlet property="artistLabel" destination="zaD-uj-G0g" id="p65-eZ-ClT"/>
-                        <outlet property="playBarButton" destination="HOZ-ye-Uld" id="Il6-Fx-NJE"/>
                         <outlet property="songTitleLabel" destination="SHN-3e-mfs" id="qbl-hy-TIQ"/>
                     </connections>
                 </viewController>
@@ -109,4 +115,7 @@
             <point key="canvasLocation" x="774" y="549"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jamiroquai_synkronized_cd_cover" width="450" height="450"/>
+    </resources>
 </document>

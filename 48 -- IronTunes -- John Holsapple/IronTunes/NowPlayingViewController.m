@@ -17,13 +17,14 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *songTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarButton;
+//@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIImageView *albumArt;
 
-- (IBAction)playTapped:(UIButton *)sender;
-- (IBAction)restartTapped:(UIButton *)sender;
+//- (IBAction)playTapped:(UIButton *)sender;
+//- (IBAction)restartTapped:(UIButton *)sender;
 
 - (IBAction)playBarButton:(UIBarButtonItem *)sender;
+//- (IBAction)pauseBarButton:(UIBarButtonItem *)sender;
 - (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender;
 - (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender;
 
@@ -33,6 +34,8 @@
 
 - (void)viewDidLoad
 {
+    self.navigationController.toolbarHidden = NO;
+    
     [super viewDidLoad];
     [self setupAudioSession];
     
@@ -73,34 +76,45 @@
 
 #pragma mark - Action Handlers
 
-- (IBAction)playTapped:(UIButton *)sender
+//- (IBAction)playTapped:(UIButton *)sender
+//{
+//    if ([sender.titleLabel.text isEqualToString:@"Pause"])
+//    {
+//        [self togglePlayback:NO];
+//    }
+//    else
+//    {
+//        [self togglePlayback:YES];
+//    }
+//}
+//
+//- (IBAction)restartTapped:(UIButton *)sender
+//{
+//    [self.avQueuePlayer seekToTime:CMTimeMakeWithSeconds(0.0, 1)];
+//    if ([self.avQueuePlayer rate] == 0.0)
+//    {
+//        [self togglePlayback:YES];
+//    }
+//}
+
+- (IBAction)playBarButton:(UIBarButtonItem *)sender
 {
-    if ([sender.titleLabel.text isEqualToString:@"Pause"])
-    {
-        [self togglePlayback:NO];
-    }
-    else
-    {
-        [self togglePlayback:YES];
-    }
+    [self togglePlayback:YES];
 }
 
-- (IBAction)restartTapped:(UIButton *)sender
+- (IBAction)pauseBarButton:(UIBarButtonItem *)sender
 {
-    [self.avQueuePlayer seekToTime:CMTimeMakeWithSeconds(0.0, 1)];
-    if ([self.avQueuePlayer rate] == 0.0)
-    {
-        [self togglePlayback:YES];
-    }
+    [self togglePlayback:NO];
 }
 
-- (IBAction)playBarButton:(UIBarButtonItem *)sender {
+- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender
+{
+    [self.avQueuePlayer advanceToNextItem];
 }
 
-- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender {
-}
-
-- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender {
+- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender
+{
+    
 }
 
 #pragma mark - Remote Control events
@@ -162,12 +176,10 @@
     if (play)
     {
         [self.avQueuePlayer play];
-        [self.playButton setTitle:@"Pause" forState:UIControlStateNormal];
     }
     else
     {
         [self.avQueuePlayer pause];
-        [self.playButton setTitle:@"Play" forState:UIControlStateNormal];
     }
 }
 
