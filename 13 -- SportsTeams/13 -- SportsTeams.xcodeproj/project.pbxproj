@@ -14,8 +14,9 @@
 		747755611B4463DD008ADE32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7477555F1B4463DD008ADE32 /* LaunchScreen.xib */; };
 		7477556D1B4463DD008ADE32 /* _3____SportsTeamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477556C1B4463DD008ADE32 /* _3____SportsTeamsTests.m */; };
 		747755781B446516008ADE32 /* TeamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747755771B446516008ADE32 /* TeamsTableViewController.m */; };
-		7477557B1B446A61008ADE32 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477557A1B446A61008ADE32 /* Team.m */; };
-		7477557E1B448441008ADE32 /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477557D1B448441008ADE32 /* TeamTableViewCell.m */; };
+		7477557E1B448441008ADE32 /* TeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7477557D1B448441008ADE32 /* TeamCell.m */; };
+		74DAB9421B7A98EF0098E277 /* NewTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAB9411B7A98EF0098E277 /* NewTeamViewController.m */; };
+		E6770F3F758E4CB4FF27E51A /* libPods-13 -- SportsTeams.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369DEF7FF4860EC68B93928A /* libPods-13 -- SportsTeams.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		369DEF7FF4860EC68B93928A /* libPods-13 -- SportsTeams.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-13 -- SportsTeams.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6528B0C89022FD7B2F4B7061 /* Pods-13 -- SportsTeams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-13 -- SportsTeams.debug.xcconfig"; path = "Pods/Target Support Files/Pods-13 -- SportsTeams/Pods-13 -- SportsTeams.debug.xcconfig"; sourceTree = "<group>"; };
 		7477554D1B4463DD008ADE32 /* 13 -- SportsTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13 -- SportsTeams.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747755511B4463DD008ADE32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747755521B4463DD008ADE32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,10 +45,11 @@
 		7477556C1B4463DD008ADE32 /* _3____SportsTeamsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3____SportsTeamsTests.m"; sourceTree = "<group>"; };
 		747755761B446516008ADE32 /* TeamsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamsTableViewController.h; sourceTree = "<group>"; };
 		747755771B446516008ADE32 /* TeamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamsTableViewController.m; sourceTree = "<group>"; };
-		747755791B446A61008ADE32 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
-		7477557A1B446A61008ADE32 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
-		7477557C1B448441008ADE32 /* TeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
-		7477557D1B448441008ADE32 /* TeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
+		7477557C1B448441008ADE32 /* TeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamCell.h; sourceTree = "<group>"; };
+		7477557D1B448441008ADE32 /* TeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamCell.m; sourceTree = "<group>"; };
+		74DAB9401B7A98EF0098E277 /* NewTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTeamViewController.h; sourceTree = "<group>"; };
+		74DAB9411B7A98EF0098E277 /* NewTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTeamViewController.m; sourceTree = "<group>"; };
+		E0B0637D01FBA625BA2B7447 /* Pods-13 -- SportsTeams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-13 -- SportsTeams.release.xcconfig"; path = "Pods/Target Support Files/Pods-13 -- SportsTeams/Pods-13 -- SportsTeams.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6770F3F758E4CB4FF27E51A /* libPods-13 -- SportsTeams.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,8 @@
 				7477554F1B4463DD008ADE32 /* 13 -- SportsTeams */,
 				747755691B4463DD008ADE32 /* 13 -- SportsTeamsTests */,
 				7477554E1B4463DD008ADE32 /* Products */,
+				ECE8DA801CCC8A3CA932A417 /* Pods */,
+				9F372103050399E8A51ED05A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,10 +98,10 @@
 				747755551B4463DD008ADE32 /* AppDelegate.m */,
 				747755761B446516008ADE32 /* TeamsTableViewController.h */,
 				747755771B446516008ADE32 /* TeamsTableViewController.m */,
-				747755791B446A61008ADE32 /* Team.h */,
-				7477557A1B446A61008ADE32 /* Team.m */,
-				7477557C1B448441008ADE32 /* TeamTableViewCell.h */,
-				7477557D1B448441008ADE32 /* TeamTableViewCell.m */,
+				7477557C1B448441008ADE32 /* TeamCell.h */,
+				7477557D1B448441008ADE32 /* TeamCell.m */,
+				74DAB9401B7A98EF0098E277 /* NewTeamViewController.h */,
+				74DAB9411B7A98EF0098E277 /* NewTeamViewController.m */,
 				7477555A1B4463DD008ADE32 /* Main.storyboard */,
 				7477555D1B4463DD008ADE32 /* Images.xcassets */,
 				7477555F1B4463DD008ADE32 /* LaunchScreen.xib */,
@@ -129,6 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9F372103050399E8A51ED05A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369DEF7FF4860EC68B93928A /* libPods-13 -- SportsTeams.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECE8DA801CCC8A3CA932A417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6528B0C89022FD7B2F4B7061 /* Pods-13 -- SportsTeams.debug.xcconfig */,
+				E0B0637D01FBA625BA2B7447 /* Pods-13 -- SportsTeams.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 747755701B4463DD008ADE32 /* Build configuration list for PBXNativeTarget "13 -- SportsTeams" */;
 			buildPhases = (
+				909CB3191D1C2826B5CD54D5 /* Check Pods Manifest.lock */,
 				747755491B4463DD008ADE32 /* Sources */,
 				7477554A1B4463DD008ADE32 /* Frameworks */,
 				7477554B1B4463DD008ADE32 /* Resources */,
+				E72CCD6B4A25A5953356578B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,13 +250,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		909CB3191D1C2826B5CD54D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E72CCD6B4A25A5953356578B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-13 -- SportsTeams/Pods-13 -- SportsTeams-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		747755491B4463DD008ADE32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7477557E1B448441008ADE32 /* TeamTableViewCell.m in Sources */,
-				7477557B1B446A61008ADE32 /* Team.m in Sources */,
+				7477557E1B448441008ADE32 /* TeamCell.m in Sources */,
+				74DAB9421B7A98EF0098E277 /* NewTeamViewController.m in Sources */,
 				747755561B4463DD008ADE32 /* AppDelegate.m in Sources */,
 				747755781B446516008ADE32 /* TeamsTableViewController.m in Sources */,
 				747755531B4463DD008ADE32 /* main.m in Sources */,
@@ -357,6 +416,7 @@
 		};
 		747755711B4463DD008ADE32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6528B0C89022FD7B2F4B7061 /* Pods-13 -- SportsTeams.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "13 -- SportsTeams/Info.plist";
@@ -367,6 +427,7 @@
 		};
 		747755721B4463DD008ADE32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B0637D01FBA625BA2B7447 /* Pods-13 -- SportsTeams.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "13 -- SportsTeams/Info.plist";
@@ -428,6 +489,7 @@
 				747755721B4463DD008ADE32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747755731B4463DD008ADE32 /* Build configuration list for PBXNativeTarget "13 -- SportsTeamsTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +498,7 @@
 				747755751B4463DD008ADE32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
