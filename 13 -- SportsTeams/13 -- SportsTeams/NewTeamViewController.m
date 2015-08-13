@@ -50,9 +50,9 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self addTeamToParse];
-    [self addPlayerToParse];
-    [self addLeagueToParse];
-    [self addRecordToParse];
+//    [self addPlayerToParse];
+//    [self addLeagueToParse];
+//    [self addRecordToParse];
     return YES;
 }
 
@@ -61,9 +61,9 @@
 - (IBAction)submitButtonTapped:(UIButton *)sender
 {
     [self addTeamToParse];
-    [self addPlayerToParse];
-    [self addLeagueToParse];
-    [self addRecordToParse];
+//    [self addPlayerToParse];
+//    [self addLeagueToParse];
+//    [self addRecordToParse];
 }
 
 - (IBAction)cancelButtonTapped:(UIButton *)sender
@@ -75,10 +75,16 @@
 
 - (void)addTeamToParse
 {
-    if (![self.teamNameTextField.text isEqualToString:@""])
+    if (![self.teamNameTextField.text isEqualToString:@""] && ![self.playerTextField.text isEqualToString:@""] && ![self.leagueTextField.text isEqualToString:@""] && ![self.recordTextField.text isEqualToString:@""])
     {
         PFObject *aNewTeamName = [PFObject objectWithClassName:@"Team"];
         aNewTeamName[@"teamName"] = self.teamNameTextField.text;
+        PFObject *aNewPlayer = [PFObject objectWithClassName:@"Team"];
+        aNewPlayer[@"player"] = self.playerTextField.text;
+        PFObject *aNewLeague = [PFObject objectWithClassName:@"Team"];
+        aNewLeague[@"league"] = self.leagueTextField.text;
+        PFObject *aNewRecord = [PFObject objectWithClassName:@"Team"];
+        aNewRecord[@"record"] = self.recordTextField.text;
 //        PFRelation *relation = [aNewTeamName relationForKey:@"createdBy"];
 //        [relation addObject:[PFUser currentUser]];
         [aNewTeamName saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
@@ -93,73 +99,77 @@
             }
         }];
     }
-}
-
-- (void)addPlayerToParse
-{
-    if (![self.playerTextField.text isEqualToString:@""])
+    else
     {
-        PFObject *aNewPlayer = [PFObject objectWithClassName:@"Team"];
-        aNewPlayer[@"player"] = self.playerTextField.text;
-//        PFRelation *relation = [aNewPlayer relationForKey:@"createdBy"];
-//        [relation addObject:[PFUser currentUser]];
-        [aNewPlayer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (succeeded)
-            {
-                NSLog(@"A new player was added to parse");
-                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-            }
-            else
-            {
-                NSLog(@"Player save failed: %@", [error localizedDescription]);
-            }
-        }];
+        [self.teamNameTextField becomeFirstResponder];
     }
 }
 
-- (void)addLeagueToParse
-{
-    if (![self.leagueTextField.text isEqualToString:@""])
-    {
-        PFObject *aNewLeague = [PFObject objectWithClassName:@"Team"];
-        aNewLeague[@"league"] = self.leagueTextField.text;
-//        PFRelation *relation = [aNewLeague relationForKey:@"createdBy"];
-//        [relation addObject:[PFUser currentUser]];
-        [aNewLeague saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (succeeded)
-            {
-                NSLog(@"A new league was added to parse");
-                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-            }
-            else
-            {
-                NSLog(@"League save failed: %@", [error localizedDescription]);
-            }
-        }];
-    }
-}
-
-- (void)addRecordToParse
-{
-    if (![self.recordTextField.text isEqualToString:@""])
-    {
-        PFObject *aNewRecord = [PFObject objectWithClassName:@"Team"];
-        aNewRecord[@"record"] = self.recordTextField.text;
-//        PFRelation *relation = [aNewRecord relationForKey:@"createdBy"];
-//        [relation addObject:[PFUser currentUser]];
-        [aNewRecord saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (succeeded)
-            {
-                NSLog(@"A new record was added to parse");
-                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-            }
-            else
-            {
-                NSLog(@"Record save failed: %@", [error localizedDescription]);
-            }
-        }];
-    }
-}
+//- (void)addPlayerToParse
+//{
+//    if (![self.playerTextField.text isEqualToString:@""])
+//    {
+//        PFObject *aNewPlayer = [PFObject objectWithClassName:@"Team"];
+//        aNewPlayer[@"player"] = self.playerTextField.text;
+////        PFRelation *relation = [aNewPlayer relationForKey:@"createdBy"];
+////        [relation addObject:[PFUser currentUser]];
+//        [aNewPlayer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (succeeded)
+//            {
+//                NSLog(@"A new player was added to parse");
+//                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//            }
+//            else
+//            {
+//                NSLog(@"Player save failed: %@", [error localizedDescription]);
+//            }
+//        }];
+//    }
+//}
+//
+//- (void)addLeagueToParse
+//{
+//    if (![self.leagueTextField.text isEqualToString:@""])
+//    {
+//        PFObject *aNewLeague = [PFObject objectWithClassName:@"Team"];
+//        aNewLeague[@"league"] = self.leagueTextField.text;
+////        PFRelation *relation = [aNewLeague relationForKey:@"createdBy"];
+////        [relation addObject:[PFUser currentUser]];
+//        [aNewLeague saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (succeeded)
+//            {
+//                NSLog(@"A new league was added to parse");
+//                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//            }
+//            else
+//            {
+//                NSLog(@"League save failed: %@", [error localizedDescription]);
+//            }
+//        }];
+//    }
+//}
+//
+//- (void)addRecordToParse
+//{
+//    if (![self.recordTextField.text isEqualToString:@""])
+//    {
+//        PFObject *aNewRecord = [PFObject objectWithClassName:@"Team"];
+//        aNewRecord[@"record"] = self.recordTextField.text;
+////        PFRelation *relation = [aNewRecord relationForKey:@"createdBy"];
+////        [relation addObject:[PFUser currentUser]];
+//        [aNewRecord saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (succeeded)
+//            {
+//                NSLog(@"A new record was added to parse");
+//                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//            }
+//            else
+//            {
+//                NSLog(@"Record save failed: %@", [error localizedDescription]);
+//            }
+//        }];
+//    }
+//}
 
 
 
