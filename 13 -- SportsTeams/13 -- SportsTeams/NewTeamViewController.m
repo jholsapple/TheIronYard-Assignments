@@ -49,10 +49,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [self addTeamToParse];
-//    [self addPlayerToParse];
-//    [self addLeagueToParse];
-//    [self addRecordToParse];
+    
     return YES;
 }
 
@@ -61,9 +58,6 @@
 - (IBAction)submitButtonTapped:(UIButton *)sender
 {
     [self addTeamToParse];
-//    [self addPlayerToParse];
-//    [self addLeagueToParse];
-//    [self addRecordToParse];
 }
 
 - (IBAction)cancelButtonTapped:(UIButton *)sender
@@ -77,17 +71,13 @@
 {
     if (![self.teamNameTextField.text isEqualToString:@""] && ![self.playerTextField.text isEqualToString:@""] && ![self.leagueTextField.text isEqualToString:@""] && ![self.recordTextField.text isEqualToString:@""])
     {
-        PFObject *aNewTeamName = [PFObject objectWithClassName:@"Team"];
-        aNewTeamName[@"teamName"] = self.teamNameTextField.text;
-        PFObject *aNewPlayer = [PFObject objectWithClassName:@"Team"];
-        aNewPlayer[@"player"] = self.playerTextField.text;
-        PFObject *aNewLeague = [PFObject objectWithClassName:@"Team"];
-        aNewLeague[@"league"] = self.leagueTextField.text;
-        PFObject *aNewRecord = [PFObject objectWithClassName:@"Team"];
-        aNewRecord[@"record"] = self.recordTextField.text;
-//        PFRelation *relation = [aNewTeamName relationForKey:@"createdBy"];
-//        [relation addObject:[PFUser currentUser]];
-        [aNewTeamName saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        PFObject *team = [PFObject objectWithClassName:@"Team"];
+        team[@"teamName"] = self.teamNameTextField.text;
+        team[@"player"] = self.playerTextField.text;
+        team[@"league"] = self.leagueTextField.text;
+        team[@"record"] = self.recordTextField.text;
+
+        [team saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded)
             {
                 NSLog(@"A new team was added to parse");

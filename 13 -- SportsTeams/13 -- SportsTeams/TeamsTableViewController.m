@@ -57,6 +57,7 @@
     TeamCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TeamCell" forIndexPath:indexPath];
     
     PFObject *aTeam = theTeams[indexPath.row];
+    NSLog(@"team = %@", aTeam);
     cell.teamNameLabel.text = aTeam[@"teamName"];
     cell.starPlayerLabel.text = aTeam[@"player"];
     cell.leagueLabel.text = aTeam[@"league"];
@@ -87,9 +88,7 @@
 
 - (void)refreshTeamsFromParse
 {
-    if ([PFUser currentUser])
-    {
-        PFQuery *query = [[PFQuery alloc] initWithClassName:@"Team"];
+            PFQuery *query = [[PFQuery alloc] initWithClassName:@"Team"];
         [query orderByDescending:@"createdAt"];
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
                     if (!error)
@@ -98,7 +97,6 @@
                         [self.tableView reloadData];
                     }
                 }];
-    }
 }
 
 

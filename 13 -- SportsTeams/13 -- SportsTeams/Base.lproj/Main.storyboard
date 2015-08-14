@@ -235,7 +235,6 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3I0-ek-q7N">
                             <connections>
-                                <action selector="addTeamTapped:" destination="IW8-ZK-kb3" id="IVD-tQ-iIR"/>
                                 <segue destination="op3-MI-8Xm" kind="presentation" identifier="ShowNewTeamModalSegue" id="eoZ-B4-NcH"/>
                             </connections>
                         </barButtonItem>
