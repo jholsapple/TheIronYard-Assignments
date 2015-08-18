@@ -37,7 +37,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
@@ -62,19 +62,6 @@
     cell.starPlayerLabel.text = aTeam[@"player"];
     cell.leagueLabel.text = aTeam[@"league"];
     cell.winsAndLossesLabel.text = aTeam[@"record"];
-    
-//    PFRelation *userCreated = aTeam[@"createdBy"];
-//    [userCreated.query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        if (!error)
-//        {
-//            id anObject = objects[0];
-//            if ([anObject isKindOfClass:[PFUser class]])
-//            {
-//                PFUser *user = anObject;
-//                
-//            }
-//        }
-//    }];
     
     return cell;
 }
