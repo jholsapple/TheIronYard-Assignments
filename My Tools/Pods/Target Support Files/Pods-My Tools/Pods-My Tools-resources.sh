@@ -58,10 +58,10 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "Parse/Parse/Resources/Localizable.strings"
+  install_resource "Parse/Parse/Resources/en.lproj"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "Parse/Parse/Resources/Localizable.strings"
+  install_resource "Parse/Parse/Resources/en.lproj"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

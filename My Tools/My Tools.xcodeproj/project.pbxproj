@@ -16,6 +16,9 @@
 		74808F861B83789700F2A4A2 /* My_ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F851B83789700F2A4A2 /* My_ToolsTests.m */; };
 		749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749571571B839BC600ACEEFF /* SignUpViewController.m */; };
 		7495715B1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */; };
+		74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176C91B86197B00C7615F /* ToolBoxController.m */; };
+		74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */; };
+		74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176CF1B86237C00C7615F /* NewEventViewController.m */; };
 		B214F426C80FB79DDA6A5478 /* libPods-My Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E3A271325AAE40FD4AB253 /* libPods-My Tools.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,12 @@
 		749571571B839BC600ACEEFF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		749571591B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PumpOpsGlossaryTableViewController.h; sourceTree = "<group>"; };
 		7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PumpOpsGlossaryTableViewController.m; sourceTree = "<group>"; };
+		74E176C81B86197B00C7615F /* ToolBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBoxController.h; sourceTree = "<group>"; };
+		74E176C91B86197B00C7615F /* ToolBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBoxController.m; sourceTree = "<group>"; };
+		74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceGuideTableViewController.h; sourceTree = "<group>"; };
+		74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenceGuideTableViewController.m; sourceTree = "<group>"; };
+		74E176CE1B86237C00C7615F /* NewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventViewController.h; sourceTree = "<group>"; };
+		74E176CF1B86237C00C7615F /* NewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventViewController.m; sourceTree = "<group>"; };
 		B8E3A271325AAE40FD4AB253 /* libPods-My Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34F5B335111AF1783B8046D /* Pods-My Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Tools/Pods-My Tools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +118,14 @@
 				74808F711B83789700F2A4A2 /* SignInViewController.m */,
 				749571561B839BC600ACEEFF /* SignUpViewController.h */,
 				749571571B839BC600ACEEFF /* SignUpViewController.m */,
+				74E176C81B86197B00C7615F /* ToolBoxController.h */,
+				74E176C91B86197B00C7615F /* ToolBoxController.m */,
+				74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */,
+				74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */,
 				749571591B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.h */,
 				7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */,
+				74E176CE1B86237C00C7615F /* NewEventViewController.h */,
+				74E176CF1B86237C00C7615F /* NewEventViewController.m */,
 				74808F731B83789700F2A4A2 /* Main.storyboard */,
 				74808F761B83789700F2A4A2 /* Images.xcassets */,
 				74808F781B83789700F2A4A2 /* LaunchScreen.xib */,
@@ -291,8 +306,11 @@
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
 				749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */,
+				74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */,
 				7495715B1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m in Sources */,
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
+				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
+				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

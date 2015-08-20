@@ -11,12 +11,11 @@
 @interface SignUpViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *signUpView;
-@property (weak, nonatomic) IBOutlet UIView *nameTextField;
-@property (weak, nonatomic) IBOutlet UIView *emailTextField;
-@property (weak, nonatomic) IBOutlet UIView *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
-@property (weak, nonatomic) IBOutlet UILabel *signUpLabel;
-
+- (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender;
 - (IBAction)signUpTapped:(UIButton *)sender;
 
 @end
@@ -45,7 +44,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - Action Handlers
 
-- (IBAction)signUpTapped:(UIButton *)sender {
+- (IBAction)signUpTapped:(UIButton *)sender
+{
+    
+}
+
+- (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender
+{
+    
 }
 @end
