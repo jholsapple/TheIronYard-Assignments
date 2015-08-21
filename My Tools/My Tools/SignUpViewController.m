@@ -7,16 +7,16 @@
 //
 
 #import "SignUpViewController.h"
+#import <Parse/Parse.h>
 
-@interface SignUpViewController ()
+@interface SignUpViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *signUpView;
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
-- (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender;
 - (IBAction)signUpTapped:(UIButton *)sender;
+- (IBAction)cancelButtonTapped:(UIButton *)sender;
 
 @end
 
@@ -26,13 +26,45 @@
 {
     [super viewDidLoad];
     self.signUpView.layer.cornerRadius = 8.0;
-    [[UINavigationBar appearance] setTintColor: [UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    BOOL returnValue = [self userCanSignIn];
+    
+    if (!returnValue)
+    {
+        if ([self.emailTextField.text isEqualToString:@""])
+        {
+            [self.emailTextField becomeFirstResponder];
+        }
+        else
+        {
+            [self.passwordTextField becomeFirstResponder];
+        }
+    }
+    return returnValue;
+}
+
+-(BOOL)userCanSignIn
+{
+    if ([self.emailTextField.text isEqualToString:@""] || [self.passwordTextField.text isEqualToString:@""])
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
 }
 
 /*
@@ -48,11 +80,33 @@
 
 - (IBAction)signUpTapped:(UIButton *)sender
 {
-    
+    if ([self userCanSignIn])
+    {
+        PFUser *user = [PFUser user];
+        user.username = self.emailTextField.text;
+        user.password = self.passwordTextField.text;
+        
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded)
+            {
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+            }
+            else
+            {
+                UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Error" message:[error userInfo] [@"error"] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                [alertC addAction:alertAction];
+                [self presentViewController:alertC animated:YES completion:nil];
+            }
+        }];
+    }
 }
 
 - (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender
 {
-    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+
 @end

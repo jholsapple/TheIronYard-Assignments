@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PumpOpsGlossaryTableViewController : UITableViewController
+@interface GlossaryTableViewController : UITableViewController
 
 @end

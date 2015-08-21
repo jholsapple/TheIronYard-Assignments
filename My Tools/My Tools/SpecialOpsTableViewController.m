@@ -1,65 +1,57 @@
 //
-//  GlosseryTableViewController.m
+//  SpecialOpsTableViewController.m
 //  My Tools
 //
-//  Created by John Holsapple on 8/18/15.
+//  Created by John Holsapple on 8/21/15.
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "PumpOpsGlossaryTableViewController.h"
-#import <Parse/Parse.h>
+#import "SpecialOpsTableViewController.h"
 
-@interface PumpOpsGlossaryTableViewController ()
-{
-    NSArray *glossaryTerms;
-}
+@interface SpecialOpsTableViewController ()
 
 @end
 
-@implementation PumpOpsGlossaryTableViewController
+@implementation SpecialOpsTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Glossary";
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
     
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [glossaryTerms count];
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GlosseryCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    PFObject *aTerm = glossaryTerms[indexPath.row];
-    NSLog(@"term = %@", aTerm);
-    cell.textLabel.text = aTerm[@"term"];
-    cell.detailTextLabel.text = aTerm[@"definition"];
+    // Configure the cell...
     
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.

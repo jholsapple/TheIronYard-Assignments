@@ -7,6 +7,7 @@
 //
 
 #import "ToolBoxController.h"
+#import <Parse/Parse.h>
 
 @interface ToolBoxController ()
 
@@ -19,17 +20,20 @@
 
 @implementation ToolBoxController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     // Check to see if the parse user is logged in
-    // if !logged in
-    // show the modal login view, segue: ShowLoginViewSegue
+    if (![PFUser currentUser])
+    {
+        [self performSegueWithIdentifier:@"ShowLoginViewSegue" sender:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,15 +51,32 @@
 }
 */
 
-- (IBAction)pumpCalcTapped:(UIButton *)sender {
+#pragma mark - Action Handlers
+
+- (IBAction)pumpCalcTapped:(UIButton *)sender
+{
+    
 }
 
-- (IBAction)referenceGuidesTapped:(UIButton *)sender {
+- (IBAction)referenceGuidesTapped:(UIButton *)sender
+{
+    
 }
 
-- (IBAction)newEventTapped:(UIButton *)sender {
+- (IBAction)newEventTapped:(UIButton *)sender
+{
+    
 }
 
-- (IBAction)logoutTapped:(UIBarButtonItem *)sender {
+- (IBAction)logoutTapped:(UIBarButtonItem *)sender
+{
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"ShowLoginViewSegue" sender:self];
 }
+
+
+
+
+
+
 @end

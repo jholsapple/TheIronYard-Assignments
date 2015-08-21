@@ -15,7 +15,9 @@
 		74808F7A1B83789700F2A4A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74808F781B83789700F2A4A2 /* LaunchScreen.xib */; };
 		74808F861B83789700F2A4A2 /* My_ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F851B83789700F2A4A2 /* My_ToolsTests.m */; };
 		749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749571571B839BC600ACEEFF /* SignUpViewController.m */; };
-		7495715B1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */; };
+		7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */; };
+		74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */; };
+		74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */; };
 		74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176C91B86197B00C7615F /* ToolBoxController.m */; };
 		74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */; };
 		74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176CF1B86237C00C7615F /* NewEventViewController.m */; };
@@ -49,8 +51,12 @@
 		74808F851B83789700F2A4A2 /* My_ToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_ToolsTests.m; sourceTree = "<group>"; };
 		749571561B839BC600ACEEFF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		749571571B839BC600ACEEFF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		749571591B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PumpOpsGlossaryTableViewController.h; sourceTree = "<group>"; };
-		7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PumpOpsGlossaryTableViewController.m; sourceTree = "<group>"; };
+		749571591B83B19700ACEEFF /* GlossaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTableViewController.h; sourceTree = "<group>"; };
+		7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTableViewController.m; sourceTree = "<group>"; };
+		74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialOpsTableViewController.h; sourceTree = "<group>"; };
+		74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialOpsTableViewController.m; sourceTree = "<group>"; };
+		74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PumpOpsTableViewController.h; sourceTree = "<group>"; };
+		74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PumpOpsTableViewController.m; sourceTree = "<group>"; };
 		74E176C81B86197B00C7615F /* ToolBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBoxController.h; sourceTree = "<group>"; };
 		74E176C91B86197B00C7615F /* ToolBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBoxController.m; sourceTree = "<group>"; };
 		74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceGuideTableViewController.h; sourceTree = "<group>"; };
@@ -114,18 +120,11 @@
 			children = (
 				74808F6D1B83789700F2A4A2 /* AppDelegate.h */,
 				74808F6E1B83789700F2A4A2 /* AppDelegate.m */,
-				74808F701B83789700F2A4A2 /* SignInViewController.h */,
-				74808F711B83789700F2A4A2 /* SignInViewController.m */,
-				749571561B839BC600ACEEFF /* SignUpViewController.h */,
-				749571571B839BC600ACEEFF /* SignUpViewController.m */,
+				74D60C151B87655E00B37279 /* Sign in/Sign up */,
+				74D60C141B87654A00B37279 /* Reference Guides */,
+				74D60C161B87676000B37279 /* New Event */,
 				74E176C81B86197B00C7615F /* ToolBoxController.h */,
 				74E176C91B86197B00C7615F /* ToolBoxController.m */,
-				74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */,
-				74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */,
-				749571591B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.h */,
-				7495715A1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m */,
-				74E176CE1B86237C00C7615F /* NewEventViewController.h */,
-				74E176CF1B86237C00C7615F /* NewEventViewController.m */,
 				74808F731B83789700F2A4A2 /* Main.storyboard */,
 				74808F761B83789700F2A4A2 /* Images.xcassets */,
 				74808F781B83789700F2A4A2 /* LaunchScreen.xib */,
@@ -158,6 +157,41 @@
 				74808F841B83789700F2A4A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74D60C141B87654A00B37279 /* Reference Guides */ = {
+			isa = PBXGroup;
+			children = (
+				74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */,
+				74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */,
+				749571591B83B19700ACEEFF /* GlossaryTableViewController.h */,
+				7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */,
+				74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */,
+				74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */,
+				74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */,
+				74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */,
+			);
+			name = "Reference Guides";
+			sourceTree = "<group>";
+		};
+		74D60C151B87655E00B37279 /* Sign in/Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				74808F701B83789700F2A4A2 /* SignInViewController.h */,
+				74808F711B83789700F2A4A2 /* SignInViewController.m */,
+				749571561B839BC600ACEEFF /* SignUpViewController.h */,
+				749571571B839BC600ACEEFF /* SignUpViewController.m */,
+			);
+			name = "Sign in/Sign up";
+			sourceTree = "<group>";
+		};
+		74D60C161B87676000B37279 /* New Event */ = {
+			isa = PBXGroup;
+			children = (
+				74E176CE1B86237C00C7615F /* NewEventViewController.h */,
+				74E176CF1B86237C00C7615F /* NewEventViewController.m */,
+			);
+			name = "New Event";
 			sourceTree = "<group>";
 		};
 		B9B18B0321BD516517CE9831 /* Frameworks */ = {
@@ -303,11 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */,
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
 				749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */,
 				74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */,
-				7495715B1B83B19700ACEEFF /* PumpOpsGlossaryTableViewController.m in Sources */,
+				7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */,
+				74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */,
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
 				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
 				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,
