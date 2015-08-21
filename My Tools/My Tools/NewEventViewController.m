@@ -8,10 +8,14 @@
 
 #import "NewEventViewController.h"
 
+@import EventKit;
+
 @interface NewEventViewController () <UITextFieldDelegate>
 {
     NSDate *startDate;
     NSDate *endDate;
+    EKEventStore *eventStore;
+    BOOL grantedAccess;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
@@ -32,6 +36,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    eventStore = [[EKEventStore alloc] init];
+    EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+    if (status == EKAuthorizationStatusNotDetermined)
+    {
+        [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+            if (granted)
+            {
+                grantedAccess = granted;
+            }
+            else
+            {
+                // access denied by user
+            }
+        }];
+    }
+    else if (status == EKAuthorizationStatusDenied)
+    {
+        // access denied by user
+    }
+    else
+    {
+        grantedAccess = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +90,7 @@
         else if (self.startDateTextField == textField)
         {
             NSDateFormatter *f = [[NSDateFormatter alloc] init];
-            [f setDateFormat:@"MM/dd/yy"];
+            [f setDateStyle:NSDateFormatterShortStyle];
             [f setTimeStyle:NSDateFormatterNoStyle];
             startDate = [f dateFromString:self.startDateTextField.text];
             [self.endDateTextField becomeFirstResponder];
@@ -71,7 +98,7 @@
         else if (self.endDateTextField == textField)
         {
             NSDateFormatter *f = [[NSDateFormatter alloc] init];
-            [f setDateFormat:@"MM/dd/yy"];
+            [f setDateStyle:NSDateFormatterShortStyle];
             [f setTimeStyle:NSDateFormatterNoStyle];
             endDate = [f dateFromString:self.endDateTextField.text];
             [self.recurringEvery becomeFirstResponder];
@@ -116,13 +143,45 @@
         }
     }
     
+    NSDate *lastShift = nil;
     for (NSDate *aDate in dates)
     {
         if (aDate == startDate)
         {
-            // created EKEvent here
+            EKEvent *event = [self createEventWithDate:aDate andTitle:title];
+            [eventStore saveEvent:event span:EKSpanThisEvent error:nil];
+            lastShift = aDate;
+        }
+        else
+        {
+            NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
+            if (difference.day == recurringEvery)
+            {
+                EKEvent *event = [self createEventWithDate:aDate andTitle:title];
+                NSError *error = nil;
+                [eventStore saveEvent:event span:EKSpanThisEvent error:&error];
+                if (error)
+                {
+                    NSLog(@"error saving event: %@", [error localizedDescription]);
+                }
+                lastShift = aDate;
+            }
         }
     }
+    
+}
+
+#pragma mark - EKEvent
+
+- (EKEvent *)createEventWithDate:(NSDate *)date andTitle:(NSString *)title
+{
+    EKEvent *event = [EKEvent eventWithEventStore:eventStore];
+    event.startDate = date;
+    event.endDate = date;
+    event.allDay = YES;
+    event.title = title;
+
+    return event;
 }
 
 @end

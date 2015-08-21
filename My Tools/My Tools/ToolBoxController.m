@@ -10,13 +10,26 @@
 
 @interface ToolBoxController ()
 
+- (IBAction)pumpCalcTapped:(UIButton *)sender;
+- (IBAction)referenceGuidesTapped:(UIButton *)sender;
+- (IBAction)newEventTapped:(UIButton *)sender;
+- (IBAction)logoutTapped:(UIBarButtonItem *)sender;
+
 @end
 
 @implementation ToolBoxController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    // Check to see if the parse user is logged in
+    // if !logged in
+    // show the modal login view, segue: ShowLoginViewSegue
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +47,15 @@
 }
 */
 
+- (IBAction)pumpCalcTapped:(UIButton *)sender {
+}
+
+- (IBAction)referenceGuidesTapped:(UIButton *)sender {
+}
+
+- (IBAction)newEventTapped:(UIButton *)sender {
+}
+
+- (IBAction)logoutTapped:(UIBarButtonItem *)sender {
+}
 @end

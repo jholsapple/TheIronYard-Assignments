@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToolBoxController : UITabBarController
+@interface ToolBoxController : UIViewController
 
 @end
