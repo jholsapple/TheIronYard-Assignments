@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)signUpTapped:(UIButton *)sender;
-- (IBAction)cancelButtonTapped:(UIButton *)sender;
+- (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.signUpView.layer.cornerRadius = 8.0;
+    self.signUpView.layer.cornerRadius = 15.0;
 }
 
 - (void)didReceiveMemoryWarning

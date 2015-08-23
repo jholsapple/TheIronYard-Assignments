@@ -9,7 +9,7 @@
 #import "SignInViewController.h"
 #import <Parse/Parse.h>
 
-@interface SignInViewController ()
+@interface SignInViewController () <UITextFieldDelegate>
 
 - (IBAction)signUpBarButtonTapped:(UIBarButtonItem *)sender;
 - (IBAction)loginTapped:(UIButton *)sender;
@@ -33,6 +33,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    BOOL returnValue = [self userCanSignIn];
+    
+    if (!returnValue)
+    {
+        if ([self.usernameTextField.text isEqualToString:@""])
+        {
+            [self.usernameTextField becomeFirstResponder];
+        }
+        else
+        {
+            [self.passwordTextField becomeFirstResponder];
+        }
+    }
+    return returnValue;
+}
+
+- (BOOL)userCanSignIn
+{
+    if ([self.usernameTextField.text isEqualToString:@""] || [self.passwordTextField.text isEqualToString:@""])
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
 - (IBAction)signUpBarButtonTapped:(UIBarButtonItem *)sender
 {
     
@@ -54,4 +87,9 @@
                                         }
                                     }];
 }
+
+
+
+
+
 @end

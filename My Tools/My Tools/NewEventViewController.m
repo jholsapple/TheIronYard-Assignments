@@ -25,7 +25,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
 - (IBAction)setEventTapped:(UIButton *)sender;
-- (IBAction)cancelTapped:(UIButton *)sender;
 
 - (void) createEventsWithTitle:(NSString *)title andRecurrence:(int)recurringEvery;
 
@@ -36,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.notesTextView.layer.cornerRadius = 5.0;
+    
     eventStore = [[EKEventStore alloc] init];
     EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
     if (status == EKAuthorizationStatusNotDetermined)
@@ -117,11 +118,6 @@
     {
         [self createEventsWithTitle:self.titleTextField.text andRecurrence:[self.recurringEvery.text intValue]];
     }
-}
-
-- (IBAction)cancelTapped:(UIButton *)sender
-{
-    [self.navigationController resignFirstResponder];
 }
 
 - (void)createEventsWithTitle:(NSString *)title andRecurrence:(int)recurringEvery
