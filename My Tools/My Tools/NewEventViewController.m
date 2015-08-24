@@ -7,6 +7,7 @@
 //
 
 #import "NewEventViewController.h"
+#import "DatePickerViewController.h"
 
 @import EventKit;
 
@@ -16,11 +17,13 @@
     NSDate *endDate;
     EKEventStore *eventStore;
     BOOL grantedAccess;
+    NSDateFormatter *dateFormatter;
+    int recurringDays;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *startDateTextField;
-@property (weak, nonatomic) IBOutlet UITextField *endDateTextField;
+@property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endDateLabel;
 @property (weak, nonatomic) IBOutlet UITextField *recurringEvery;
 @property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
@@ -36,6 +39,11 @@
 {
     [super viewDidLoad];
     self.notesTextView.layer.cornerRadius = 5.0;
+    dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    
+    recurringDays = -1;
     
     eventStore = [[EKEventStore alloc] init];
     EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
@@ -48,14 +56,19 @@
             }
             else
             {
-                // access denied by user
+                UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Calendar Access Denied" message:@"You are not able to create any new events. " preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                [alertC addAction:alertAction];
+                [self presentViewController:alertC animated:YES completion:nil];
             }
         }];
     }
     else if (status == EKAuthorizationStatusDenied)
     {
-        // access denied by user
-    }
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Calendar Access Denied" message:@"You are not able to create any new events. " preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertC addAction:alertAction];
+        [self presentViewController:alertC animated:YES completion:nil];    }
     else
     {
         grantedAccess = YES;
@@ -68,15 +81,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DatePickerViewController *datePickerVC = (DatePickerViewController *)[segue destinationViewController];
+    datePickerVC.delegate = self;
+    if ([segue.identifier isEqualToString:@"StartDatePickerSegue"])
+    {
+        datePickerVC.isStartDate = YES;
+    }
+    else if  ([segue.identifier isEqualToString:@"EndDatePickerSegue"])
+    {
+        datePickerVC.isStartDate =NO;
+    }
 }
-*/
+
+#pragma mark - NewEventDatePickerDelegate
+
+- (void)newEventDateWasChosen:(NSDate *)newEventDate isStartDate:(BOOL)startDateChosen
+{
+    if (startDateChosen)
+    {
+        self.startDateLabel.text = [dateFormatter stringFromDate:newEventDate];
+        startDate = newEventDate;
+    }
+    else
+    {
+        self.endDateLabel.text = [dateFormatter stringFromDate:newEventDate];
+        endDate = newEventDate;
+    }
+}
 
 #pragma mark - UITextFieldDelegate
 
@@ -86,30 +122,34 @@
     {
         if (self.titleTextField == textField)
         {
-            [self.startDateTextField becomeFirstResponder];
-        }
-        else if (self.startDateTextField == textField)
-        {
-            NSDateFormatter *f = [[NSDateFormatter alloc] init];
-            [f setDateStyle:NSDateFormatterShortStyle];
-            [f setTimeStyle:NSDateFormatterNoStyle];
-            startDate = [f dateFromString:self.startDateTextField.text];
-            [self.endDateTextField becomeFirstResponder];
-        }
-        else if (self.endDateTextField == textField)
-        {
-            NSDateFormatter *f = [[NSDateFormatter alloc] init];
-            [f setDateStyle:NSDateFormatterShortStyle];
-            [f setTimeStyle:NSDateFormatterNoStyle];
-            endDate = [f dateFromString:self.endDateTextField.text];
             [self.recurringEvery becomeFirstResponder];
         }
-//        else if (self.recurringEvery == textField)
-//        {
-//            [self.notesTextView becomeFirstResponder];
-//        }
+        else if (self.recurringEvery == textField)
+        {
+            [self.notesTextView becomeFirstResponder];
+        }
     }
     return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (self.recurringEvery == textField)
+    {
+        if (recurringDays >= 0)
+        {
+            self.recurringEvery.text = [NSString stringWithFormat:@"%d", recurringDays];
+        }
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    if (self.recurringEvery == textField)
+    {
+        recurringDays = [self.recurringEvery.text intValue];
+        self.recurringEvery.text = [NSString stringWithFormat:@"Recurring Every %@ days", self.recurringEvery.text];
+    }
 }
 
 - (IBAction)setEventTapped:(UIButton *)sender
@@ -142,26 +182,18 @@
     NSDate *lastShift = nil;
     for (NSDate *aDate in dates)
     {
-        if (aDate == startDate)
+        NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
+        if (difference.day == recurringEvery || aDate == startDate)
         {
             EKEvent *event = [self createEventWithDate:aDate andTitle:title];
-            [eventStore saveEvent:event span:EKSpanThisEvent error:nil];
-            lastShift = aDate;
-        }
-        else
-        {
-            NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
-            if (difference.day == recurringEvery)
+            [event setCalendar:[eventStore defaultCalendarForNewEvents]];
+            NSError *error = nil;
+            [eventStore saveEvent:event span:EKSpanThisEvent error:&error];
+            if (error)
             {
-                EKEvent *event = [self createEventWithDate:aDate andTitle:title];
-                NSError *error = nil;
-                [eventStore saveEvent:event span:EKSpanThisEvent error:&error];
-                if (error)
-                {
-                    NSLog(@"error saving event: %@", [error localizedDescription]);
-                }
-                lastShift = aDate;
+                NSLog(@"error saving event: %@", [error localizedDescription]);
             }
+            lastShift = aDate;
         }
     }
     

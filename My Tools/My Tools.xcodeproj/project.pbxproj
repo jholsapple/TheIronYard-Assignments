@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF691B8B5C540080650E /* CalculatorViewController.m */; };
+		742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF6C1B8B87E50080650E /* DatePickerViewController.m */; };
 		74808F6C1B83789700F2A4A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6B1B83789700F2A4A2 /* main.m */; };
 		74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6E1B83789700F2A4A2 /* AppDelegate.m */; };
 		74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F711B83789700F2A4A2 /* SignInViewController.m */; };
@@ -36,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		5FE57FB67B94AE54CBA7B131 /* Pods-My Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Tools/Pods-My Tools.debug.xcconfig"; sourceTree = "<group>"; };
+		742AEF681B8B5C540080650E /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		742AEF691B8B5C540080650E /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		742AEF6B1B8B87E50080650E /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		742AEF6C1B8B87E50080650E /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		74808F661B83789700F2A4A2 /* My Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F6A1B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F6B1B83789700F2A4A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 				74D60C151B87655E00B37279 /* Sign in/Sign up */,
 				74D60C141B87654A00B37279 /* Reference Guides */,
 				74D60C161B87676000B37279 /* New Event */,
+				742AEF681B8B5C540080650E /* CalculatorViewController.h */,
+				742AEF691B8B5C540080650E /* CalculatorViewController.m */,
 				74E176C81B86197B00C7615F /* ToolBoxController.h */,
 				74E176C91B86197B00C7615F /* ToolBoxController.m */,
 				74808F731B83789700F2A4A2 /* Main.storyboard */,
@@ -190,6 +198,8 @@
 			children = (
 				74E176CE1B86237C00C7615F /* NewEventViewController.h */,
 				74E176CF1B86237C00C7615F /* NewEventViewController.m */,
+				742AEF6B1B8B87E50080650E /* DatePickerViewController.h */,
+				742AEF6C1B8B87E50080650E /* DatePickerViewController.m */,
 			);
 			name = "New Event";
 			sourceTree = "<group>";
@@ -339,11 +349,13 @@
 			files = (
 				74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */,
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
+				742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
 				749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */,
 				74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */,
 				7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */,
 				74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */,
+				742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */,
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
 				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
 				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewEventViewController : UIViewController
+@protocol NewEventDatePickerDelegate
+
+- (void)newEventDateWasChosen:(NSDate *)newEventDate isStartDate:(BOOL)startDateChosen;
+
+@end
+
+@interface NewEventViewController : UITableViewController <NewEventDatePickerDelegate>
 
 @end
