@@ -11,6 +11,8 @@
 		742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF6C1B8B87E50080650E /* DatePickerViewController.m */; };
 		743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */; };
 		7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */; };
+		7468FE301B8CEAE60073D7DA /* GlossaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */; };
+		7468FE331B8CFA050073D7DA /* QFormulaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */; };
 		74808F6C1B83789700F2A4A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6B1B83789700F2A4A2 /* main.m */; };
 		74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6E1B83789700F2A4A2 /* AppDelegate.m */; };
 		74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F711B83789700F2A4A2 /* SignInViewController.m */; };
@@ -49,6 +51,10 @@
 		743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoseCoefficientsTableViewController.m; sourceTree = "<group>"; };
 		7468FE2B1B8CE1660073D7DA /* CoefficientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoefficientCell.h; sourceTree = "<group>"; };
 		7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoefficientCell.m; sourceTree = "<group>"; };
+		7468FE2E1B8CEAE60073D7DA /* GlossaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryCell.h; sourceTree = "<group>"; };
+		7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryCell.m; sourceTree = "<group>"; };
+		7468FE311B8CFA050073D7DA /* QFormulaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFormulaTableViewController.h; sourceTree = "<group>"; };
+		7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFormulaTableViewController.m; sourceTree = "<group>"; };
 		74808F661B83789700F2A4A2 /* My Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F6A1B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F6B1B83789700F2A4A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,10 +134,14 @@
 				74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */,
 				749571591B83B19700ACEEFF /* GlossaryTableViewController.h */,
 				7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */,
+				7468FE2E1B8CEAE60073D7DA /* GlossaryCell.h */,
+				7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */,
 				743504C71B8CC12400EF543A /* HoseCoefficientsTableViewController.h */,
 				743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */,
 				7468FE2B1B8CE1660073D7DA /* CoefficientCell.h */,
 				7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */,
+				7468FE311B8CFA050073D7DA /* QFormulaTableViewController.h */,
+				7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */,
 			);
 			name = PumpOpsReferenceGuides;
 			sourceTree = "<group>";
@@ -399,6 +409,8 @@
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
 				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
 				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,
+				7468FE301B8CEAE60073D7DA /* GlossaryCell.m in Sources */,
+				7468FE331B8CFA050073D7DA /* QFormulaTableViewController.m in Sources */,
 				743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */,
 				748239741B8C064900A0C225 /* CalculatorBrain.m in Sources */,
 			);

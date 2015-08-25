@@ -7,6 +7,7 @@
 //
 
 #import "GlossaryTableViewController.h"
+#import "GlossaryCell.h"
 #import <Parse/Parse.h>
 
 @interface GlossaryTableViewController ()
@@ -22,12 +23,8 @@
 {
     [super viewDidLoad];
     self.title = @"Glossary";
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
     
+    [self refreshGlossaryFromParse];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,10 +48,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GlosseryCell" forIndexPath:indexPath];
+    GlossaryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GlossaryCell" forIndexPath:indexPath];
     
     PFObject *aTerm = glossaryTerms[indexPath.row];
-    NSLog(@"term = %@", aTerm);
     cell.textLabel.text = aTerm[@"term"];
     cell.detailTextLabel.text = aTerm[@"definition"];
     
@@ -104,5 +100,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Private
+
+-(void)refreshGlossaryFromParse
+{
+    if ([PFUser currentUser])
+    {
+        PFQuery *query = [[PFQuery alloc] initWithClassName:@"Glossary"];
+        [query findObjectsInBackgroundWithBlock:^(NSArray*objects, NSError *error) {
+            if (!error)
+            {
+                glossaryTerms = objects;
+                [self.tableView reloadData];
+            }
+        }];
+    }
+}
+
+
+
+
+
+
 
 @end
