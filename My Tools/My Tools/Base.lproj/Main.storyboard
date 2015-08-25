@@ -881,6 +881,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" id="sfT-98-bej">
+                            <rect key="frame" x="0.0" y="293" width="600" height="308"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                        </textView>
                         <sections>
                             <tableViewSection id="HDg-87-TrQ">
                                 <cells>
@@ -924,7 +932,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jye-He-eXD">
-                                                    <rect key="frame" x="16" y="7" width="568" height="30"/>
+                                                    <rect key="frame" x="16" y="8" width="568" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
@@ -933,7 +941,7 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Jye-He-eXD" firstAttribute="top" secondItem="5RE-hW-NiE" secondAttribute="top" constant="7" id="41y-5E-Ycf"/>
+                                                <constraint firstItem="Jye-He-eXD" firstAttribute="top" secondItem="5RE-hW-NiE" secondAttribute="top" constant="8" id="41y-5E-Ycf"/>
                                                 <constraint firstAttribute="trailing" secondItem="Jye-He-eXD" secondAttribute="trailing" constant="16" id="QeE-DY-5DW"/>
                                                 <constraint firstItem="Jye-He-eXD" firstAttribute="leading" secondItem="5RE-hW-NiE" secondAttribute="leading" constant="16" id="Z3U-EB-GX5"/>
                                             </constraints>
@@ -981,7 +989,7 @@
                                             <segue destination="Qtx-ar-6vX" kind="show" identifier="EndDatePickerSegue" id="Vjp-X9-o6l"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gn7-qn-l3W">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="gn7-qn-l3W">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gn7-qn-l3W" id="YQH-zg-uKB">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -1004,34 +1012,6 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Notes:" id="g0b-R3-c9h">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="zue-11-FRi">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zue-11-FRi" id="Sli-9c-y6y">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRM-rK-qYw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="132" id="PVm-1J-F3n"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="TRM-rK-qYw" secondAttribute="trailing" id="M1N-eH-Q3m"/>
-                                                <constraint firstItem="TRM-rK-qYw" firstAttribute="leading" secondItem="Sli-9c-y6y" secondAttribute="leading" id="Me5-IX-cG8"/>
-                                                <constraint firstAttribute="bottom" secondItem="TRM-rK-qYw" secondAttribute="bottom" constant="8" id="rm4-v8-UxP"/>
-                                                <constraint firstItem="TRM-rK-qYw" firstAttribute="top" secondItem="Sli-9c-y6y" secondAttribute="top" id="yo6-pc-eSM"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="fQE-eL-1HH" id="UMV-hf-ZY7"/>
@@ -1040,7 +1020,7 @@
                     </tableView>
                     <connections>
                         <outlet property="endDateLabel" destination="6pA-vX-lNk" id="BJc-rI-YTx"/>
-                        <outlet property="notesTextView" destination="TRM-rK-qYw" id="Sjf-Zd-J9Y"/>
+                        <outlet property="notesTextView" destination="sfT-98-bej" id="vIK-L1-7E4"/>
                         <outlet property="recurringEvery" destination="bVG-IV-JjU" id="ATz-Hb-yf1"/>
                         <outlet property="startDateLabel" destination="Q22-39-MQp" id="kD0-8l-TOR"/>
                         <outlet property="titleTextField" destination="Jye-He-eXD" id="tCf-vc-Mag"/>

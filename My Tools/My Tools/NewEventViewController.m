@@ -39,11 +39,16 @@
 {
     [super viewDidLoad];
     self.notesTextView.layer.cornerRadius = 5.0;
+    self.notesTextView.text = @"Comments";
+    self.notesTextView.textColor = [UIColor lightGrayColor];
+    
     dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     
     recurringDays = -1;
+    
+    
     
     eventStore = [[EKEventStore alloc] init];
     EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
@@ -65,10 +70,11 @@
     }
     else if (status == EKAuthorizationStatusDenied)
     {
-        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Calendar Access Denied" message:@"You are not able to create any new events. " preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Calendar Access Denied" message:@"You are not able to create any new events at this time. " preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alertC addAction:alertAction];
-        [self presentViewController:alertC animated:YES completion:nil];    }
+        [self presentViewController:alertC animated:YES completion:nil];
+    }
     else
     {
         grantedAccess = YES;
@@ -157,6 +163,14 @@
     if (startDate != nil && endDate != nil && ![self.titleTextField.text isEqualToString:@""] && ![self.recurringEvery.text isEqualToString:@""])
     {
         [self createEventsWithTitle:self.titleTextField.text andRecurrence:[self.recurringEvery.text intValue]];
+    }
+    else if (startDate == nil && endDate == nil)
+    {
+        
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"No Dates Selected" message:@"You must select Start and End dates" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertC addAction:alertAction];
+        [self presentViewController:alertC animated:YES completion:nil];
     }
 }
 
