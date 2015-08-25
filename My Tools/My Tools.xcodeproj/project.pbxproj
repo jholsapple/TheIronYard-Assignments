@@ -13,6 +13,10 @@
 		7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */; };
 		7468FE301B8CEAE60073D7DA /* GlossaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */; };
 		7468FE331B8CFA050073D7DA /* QFormulaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */; };
+		7468FE361B8CFD660073D7DA /* PrinciplesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE351B8CFD660073D7DA /* PrinciplesTableViewController.m */; };
+		7468FE391B8D06320073D7DA /* PrincipleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE381B8D06320073D7DA /* PrincipleCell.m */; };
+		7468FE3C1B8D19540073D7DA /* AppliancesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE3B1B8D19540073D7DA /* AppliancesTableViewController.m */; };
+		7468FE3F1B8D1E650073D7DA /* ApplianceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE3E1B8D1E650073D7DA /* ApplianceCell.m */; };
 		74808F6C1B83789700F2A4A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6B1B83789700F2A4A2 /* main.m */; };
 		74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6E1B83789700F2A4A2 /* AppDelegate.m */; };
 		74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F711B83789700F2A4A2 /* SignInViewController.m */; };
@@ -55,6 +59,14 @@
 		7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryCell.m; sourceTree = "<group>"; };
 		7468FE311B8CFA050073D7DA /* QFormulaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFormulaTableViewController.h; sourceTree = "<group>"; };
 		7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFormulaTableViewController.m; sourceTree = "<group>"; };
+		7468FE341B8CFD660073D7DA /* PrinciplesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinciplesTableViewController.h; sourceTree = "<group>"; };
+		7468FE351B8CFD660073D7DA /* PrinciplesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinciplesTableViewController.m; sourceTree = "<group>"; };
+		7468FE371B8D06320073D7DA /* PrincipleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipleCell.h; sourceTree = "<group>"; };
+		7468FE381B8D06320073D7DA /* PrincipleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipleCell.m; sourceTree = "<group>"; };
+		7468FE3A1B8D19540073D7DA /* AppliancesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppliancesTableViewController.h; sourceTree = "<group>"; };
+		7468FE3B1B8D19540073D7DA /* AppliancesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppliancesTableViewController.m; sourceTree = "<group>"; };
+		7468FE3D1B8D1E650073D7DA /* ApplianceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplianceCell.h; sourceTree = "<group>"; };
+		7468FE3E1B8D1E650073D7DA /* ApplianceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplianceCell.m; sourceTree = "<group>"; };
 		74808F661B83789700F2A4A2 /* My Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F6A1B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F6B1B83789700F2A4A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -142,6 +154,14 @@
 				7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */,
 				7468FE311B8CFA050073D7DA /* QFormulaTableViewController.h */,
 				7468FE321B8CFA050073D7DA /* QFormulaTableViewController.m */,
+				7468FE341B8CFD660073D7DA /* PrinciplesTableViewController.h */,
+				7468FE351B8CFD660073D7DA /* PrinciplesTableViewController.m */,
+				7468FE371B8D06320073D7DA /* PrincipleCell.h */,
+				7468FE381B8D06320073D7DA /* PrincipleCell.m */,
+				7468FE3A1B8D19540073D7DA /* AppliancesTableViewController.h */,
+				7468FE3B1B8D19540073D7DA /* AppliancesTableViewController.m */,
+				7468FE3D1B8D1E650073D7DA /* ApplianceCell.h */,
+				7468FE3E1B8D1E650073D7DA /* ApplianceCell.m */,
 			);
 			name = PumpOpsReferenceGuides;
 			sourceTree = "<group>";
@@ -397,15 +417,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */,
+				7468FE3C1B8D19540073D7DA /* AppliancesTableViewController.m in Sources */,
+				7468FE3F1B8D1E650073D7DA /* ApplianceCell.m in Sources */,
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
 				742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
+				7468FE391B8D06320073D7DA /* PrincipleCell.m in Sources */,
 				7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */,
 				749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */,
 				74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */,
 				7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */,
 				74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */,
 				742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */,
+				7468FE361B8CFD660073D7DA /* PrinciplesTableViewController.m in Sources */,
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
 				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
 				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,
