@@ -160,12 +160,63 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flj-9Q-DzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5768" y="423"/>
+            <point key="canvasLocation" x="5268" y="423"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Hose Coefficients Table View Controller-->
+        <scene sceneID="T4L-L9-AwX">
+            <objects>
+                <tableViewController id="6rw-Wy-IgA" customClass="HoseCoefficientsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="beP-RV-d1d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoefficientCell" id="rWR-kr-sjS" customClass="CoefficientCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rWR-kr-sjS" id="bGr-Xn-0Wj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hose Diameter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWL-rM-gC8">
+                                            <rect key="frame" x="8" y="11" width="114" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coefficient" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTP-gK-aoU">
+                                            <rect key="frame" x="509" y="11" width="83" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dWL-rM-gC8" firstAttribute="leading" secondItem="bGr-Xn-0Wj" secondAttribute="leading" constant="8" id="6kl-v3-w4c"/>
+                                        <constraint firstItem="bTP-gK-aoU" firstAttribute="top" secondItem="bGr-Xn-0Wj" secondAttribute="top" constant="11" id="6oc-UQ-N9v"/>
+                                        <constraint firstItem="dWL-rM-gC8" firstAttribute="top" secondItem="bGr-Xn-0Wj" secondAttribute="top" constant="11" id="o79-wl-2JU"/>
+                                        <constraint firstAttribute="trailing" secondItem="bTP-gK-aoU" secondAttribute="trailing" constant="8" id="vi7-fb-gyr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coefficientLabel" destination="bTP-gK-aoU" id="nZ1-lh-u1y"/>
+                                    <outlet property="hoseDiameterLabel" destination="dWL-rM-gC8" id="zcI-kB-Ejc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="6rw-Wy-IgA" id="2ta-cI-COV"/>
+                            <outlet property="delegate" destination="6rw-Wy-IgA" id="vKd-zD-lzG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg0-AY-iSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5971" y="423"/>
+        </scene>
+        <!--Pump Ops Table View Controller-->
         <scene sceneID="ECZ-hz-5eC">
             <objects>
-                <tableViewController id="kmJ-EF-v1z" sceneMemberID="viewController">
+                <tableViewController id="kmJ-EF-v1z" customClass="PumpOpsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" id="A9L-zl-hbD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +238,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6rw-Wy-IgA" kind="show" id="PGq-V4-Ulo"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="tLV-jj-Ei4" rowHeight="88" style="IBUITableViewCellStyleDefault" id="Syz-jU-44b">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -232,6 +286,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oJN-wK-zSg" kind="show" id="tOE-J3-tDw"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qcr-zB-UbP" rowHeight="88" style="IBUITableViewCellStyleDefault" id="ZHU-65-4ty">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -742,7 +799,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
-                        <color key="sectionIndexBackgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="Jj5-vM-nP0">
                                 <cells>
@@ -759,7 +816,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gKP-T2-xso" rowHeight="88" style="IBUITableViewCellStyleDefault" id="AIa-pm-r3I">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -774,7 +831,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="kmJ-EF-v1z" kind="show" id="DfA-e1-mVR"/>
                                         </connections>
@@ -792,7 +849,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="AZm-7B-iWq" kind="show" id="xeD-jO-jy5"/>
                                         </connections>
@@ -810,7 +867,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

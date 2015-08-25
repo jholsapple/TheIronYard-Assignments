@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF691B8B5C540080650E /* CalculatorViewController.m */; };
 		742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF6C1B8B87E50080650E /* DatePickerViewController.m */; };
+		743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */; };
+		7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */; };
 		74808F6C1B83789700F2A4A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6B1B83789700F2A4A2 /* main.m */; };
 		74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F6E1B83789700F2A4A2 /* AppDelegate.m */; };
 		74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F711B83789700F2A4A2 /* SignInViewController.m */; };
@@ -16,6 +18,7 @@
 		74808F771B83789700F2A4A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74808F761B83789700F2A4A2 /* Images.xcassets */; };
 		74808F7A1B83789700F2A4A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74808F781B83789700F2A4A2 /* LaunchScreen.xib */; };
 		74808F861B83789700F2A4A2 /* My_ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74808F851B83789700F2A4A2 /* My_ToolsTests.m */; };
+		748239741B8C064900A0C225 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 748239731B8C064900A0C225 /* CalculatorBrain.m */; };
 		749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749571571B839BC600ACEEFF /* SignUpViewController.m */; };
 		7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */; };
 		74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */; };
@@ -42,6 +45,10 @@
 		742AEF691B8B5C540080650E /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		742AEF6B1B8B87E50080650E /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		742AEF6C1B8B87E50080650E /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		743504C71B8CC12400EF543A /* HoseCoefficientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoseCoefficientsTableViewController.h; sourceTree = "<group>"; };
+		743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoseCoefficientsTableViewController.m; sourceTree = "<group>"; };
+		7468FE2B1B8CE1660073D7DA /* CoefficientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoefficientCell.h; sourceTree = "<group>"; };
+		7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoefficientCell.m; sourceTree = "<group>"; };
 		74808F661B83789700F2A4A2 /* My Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F6A1B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F6B1B83789700F2A4A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +62,8 @@
 		74808F7F1B83789700F2A4A2 /* My ToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My ToolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F841B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F851B83789700F2A4A2 /* My_ToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_ToolsTests.m; sourceTree = "<group>"; };
+		748239721B8C064900A0C225 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		748239731B8C064900A0C225 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 		749571561B839BC600ACEEFF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		749571571B839BC600ACEEFF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		749571591B83B19700ACEEFF /* GlossaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTableViewController.h; sourceTree = "<group>"; };
@@ -101,6 +110,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		743504BE1B8CAD4500EF543A /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				742AEF681B8B5C540080650E /* CalculatorViewController.h */,
+				742AEF691B8B5C540080650E /* CalculatorViewController.m */,
+				748239721B8C064900A0C225 /* CalculatorBrain.h */,
+				748239731B8C064900A0C225 /* CalculatorBrain.m */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		743504C21B8CB2EA00EF543A /* PumpOpsReferenceGuides */ = {
+			isa = PBXGroup;
+			children = (
+				74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */,
+				74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */,
+				749571591B83B19700ACEEFF /* GlossaryTableViewController.h */,
+				7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */,
+				743504C71B8CC12400EF543A /* HoseCoefficientsTableViewController.h */,
+				743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */,
+				7468FE2B1B8CE1660073D7DA /* CoefficientCell.h */,
+				7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */,
+			);
+			name = PumpOpsReferenceGuides;
+			sourceTree = "<group>";
+		};
+		743504C31B8CB30F00EF543A /* SpecialOpsReferenceGuides */ = {
+			isa = PBXGroup;
+			children = (
+				74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */,
+				74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */,
+			);
+			name = SpecialOpsReferenceGuides;
+			sourceTree = "<group>";
+		};
 		74808F5D1B83789700F2A4A2 = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +170,12 @@
 			children = (
 				74808F6D1B83789700F2A4A2 /* AppDelegate.h */,
 				74808F6E1B83789700F2A4A2 /* AppDelegate.m */,
+				74E176C81B86197B00C7615F /* ToolBoxController.h */,
+				74E176C91B86197B00C7615F /* ToolBoxController.m */,
 				74D60C151B87655E00B37279 /* Sign in/Sign up */,
 				74D60C141B87654A00B37279 /* Reference Guides */,
 				74D60C161B87676000B37279 /* New Event */,
-				742AEF681B8B5C540080650E /* CalculatorViewController.h */,
-				742AEF691B8B5C540080650E /* CalculatorViewController.m */,
-				74E176C81B86197B00C7615F /* ToolBoxController.h */,
-				74E176C91B86197B00C7615F /* ToolBoxController.m */,
+				743504BE1B8CAD4500EF543A /* Calculator */,
 				74808F731B83789700F2A4A2 /* Main.storyboard */,
 				74808F761B83789700F2A4A2 /* Images.xcassets */,
 				74808F781B83789700F2A4A2 /* LaunchScreen.xib */,
@@ -172,12 +215,8 @@
 			children = (
 				74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */,
 				74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */,
-				749571591B83B19700ACEEFF /* GlossaryTableViewController.h */,
-				7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */,
-				74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */,
-				74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */,
-				74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */,
-				74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */,
+				743504C21B8CB2EA00EF543A /* PumpOpsReferenceGuides */,
+				743504C31B8CB30F00EF543A /* SpecialOpsReferenceGuides */,
 			);
 			name = "Reference Guides";
 			sourceTree = "<group>";
@@ -351,6 +390,7 @@
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
 				742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
+				7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */,
 				749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */,
 				74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */,
 				7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */,
@@ -359,6 +399,8 @@
 				74808F6C1B83789700F2A4A2 /* main.m in Sources */,
 				74E176D01B86237C00C7615F /* NewEventViewController.m in Sources */,
 				74E176CD1B861F5B00C7615F /* ReferenceGuideTableViewController.m in Sources */,
+				743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */,
+				748239741B8C064900A0C225 /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse enableLocalDatastore];
     [Parse setApplicationId:@"Jnoij5QN4BGRrwtWca9uZwqSdtxETE3ZBqErsPek"
                   clientKey:@"PIKckcDswyvSxTdDagjm4z0jXX0xPBcr9EEarfRY"];
     

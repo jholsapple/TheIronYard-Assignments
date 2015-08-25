@@ -1,32 +1,36 @@
 //
-//  PumpOpsTableViewController.m
+//  HoseCoefficientsTableViewController.m
 //  My Tools
 //
-//  Created by John Holsapple on 8/21/15.
+//  Created by John Holsapple on 8/25/15.
 //  Copyright (c) 2015 John Holsapple -- The Iron Yard. All rights reserved.
 //
 
-#import "PumpOpsTableViewController.h"
+#import "HoseCoefficientsTableViewController.h"
+#import "CoefficientCell.h"
+#import <Parse/Parse.h>
 
-@interface PumpOpsTableViewController ()
+@interface HoseCoefficientsTableViewController ()
+{
+    NSArray *hoseCoefficients;
+}
 
 @end
 
-@implementation PumpOpsTableViewController
+@implementation HoseCoefficientsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    self.title = @"Coefficients";
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self refreshCoefficientsFromParse];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
@@ -40,18 +44,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return [hoseCoefficients count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CoefficientCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CoefficientCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    PFObject *aCoefficient = hoseCoefficients[indexPath.row];
+    cell.hoseDiameterLabel.text = aCoefficient[@"hoseDiameter"];
+    cell.coefficientLabel.text = aCoefficient[@"coefficient"];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -96,5 +101,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Private
+
+- (void)refreshCoefficientsFromParse
+{
+    if ([PFUser currentUser])
+    {
+        PFQuery *query = [[PFQuery alloc] initWithClassName:@"HoseCoefficients"];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if (!error)
+            {
+                hoseCoefficients = objects;
+                [self.tableView reloadData];
+            }
+        }];
+    }
+}
+
 
 @end
