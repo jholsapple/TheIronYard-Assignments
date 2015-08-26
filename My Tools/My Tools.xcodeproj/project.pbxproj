@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF691B8B5C540080650E /* CalculatorViewController.m */; };
 		742AEF6D1B8B87E50080650E /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742AEF6C1B8B87E50080650E /* DatePickerViewController.m */; };
+		742F3CE41B8DFB41009E69D0 /* HandlineCalclulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742F3CE31B8DFB41009E69D0 /* HandlineCalclulatorViewController.m */; };
 		743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */; };
 		7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2C1B8CE1660073D7DA /* CoefficientCell.m */; };
 		7468FE301B8CEAE60073D7DA /* GlossaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468FE2F1B8CEAE60073D7DA /* GlossaryCell.m */; };
@@ -47,10 +47,10 @@
 
 /* Begin PBXFileReference section */
 		5FE57FB67B94AE54CBA7B131 /* Pods-My Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Tools/Pods-My Tools.debug.xcconfig"; sourceTree = "<group>"; };
-		742AEF681B8B5C540080650E /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
-		742AEF691B8B5C540080650E /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 		742AEF6B1B8B87E50080650E /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		742AEF6C1B8B87E50080650E /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		742F3CE21B8DFB41009E69D0 /* HandlineCalclulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlineCalclulatorViewController.h; sourceTree = "<group>"; };
+		742F3CE31B8DFB41009E69D0 /* HandlineCalclulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlineCalclulatorViewController.m; sourceTree = "<group>"; };
 		743504C71B8CC12400EF543A /* HoseCoefficientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoseCoefficientsTableViewController.h; sourceTree = "<group>"; };
 		743504C81B8CC12400EF543A /* HoseCoefficientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoseCoefficientsTableViewController.m; sourceTree = "<group>"; };
 		7468FE2B1B8CE1660073D7DA /* CoefficientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoefficientCell.h; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		743504BE1B8CAD4500EF543A /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				742AEF681B8B5C540080650E /* CalculatorViewController.h */,
-				742AEF691B8B5C540080650E /* CalculatorViewController.m */,
+				742F3CE21B8DFB41009E69D0 /* HandlineCalclulatorViewController.h */,
+				742F3CE31B8DFB41009E69D0 /* HandlineCalclulatorViewController.m */,
 				748239721B8C064900A0C225 /* CalculatorBrain.h */,
 				748239731B8C064900A0C225 /* CalculatorBrain.m */,
 			);
@@ -416,11 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742F3CE41B8DFB41009E69D0 /* HandlineCalclulatorViewController.m in Sources */,
 				74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */,
 				7468FE3C1B8D19540073D7DA /* AppliancesTableViewController.m in Sources */,
 				7468FE3F1B8D1E650073D7DA /* ApplianceCell.m in Sources */,
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
-				742AEF6A1B8B5C540080650E /* CalculatorViewController.m in Sources */,
 				74808F6F1B83789700F2A4A2 /* AppDelegate.m in Sources */,
 				7468FE391B8D06320073D7DA /* PrincipleCell.m in Sources */,
 				7468FE2D1B8CE1660073D7DA /* CoefficientCell.m in Sources */,

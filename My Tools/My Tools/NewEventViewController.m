@@ -187,19 +187,24 @@
         NSDate *dateToAdd = [[NSCalendar currentCalendar] dateByAddingComponents:oneDay toDate:selectedDate options:0];
         [dates addObject:dateToAdd];
         selectedDate = dateToAdd;
-        if (dateToAdd == endDate)
+        NSDateComponents *dateToAddComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:dateToAdd];
+        NSDateComponents *endDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:endDate];
+        
+        if (dateToAddComponents.month == endDateComponents.month && dateToAddComponents.day == endDateComponents.day && dateToAddComponents.year == endDateComponents.year)
         {
             done = YES;
         }
     }
     
-    NSDate *lastShift = nil;
+    NSDate *lastShift = startDate;
     for (NSDate *aDate in dates)
     {
         NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
-        if (difference.day == recurringEvery || aDate == startDate)
+        NSLog(@"date = %@, difference = %ld", aDate, difference.day);
+        if (difference.day == recurringDays || aDate == startDate)
         {
             EKEvent *event = [self createEventWithDate:aDate andTitle:title];
+            NSLog(@"adding event on day %@", aDate);
             [event setCalendar:[eventStore defaultCalendarForNewEvents]];
             NSError *error = nil;
             [eventStore saveEvent:event span:EKSpanThisEvent error:&error];
