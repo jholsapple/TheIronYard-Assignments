@@ -11,7 +11,7 @@
 
 @interface SignInViewController () <UITextFieldDelegate>
 
-- (IBAction)signUpBarButtonTapped:(UIBarButtonItem *)sender;
+- (IBAction)signUpButtonTapped:(UIBarButtonItem *)sender;
 - (IBAction)loginTapped:(UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -26,6 +26,14 @@
     [super viewDidLoad];
     self.loginView.layer.cornerRadius = 15.0;
     self.loginView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8f];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault]; //UIImageNamed:@"transparent.png"
+    self.navigationController.navigationBar.shadowImage = [UIImage new];////UIImageNamed:@"transparent.png"
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,7 +74,7 @@
     }
 }
 
-- (IBAction)signUpBarButtonTapped:(UIBarButtonItem *)sender
+- (IBAction)signUpButtonTapped:(UIBarButtonItem *)sender
 {
     
 }

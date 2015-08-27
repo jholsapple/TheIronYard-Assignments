@@ -10,6 +10,10 @@
 #import "CalculatorBrain.h"
 
 @interface HandlineCalclulatorViewController ()
+{
+    NSArray *_hoseCoefficient;
+    NSArray *_fogNozzleGpm;
+}
 
 
 @property (nonatomic) CalculatorBrain *myBrain;
@@ -26,7 +30,7 @@
 - (IBAction)nozzleSelector:(UISegmentedControl *)sender;
 - (IBAction)gpmSelector:(UISegmentedControl *)sender;
 - (IBAction)lemonadeButtonTapped:(UIButton *)sender;
-- (IBAction)clearButtonTapped:(UIButton *)sender;
+- (IBAction)clearBarButtonTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -49,8 +53,8 @@ double backPressure;      //Back pressure due to elevation
     self.title = @"Hand Line";
         
     self.myBrain = [[CalculatorBrain alloc] init];
-//    _hoseCoefficient = @[@15.5,@2,@.8]; //Corresponds to hose diameter selector
-//    _fogNozzleGpm = @[@95,@125,@150,@200,@250]; //Corresponds to fog nozzle GPM selector
+    _hoseCoefficient = @[@15.5,@2,@.8]; //Corresponds to hose diameter selector
+    _fogNozzleGpm = @[@95,@125,@150,@200,@250]; //Corresponds to fog nozzle GPM selector
 //    _smoothBoreTipGpm = @[@100,@150,@200,@250,@300]; //Corresponds to smooth bore tip selector
     
 //    self.nozzleGpmHeading.hidden = NO;
@@ -58,13 +62,13 @@ double backPressure;      //Back pressure due to elevation
 //    self.tipDiameterHeading.hidden = YES;
 //    self.tipDiameterSelector.hidden = YES;
     
-//    nozzlePressure = 75;
-//    coefficient = 15.5;
-//    gpm = 95;
-//    heavyAppliances = 0;
-//    hoseLength = 0;
-//    elevation = 0;
-//    
+    nozzlePressure = 50;
+    coefficient = 15.5;
+    gpm = 95;
+    heavyAppliances = 0;
+    hoseLength = 0;
+    elevation = 0;
+//
 //    NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
 //    self.nozzlePressureLabel.text = nozzlePressureString;
     
@@ -88,9 +92,9 @@ double backPressure;      //Back pressure due to elevation
     }
 }
 
-- (IBAction)clearButtonTapped:(UIButton *)sender
+- (IBAction)clearBarButtonTapped:(UIBarButtonItem *)sender;
 {
-    UIAlertView* resetAlert = [[UIAlertView alloc]initWithTitle:@"Clear Entries" message:@"Clear All Entries?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Clear", nil];
+    UIAlertView* resetAlert = [[UIAlertView alloc]initWithTitle:@"Clear Entries" message:@"Clear All Entries?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     
     [resetAlert show];
 }
@@ -126,14 +130,14 @@ double backPressure;      //Back pressure due to elevation
 //        self.tipDiameterHeading.hidden = YES;
 //        self.tipDiameterSelector.hidden = YES;
         
-        nozzlePressure = 75;
+        nozzlePressure = 50;
 //        backPressure = 0;
         
         NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
         self.nozzlePressureLabel.text = nozzlePressureString;
         
-//        coefficient = [[self.hoseCoefficient objectAtIndex:self.hoseDiameterSelector.selectedSegmentIndex]doubleValue];
-//        gpm = [[self.fogNozzleGpm objectAtIndex:self.nozzleGpmSelector.selectedSegmentIndex] doubleValue];
+        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
+        gpm = [[_fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
         
 //        NSString *gpmString = [NSString stringWithFormat:@"%3.0f",gpm];
 //        self.tipGpmLabel.text = gpmString;
@@ -146,15 +150,15 @@ double backPressure;      //Back pressure due to elevation
 //        self.tipDiameterHeading.hidden = YES;
 //        self.tipDiameterSelector.hidden = YES;
         
-        nozzlePressure = 100;
+        nozzlePressure = 75;
 //        backPressure = 0;
         
         NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
         self.nozzlePressureLabel.text = nozzlePressureString;
         
-//        coefficient = [[self.hoseCoefficient objectAtIndex:self.hoseDiameterSelector.selectedSegmentIndex]doubleValue];
-//        gpm = [[self.fogNozzleGpm objectAtIndex:self.nozzleGpmSelector.selectedSegmentIndex] doubleValue];
-//        
+        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
+        gpm = [[_fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
+//
 //        NSString *gpmString = [NSString stringWithFormat:@"%3.0f",gpm];
 //        self.tipGpmLabel.text = gpmString;
     }
@@ -167,15 +171,15 @@ double backPressure;      //Back pressure due to elevation
 //        self.tipDiameterSelector.hidden = NO;
         
 //        smoothBoreGpm = 100;
-        nozzlePressure = 50;
+        nozzlePressure = 100;
 //        backPressure = 0;
         
         NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
         self.nozzlePressureLabel.text = nozzlePressureString;
         
-//        coefficient = [[self.hoseCoefficient objectAtIndex:self.hoseDiameterSelector.selectedSegmentIndex]doubleValue];
+        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
 //        gpm = [[self.smoothBoreTipGpm objectAtIndex:self.tipDiameterSelector.selectedSegmentIndex] doubleValue];
-//        
+//
 //        NSString *gpmString = [NSString stringWithFormat:@"%3.0f",gpm];
 //        self.tipGpmLabel.text = gpmString;
     }
@@ -210,7 +214,7 @@ double backPressure;      //Back pressure due to elevation
 
 - (IBAction)hoseDiameterSelector:(UISegmentedControl *)sender
 {
-//    coefficient = [[self.hoseCoefficient objectAtIndex:sender.selectedSegmentIndex] doubleValue];
+    coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex] doubleValue];
     
     hoseLength = [self.lengthTextField.text doubleValue];
     elevation = [self.elevationTextField.text doubleValue];
@@ -227,7 +231,7 @@ double backPressure;      //Back pressure due to elevation
 
 - (IBAction)gpmSelector:(UISegmentedControl *)sender
 {
-//    gpm = [[self.fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
+    gpm = [[_fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
 //    NSString *gpmString = [NSString stringWithFormat:@"%3.0f",gpm];
 //    self.tipGpmLabel.text = gpmString;
     
@@ -299,7 +303,7 @@ double backPressure;      //Back pressure due to elevation
 //    self.nozzleGpmSelector.selectedSegmentIndex = 0;
 //    self.tipDiameterSelector.selectedSegmentIndex = 0;
     
-    nozzlePressure = 100;
+    nozzlePressure = 50;
     coefficient = 15.5;
     gpm = 95;
     hoseLength = 0;
@@ -317,8 +321,7 @@ double backPressure;      //Back pressure due to elevation
     frictionLoss = [self.myBrain calculateFrictionWithCoefficient:coefficient andGpm:gpm andLength:hoseLength];
     backPressure = [self.myBrain calculateBackPressureWithAnElevationInFeetOf:elevation];
     
-    double haFl = [self.myBrain calculateFrictionLossInHeavyAppliances:heavyAppliances]; // Number of appliances by 10 psi.
-    
+    double haFl = [self.myBrain calculateFrictionLossInHeavyAppliances:heavyAppliances];  // Number of appliances by 10 psi.
     int nozzlePressureInt = (int) round(nozzlePressure);
     int frictionLossInt = (int) round(frictionLoss);
     int backPressureInt = (int)round(backPressure);
