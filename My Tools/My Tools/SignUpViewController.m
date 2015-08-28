@@ -17,6 +17,7 @@
 
 - (IBAction)signUpTapped:(UIButton *)sender;
 - (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender;
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -67,15 +68,6 @@
     }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark - Action Handlers
 
 - (IBAction)signUpTapped:(UIButton *)sender
@@ -105,6 +97,20 @@
 - (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender
+{
+    [self hideKeyboard];
+}
+
+- (void) hideKeyboard
+{
+    if ([self.emailTextField isFirstResponder] || [self.passwordTextField isFirstResponder])
+    {
+        [self.emailTextField resignFirstResponder];
+        [self.passwordTextField resignFirstResponder];
+    }
 }
 
 

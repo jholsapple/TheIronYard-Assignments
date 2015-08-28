@@ -13,6 +13,7 @@
 
 - (IBAction)signUpButtonTapped:(UIBarButtonItem *)sender;
 - (IBAction)loginTapped:(UIButton *)sender;
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -22,7 +23,8 @@
 
 @implementation SignInViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.loginView.layer.cornerRadius = 15.0;
     self.loginView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8f];
@@ -33,10 +35,10 @@
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     
-    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -76,7 +78,7 @@
 
 - (IBAction)signUpButtonTapped:(UIBarButtonItem *)sender
 {
-    
+    // There is a segue to Sign In view controller
 }
 
 - (IBAction)loginTapped:(id)sender
@@ -86,7 +88,8 @@
                                         if (user)
                                         {
                                             [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-                                        } else
+                                        }
+                                        else
                                         {
                                             UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Error" message:[error userInfo] [@"error"] preferredStyle:UIAlertControllerStyleAlert];
                                             UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
@@ -94,6 +97,20 @@
                                             [self presentViewController:alertC animated:YES completion:nil];
                                         }
                                     }];
+}
+
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender
+{
+    [self hideKeyboard];
+}
+
+- (void) hideKeyboard
+{
+    if ([self.usernameTextField isFirstResponder] || [self.passwordTextField isFirstResponder])
+    {
+        [self.usernameTextField resignFirstResponder];
+        [self.passwordTextField resignFirstResponder];
+    }
 }
 
 

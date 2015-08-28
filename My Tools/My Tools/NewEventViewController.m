@@ -40,7 +40,9 @@
     [super viewDidLoad];
     self.notesTextView.layer.cornerRadius = 5.0;
     self.notesTextView.text = @"Comments";
-    self.notesTextView.textColor = [UIColor lightGrayColor];
+    self.notesTextView.textColor = [UIColor whiteColor];
+    [self.titleTextField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.recurringEvery setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     
     dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
@@ -200,7 +202,7 @@
     for (NSDate *aDate in dates)
     {
         NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
-        NSLog(@"date = %@, difference = %ld", aDate, difference.day);
+        NSLog(@"date = %@, difference = %ld", aDate, (long)difference.day);
         if (difference.day == recurringDays || aDate == startDate)
         {
             EKEvent *event = [self createEventWithDate:aDate andTitle:title];
