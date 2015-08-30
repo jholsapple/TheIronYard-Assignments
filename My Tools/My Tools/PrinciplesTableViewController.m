@@ -23,6 +23,7 @@
 {
     [super viewDidLoad];
     self.title = @"Principles";
+    
     [self refreshPrinciplesFromParse];
     
 }
@@ -46,15 +47,16 @@
     return [principles count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     PrincipleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PrincipleCell" forIndexPath:indexPath];
     
     PFUser *aPrinciple = principles[indexPath.row];
-    cell.principleTextView.text = aPrinciple[@"principle"];
-
-
+    cell.principleLabel.text = aPrinciple[@"principle"];
+    
     return cell;
 }
+
 
 #pragma mark - Private
 

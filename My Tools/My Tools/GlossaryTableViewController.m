@@ -47,7 +47,8 @@
     return [glossaryTerms count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     GlossaryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GlossaryCell" forIndexPath:indexPath];
     
     PFObject *aTerm = glossaryTerms[indexPath.row];

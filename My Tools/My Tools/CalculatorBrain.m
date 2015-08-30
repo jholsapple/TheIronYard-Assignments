@@ -59,11 +59,13 @@ double const gravityPressure = .434;
     double surfaceArea = l * w;
     return surfaceArea;
 }
+
 - (double) calculateSquareTankVolumeWithLength:(double)l andWidth:(double)w andHeight:(double)h
 {
     double volume = l * w * h;
     return volume;
 }
+
 - (double) calculateSquareTankCapacityWithLength:(double)l andWidth:(double)w andHeight:(double)h
 {
     double volume = l * w * h;
@@ -79,12 +81,14 @@ double const gravityPressure = .434;
     double surfaceArea = pi * (radius * radius);
     return surfaceArea;
 }
+
 - (double) calculateRoundTankVolumeWithDiameter:(double)diameter andHeight:(double)height
 {
     double radius = diameter/2;
     double volume = pi * (radius * radius)*height;
     return volume;
 }
+
 - (double) calculateRoundTankCapacityWithDiameter:(double)diameter andHeight:(double)height
 {
     double radius = diameter/2;
