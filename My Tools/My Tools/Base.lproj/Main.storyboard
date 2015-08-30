@@ -92,7 +92,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KAU-ja-PhF"/>
-                                    <segue destination="MqN-Up-2wa" kind="show" id="D2R-5R-gdY"/>
+                                    <segue destination="MqN-Up-2wa" kind="show" id="RwC-rK-lbV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -357,31 +357,36 @@
         <scene sceneID="6vA-0s-ISz">
             <objects>
                 <tableViewController id="XlX-vB-5E7" customClass="PrinciplesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qW6-Ge-F4S">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="qW6-Ge-F4S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3210910857" green="0.3171522021" blue="0.30857512349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrincipleCell" id="Eni-X5-NSE" customClass="PrincipleCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eni-X5-NSE" id="I6K-O5-qZB">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJF-cI-WNj">
-                                            <rect key="frame" x="16" y="11" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-vQ-AsS">
+                                            <rect key="frame" x="16" y="0.0" width="568" height="75.5"/>
+                                            <color key="backgroundColor" red="0.3210910857" green="0.3171522021" blue="0.30857512349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.3210910857" green="0.3171522021" blue="0.30857512349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="jJF-cI-WNj" firstAttribute="leading" secondItem="I6K-O5-qZB" secondAttribute="leading" constant="16" id="KVO-XE-mbr"/>
-                                        <constraint firstItem="jJF-cI-WNj" firstAttribute="top" secondItem="I6K-O5-qZB" secondAttribute="top" constant="11" id="VrH-8p-Krc"/>
+                                        <constraint firstAttribute="bottom" secondItem="A2p-vQ-AsS" secondAttribute="bottom" id="Q5I-tu-cY6"/>
+                                        <constraint firstItem="A2p-vQ-AsS" firstAttribute="leading" secondItem="I6K-O5-qZB" secondAttribute="leading" constant="16" id="dgF-IS-4p4"/>
+                                        <constraint firstItem="A2p-vQ-AsS" firstAttribute="top" secondItem="I6K-O5-qZB" secondAttribute="top" id="oqQ-41-UOu"/>
+                                        <constraint firstAttribute="trailing" secondItem="A2p-vQ-AsS" secondAttribute="trailing" constant="16" id="z7H-Cs-7dT"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.3210910857" green="0.3171522021" blue="0.30857512349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="principleLabel" destination="jJF-cI-WNj" id="MiJ-fD-qQF"/>
+                                    <outlet property="principleTextView" destination="A2p-vQ-AsS" id="mex-3z-8E6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

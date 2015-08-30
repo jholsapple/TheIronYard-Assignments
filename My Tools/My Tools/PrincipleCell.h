@@ -11,7 +11,7 @@
 @interface PrincipleCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UITextView *principleTextView;
-@property (weak, nonatomic) IBOutlet UILabel *principleLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *principleLabel;
 
 
 @end

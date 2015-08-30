@@ -52,7 +52,7 @@
     PrincipleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PrincipleCell" forIndexPath:indexPath];
     
     PFUser *aPrinciple = principles[indexPath.row];
-    cell.principleLabel.text = aPrinciple[@"principle"];
+    cell.principleTextView.text = aPrinciple[@"principle"];
     
     return cell;
 }
