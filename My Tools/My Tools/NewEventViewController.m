@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
 - (IBAction)setEventTapped:(UIButton *)sender;
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender;
 
 - (void) createEventsWithTitle:(NSString *)title andRecurrence:(int)recurringEvery;
 
@@ -165,6 +166,11 @@
     if (startDate != nil && endDate != nil && ![self.titleTextField.text isEqualToString:@""] && ![self.recurringEvery.text isEqualToString:@""])
     {
         [self createEventsWithTitle:self.titleTextField.text andRecurrence:[self.recurringEvery.text intValue]];
+        
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"New Calendar Event Created" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertC addAction:alertAction];
+        [self presentViewController:alertC animated:YES completion:nil];
     }
     else if (startDate == nil && endDate == nil)
     {
@@ -173,6 +179,21 @@
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alertC addAction:alertAction];
         [self presentViewController:alertC animated:YES completion:nil];
+    }
+}
+
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender
+{
+    [self hideKeyboard];
+}
+
+- (void) hideKeyboard
+{
+    if ([self.titleTextField isFirstResponder] || [self.notesTextView isFirstResponder] || [self.recurringEvery isFirstResponder])
+    {
+        [self.titleTextField resignFirstResponder];
+        [self.notesTextView resignFirstResponder];
+        [self.recurringEvery resignFirstResponder];
     }
 }
 

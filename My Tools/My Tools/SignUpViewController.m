@@ -96,7 +96,7 @@
 
 - (IBAction)cancelBarButtonTapped:(UIBarButtonItem *)sender
 {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)viewTapped:(UITapGestureRecognizer *)sender

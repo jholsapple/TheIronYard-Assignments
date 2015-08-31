@@ -22,14 +22,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *elevationTextField;
 
 @property (weak, nonatomic) IBOutlet UILabel *dischargePressureLabel;
-@property (weak, nonatomic) IBOutlet UILabel *nozzlePressureLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *nozzlePressureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *frictionLossLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *hoseDiameterSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *nozzleSelectSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *nozzleGpmSegmentedControl;
+
 
 - (IBAction)hoseDiameterSelector:(UISegmentedControl *)sender;
 - (IBAction)nozzleSelector:(UISegmentedControl *)sender;
 - (IBAction)gpmSelector:(UISegmentedControl *)sender;
 - (IBAction)lemonadeButtonTapped:(UIButton *)sender;
 - (IBAction)clearBarButtonTapped:(UIBarButtonItem *)sender;
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -54,9 +59,9 @@ double backPressure;      //Back pressure due to elevation
     _hoseCoefficient = @[@15.5,@2,@.8]; //Corresponds to hose diameter selector
     _fogNozzleGpm = @[@95,@125,@150,@200,@250]; //Corresponds to fog nozzle GPM selector
     
-    nozzlePressure = 50;
-    coefficient = 15.5;
-    gpm = 95;
+    nozzlePressure = 0;
+    coefficient = 0;
+    gpm = 0;
     heavyAppliances = 0;
     hoseLength = 0;
     elevation = 0;
@@ -67,16 +72,21 @@ double backPressure;      //Back pressure due to elevation
 
 - (IBAction)lemonadeButtonTapped:(UIButton *)sender;
 {
-    hoseLength = [self.lengthTextField.text doubleValue];
-    elevation = [self.elevationTextField.text doubleValue];
-    heavyAppliances = [self.applianceTextField.text doubleValue];
-    
-    [self.lengthTextField resignFirstResponder];
-    [self.elevationTextField resignFirstResponder];
-    [self.applianceTextField resignFirstResponder];
-    if (hoseLength > 0)
+    if (![self.lengthTextField.text isEqualToString:@""])
     {
-        [self calculate];
+        hoseLength = [self.lengthTextField.text doubleValue];
+        elevation = [self.elevationTextField.text doubleValue];
+        heavyAppliances = [self.applianceTextField.text doubleValue];
+        
+        if (hoseLength > 0)
+        {
+            [self calculate];
+            [self.lengthTextField resignFirstResponder];
+        }
+    }
+    else
+    {
+        [self.lengthTextField becomeFirstResponder];
     }
 }
 
@@ -87,36 +97,24 @@ double backPressure;      //Back pressure due to elevation
     [resetAlert show];
 }
 
+- (IBAction)viewTapped:(UITapGestureRecognizer *)sender
+{
+    [self hideKeyboard];
+}
+
 - (IBAction)nozzleSelector:(UISegmentedControl *)sender
 {
     if (sender.selectedSegmentIndex == 0)
     {
         nozzlePressure = 50;
-        
-        NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
-        self.nozzlePressureLabel.text = nozzlePressureString;
-        
-        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
-        gpm = [[_fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
     }
     else if (sender.selectedSegmentIndex == 1)
     {
         nozzlePressure = 75;
-        
-        NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
-        self.nozzlePressureLabel.text = nozzlePressureString;
-        
-        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
-        gpm = [[_fogNozzleGpm objectAtIndex:sender.selectedSegmentIndex] doubleValue];
     }
     else if (sender.selectedSegmentIndex == 2)
     {
         nozzlePressure = 100;
-        
-        NSString *nozzlePressureString = [NSString stringWithFormat:@"%3.0f",nozzlePressure];
-        self.nozzlePressureLabel.text = nozzlePressureString;
-        
-        coefficient = [[_hoseCoefficient objectAtIndex:sender.selectedSegmentIndex]doubleValue];
     }
     
     hoseLength = [self.lengthTextField.text doubleValue];
@@ -127,9 +125,6 @@ double backPressure;      //Back pressure due to elevation
     {
         [self calculate];
     }
-    [self.lengthTextField resignFirstResponder];
-    [self.elevationTextField resignFirstResponder];
-    [self.applianceTextField resignFirstResponder];
 }
 
 - (IBAction)hoseDiameterSelector:(UISegmentedControl *)sender
@@ -144,9 +139,6 @@ double backPressure;      //Back pressure due to elevation
     {
         [self calculate];
     }
-    [self.lengthTextField resignFirstResponder];
-    [self.elevationTextField resignFirstResponder];
-    [self.applianceTextField resignFirstResponder];
 }
 
 - (IBAction)gpmSelector:(UISegmentedControl *)sender
@@ -161,10 +153,16 @@ double backPressure;      //Back pressure due to elevation
     {
         [self calculate];
     }
-    
-    [self.lengthTextField resignFirstResponder];
-    [self.elevationTextField resignFirstResponder];
-    [self.applianceTextField resignFirstResponder];
+}
+
+- (void) hideKeyboard
+{
+    if ([self.lengthTextField isFirstResponder] || [self.applianceTextField isFirstResponder] || [self.elevationTextField isFirstResponder])
+    {
+        [self.lengthTextField resignFirstResponder];
+        [self.applianceTextField resignFirstResponder];
+        [self.elevationTextField resignFirstResponder];
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -181,13 +179,16 @@ double backPressure;      //Back pressure due to elevation
     self.applianceTextField.text = @"";
     self.elevationTextField.text = @"";
     
-    self.nozzlePressureLabel.text = @"0";
+//    self.nozzlePressureLabel.text = @"0";
     self.frictionLossLabel.text = @"0";
     self.dischargePressureLabel.text = @"0";
+    self.hoseDiameterSegmentedControl.selectedSegmentIndex = 0;
+    self.nozzleSelectSegmentedControl.selectedSegmentIndex = 0;
+    self.nozzleGpmSegmentedControl.selectedSegmentIndex = 0;
     
-    nozzlePressure = 50;
-    coefficient = 15.5;
-    gpm = 95;
+    nozzlePressure = 0;
+    coefficient = 0;
+    gpm = 0;
     hoseLength = 0;
     elevation = 0;
     heavyAppliances = 0;
@@ -196,12 +197,65 @@ double backPressure;      //Back pressure due to elevation
 
 - (void)calculate
 {
-    heavyAppliances = [self.applianceTextField.text intValue];
-    hoseLength = [self.lengthTextField.text intValue];
-    elevation = [self.elevationTextField.text intValue];
-    
+    if (coefficient == 0)
+    {
+        switch (self.hoseDiameterSegmentedControl.selectedSegmentIndex)
+        {
+            case 0:
+                coefficient = 15.5;
+                break;
+            case 1:
+                coefficient = 2;
+                break;
+            case 2:
+                coefficient = 0.8;
+                break;
+            default:
+                break;
+        }
+    }
+    if (nozzlePressure == 0)
+    {
+        switch (self.nozzleSelectSegmentedControl.selectedSegmentIndex)
+        {
+            case 0:
+                nozzlePressure = 50;
+                break;
+            case 1:
+                nozzlePressure = 75;
+                break;
+            case 2:
+                nozzlePressure = 100;
+                break;
+            default:
+                break;
+        }
+    }
+    if (gpm == 0)
+    {
+        switch (self.nozzleGpmSegmentedControl.selectedSegmentIndex)
+        {
+            case 0:
+                gpm = 95;
+                break;
+            case 1:
+                gpm = 125;
+                break;
+            case 2:
+                gpm = 150;
+                break;
+            case 3:
+                gpm = 200;
+                break;
+            case 4:
+                gpm = 250;
+                break;
+            default:
+                break;
+        }
+    }
     frictionLoss = [self.myBrain calculateFrictionWithCoefficient:coefficient andGpm:gpm andLength:hoseLength];
-    backPressure = [self.myBrain calculateBackPressureWithAnElevationInFeetOf:elevation];
+//    backPressure = [self.myBrain calculateBackPressureWithAnElevationInFeetOf:elevation];
     
     double haFl = [self.myBrain calculateFrictionLossInHeavyAppliances:heavyAppliances];  // Number of appliances by 10 psi.
     int nozzlePressureInt = (int) round(nozzlePressure);
@@ -211,7 +265,7 @@ double backPressure;      //Back pressure due to elevation
     
     int pdp = nozzlePressureInt + frictionLossInt + backPressureInt + haFlInt;
     
-    NSString *frictionLossString = [NSString stringWithFormat:@"%i",frictionLossInt];
+    NSString *frictionLossString = [NSString stringWithFormat:@"%i psi",frictionLossInt];
     NSString *pdpString = [NSString stringWithFormat:@"%i psi",pdp];
     self.frictionLossLabel.text = frictionLossString;
     self.dischargePressureLabel.text = pdpString;
