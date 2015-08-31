@@ -28,7 +28,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
 - (IBAction)setEventTapped:(UIButton *)sender;
-- (IBAction)viewTapped:(UITapGestureRecognizer *)sender;
 
 - (void) createEventsWithTitle:(NSString *)title andRecurrence:(int)recurringEvery;
 
@@ -182,20 +181,6 @@
     }
 }
 
-- (IBAction)viewTapped:(UITapGestureRecognizer *)sender
-{
-    [self hideKeyboard];
-}
-
-- (void) hideKeyboard
-{
-    if ([self.titleTextField isFirstResponder] || [self.notesTextView isFirstResponder] || [self.recurringEvery isFirstResponder])
-    {
-        [self.titleTextField resignFirstResponder];
-        [self.notesTextView resignFirstResponder];
-        [self.recurringEvery resignFirstResponder];
-    }
-}
 
 - (void)createEventsWithTitle:(NSString *)title andRecurrence:(int)recurringEvery
 {

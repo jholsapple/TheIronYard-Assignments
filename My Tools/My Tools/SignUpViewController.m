@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     self.signUpView.layer.cornerRadius = 15.0;
+    self.signUpView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8f];
+    
 }
 
 - (void)didReceiveMemoryWarning

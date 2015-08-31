@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     [Parse setApplicationId:@"Jnoij5QN4BGRrwtWca9uZwqSdtxETE3ZBqErsPek"
                   clientKey:@"PIKckcDswyvSxTdDagjm4z0jXX0xPBcr9EEarfRY"];
     
