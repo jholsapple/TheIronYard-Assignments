@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74808F651B83789700F2A4A2"
-            BuildableName = "My Tools.app"
-            BlueprintName = "My Tools"
-            ReferencedContainer = "container:My Tools.xcodeproj">
+            BuildableName = "Firefighter Toolbox.app"
+            BlueprintName = "Firefighter Toolbox"
+            ReferencedContainer = "container:Firefighter Toolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74808F651B83789700F2A4A2"
-            BuildableName = "My Tools.app"
-            BlueprintName = "My Tools"
-            ReferencedContainer = "container:My Tools.xcodeproj">
+            BuildableName = "Firefighter Toolbox.app"
+            BlueprintName = "Firefighter Toolbox"
+            ReferencedContainer = "container:Firefighter Toolbox.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
