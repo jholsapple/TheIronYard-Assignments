@@ -7,6 +7,7 @@
 //
 
 #import "SignInViewController.h"
+#import "UIView+FormScroll.h"
 #import <Parse/Parse.h>
 
 @interface SignInViewController () <UITextFieldDelegate>
@@ -41,6 +42,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - View movements
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self.view scrollToView:textField];
+}
+
+-(void) textFieldDidEndEditing:(UITextField *)textField
+{
+    [self.view scrollToY:0];
+    [textField resignFirstResponder];
 }
 
 #pragma mark - UITextField Delegate

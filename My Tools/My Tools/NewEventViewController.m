@@ -8,6 +8,7 @@
 
 #import "NewEventViewController.h"
 #import "DatePickerViewController.h"
+#import "UIView+FormScroll.h"
 
 @import EventKit;
 
@@ -142,6 +143,8 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    [self.view scrollToView:textField];
+    
     if (self.recurringEvery == textField)
     {
         if (recurringDays >= 0)
@@ -153,11 +156,34 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
+    [self.view scrollToY:0];
+    [textField resignFirstResponder];
+    
     if (self.recurringEvery == textField)
     {
         recurringDays = [self.recurringEvery.text intValue];
         self.recurringEvery.text = [NSString stringWithFormat:@"Recurring Every %@ days", self.recurringEvery.text];
     }
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    if ([textView.text isEqualToString:@"Comments"])
+    {
+        self.notesTextView.text = @"";
+    }
+    
+    [self.notesTextView becomeFirstResponder];
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    if ([self.notesTextView.text isEqualToString:@""])
+    {
+        self.notesTextView.text = @"Comments";
+    }
+    
+    [self.notesTextView resignFirstResponder];
 }
 
 - (IBAction)setEventTapped:(UIButton *)sender
@@ -208,7 +234,7 @@
     for (NSDate *aDate in dates)
     {
         NSDateComponents *difference = [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:lastShift toDate:aDate options:0];
-        NSLog(@"date = %@, difference = %ld", aDate, (long)difference.day);
+//        NSLog(@"date = %@, difference = %ld", aDate, (long)difference.day);
         if (difference.day == recurringDays || aDate == startDate)
         {
             EKEvent *event = [self createEventWithDate:aDate andTitle:title];
@@ -218,7 +244,7 @@
             [eventStore saveEvent:event span:EKSpanThisEvent error:&error];
             if (error)
             {
-                NSLog(@"error saving event: %@", [error localizedDescription]);
+//                NSLog(@"error saving event: %@", [error localizedDescription]);
             }
             lastShift = aDate;
         }

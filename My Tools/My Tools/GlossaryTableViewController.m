@@ -54,6 +54,7 @@
     PFObject *aTerm = glossaryTerms[indexPath.row];
     cell.textLabel.text = aTerm[@"term"];
     cell.detailTextLabel.text = aTerm[@"definition"];
+//    cell.detailTextLabel.numberOfLines = 0;
     
     return cell;
 }

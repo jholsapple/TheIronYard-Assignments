@@ -7,6 +7,7 @@
 //
 
 #import "SignUpViewController.h"
+#import "UIView+FormScroll.h"
 #import <Parse/Parse.h>
 
 @interface SignUpViewController () <UITextFieldDelegate>
@@ -35,6 +36,19 @@
 {
     [super didReceiveMemoryWarning];
     
+}
+
+#pragma mark - View movements
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self.view scrollToView:textField];
+}
+
+-(void) textFieldDidEndEditing:(UITextField *)textField
+{
+    [self.view scrollToY:0];
+    [textField resignFirstResponder];
 }
 
 #pragma mark - UITextFieldDelegate

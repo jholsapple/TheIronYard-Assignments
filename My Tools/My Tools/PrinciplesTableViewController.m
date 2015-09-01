@@ -25,10 +25,11 @@
     self.title = @"Principles";
     
     [self refreshPrinciplesFromParse];
-    
+
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -52,11 +53,11 @@
     PrincipleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PrincipleCell" forIndexPath:indexPath];
     
     PFUser *aPrinciple = principles[indexPath.row];
-    cell.principleTextView.text = aPrinciple[@"principle"];
+    cell.principleLabel.text = aPrinciple[@"principle"];
+    cell.principleLabel.numberOfLines = 0;
     
     return cell;
 }
-
 
 #pragma mark - Private
 

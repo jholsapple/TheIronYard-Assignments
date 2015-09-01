@@ -88,6 +88,7 @@ double backPressure;      //Back pressure due to elevation
     {
         [self.lengthTextField becomeFirstResponder];
     }
+    [self resignFirstResponder];
 }
 
 - (IBAction)clearBarButtonTapped:(UIBarButtonItem *)sender;
