@@ -92,7 +92,7 @@ double backPressure;      //Back pressure due to elevation
 
 - (IBAction)clearBarButtonTapped:(UIBarButtonItem *)sender;
 {
-    UIAlertView* resetAlert = [[UIAlertView alloc]initWithTitle:@"Clear Entries" message:@"Clear All Entries?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    UIAlertView* resetAlert = [[UIAlertView alloc]initWithTitle:@"Clear Entries" message:@"Would you like to clear all entries?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
     
     [resetAlert show];
 }

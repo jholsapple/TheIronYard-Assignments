@@ -27,6 +27,7 @@
 		748239741B8C064900A0C225 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 748239731B8C064900A0C225 /* CalculatorBrain.m */; };
 		749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749571571B839BC600ACEEFF /* SignUpViewController.m */; };
 		7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */; };
+		74A63CA11B95FC9000CD1646 /* BasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A63CA01B95FC9000CD1646 /* BasicsTableViewController.m */; };
 		74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */; };
 		74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */; };
 		74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176C91B86197B00C7615F /* ToolBoxController.m */; };
@@ -86,6 +87,8 @@
 		749571571B839BC600ACEEFF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		749571591B83B19700ACEEFF /* GlossaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTableViewController.h; sourceTree = "<group>"; };
 		7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTableViewController.m; sourceTree = "<group>"; };
+		74A63C9F1B95FC9000CD1646 /* BasicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicsTableViewController.h; sourceTree = "<group>"; };
+		74A63CA01B95FC9000CD1646 /* BasicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicsTableViewController.m; sourceTree = "<group>"; };
 		74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialOpsTableViewController.h; sourceTree = "<group>"; };
 		74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialOpsTableViewController.m; sourceTree = "<group>"; };
 		74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PumpOpsTableViewController.h; sourceTree = "<group>"; };
@@ -240,11 +243,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		74A63CA21B95FCA400CD1646 /* BasicsReferenceGuides */ = {
+			isa = PBXGroup;
+			children = (
+				74A63C9F1B95FC9000CD1646 /* BasicsTableViewController.h */,
+				74A63CA01B95FC9000CD1646 /* BasicsTableViewController.m */,
+			);
+			name = BasicsReferenceGuides;
+			sourceTree = "<group>";
+		};
 		74D60C141B87654A00B37279 /* Reference Guides */ = {
 			isa = PBXGroup;
 			children = (
 				74E176CB1B861F5B00C7615F /* ReferenceGuideTableViewController.h */,
 				74E176CC1B861F5B00C7615F /* ReferenceGuideTableViewController.m */,
+				74A63CA21B95FCA400CD1646 /* BasicsReferenceGuides */,
 				743504C21B8CB2EA00EF543A /* PumpOpsReferenceGuides */,
 				743504C31B8CB30F00EF543A /* SpecialOpsReferenceGuides */,
 			);
@@ -418,6 +431,7 @@
 			files = (
 				742F3CE41B8DFB41009E69D0 /* HandlineCalclulatorViewController.m in Sources */,
 				74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */,
+				74A63CA11B95FC9000CD1646 /* BasicsTableViewController.m in Sources */,
 				7468FE3C1B8D19540073D7DA /* AppliancesTableViewController.m in Sources */,
 				7468FE3F1B8D1E650073D7DA /* ApplianceCell.m in Sources */,
 				74808F721B83789700F2A4A2 /* SignInViewController.m in Sources */,
