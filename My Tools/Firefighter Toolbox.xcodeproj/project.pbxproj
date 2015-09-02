@@ -30,6 +30,7 @@
 		749571581B839BC600ACEEFF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749571571B839BC600ACEEFF /* SignUpViewController.m */; };
 		7495715B1B83B19700ACEEFF /* GlossaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */; };
 		74A63CA11B95FC9000CD1646 /* BasicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A63CA01B95FC9000CD1646 /* BasicsTableViewController.m */; };
+		74D18B701B97423B00FE0C0E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D18B6F1B97423B00FE0C0E /* SettingsViewController.m */; };
 		74D60C191B8767BD00B37279 /* SpecialOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */; };
 		74D60C1C1B87680400B37279 /* PumpOpsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D60C1B1B87680400B37279 /* PumpOpsTableViewController.m */; };
 		74E176CA1B86197B00C7615F /* ToolBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E176C91B86197B00C7615F /* ToolBoxController.m */; };
@@ -74,7 +75,7 @@
 		747788F41B961935000C5791 /* WildlandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlandTableViewController.m; sourceTree = "<group>"; };
 		747788F71B962143000C5791 /* UIView+FormScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FormScroll.h"; sourceTree = "<group>"; };
 		747788F81B962144000C5791 /* UIView+FormScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FormScroll.m"; sourceTree = "<group>"; };
-		74808F661B83789700F2A4A2 /* Firefighter Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firefighter Toolbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74808F661B83789700F2A4A2 /* FF Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FF Toolbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74808F6A1B83789700F2A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74808F6B1B83789700F2A4A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74808F6D1B83789700F2A4A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +96,8 @@
 		7495715A1B83B19700ACEEFF /* GlossaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTableViewController.m; sourceTree = "<group>"; };
 		74A63C9F1B95FC9000CD1646 /* BasicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicsTableViewController.h; sourceTree = "<group>"; };
 		74A63CA01B95FC9000CD1646 /* BasicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicsTableViewController.m; sourceTree = "<group>"; };
+		74D18B6E1B97423B00FE0C0E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		74D18B6F1B97423B00FE0C0E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		74D60C171B8767BD00B37279 /* SpecialOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialOpsTableViewController.h; sourceTree = "<group>"; };
 		74D60C181B8767BD00B37279 /* SpecialOpsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialOpsTableViewController.m; sourceTree = "<group>"; };
 		74D60C1A1B87680400B37279 /* PumpOpsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PumpOpsTableViewController.h; sourceTree = "<group>"; };
@@ -207,7 +210,7 @@
 		74808F671B83789700F2A4A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74808F661B83789700F2A4A2 /* Firefighter Toolbox.app */,
+				74808F661B83789700F2A4A2 /* FF Toolbox.app */,
 				74808F7F1B83789700F2A4A2 /* Firefighter ToolboxTests.xctest */,
 			);
 			name = Products;
@@ -220,6 +223,8 @@
 				74808F6E1B83789700F2A4A2 /* AppDelegate.m */,
 				74E176C81B86197B00C7615F /* ToolBoxController.h */,
 				74E176C91B86197B00C7615F /* ToolBoxController.m */,
+				74D18B6E1B97423B00FE0C0E /* SettingsViewController.h */,
+				74D18B6F1B97423B00FE0C0E /* SettingsViewController.m */,
 				747788F71B962143000C5791 /* UIView+FormScroll.h */,
 				747788F81B962144000C5791 /* UIView+FormScroll.m */,
 				74D60C151B87655E00B37279 /* Sign in/Sign up */,
@@ -331,7 +336,7 @@
 			);
 			name = "Firefighter Toolbox";
 			productName = "My Tools";
-			productReference = 74808F661B83789700F2A4A2 /* Firefighter Toolbox.app */;
+			productReference = 74808F661B83789700F2A4A2 /* FF Toolbox.app */;
 			productType = "com.apple.product-type.application";
 		};
 		74808F7E1B83789700F2A4A2 /* Firefighter ToolboxTests */ = {
@@ -469,6 +474,7 @@
 				7468FE301B8CEAE60073D7DA /* GlossaryCell.m in Sources */,
 				7468FE331B8CFA050073D7DA /* QFormulaTableViewController.m in Sources */,
 				747788F91B962144000C5791 /* UIView+FormScroll.m in Sources */,
+				74D18B701B97423B00FE0C0E /* SettingsViewController.m in Sources */,
 				743504C91B8CC12400EF543A /* HoseCoefficientsTableViewController.m in Sources */,
 				748239741B8C064900A0C225 /* CalculatorBrain.m in Sources */,
 			);
@@ -599,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Tools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Firefighter Toolbox";
+				PRODUCT_NAME = "FF Toolbox";
 			};
 			name = Debug;
 		};
@@ -610,7 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Tools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Firefighter Toolbox";
+				PRODUCT_NAME = "FF Toolbox";
 			};
 			name = Release;
 		};
