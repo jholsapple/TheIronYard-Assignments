@@ -192,7 +192,7 @@
     {
         [self createEventsWithTitle:self.titleTextField.text andRecurrence:[self.recurringEvery.text intValue]];
         
-        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Event Created" message:@"A new Calendar Event has been created" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Event Created" message:@"A new Calendar Event has been created in your default calendar" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alertC addAction:alertAction];
         [self presentViewController:alertC animated:YES completion:nil];

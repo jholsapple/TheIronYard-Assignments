@@ -872,11 +872,11 @@
                             <constraint firstItem="88r-cV-gtb" firstAttribute="centerX" secondItem="OfX-Sq-ScA" secondAttribute="centerX" id="cJt-EN-jve"/>
                             <constraint firstItem="RaL-JJ-16e" firstAttribute="top" secondItem="Ctq-5R-UqA" secondAttribute="bottom" constant="-21" id="gYg-TL-sgv"/>
                             <constraint firstAttribute="trailing" secondItem="0Oq-Rz-0uL" secondAttribute="trailing" id="hz2-xD-JrJ"/>
-                            <constraint firstItem="OfX-Sq-ScA" firstAttribute="centerX" secondItem="QDZ-sJ-d8L" secondAttribute="centerX" constant="-0.25" id="lkV-hV-yuZ"/>
+                            <constraint firstItem="OfX-Sq-ScA" firstAttribute="centerX" secondItem="QDZ-sJ-d8L" secondAttribute="centerX" id="lkV-hV-yuZ"/>
                             <constraint firstItem="0Oq-Rz-0uL" firstAttribute="top" secondItem="gh9-lo-BEg" secondAttribute="top" id="par-4c-6i1"/>
-                            <constraint firstItem="3VN-5e-7nN" firstAttribute="centerX" secondItem="88r-cV-gtb" secondAttribute="centerX" constant="0.5" id="s0G-br-yjX"/>
+                            <constraint firstItem="3VN-5e-7nN" firstAttribute="centerX" secondItem="88r-cV-gtb" secondAttribute="centerX" id="s0G-br-yjX"/>
                             <constraint firstItem="0Oq-Rz-0uL" firstAttribute="leading" secondItem="gh9-lo-BEg" secondAttribute="leading" id="ska-XZ-nhy"/>
-                            <constraint firstItem="Ctq-5R-UqA" firstAttribute="centerX" secondItem="RaL-JJ-16e" secondAttribute="centerX" constant="-0.75" id="xfs-QT-UcB"/>
+                            <constraint firstItem="Ctq-5R-UqA" firstAttribute="centerX" secondItem="RaL-JJ-16e" secondAttribute="centerX" id="xfs-QT-UcB"/>
                             <constraint firstItem="QDZ-sJ-d8L" firstAttribute="top" secondItem="OfX-Sq-ScA" secondAttribute="bottom" constant="-21" id="zZY-RS-1wM"/>
                         </constraints>
                     </view>
@@ -1753,6 +1753,6 @@
         <image name="mj_eng-3" width="720" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vjp-X9-o6l"/>
+        <segue reference="idS-HG-zLM"/>
     </inferredMetricsTieBreakers>
 </document>
