@@ -368,6 +368,7 @@
 				TargetAttributes = {
 					74808F651B83789700F2A4A2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 23BAUC8853;
 					};
 					74808F7E1B83789700F2A4A2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -603,9 +604,12 @@
 			baseConfigurationReference = 5FE57FB67B94AE54CBA7B131 /* Pods-My Tools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "My Tools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "FF Toolbox";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -614,9 +618,12 @@
 			baseConfigurationReference = E34F5B335111AF1783B8046D /* Pods-My Tools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "My Tools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "FF Toolbox";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
