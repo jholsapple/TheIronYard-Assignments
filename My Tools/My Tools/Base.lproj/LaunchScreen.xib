@@ -22,9 +22,15 @@
                     <color key="textColor" red="0.90194547176361084" green="0.90076726675033569" blue="0.89776664972305298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Hydrant" translatesAutoresizingMaskIntoConstraints="NO" id="ylA-aP-Q08">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hydrant" translatesAutoresizingMaskIntoConstraints="NO" id="ylA-aP-Q08">
                     <rect key="frame" x="137" y="112" width="206" height="256"/>
                 </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="n2n-Vn-UKw">
+                    <rect key="frame" x="207" y="432" width="67" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.90194547179999995" green="0.90076726679999997" blue="0.89776664969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.32165712118148804" green="0.31779682636260986" blue="0.30938667058944702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -33,14 +39,17 @@
                 <constraint firstAttribute="centerY" secondItem="ylA-aP-Q08" secondAttribute="centerY" id="2ES-lv-pc0"/>
                 <constraint firstAttribute="centerX" secondItem="ylA-aP-Q08" secondAttribute="centerX" id="2Pa-Mm-hCT"/>
                 <constraint firstAttribute="bottom" secondItem="ylA-aP-Q08" secondAttribute="bottom" id="F0a-dP-pW7"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="n2n-Vn-UKw" secondAttribute="bottom" constant="8" id="HkH-lg-lls"/>
                 <constraint firstItem="ylA-aP-Q08" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kz8-Pu-zR8"/>
                 <constraint firstAttribute="trailing" secondItem="ylA-aP-Q08" secondAttribute="trailing" id="L8A-kb-j67"/>
                 <constraint firstItem="ylA-aP-Q08" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MiS-8R-0kV"/>
+                <constraint firstItem="n2n-Vn-UKw" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="R04-ZK-48a"/>
                 <constraint firstItem="he1-3F-Ut0" firstAttribute="bottom" secondItem="ylA-aP-Q08" secondAttribute="top" constant="71" id="Uae-Wm-U28"/>
                 <constraint firstItem="he1-3F-Ut0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="Zae-Kp-WGo"/>
                 <constraint firstItem="ylA-aP-Q08" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="hSU-ti-lfa"/>
                 <constraint firstItem="ylA-aP-Q08" firstAttribute="centerX" secondItem="he1-3F-Ut0" secondAttribute="centerX" id="hbz-PR-hvx"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="sLV-tQ-rSu"/>
+                <constraint firstItem="n2n-Vn-UKw" firstAttribute="centerX" secondItem="ylA-aP-Q08" secondAttribute="centerX" id="wJ4-7b-TWX"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -51,6 +60,7 @@
                     <exclude reference="Kz8-Pu-zR8"/>
                     <exclude reference="L8A-kb-j67"/>
                     <exclude reference="MiS-8R-0kV"/>
+                    <exclude reference="wJ4-7b-TWX"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>

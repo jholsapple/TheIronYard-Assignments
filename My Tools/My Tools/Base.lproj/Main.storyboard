@@ -95,6 +95,12 @@
                                     <segue destination="MqN-Up-2wa" kind="show" id="RwC-rK-lbV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8M-lK-r8q">
+                                <rect key="frame" x="264" y="570.5" width="71.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -109,7 +115,9 @@
                             <constraint firstItem="624-WZ-iqr" firstAttribute="centerX" secondItem="EYa-5E-FlK" secondAttribute="centerX" id="YjY-nf-pz4"/>
                             <constraint firstItem="EYa-5E-FlK" firstAttribute="centerX" secondItem="SoJ-1T-na7" secondAttribute="centerX" id="gJo-4w-Y6B"/>
                             <constraint firstItem="iSk-sN-iEv" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="hJb-Hz-y2j"/>
+                            <constraint firstAttribute="centerX" secondItem="f8M-lK-r8q" secondAttribute="centerX" id="ouJ-1g-uf7"/>
                             <constraint firstItem="EYa-5E-FlK" firstAttribute="top" secondItem="624-WZ-iqr" secondAttribute="bottom" constant="35" id="t7x-uv-1QJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="f8M-lK-r8q" secondAttribute="bottom" constant="12" id="tcF-HM-7nx"/>
                             <constraint firstAttribute="centerY" secondItem="624-WZ-iqr" secondAttribute="centerY" constant="37" id="y42-6v-6i7"/>
                             <constraint firstAttribute="trailing" secondItem="624-WZ-iqr" secondAttribute="trailing" constant="16" id="yqI-TP-yIu"/>
                         </constraints>
