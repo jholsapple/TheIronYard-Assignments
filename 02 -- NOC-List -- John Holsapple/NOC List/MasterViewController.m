@@ -26,10 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //
-    // 3. Set the title of the view to "NOC List"
-    //
     self.title = @"NOC List";
     
     //
@@ -87,18 +83,7 @@
         UITableViewCell *selectedCell = (UITableViewCell *)sender;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
         
-        //
-        // 10. Now we're going to use the "row" property of the indexPath from above to pull out the associated Agent object
-        //     from the agents array.
-        //
         Agent *selectedAgent = self.agents[indexPath.row];
-        
-        //
-        // 11. Now we need to send this Agent object to the detail view controller so it know's which agent's info to show.
-        //     See the method call below on the segue object for how to get a handle to the detail view controller.
-        //
-        //     How would we go about setting this agent object?
-        //
         
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.agent = selectedAgent;
@@ -122,30 +107,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //
-    // 13. We need the tableview to dequeue a cell for us to use. This will either pull an unused cell and give it to us to
-    //     reuse, or it will create a brand new cell. In either case, we need to make sure to set/reset all the UI elements
-    //     so we don't show stale data.
-    //
-    //     The method call below will perform this dequeuing operation. What should we set as the identifier?
-    //
     UITableViewCell *agentNameCell = [tableView dequeueReusableCellWithIdentifier:@"AgentNameCell" forIndexPath:indexPath];
 
-    //
-    // 14. We need to get a handle to the appropriate Agent object. How do we do that? (hint: we've done this already ^)
-    //
     Agent *selectedAgent = [self.agents objectAtIndex: indexPath.row];
     
-    //
-    // 15. The cell needs to show both the cover name and the real name of the agent. Since we are using one of the built-in
-    //     cell types, the "cell" object above has properties for these two labels already. How do we assign those?
-    //
     agentNameCell.textLabel.text = selectedAgent.coverName;
     agentNameCell.detailTextLabel.text = selectedAgent.realName;
-
-    //
-    // 16. This method is supposed to give a cell back to its caller. How do we do that? Why is this method currently
-    //     throwing an error?
     
     return agentNameCell;
 }
