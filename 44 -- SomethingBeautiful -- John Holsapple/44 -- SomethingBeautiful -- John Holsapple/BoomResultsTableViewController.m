@@ -55,7 +55,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
+    ResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
     
     Character *aCharacter = _characters[indexPath.row];
     cell.textLabel.text = aCharacter.characterName;
@@ -63,17 +63,11 @@
     return cell;
 }
 
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([segue.identifier isEqualToString:@"ShowDetailViewSegue"])
-    {
-        IndividualCharacterViewController *detailVC = (IndividualCharacterViewController *)[segue destinationViewController];
-        UITableViewCell *selectedCell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
-        Character *selectedCharacter = _characters[indexPath.row];
-        detailVC.characterInfo = selectedCharacter;
-    }
+    IndividualCharacterViewController *detailVC = [[IndividualCharacterViewController alloc] init];
+    detailVC.characterInfo = _characters [indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 

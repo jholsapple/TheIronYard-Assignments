@@ -45,7 +45,8 @@
     if (![search isEqualToString:@""])
     {
         NSString *urlString = [NSString stringWithFormat:@"http://gateway.marvel.com/v1/public/characters?nameStartsWith=%@&apikey=3064df81eb7184a51f2a603d25e295b3&ts=1&hash=b6268eacde15dab3345bf58b0a947e88", search];
-        NSString *escapedUrlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
+        NSString *escapedUrlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:set];
         NSURL *url = [NSURL URLWithString:escapedUrlString];
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:[NSOperationQueue mainQueue]];

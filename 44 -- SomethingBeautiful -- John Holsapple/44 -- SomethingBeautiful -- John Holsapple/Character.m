@@ -19,7 +19,7 @@
         aCharacter.characterDescription = characterDictionary[@"description"];
         NSDictionary *thumbnailDict = characterDictionary[@"thumbnail"];
         aCharacter.characterPic = [NSString stringWithFormat:@"%@/portrait_incredible.%@", thumbnailDict[@"path"], thumbnailDict[@"extension"]];
-//        NSLog(@"character: %@, image path: %@", characterDictionary[@"name"], aCharacter.characterPic);
+        NSLog(@"character: %@, image path: %@", characterDictionary[@"name"], aCharacter.characterPic);
     }
     return aCharacter;
 }
