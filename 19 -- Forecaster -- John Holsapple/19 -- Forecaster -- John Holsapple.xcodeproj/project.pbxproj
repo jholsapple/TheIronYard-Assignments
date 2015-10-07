@@ -18,19 +18,8 @@
 		749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D31B4F0EE100E0930D /* Main.storyboard */; };
 		749DD3D71B4F0EE100E0930D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D61B4F0EE100E0930D /* Images.xcassets */; };
 		749DD3DA1B4F0EE100E0930D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749DD3D81B4F0EE100E0930D /* LaunchScreen.xib */; };
-		749DD3E61B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */; };
 		749DD3F11B4F0F2300E0930D /* ForecasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		749DD3E01B4F0EE100E0930D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 749DD3BE1B4F0EE100E0930D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 749DD3C51B4F0EE100E0930D;
-			remoteInfo = "19 -- Forecaster -- John Holsapple";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		742123121B5007320011B7E2 /* LocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailViewController.h; sourceTree = "<group>"; };
@@ -53,7 +42,6 @@
 		749DD3D41B4F0EE100E0930D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		749DD3D61B4F0EE100E0930D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		749DD3D91B4F0EE100E0930D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "19 -- Forecaster -- John HolsappleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749DD3E41B4F0EE100E0930D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_9____Forecaster____John_HolsappleTests.m"; sourceTree = "<group>"; };
 		749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewController.h; sourceTree = "<group>"; };
@@ -62,13 +50,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		749DD3C31B4F0EE100E0930D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749DD3DC1B4F0EE100E0930D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */,
-				749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,40 +149,18 @@
 			productReference = 749DD3C61B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple.app */;
 			productType = "com.apple.product-type.application";
 		};
-		749DD3DE1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 749DD3EC1B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John HolsappleTests" */;
-			buildPhases = (
-				749DD3DB1B4F0EE100E0930D /* Sources */,
-				749DD3DC1B4F0EE100E0930D /* Frameworks */,
-				749DD3DD1B4F0EE100E0930D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				749DD3E11B4F0EE100E0930D /* PBXTargetDependency */,
-			);
-			name = "19 -- Forecaster -- John HolsappleTests";
-			productName = "19 -- Forecaster -- John HolsappleTests";
-			productReference = 749DD3DF1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		749DD3BE1B4F0EE100E0930D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
 					749DD3C51B4F0EE100E0930D = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 23BAUC8853;
-					};
-					749DD3DE1B4F0EE100E0930D = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 749DD3C51B4F0EE100E0930D;
 					};
 				};
 			};
@@ -220,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				749DD3C51B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */,
-				749DD3DE1B4F0EE100E0930D /* 19 -- Forecaster -- John HolsappleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,13 +190,6 @@
 				749DD3D51B4F0EE100E0930D /* Main.storyboard in Resources */,
 				749DD3DA1B4F0EE100E0930D /* LaunchScreen.xib in Resources */,
 				749DD3D71B4F0EE100E0930D /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749DD3DD1B4F0EE100E0930D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,23 +212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		749DD3DB1B4F0EE100E0930D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				749DD3E61B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		749DD3E11B4F0EE100E0930D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 749DD3C51B4F0EE100E0930D /* 19 -- Forecaster -- John Holsapple */;
-			targetProxy = 749DD3E01B4F0EE100E0930D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		749DD3D31B4F0EE100E0930D /* Main.storyboard */ = {
@@ -321,6 +255,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -336,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -373,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -386,7 +321,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,42 +334,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "19 -- Forecaster -- John Holsapple/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		749DD3ED1B4F0EE100E0930D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "19 -- Forecaster -- John HolsappleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/19 -- Forecaster -- John Holsapple.app/19 -- Forecaster -- John Holsapple";
-			};
-			name = Debug;
-		};
-		749DD3EE1B4F0EE100E0930D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "19 -- Forecaster -- John HolsappleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/19 -- Forecaster -- John Holsapple.app/19 -- Forecaster -- John Holsapple";
 			};
 			name = Release;
 		};
@@ -453,15 +358,6 @@
 			buildConfigurations = (
 				749DD3EA1B4F0EE100E0930D /* Debug */,
 				749DD3EB1B4F0EE100E0930D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		749DD3EC1B4F0EE100E0930D /* Build configuration list for PBXNativeTarget "19 -- Forecaster -- John HolsappleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				749DD3ED1B4F0EE100E0930D /* Debug */,
-				749DD3EE1B4F0EE100E0930D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

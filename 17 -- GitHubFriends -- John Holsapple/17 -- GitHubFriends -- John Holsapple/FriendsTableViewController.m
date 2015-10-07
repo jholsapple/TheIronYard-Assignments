@@ -13,7 +13,7 @@
 
 @interface FriendsTableViewController ()
 {
-    NSMutableArray *friends;
+    NSMutableArray *_friends;
 }
 
 @end
@@ -25,8 +25,8 @@
     [super viewDidLoad];
     self.title = @"Friends";
     
-    friends = [[NSMutableArray alloc] init];
-    [friends addObject:@{
+    _friends = [[NSMutableArray alloc] init];
+    [_friends addObject:@{
                         @"login": @"jcgohlke",
                         @"id": @3697689,
                         @"avatar_url": @"https://avatars.githubusercontent.com/u/3697689?v=3",
@@ -68,7 +68,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [friends count];
+    return [_friends count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,7 +76,7 @@
     FriendCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    NSDictionary *friendInfo = friends[indexPath.row];
+    NSDictionary *friendInfo = _friends[indexPath.row];
     cell.textLabel.text = friendInfo[@"name"];
     
     NSURL *avatarURL = [NSURL URLWithString:friendInfo[@"avatar_url"]];
@@ -91,7 +91,7 @@
 {
     FriendDetailViewController *detailVC = [[FriendDetailViewController alloc] init];
     detailVC.view.backgroundColor = [UIColor greenColor];
-    detailVC.friendInfo = friends [indexPath.row];
+    detailVC.friendInfo = _friends [indexPath.row];
     [detailVC configureView];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
@@ -101,7 +101,7 @@
 -(IBAction)addFriendTapped:(UIBarButtonItem *)sender;
 {
     NewFriendViewController *newFriendVC = [[NewFriendViewController alloc] init];
-    newFriendVC.friends = friends;
+    newFriendVC.friends = _friends;
     
     newFriendVC.view.backgroundColor = [UIColor greenColor];
     

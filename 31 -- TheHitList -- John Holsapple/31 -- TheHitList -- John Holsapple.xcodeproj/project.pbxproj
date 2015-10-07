@@ -159,6 +159,8 @@
 		7474ACD11B66C7F200A8F913 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
@@ -413,6 +415,7 @@
 				7474ACFD1B66C7F300A8F913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7474ACFE1B66C7F300A8F913 /* Build configuration list for PBXNativeTarget "31 -- TheHitList -- John HolsappleTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +424,7 @@
 				7474AD001B66C7F300A8F913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -18,15 +18,15 @@ class ViewController: UIViewController, UITableViewDataSource
     
     @IBAction func addName(sender: AnyObject)
     {
-        var alert = UIAlertController(title: "New name", message: "Add a new name", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "New name", message: "Add a new name", preferredStyle: .Alert)
         
-        let saveAction = UIAlertAction(title: "Save", style: .Default) { (action: UIAlertAction!) -> Void in
-        let textField = alert.textFields![0] as! UITextField
+        let saveAction = UIAlertAction(title: "Save", style: .Default) { (action: UIAlertAction) -> Void in
+        let textField = alert.textFields![0] 
         self.saveName(textField.text)
         self.tableView.reloadData()
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (action: UIAlertAction!) -> Void in
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (action: UIAlertAction) -> Void in
         }
         
         alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) -> Void in
@@ -50,9 +50,11 @@ class ViewController: UIViewController, UITableViewDataSource
         person.setValue(name, forKey: "name")
         // 4
         var error: NSError?
-        if !managedContext.save(&error)
-        {
-            println("Could not save \(error), \(error?.userInfo)")
+        do {
+            try managedContext.save()
+        } catch let error1 as NSError {
+            error = error1
+            print("Could not save \(error), \(error?.userInfo)")
         }
         //5
         people.append(person)
@@ -81,8 +83,8 @@ class ViewController: UIViewController, UITableViewDataSource
         // 2
         let fetchRequest = NSFetchRequest(entityName:"Person")
         // 3
-        var error: NSError?
-        let fetchedResults = managedContext.executeFetchRequest(fetchRequest, error: &error) as? [NSManagedObject]
+        let error: NSError?
+        let fetchedResults = managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
         
         if let results = fetchedResults
         {
@@ -90,7 +92,7 @@ class ViewController: UIViewController, UITableViewDataSource
         }
         else
         {
-            println("Could not fetch \(error), \(error!.userInfo)")
+            print("Could not fetch \(error), \(error!.userInfo)")
         }
     }
     

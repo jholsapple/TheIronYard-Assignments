@@ -16,8 +16,9 @@
 
 @interface ForecasterTableViewController ()
 {
-    NSMutableArray *cityForecasts;
+    NSMutableArray *_cityForecasts;
 }
+
 - (IBAction)addLocationTapped:(UIBarButtonItem *)sender;
 
 @end
@@ -29,7 +30,7 @@
     [super viewDidLoad];
     self.title = @"Forecaster";
     [NetworkManager sharedNetworkManager].delegate = self;
-    cityForecasts = [[NSMutableArray alloc] init];
+    _cityForecasts = [[NSMutableArray alloc] init];
     
 }
 
@@ -50,18 +51,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [cityForecasts count];
+    return [_cityForecasts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ForecasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
     
-    City *aCity = [cityForecasts objectAtIndex:indexPath.row];
+    City *aCity = [_cityForecasts objectAtIndex:indexPath.row];
     
     cell.cityStateLabel.text =  [NSString stringWithFormat:@"%@, %@", aCity.cityName, aCity.stateName];
     NSDateFormatter *f = [[NSDateFormatter alloc] init];
-    [f setDateStyle: NSDateFormatterShortStyle];
+    [f setDateStyle: NSDateFormatterMediumStyle];
     [f setTimeStyle:NSDateFormatterNoStyle];
     cell.currentDateLabel.text = [f stringFromDate: [NSDate date]];
     if (aCity.theWeather.weatherIcon)
@@ -72,15 +73,19 @@
     {
         cell.currentTempLabel.text = [NSString stringWithFormat:@"%.f℉", aCity.theWeather.currentTemp];
     }
+    if (aCity.theWeather.lowTemp)
+    {
+        cell.lowTempLabel.text = [NSString stringWithFormat:@"%.f℉", aCity.theWeather.lowTemp];
+    }
     
     return cell;
 }
                                         
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LocationDetailViewController *detailVC = [[LocationDetailViewController alloc] init];
-    detailVC.forecastsInfo = cityForecasts [indexPath.row];
-    
+    LocationDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CityWeather"];
+    detailVC.forecastInfo = _cityForecasts [indexPath.row];
+    [detailVC configureView];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
@@ -91,16 +96,16 @@
 - (void)cityWasFound: (City *) aCity;
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    [cityForecasts addObject:aCity];
+    [_cityForecasts addObject:aCity];
     aCity.theWeather = [[Weather alloc] init];
     [[NetworkManager sharedNetworkManager] fetchCurrentWeatherForCity:aCity];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[cityForecasts indexOfObject:aCity] inSection:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[_cityForecasts indexOfObject:aCity] inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
 }
 
 - (void)weatherWasFoundForCity: (City *) anotherCity;
 {
-    NSIndexPath *indexPathForCell = [NSIndexPath indexPathForRow:[cityForecasts indexOfObject:anotherCity] inSection:0];
+    NSIndexPath *indexPathForCell = [NSIndexPath indexPathForRow:[_cityForecasts indexOfObject:anotherCity] inSection:0];
     ForecasterTableViewCell *cellToUpdate = (ForecasterTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPathForCell];
     cellToUpdate.weatherIcon.image = [UIImage imageNamed: anotherCity.theWeather.weatherIcon];
     cellToUpdate.currentTempLabel.text = [NSString stringWithFormat :@"%.f℉", anotherCity.theWeather.currentTemp];

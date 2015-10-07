@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTextField;
 - (IBAction)addLocationButton:(UIButton *)sender;
 - (IBAction)currentLocationButton:(UIButton *)sender;
+- (IBAction)cancelButtonTapped:(UIButton *)sender;
 
 @end
 
@@ -55,6 +56,11 @@
 }
 
 - (IBAction)currentLocationButton:(UIButton *)sender
+{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)cancelButtonTapped:(UIButton *)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

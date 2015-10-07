@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ForecasterTableViewController.h"
+#import "Weather.h"
 
 @interface LocationDetailViewController : UIViewController
 
-@property(nonatomic) NSDictionary *forecastsInfo;
+@property(nonatomic) NSDictionary *forecastInfo;
+@property(nonatomic)Weather *theWeather;
+@property(nonatomic)id <ForecasterTableViewControllerDelegate> delegate;
+
+- (void)configureView;
 
 @end

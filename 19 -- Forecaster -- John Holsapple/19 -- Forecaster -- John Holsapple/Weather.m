@@ -23,9 +23,11 @@
         self.wind = [currently[@"windSpeed"] floatValue];
         self.weatherIcon = currently[@"icon"];
         NSDictionary *daily = forecastDictionary [@"daily"];
-        self.lowTemp = [daily[@"temperatureMin"] floatValue];
-        NSNumber *sunrise = daily[@"sunriseTime"];
-        NSNumber *sunset = daily[@"sunsetTime"];
+        NSArray *data = daily[@"data"];
+        NSDictionary *dataComponents = data[0];
+        self.lowTemp = [dataComponents[@"temperatureMin"] floatValue];
+        NSNumber *sunrise = dataComponents[@"sunriseTime"];
+        NSNumber *sunset = dataComponents[@"sunsetTime"];
         self.sunrise = [NSDate dateWithTimeIntervalSince1970:[sunrise doubleValue]];
         self.sunset =[NSDate dateWithTimeIntervalSince1970:[sunset doubleValue]];
     }
