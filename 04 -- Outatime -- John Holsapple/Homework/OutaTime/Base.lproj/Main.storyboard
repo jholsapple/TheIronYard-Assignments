@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uGX-mP-Xos">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uGX-mP-Xos">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="digital-7.ttf">
@@ -30,54 +31,63 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJj-oG-KHX">
                                 <rect key="frame" x="214" y="84" width="172" height="25"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-Jw-nUV">
                                 <rect key="frame" x="210" y="117" width="180" height="36.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="0.78903317451477051" green="0.18061754107475281" blue="0.16475954651832581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhR-W3-uDj">
                                 <rect key="frame" x="210" y="206" width="180" height="36.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="0.74773848684210531" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOa-Cd-e3V">
                                 <rect key="frame" x="232" y="173" width="136.5" height="25"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf6-lR-Fno">
                                 <rect key="frame" x="217" y="296" width="166" height="36.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYh-EK-WoC">
                                 <rect key="frame" x="196" y="263" width="208" height="25"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-Rn-foS">
                                 <rect key="frame" x="269" y="352" width="62" height="25"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kQ-Tu-h61">
                                 <rect key="frame" x="256" y="385" width="87" height="36.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="0.78903317449999999" green="0.1806175411" blue="0.16475954649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-iG-QYo">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-iG-QYo">
                                 <rect key="frame" x="215" y="442" width="170" height="30"/>
+                                <animations/>
                                 <state key="normal" title="SET DESTINATION TIME">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -85,8 +95,9 @@
                                     <segue destination="bBv-ya-q7Q" kind="show" identifier="ShowDestinationDatePickerSegue" id="dQ0-Zy-3ZF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgI-RA-jlW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgI-RA-jlW">
                                 <rect key="frame" x="249" y="492" width="102" height="30"/>
+                                <animations/>
                                 <state key="normal" title="TRAVEL BACK">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -95,6 +106,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.20984494686126709" green="0.2098878026008606" blue="0.20984223484992981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="FJj-oG-KHX" secondAttribute="centerX" constant="-0.5" id="0F7-oX-3e3"/>
@@ -168,8 +180,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
                                 <rect key="frame" x="0.0" y="219" width="600" height="162"/>
+                                <animations/>
                                 <date key="date" timeIntervalSinceReferenceDate="445876717.15564197">
                                     <!--2015-02-17 14:38:37 +0000-->
                                 </date>
@@ -181,6 +194,7 @@
                                 </date>
                             </datePicker>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="H9E-IV-AOj" secondAttribute="centerX" id="0u0-w6-zA8"/>
@@ -217,6 +231,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7IN-9w-Oi7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

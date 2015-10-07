@@ -16,6 +16,4 @@
 @property(nonatomic)Weather *theWeather;
 @property(nonatomic)id <ForecasterTableViewControllerDelegate> delegate;
 
-- (void)configureView;
-
 @end

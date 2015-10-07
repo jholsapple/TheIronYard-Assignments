@@ -11,7 +11,6 @@
 #import "LocationDetailViewController.h"
 #import "ForecasterTableViewCell.h"
 #import "Weather.h"
-#import "City.h"
 #import "NetworkManager.h"
 
 @interface ForecasterTableViewController ()
@@ -59,23 +58,24 @@
     ForecasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
     
     City *aCity = [_cityForecasts objectAtIndex:indexPath.row];
+    City *anotherCity = [_cityForecasts objectAtIndex:indexPath.row];
     
     cell.cityStateLabel.text =  [NSString stringWithFormat:@"%@, %@", aCity.cityName, aCity.stateName];
     NSDateFormatter *f = [[NSDateFormatter alloc] init];
     [f setDateStyle: NSDateFormatterMediumStyle];
     [f setTimeStyle:NSDateFormatterNoStyle];
     cell.currentDateLabel.text = [f stringFromDate: [NSDate date]];
-    if (aCity.theWeather.weatherIcon)
+    if (anotherCity.theWeather.weatherIcon)
     {
         cell.weatherIcon.image = [UIImage imageNamed:aCity.theWeather.weatherIcon];
     }
-    if (aCity.theWeather.currentTemp > 0)
+    if (anotherCity.theWeather.currentTemp)
     {
         cell.currentTempLabel.text = [NSString stringWithFormat:@"%.f℉", aCity.theWeather.currentTemp];
     }
-    if (aCity.theWeather.lowTemp)
+    if (anotherCity.theWeather.lowTemp)
     {
-        cell.lowTempLabel.text = [NSString stringWithFormat:@"%.f℉", aCity.theWeather.lowTemp];
+        cell.lowTempLabel.text = [NSString stringWithFormat:@"%.f", aCity.theWeather.lowTemp];
     }
     
     return cell;
@@ -84,8 +84,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LocationDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CityWeather"];
-    detailVC.forecastInfo = _cityForecasts [indexPath.row];
-    [detailVC configureView];
+    City *theCity = _cityForecasts [indexPath.row];
+    detailVC.theWeather = theCity.theWeather;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
@@ -109,6 +109,7 @@
     ForecasterTableViewCell *cellToUpdate = (ForecasterTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPathForCell];
     cellToUpdate.weatherIcon.image = [UIImage imageNamed: anotherCity.theWeather.weatherIcon];
     cellToUpdate.currentTempLabel.text = [NSString stringWithFormat :@"%.f℉", anotherCity.theWeather.currentTemp];
+    cellToUpdate.lowTempLabel.text = [NSString stringWithFormat:@"%.f", anotherCity.theWeather.lowTemp];
     
 }
 

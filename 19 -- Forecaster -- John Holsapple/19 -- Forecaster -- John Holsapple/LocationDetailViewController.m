@@ -7,10 +7,6 @@
 //
 
 #import "LocationDetailViewController.h"
-#import "ForecasterTableViewController.h"
-#import "Weather.h"
-#import "City.h"
-#import "NetworkManager.h"
 
 @interface LocationDetailViewController ()
 
@@ -34,10 +30,16 @@
     
 }
 
-- (void)configureView
+- (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     self.currentTempLabel.text = [NSString stringWithFormat:@"%.f", _theWeather.currentTemp];
-    self.lowTempLabel.text = [NSString stringWithFormat:@"%.f", _theWeather.currentTemp];
+    self.lowTempLabel.text = [NSString stringWithFormat:@"%.f", _theWeather.lowTemp];
+    self.precipitationLabel.text = [NSString stringWithFormat:@"%.02f%%", _theWeather.precipitation];
+    self.humidityLabel.text = [NSString stringWithFormat:@"%.02f", _theWeather.humidity];
+    self.windLabel.text = [NSString stringWithFormat:@"%.02f mph", _theWeather.wind];
+    self.weatherIcon.image = [NSString stringWithFormat:@"%@", _theWeather.weatherIcon];
 }
 
 - (void)didReceiveMemoryWarning
