@@ -8,6 +8,7 @@
 
 #import "LocationDetailViewController.h"
 
+
 @interface LocationDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *currentTempLabel;
@@ -17,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *windLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sunriseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sunsetLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *cityNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherIcon;
 
 @end
@@ -36,10 +37,11 @@
     
     self.currentTempLabel.text = [NSString stringWithFormat:@"%.f", _theWeather.currentTemp];
     self.lowTempLabel.text = [NSString stringWithFormat:@"%.f", _theWeather.lowTemp];
-    self.precipitationLabel.text = [NSString stringWithFormat:@"%.02f%%", _theWeather.precipitation];
+    self.precipitationLabel.text = [NSString stringWithFormat:@"%.000f%%", _theWeather.precipitation];
     self.humidityLabel.text = [NSString stringWithFormat:@"%.02f", _theWeather.humidity];
     self.windLabel.text = [NSString stringWithFormat:@"%.02f mph", _theWeather.wind];
-    self.weatherIcon.image = [NSString stringWithFormat:@"%@", _theWeather.weatherIcon];
+    self.weatherIcon.image = [UIImage imageNamed:_theWeather.weatherIcon];
+    self.cityNameLabel.text = [NSString stringWithFormat:@"%@, %@", _myCity.cityName, _myCity.stateName];
 }
 
 - (void)didReceiveMemoryWarning

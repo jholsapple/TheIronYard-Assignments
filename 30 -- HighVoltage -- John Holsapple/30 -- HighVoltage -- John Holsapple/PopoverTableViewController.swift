@@ -41,7 +41,7 @@ class PopoverTableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DataTypeCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("DataTypeCell", forIndexPath: indexPath) 
         
         cell.textLabel!.text = dataTypes[indexPath.row]
         if indexPath.row == self.selectedIndex

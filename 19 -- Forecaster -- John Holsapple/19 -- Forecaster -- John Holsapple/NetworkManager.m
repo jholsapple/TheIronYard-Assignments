@@ -130,7 +130,6 @@ static NSString *forecastIOBaseURL = @"https://api.forecast.io/forecast/35cbb07f
         if (coordinateSuccess)
         {
             [self.delegate cityWasFound: theCity];
-            
         }
         if (weatherSuccess)
         {

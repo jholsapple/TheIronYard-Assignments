@@ -53,6 +53,14 @@
         
         [self dismissViewControllerAnimated:YES completion:nil];
     }
+    else
+    {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"No Zip Code Entered" message:@"Do you expect me to read your mind?" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"My Bad!" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:alertAction];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 - (IBAction)currentLocationButton:(UIButton *)sender

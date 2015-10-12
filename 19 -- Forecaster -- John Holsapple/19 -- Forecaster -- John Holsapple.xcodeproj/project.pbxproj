@@ -46,6 +46,10 @@
 		749DD3E51B4F0EE100E0930D /* _9____Forecaster____John_HolsappleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_9____Forecaster____John_HolsappleTests.m"; sourceTree = "<group>"; };
 		749DD3EF1B4F0F2300E0930D /* ForecasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecasterTableViewController.h; sourceTree = "<group>"; };
 		749DD3F01B4F0F2300E0930D /* ForecasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecasterTableViewController.m; sourceTree = "<group>"; };
+		74E4ED8B1BCC001800DB7D05 /* System San Francisco Display Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Bold.ttf"; sourceTree = "<group>"; };
+		74E4ED8C1BCC001800DB7D05 /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
+		74E4ED8D1BCC001800DB7D05 /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
+		74E4ED8E1BCC001800DB7D05 /* System San Francisco Display Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Ultralight.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,10 @@
 		749DD3C91B4F0EE100E0930D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74E4ED8B1BCC001800DB7D05 /* System San Francisco Display Bold.ttf */,
+				74E4ED8C1BCC001800DB7D05 /* System San Francisco Display Regular.ttf */,
+				74E4ED8D1BCC001800DB7D05 /* System San Francisco Display Thin.ttf */,
+				74E4ED8E1BCC001800DB7D05 /* System San Francisco Display Ultralight.ttf */,
 				749DD3CA1B4F0EE100E0930D /* Info.plist */,
 				749DD3CB1B4F0EE100E0930D /* main.m */,
 			);

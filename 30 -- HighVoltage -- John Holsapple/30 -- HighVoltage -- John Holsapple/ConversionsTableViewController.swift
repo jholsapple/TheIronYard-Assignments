@@ -109,7 +109,7 @@ class ConversionsTableViewController: UITableViewController, UIPopoverPresentati
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let identifier = tableData[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) 
         
         let textField = cell.viewWithTag(1) as! UITextField
         switch identifier
@@ -139,7 +139,7 @@ class ConversionsTableViewController: UITableViewController, UIPopoverPresentati
                 textField.text = electricityConverter.ohmsString
             }
         default:
-            println()
+            print("")
         }
 
         return cell
@@ -198,7 +198,7 @@ class ConversionsTableViewController: UITableViewController, UIPopoverPresentati
                 controller.delegate = self
                 controller.preferredContentSize = CGSize(width: 100, height: 44 * valueTypes.count)
                 controller.dataTypes = valueTypes.keys.array
-                println("Roadhouse!")
+                print("Roadhouse!")
             }
         }
     }

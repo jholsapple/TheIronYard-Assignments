@@ -19,6 +19,7 @@
 }
 
 - (IBAction)addLocationTapped:(UIBarButtonItem *)sender;
+- (IBAction)refreshLocationsTapped:(UIBarButtonItem *)sender;
 
 @end
 
@@ -31,6 +32,13 @@
     [NetworkManager sharedNetworkManager].delegate = self;
     _cityForecasts = [[NSMutableArray alloc] init];
     
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshLocations)];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self refreshLocations];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,22 +66,21 @@
     ForecasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ForecasterCell" forIndexPath:indexPath];
     
     City *aCity = [_cityForecasts objectAtIndex:indexPath.row];
-    City *anotherCity = [_cityForecasts objectAtIndex:indexPath.row];
     
     cell.cityStateLabel.text =  [NSString stringWithFormat:@"%@, %@", aCity.cityName, aCity.stateName];
     NSDateFormatter *f = [[NSDateFormatter alloc] init];
     [f setDateStyle: NSDateFormatterMediumStyle];
     [f setTimeStyle:NSDateFormatterNoStyle];
     cell.currentDateLabel.text = [f stringFromDate: [NSDate date]];
-    if (anotherCity.theWeather.weatherIcon)
+    if (aCity.theWeather.weatherIcon)
     {
         cell.weatherIcon.image = [UIImage imageNamed:aCity.theWeather.weatherIcon];
     }
-    if (anotherCity.theWeather.currentTemp)
+    if (aCity.theWeather.currentTemp)
     {
         cell.currentTempLabel.text = [NSString stringWithFormat:@"%.f℉", aCity.theWeather.currentTemp];
     }
-    if (anotherCity.theWeather.lowTemp)
+    if (aCity.theWeather.lowTemp)
     {
         cell.lowTempLabel.text = [NSString stringWithFormat:@"%.f", aCity.theWeather.lowTemp];
     }
@@ -86,9 +93,34 @@
     LocationDetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CityWeather"];
     City *theCity = _cityForecasts [indexPath.row];
     detailVC.theWeather = theCity.theWeather;
+    detailVC.myCity = theCity;
+    
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 
+- (void)refreshLocations
+{
+    [self.tableView reloadData];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [_cityForecasts removeObjectAtIndex:indexPath.row];
+        [self.tableView reloadData];
+    }
+}
 
 
 #pragma mark - ForecasterTableViewControllerDelegate
@@ -113,11 +145,18 @@
     
 }
 
+#pragma mark - Actions
+
 -(IBAction)addLocationTapped:(UIBarButtonItem *)sender
 {
     AddLocationViewController *addLocationVC = [[AddLocationViewController alloc] init];
     
     [self presentViewController:addLocationVC animated:YES completion:nil];
+}
+
+- (IBAction)refreshLocationsTapped:(UIBarButtonItem *)sender
+{
+    [self refreshLocations];
 }
 
 @end

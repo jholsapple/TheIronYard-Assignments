@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         {
             webView.loadRequest(NSURLRequest (URL: url))
         }
-        println("url: \(webView.request?.URL)")
+        print("url: \(webView.request?.URL)")
         return true
     }
     
