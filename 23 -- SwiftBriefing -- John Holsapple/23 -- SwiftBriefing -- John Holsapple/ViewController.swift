@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     {
         hideKeyboard()
         
-        if !agentNameTextField.text.isEmpty && !agentPasswordTextField.text.isEmpty && agentNameTextField.text.componentsSeparatedByString(" ").count == 2
+        if !agentNameTextField.text!.isEmpty && !agentPasswordTextField.text!.isEmpty && agentNameTextField.text!.componentsSeparatedByString(" ").count == 2
         {
             let agentName = agentNameTextField.text
-            let nameComponents = agentName.componentsSeparatedByString(" ")
+            let nameComponents = agentName!.componentsSeparatedByString(" ")
             greetingLabel.text = "Good Evening, Agent \(nameComponents[1])"
             
             missionBriefing.text = "This mission will be an arduous one, fraught with peril. You will cover much strange and unfamiliar territory. Should you choose to accept this mission, Agent \(nameComponents[1]), you will certainly be disavowed, but you will be doing your country a great service. This message will self destruct in 5 seconds."
@@ -43,9 +43,9 @@ class ViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.agentNameTextField.text = ""
-        self.agentPasswordTextField.text = ""
-        self.missionBriefing.text = ""
+        agentNameTextField.text = ""
+        agentPasswordTextField.text = ""
+        missionBriefing.text = ""
     }
 
     override func didReceiveMemoryWarning()

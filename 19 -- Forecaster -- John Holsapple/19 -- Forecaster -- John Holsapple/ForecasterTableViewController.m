@@ -103,6 +103,8 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - Editing Cell
+
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewCellEditingStyleDelete;
@@ -120,6 +122,11 @@
         [_cityForecasts removeObjectAtIndex:indexPath.row];
         [self.tableView reloadData];
     }
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
 }
 
 
