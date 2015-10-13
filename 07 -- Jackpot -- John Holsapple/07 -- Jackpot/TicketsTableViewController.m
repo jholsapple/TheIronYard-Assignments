@@ -12,7 +12,7 @@
 
 @interface TicketsTableViewController()
 {
-    NSMutableArray *tickets;
+    NSMutableArray *_tickets;
 }
 
 - (IBAction)addTickets:(UIBarButtonItem *)sender;
@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     
-    tickets = [[NSMutableArray alloc] init];
+    _tickets = [[NSMutableArray alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,7 +52,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [tickets count];
+    return [_tickets count];
 }
 
 
@@ -62,7 +62,7 @@
     
     // Configure the cell...
     
-    Ticket *specificTicket = [tickets objectAtIndex:indexPath.row];
+    Ticket *specificTicket = [_tickets objectAtIndex:indexPath.row];
     
      cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", [specificTicket.picks objectAtIndex:0], specificTicket.picks[1], specificTicket.picks[2], specificTicket.picks[3], specificTicket.picks[4], specificTicket.picks[5]];
     
@@ -121,7 +121,7 @@
 - (IBAction)addTickets:(UIBarButtonItem *)sender
 {
     Ticket *anotherTicket =  [Ticket ticketUsingRandomNumbers];
-    [tickets addObject:anotherTicket];
+    [_tickets addObject:anotherTicket];
     [self.tableView reloadData];
 }
 

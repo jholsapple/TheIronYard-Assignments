@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController
+{
     @IBOutlet weak var agentNameTextField: UITextField!
     @IBOutlet weak var agentPasswordTextField: UITextField!
     @IBOutlet weak var greetingLabel: UILabel!
