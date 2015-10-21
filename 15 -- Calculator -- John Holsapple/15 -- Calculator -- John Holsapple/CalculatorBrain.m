@@ -110,8 +110,8 @@ typedef enum
 
 -(float)runCalculation
 {
-    float leftOperand = 0.0;
-    float rightOperand = 0.0;
+    float leftOperand = 0;
+    float rightOperand = 0;
     if ([self.operand1 length] > 0)
     {
         leftOperand = [self.operand1 floatValue];

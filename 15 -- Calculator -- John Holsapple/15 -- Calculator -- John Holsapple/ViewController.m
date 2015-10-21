@@ -48,7 +48,7 @@
 -(IBAction)operatorTapped:(UIButton*)sender
 {
     NSString *operatorString = sender.titleLabel.text;
-    [self.brain addOperator:operatorString];
+    [self.brain addOperator: operatorString];
 }
 
 -(IBAction)percentTapped:(UIButton*)sender
@@ -73,7 +73,7 @@
 - (IBAction)equalTapped:(id)sender
 {
     float theAnswer = [self.brain runCalculation];
-    self.outputLabel.text = [NSString stringWithFormat:@"%.2f",theAnswer];
+    self.outputLabel.text = [NSString stringWithFormat:@"%.f",theAnswer];
     self.brain = nil;
     self.brain = [[CalculatorBrain alloc] init];
 }
