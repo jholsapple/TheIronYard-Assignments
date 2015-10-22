@@ -83,7 +83,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         }
         else if textField.text == zipCodeTextField
         {
-            if count(zipCodeTextField.text) == 5
+            if zipCodeTextField.text.characters.count == 5
             {
                 
 /*              let set = NSCharacterSet(charactersInString: "0123456789")
@@ -94,7 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         }
         else if textField.text == phoneNumberTextField
         {
-            if count(phoneNumberTextField.text) == 10
+            if phoneNumberTextField.text.characters.count == 10
             {
                 let set = NSCharacterSet(charactersInString: "0123456789")
             }
