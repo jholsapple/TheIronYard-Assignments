@@ -162,19 +162,19 @@ class ConversionsTableViewController: UITableViewController, UIPopoverPresentati
             textFieldReturn = true
             if textField == ampsTextField
             {
-                electricityConverter.ampsString = textField.text
+                electricityConverter.ampsString = textField.text!
             }
             if textField == wattsTextField
             {
-                electricityConverter.wattsString = textField.text
+                electricityConverter.wattsString = textField.text!
             }
             if textField == voltsTextField
             {
-                electricityConverter.voltsString = textField.text
+                electricityConverter.voltsString = textField.text!
             }
             if textField == ohmsTextField
             {
-                electricityConverter.ohmsString = textField.text
+                electricityConverter.ohmsString = textField.text!
             }
         }
         if textFieldReturn
@@ -197,7 +197,7 @@ class ConversionsTableViewController: UITableViewController, UIPopoverPresentati
                 controller.popoverPresentationController!.delegate = self
                 controller.delegate = self
                 controller.preferredContentSize = CGSize(width: 100, height: 44 * valueTypes.count)
-                controller.dataTypes = valueTypes.keys.array
+                controller.dataTypes = valueTypes.keys.values
                 print("Roadhouse!")
             }
         }
