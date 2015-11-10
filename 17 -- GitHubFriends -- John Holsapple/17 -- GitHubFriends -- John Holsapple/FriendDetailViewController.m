@@ -11,9 +11,9 @@
 @interface FriendDetailViewController ()
 
 @property(nonatomic) UILabel *nameLabel;
-@property(nonatomic) UILabel *companyLabel;
+@property(nonatomic) UILabel *loginLabel;
 @property(nonatomic) UILabel *locationLabel;
-@property(nonatomic) UILabel *blogLabel;
+@property(nonatomic) UILabel *emailLabel;
 @property(nonatomic) UIImageView *avatarImage;
 
 @end
@@ -30,20 +30,20 @@
 {
     self.title = self.friendInfo[@"name"];
     
-    self.companyLabel = [[UILabel alloc] init];
-    self.companyLabel.text = [NSString stringWithFormat:@"%@", self.friendInfo[@"company"]];
-    [self.companyLabel setFrame:CGRectMake(self.view.frame.size.width/6, 75.0f, self.view.frame.size.width/2, 30.0f)];
-    [self.view addSubview:self.companyLabel];
+    self.loginLabel = [[UILabel alloc] init];
+    self.loginLabel.text = [NSString stringWithFormat:@"%@", self.friendInfo[@"login"]];
+    [self.loginLabel setFrame:CGRectMake(self.view.frame.size.width/6, 75.0f, self.view.frame.size.width/2, 30.0f)];
+    [self.view addSubview:self.loginLabel];
     
     self.locationLabel = [[UILabel alloc] init];
     self.locationLabel.text = [NSString stringWithFormat:@"%@", self.friendInfo[@"location"]];
-    [self.locationLabel setFrame:CGRectMake(self.companyLabel.frame.origin.x, self.companyLabel.frame.origin.y + self.companyLabel.frame.size.height +10, self.companyLabel.frame.size.width, 40.0f)];
+    [self.locationLabel setFrame:CGRectMake(self.loginLabel.frame.origin.x, self.loginLabel.frame.origin.y + self.loginLabel.frame.size.height +10, self.loginLabel.frame.size.width, 40.0f)];
     [self.view addSubview:self.locationLabel];
  
-    self.blogLabel = [[UILabel alloc] init];
-    self.blogLabel.text = [NSString stringWithFormat:@"%@", self.friendInfo[@"blog"]];
-    [self.blogLabel setFrame:CGRectMake(self.locationLabel.frame.origin.x, self.locationLabel.frame.origin.y + self.locationLabel.frame.size.height +10, self.locationLabel.frame.size.width, 40.0f)];
-    [self.view addSubview:self.blogLabel];
+    self.emailLabel = [[UILabel alloc] init];
+    self.emailLabel.text = [NSString stringWithFormat:@"%@", self.friendInfo[@"email"]];
+    [self.emailLabel setFrame:CGRectMake(self.locationLabel.frame.origin.x, self.locationLabel.frame.origin.y + self.locationLabel.frame.size.height +10, self.locationLabel.frame.size.width, 40.0f)];
+    [self.view addSubview:self.emailLabel];
     
     self.avatarImage = [[UIImageView alloc] init];
     NSURL *avatarURL = [NSURL URLWithString:self.friendInfo[@"avatar_url"]];
