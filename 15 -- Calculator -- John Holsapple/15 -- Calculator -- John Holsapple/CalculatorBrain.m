@@ -32,7 +32,6 @@ typedef enum
 @implementation CalculatorBrain
 
 - (instancetype) init
-
 {
     self = [super init];
     if (self)
@@ -42,7 +41,6 @@ typedef enum
         _operand2 = [[NSMutableString alloc] init];
         smoothOperator = OperatorTypeNone;
     }
-    
     return self;
 }
 
